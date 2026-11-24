@@ -173,11 +173,11 @@ confidence: medium
 
 ---
 
-## Phase 1: vision core, ML, Sign→Text (difficulty 5) ⬜
+## Phase 1: vision core, ML, Sign→Text (difficulty 5) ✅ 24 Nov
 
 **Goal:** real on-device ASL and ISL fingerspelling at ≥ 0.90 macro-F1 on held-out signers, with a smooth live UX (FR-SG-01..09).
 
-### 1.1 Camera and vision worker ⬜
+### 1.1 Camera and vision worker ✅ 24 Nov (module worker, MediaPipe tasks-vision 1.2.3 ESM runtime served from /wasm/mediapipe (4.1 MB gz, camera pages only); back-pressure frame loop via requestVideoFrameCallback; fixed MediaPipe "ModuleFactory not set" for the 2nd task/CPU retry by restoring the factory from the loader's default export)
 
 **Steps:**
 1. `engines/vision/camera.ts`: `getUserMedia({video:{width:640,height:480,facingMode:'user'}})`, start/stop, device switch, `NotAllowedError` / `NotFoundError` mapping to friendly messages.
@@ -201,7 +201,7 @@ confidence: medium
 
 **Visual check:** screenshot with the overlay, plus a GIF of tracking.
 
-### 1.2 Feature spec, Python ↔ TypeScript ⬜
+### 1.2 Feature spec, Python ↔ TypeScript ✅ 24 Nov (features.ts 1:1 with ml/bridgify_ml/features.py incl. aspect fix; parity: 20 frames < 1e-5)
 
 **Steps:**
 1. `ml/` env: `uv init --python 3.12`, then add `torch`, `mediapipe`, `numpy`, `pandas`, `scikit-learn`, `pyyaml` and `pytest`.
@@ -212,7 +212,7 @@ confidence: medium
 
 **Acceptance:** the parity test is green in CI.
 
-### 1.3 Collector (`/lab/collector`) ⬜
+### 1.3 Collector (`/lab/collector`) ⏭ descoped 24 Nov (D-27: public multi-signer data instead of recordings)
 
 **Steps:**
 1. The flow from ML-PIPELINE §3.2: signer form, letter queue with reference image, countdown, 4 s capture, live count of good frames, redo button.
@@ -223,7 +223,7 @@ confidence: medium
 
 **Human:** **H3 starts now.** Send the team the link and a 1-page guide covering light, background, distance and both hands for ASL.
 
-### 1.4 Data assembly ⬜
+### 1.4 Data assembly ✅ 24 Nov (ASL-HG 10 signers, 99.78% hand detection; Dwibon ISL 6+1 signers; HaGRID 626 test users; KDEF 70 people; see docs/EVAL.md)
 
 **Steps:**
 1. Download the Kaggle ISL landmark CSVs. Verify the column order and whether the coordinates are raw image-normalised. If they are already normalised differently, reconstruct or re-extract from the image set.
@@ -235,7 +235,7 @@ confidence: medium
 
 **Acceptance:** each class has ≥ 500 training samples, and the split has no signer leakage (assert in a test).
 
-### 1.5 Training and evaluation ⬜
+### 1.5 Training and evaluation ✅ 24 Nov (held-out macro-F1: ASL MLP 0.962 on signers P9–P10; ISL logistic regression 0.989 on unseen signer; baselines + LOSO in EVAL.md)
 
 **Steps:**
 1. `train.py --config configs/asl_letters.yaml`: baselines (kNN, logistic regression, SVM), then the MLP with augmentation. Seeds fixed. Writes `runs/<date>-asl/report.json` with confusion matrix PNG and per-class F1.
@@ -250,7 +250,7 @@ confidence: medium
 
 **Acceptance:** held-out macro-F1 ≥ 0.90 for both languages, and the MLP beats logistic regression (otherwise ship logistic regression; the same exporter handles one layer).
 
-### 1.6 Export, JS inference, parity ⬜
+### 1.6 Export, JS inference, parity ✅ 24 Nov (asl 86 KB, isl 17 KB weights; mlp.ts; 100 parity tests incl. models, gestures, emotion)
 
 **Steps:**
 1. `export.py` writes `{name}.bin` + `{name}.json` to `web/public/models/` and updates `manifest.json` (sha256, bytes, version, licence, metrics).
@@ -260,7 +260,7 @@ confidence: medium
 
 **Acceptance:** parity green, MLP < 1 ms per frame in the browser (logged `inferMs`).
 
-### 1.7 Sign→Text page ⬜ (FR-SG-01..09)
+### 1.7 Sign→Text page ✅ 24 Nov (FR-SG-01..09; real fake-webcam e2e: held-out signer photos L, O, V → "LOV"; error/keyboard/mobile e2e. Live-person accuracy check still to do with the team)
 
 **Steps:**
 1. Layout per DESIGN-SYSTEM (camera left, detected text right; mobile: camera on top).
@@ -281,9 +281,9 @@ confidence: medium
 
 ---
 
-## Phase 2: Gesture & Emotion (difficulty 3) ⬜ (FR-GE-01..06)
+## Phase 2: Gesture & Emotion (difficulty 3) ✅ 24 Nov (FR-GE-01..06)
 
-### 2.1 Gesture rules ⬜
+### 2.1 Gesture rules ✅ 24 Nov (97.3% on 626 unseen HaGRID users; wave detector unit-tested; ILY untested on real data, no public set)
 
 **Steps:**
 1. `gestures.ts`: finger extension by distance ratios (tip-to-wrist vs PIP-to-wrist > 1.15), thumb direction, and the rule table (SYSTEM-ARCHITECTURE §6.6).
@@ -293,7 +293,7 @@ confidence: medium
 
 **Acceptance:** 8-gesture confusion table in EVAL.md, ≥ 90%.
 
-### 2.2 Emotion ⬜
+### 2.2 Emotion ✅ 24 Nov (logistic regression on 52 blendshapes, 0.744 macro-F1 on 20 unseen KDEF people; rule weights kept for the "based on" explanation)
 
 **Steps:**
 1. Add `FaceLandmarker` (`outputFaceBlendshapes:true`, numFaces 1) to vision.worker behind the `face` flag, running every 3rd frame.
@@ -302,7 +302,7 @@ confidence: medium
 
 **Acceptance:** macro-F1 reported in EVAL.md (no gate). The UI shows the "approximate" label and the top 3 driving blendshapes.
 
-### 2.3 Page ⬜
+### 2.3 Page ✅ 24 Nov (fake-webcam e2e: open hand → "Open palm"; log once per new gesture; CSV export; mobile)
 
 **Steps:**
 1. One camera stage with hand and face overlays.
@@ -318,9 +318,9 @@ confidence: medium
 
 ---
 
-## Phase 3: Speech (difficulty 3) ⬜ (FR-TTS-*, FR-STT-*)
+## Phase 3: Speech (difficulty 3) ✅ 24 Nov (FR-TTS-*, FR-STT-*)
 
-### 3.1 TTS engine ⬜
+### 3.1 TTS engine ✅ 24 Nov (`engines/speech/{tts,chunk,voices}.ts`; sentence chunking ≤180 chars incl. Hindi danda, boundary + estimated word timing after 400 ms, Chrome keep-alive, local-voice ranking; 5 unit tests)
 
 **Steps:**
 1. `voices.ts`: loads voices with `voiceschanged` and a timeout; ranks `localService` first; matches language.
@@ -335,7 +335,7 @@ confidence: medium
 
 **Acceptance:** speaks a 600-character paragraph in Chrome, Firefox and Safari without cutting off. Highlight follows along: real boundaries in Firefox/Safari, estimated in Chrome network voices.
 
-### 3.2 TTS page and quick access ⬜
+### 3.2 TTS page and quick access ✅ 24 Nov (`/tools/text-to-speech`; English + Hindi phrase sets, 6/5 categories; live caption; e2e desktop + mobile incl. keyboard Ctrl+Enter)
 
 **Steps:**
 1. Text area, voice/language select, speed slider (1–10), caption band, controls.
@@ -344,7 +344,7 @@ confidence: medium
 
 **Acceptance:** FR-TTS-01..06 checks pass. axe clean.
 
-### 3.3 gTTS fallback ⬜
+### 3.3 gTTS fallback ✅ 24 Nov (Flask function `web/api/tts.py` on Vercel per D-24; tested locally: en + hi mp3, empty → 400)
 
 **Steps:**
 1. `POST /api/tts`: gTTS with lang map, length cap, rate limit, sha1 disk cache, `audio/mpeg`.
@@ -352,7 +352,7 @@ confidence: medium
 
 **Acceptance:** pytest (gTTS mocked) passes, plus a manual run.
 
-### 3.4 STT browser path ⬜
+### 3.4 STT browser path ✅ 24 Nov (`engines/speech/{stt,punctuate}.ts`, Brave detection; 21 punctuation tests; captions view; e2e)
 
 **Steps:**
 1. `stt.ts`: constructor detection (`SpeechRecognition` / `webkit…`), `continuous`, `interimResults`, `lang`, `processLocally` when supported, auto-restart while active, error mapping.
@@ -363,7 +363,7 @@ confidence: medium
 
 **Acceptance:** live words < 500 ms in Chrome. Punctuation tests green.
 
-### 3.5 Whisper opt-in ⬜ (FR-STT-05)
+### 3.5 Whisper opt-in ✅ 24 Nov (whisper-tiny.en in a worker, 16 kHz PCM via AudioWorklet, silence skip; WebGPU only if an adapter exists, else WASM; real e2e with a spoken clip as fake mic → transcript contains "hospital"; worker chunk not in entry) (FR-STT-05)
 
 **Steps:**
 1. A dialog showing the size (~40 MB, once).
@@ -375,9 +375,9 @@ confidence: medium
 
 ---
 
-## Phase 4: Braille ⇄ Text (difficulty 3) ⬜ (FR-BR-*)
+## Phase 4: Braille ⇄ Text (difficulty 3) ✅ 24 Nov (FR-BR-*)
 
-### 4.1 liblouis service ⬜
+### 4.1 liblouis engine ✅ 24 Nov (D-24: liblouis 3.39.0 compiled to WebAssembly, 143 KB gzip with 17 tables embedded, UCS-4; worker `workers/braille.worker.ts`; 59 golden cases from native liblouis match exactly in Vitest and pytest)
 
 **Steps:**
 1. `louis_svc.py`: table map (SYSTEM-ARCHITECTURE §7.2); `translateString`, `backTranslateString`; Unicode output through `unicode.dis`; build `cells` (dots from the code point minus 0x2800) and `brf` (with `en-us-brf.dis`, or our own ASCII map).
@@ -386,7 +386,7 @@ confidence: medium
 
 **Acceptance:** pytest green inside Docker.
 
-### 4.2 Client engine and DotGrid ⬜
+### 4.2 Client engine and DotGrid ✅ 24 Nov (`engines/braille/client.ts` with offline Grade 1 fallback; DotGrid with dot numbers)
 
 **Steps:**
 1. `grade1.ts`: UEB Grade 1 offline map (letters, digits with number sign, capitals indicator, basic punctuation), with tests that agree with the server on 50 strings.
@@ -395,7 +395,7 @@ confidence: medium
 
 **Acceptance:** tests green. Offline toggle in DevTools shows Grade 1 with the banner.
 
-### 4.3 Text→Braille page ⬜
+### 4.3 Text→Braille page ✅ 24 Nov (report cases reproduce exactly in e2e; .txt conversation log + .brf downloads)
 
 **Steps:**
 1. Grade select (Grade 1, Grade 2, Hindi Bharati), input, Convert, output (Unicode + Copy), DotGrid, Speak Aloud.
@@ -403,7 +403,7 @@ confidence: medium
 
 **Acceptance:** the report's own test cases reproduce exactly.
 
-### 4.4 Braille→Text (Perkins) ⬜
+### 4.4 Braille→Text (Perkins) ✅ 24 Nov (S D F J K L chording on last-key release; tap-dots for touch; e2e keyboard + touch)
 
 **Steps:**
 1. `perkins.ts`:
@@ -417,7 +417,7 @@ confidence: medium
 
 **Acceptance:** chording F+J gives "c". A Grade 2 contraction expands. Usable with keyboard only and with touch only.
 
-### 4.5 Bharati ⬜
+### 4.5 Bharati ✅ 24 Nov (hi-in-g1 in WASM; 10 golden Hindi cases; e2e)
 
 **Steps:**
 1. `hi-in-g1.utb` in the table map.

@@ -38,4 +38,6 @@ All decisions were made on 24 Nov 2026. Reverse one only by adding a new entry t
 | D-25 | The repo is **public** on the team's GitHub (RidzM/bridgify) | Team decision, 24 Nov. Note: public disclosure counts against patent novelty (RESEARCH §1); a provisional should be filed early | Private repo + passcode gate |
 | D-26 | Design revision 2 (DESIGN-SYSTEM §0): app shell with a sidebar, Atkinson Hyperlegible Next only, a neutral ramp with one violet accent, composer-first home, motion tokens | An audit found template tells. Impeccable now reports 0 anti-patterns on the home page | Keep the v1 landing layout; keep Syne |
 | D-27 | ML training data comes from public multi-signer sets (ML-PIPELINE §3.1 rev 2); no team recordings | The team can't record; public sets with signer IDs still allow held-out-person evaluation | Own recordings |
+| D-28 | Whisper fallback uses `whisper-tiny.en` (q8 on WASM, fp32 on WebGPU) and picks WebGPU only if `requestAdapter()` returns an adapter | `navigator.gpu` exists without an adapter on many machines (found in testing: the "no available backend" crash) | whisper-base (2× download) |
+| D-29 | Playwright runs every functional flow twice: Desktop Chrome and **Pixel 7** (touch, 412 px). Accessibility sweeps run on desktop across 12 modes | The team asked for phone usability to be proven, not assumed | Desktop only |
 

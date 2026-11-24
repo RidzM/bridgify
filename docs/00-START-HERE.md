@@ -44,10 +44,10 @@ It also has 12 display modes so the interface itself fits the person. Camera and
 
 | | |
 |---|---|
-| Stage | Phase 0 done locally (shell, 12 modes, API skeleton, tests); deploy waiting on Q-02/Q-03 |
-| Next | Phase 1 (vision and ML, the hardest part); P0.6 deploy once Q-02/Q-03 are answered |
-| Blocking questions | Q-02 (repo account), Q-03 (API host) |
-| Live link | Not yet |
+| Stage | Phases 0–4 done and live: all speech, braille, sign-to-text and gesture/emotion tools work |
+| Next | Phase 5 (text to sign + content), then tutorials, Bridge, SOS, offline |
+| Blocking questions | none |
+| Live link | https://bridgify-vcet.vercel.app |
 
 ## Hard rules
 

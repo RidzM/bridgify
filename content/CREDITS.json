@@ -1,0 +1,89 @@
+{
+  "items": [
+    {
+      "id": "liblouis",
+      "name": "liblouis 3.39.0",
+      "license": "LGPL-2.1-or-later",
+      "url": "https://liblouis.io",
+      "source": "https://github.com/liblouis/liblouis/releases/download/v3.39.0/liblouis-3.39.0.tar.gz",
+      "usedFor": "braille translation in the browser"
+    },
+    {
+      "id": "mediapipe-hand",
+      "name": "MediaPipe Hand Landmarker",
+      "license": "Apache-2.0",
+      "url": "https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker",
+      "usedFor": "hand tracking (sign to text, gestures)"
+    },
+    {
+      "id": "mediapipe-face",
+      "name": "MediaPipe Face Landmarker",
+      "license": "Apache-2.0",
+      "url": "https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker",
+      "usedFor": "face blendshapes (expression)"
+    },
+    {
+      "id": "asl-hg",
+      "name": "ASL-HG dataset (via Hugging Face juanjodurillo/asl-hg)",
+      "license": "CC-BY-4.0",
+      "url": "https://huggingface.co/datasets/juanjodurillo/asl-hg",
+      "usedFor": "training and held-out testing of the ASL letter model"
+    },
+    {
+      "id": "isl-landmarks",
+      "name": "ISL dataset: MediaPipe hand landmarks (Kaggle dwibonbhargabdeka)",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://www.kaggle.com/datasets/dwibonbhargabdeka/isl-dataset-mediapipe-hand-landmarks",
+      "usedFor": "training and held-out testing of the ISL letter model (model weights shared alike)"
+    },
+    {
+      "id": "hagrid",
+      "name": "HaGRID annotations (Kaggle kapitanov/hagrid)",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://www.kaggle.com/datasets/kapitanov/hagrid",
+      "usedFor": "tuning and testing the gesture rules"
+    },
+    {
+      "id": "kdef",
+      "name": "KDEF, Karolinska Directed Emotional Faces (Kaggle mirror)",
+      "license": "Non-commercial research use",
+      "url": "https://kdef.se",
+      "usedFor": "training and held-out testing of the expression model (non-commercial use only)"
+    },
+    {
+      "id": "whisper-tiny-en",
+      "name": "Whisper tiny.en (onnx-community)",
+      "license": "MIT",
+      "url": "https://huggingface.co/onnx-community/whisper-tiny.en",
+      "usedFor": "optional on-device speech recognition"
+    },
+    {
+      "id": "transformers-js",
+      "name": "Transformers.js",
+      "license": "Apache-2.0",
+      "url": "https://github.com/huggingface/transformers.js",
+      "usedFor": "running Whisper in the browser"
+    },
+    {
+      "id": "gtts",
+      "name": "gTTS",
+      "license": "MIT",
+      "url": "https://github.com/pndurette/gTTS",
+      "usedFor": "server voice fallback"
+    },
+    {
+      "id": "atkinson",
+      "name": "Atkinson Hyperlegible Next (Braille Institute)",
+      "license": "OFL-1.1",
+      "url": "https://www.brailleinstitute.org/freefont/",
+      "usedFor": "interface typeface"
+    },
+    {
+      "id": "opendyslexic",
+      "name": "OpenDyslexic",
+      "license": "OFL-1.1",
+      "url": "https://opendyslexic.org",
+      "usedFor": "dyslexia mode typeface"
+    }
+  ]
+}

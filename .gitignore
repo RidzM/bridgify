@@ -44,3 +44,6 @@ tools/
 # local secrets (never committed)
 .secrets/
 .mcp.json
+
+# local-only helper scripts (never committed)
+tools-local/
