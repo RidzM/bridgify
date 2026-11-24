@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router'
 import { ToolFrame } from '@/components/shell/ToolFrame'
 import { LetterGlyph } from '@/components/tool/LetterGlyph'
 import { Button } from '@/components/ui/Button'

@@ -1,5 +1,5 @@
 import { useEffect, useState, Suspense } from 'react'
-import { Outlet, useLocation, Link } from 'react-router-dom'
+import { Outlet, useLocation, Link } from 'react-router'
 import { Dialog } from '@base-ui/react/dialog'
 import { X } from 'lucide-react'
 import { TopBar } from '@/components/shell/TopBar'

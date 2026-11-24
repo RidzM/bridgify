@@ -1,0 +1,12 @@
+{
+  "lang": "en-IN",
+  "note": "SOS cards (FR-SOS-01). 'adds' appends the person's own details (emergency contact or medical notes), which they edit on the SOS page and which stay on the device. 'hi' is a Hindi line for the reader of the card.",
+  "presets": [
+    { "id": "deaf", "text": "I am Deaf. Please write it down.", "hi": "मैं बधिर हूँ। कृपया लिखकर बताइए।" },
+    { "id": "no-speech", "text": "I can't speak. I need help.", "hi": "मैं बोलने में असमर्थ हूँ। मुझे मदद चाहिए।" },
+    { "id": "doctor", "text": "I need a doctor.", "hi": "मुझे डॉक्टर चाहिए।" },
+    { "id": "call", "text": "Please call this number.", "hi": "कृपया इस नंबर पर फ़ोन कीजिए।", "adds": "contact" },
+    { "id": "blind", "text": "I am blind. Please guide me.", "hi": "मैं दृष्टिहीन हूँ। कृपया मुझे रास्ता दिखाइए।" },
+    { "id": "condition", "text": "I have a medical condition.", "hi": "मुझे एक बीमारी है।", "adds": "notes" }
+  ]
+}

@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router'
 import { SlidersHorizontal, Siren } from 'lucide-react'
 import { NAV } from '@/lib/nav'
 import { usePrefs } from '@/stores/prefs'

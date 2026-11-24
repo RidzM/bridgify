@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router'
 import { Volume2 } from 'lucide-react'
 import { ToolFrame } from '@/components/shell/ToolFrame'
 import { BrailleCell } from '@/components/shell/BrailleCell'

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 /** Wordmark with the braille cell for "b" (dots 1 and 2 raised). */
 export function Logo() {

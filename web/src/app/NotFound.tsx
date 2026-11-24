@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { TOOLS } from '@/lib/tools'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'
 

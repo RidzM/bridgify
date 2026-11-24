@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { TOOLS, type Tool } from '@/lib/tools'
 import { LETTERS } from '@/engines/braille/grade1'
 import { charToDots } from '@/engines/braille/cells'

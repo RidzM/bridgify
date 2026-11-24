@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { Menu, Siren, SlidersHorizontal } from 'lucide-react'
 import { Logo } from './Logo'
 

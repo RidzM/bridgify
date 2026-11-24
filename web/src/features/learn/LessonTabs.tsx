@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router'
 
 export function LessonTabs({ base, tabs }: { base: string; tabs: { id: string; label: string }[] }) {
   return (

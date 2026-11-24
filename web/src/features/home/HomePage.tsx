@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { Captions, ScanLine, Volume2, MessagesSquare, ChevronRight } from 'lucide-react'
 import { Composer } from './Composer'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'

@@ -5,7 +5,8 @@ export default defineConfig({
   testIgnore: process.env.SLOW ? [] : ['**/*.slow.spec.ts'],
   timeout: 60_000,
   reporter: [['list']],
-  use: { baseURL: process.env.BASE_URL ?? 'http://localhost:4173', reducedMotion: 'reduce' },
+  // Service workers are blocked by default so each test doesn't download the offline precache; offline specs opt back in.
+  use: { baseURL: process.env.BASE_URL ?? 'http://localhost:4173', reducedMotion: 'reduce', serviceWorkers: 'block' },
   webServer: process.env.BASE_URL ? undefined : { command: 'pnpm preview --port 4173', port: 4173, reuseExistingServer: true },
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'] } },

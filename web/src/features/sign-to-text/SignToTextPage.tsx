@@ -13,8 +13,10 @@ import { LetterCommitter } from '@/engines/vision/committer'
 import { topK } from '@/engines/vision/mlp'
 import type { Hand, VisionResult } from '@/engines/vision/types'
 import { Speaker } from '@/engines/speech/tts'
-import { SIGN_LANGS } from '@/lib/signLangs'
+import { SIGN_LANGS, signLang } from '@/lib/signLangs'
 import { usePrefs, type SignLang } from '@/stores/prefs'
+import { loadFingerspelling, type Fingerspelling } from '@/engines/sign/content'
+import { LetterGlyph } from '@/components/tool/LetterGlyph'
 
 const speaker = new Speaker()
 
@@ -48,6 +50,8 @@ export default function SignToTextPage() {
   const v = useVision({ hands: { numHands: lang === 'isl' ? 2 : 1, classifier: lang === 'isl' ? 'isl-letters' : 'asl-letters' } }, onResult)
   useEffect(() => { smoother.current.reset(); committer.current.reset() }, [lang])
 
+  const [fs, setFs] = useState<Fingerspelling | null>(null)
+  useEffect(() => { void loadFingerspelling(lang).then(setFs) }, [lang])
   const unsure = v.running && hands.length > 0 && view.p < 0.8 && view.top.length > 0
   const add = (s: string) => setText((t) => t + s)
 
@@ -100,9 +104,22 @@ export default function SignToTextPage() {
             <Button onClick={async () => { await navigator.clipboard.writeText(text); toast('Copied') }} disabled={!text} icon={<Copy aria-hidden size={16} />}>Copy</Button>
             <Button variant="quiet" onClick={() => { const b = text; setText(''); toast('Cleared', { label: 'Undo', run: () => setText(b) }) }} disabled={!text} icon={<Trash2 aria-hidden size={16} />}>Clear</Button>
           </div>
-          <p className="text-[0.8125rem] text-ink-muted">J and Z use movement, so type them with the keyboard. This recognises fingerspelled letters only. It does not translate sign language and is not a substitute for an interpreter.</p>
+          <p className="text-[0.8125rem] text-ink-muted">{lang === 'asl' ? 'J and Z use movement, so type them with the keyboard.' : 'H, J and Y are not recognised yet, so type them with the keyboard.'} This recognises fingerspelled letters only. It does not translate sign language and is not a substitute for an interpreter.</p>
         </Panel>
       </div>
+      {fs && fs.letters.some((l) => l.media) && (
+        <details className="mt-4 rounded-[16px] border border-line bg-surface p-5">
+          <summary className="min-h-11 cursor-pointer py-2 font-medium">{signLang(lang).code} alphabet reference</summary>
+          <ul className="mt-3 grid grid-cols-4 gap-2 sm:grid-cols-7 lg:grid-cols-9">
+            {fs.letters.map((l) => (
+              <li key={l.letter} className="flex flex-col items-center gap-1 rounded-[10px] bg-bg p-2">
+                <LetterGlyph media={l.media} className="h-14 w-14" alt={`${signLang(lang).code} letter ${l.letter}`} />
+                <span className="font-semibold">{l.letter}{l.motion ? <span className="sr-only"> (moving letter)</span> : null}</span>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
     </ToolFrame>
   )
 }
