@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bridgify architecture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700&amp;family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,500;0,600;1,400&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:       #F8F4FF;
+      --color-paper-2:     #EFE8FA;
+      --color-ink:         #1A0833;
+      --color-muted:       #4E3F66;
+      --color-soft:        #5C4D75;
+      --color-rule:        #DDD3EE;
+      --color-rule-solid:  #8C7BA8;
+      --color-accent:      #3D0075;
+      --color-accent-tint: rgba(61,0,117,0.08);
+      --color-link:        #1F4FA8;
+      --color-live:        #A800A8;
+      --color-ondevice:    #0B6E69;
+      --font-title: 'Syne', system-ui, sans-serif;
+      --font-sans:  'Atkinson Hyperlegible Next', system-ui, sans-serif;
+      --font-mono:  'Geist Mono', ui-monospace, Menlo, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      min-height: 100vh;
+      padding: 3rem 2rem;
+      color: var(--color-ink);
+    }
+    @media (max-width: 640px) { body { padding: 2rem 16px; } }
+    .container { max-width: 1320px; margin: 0 auto; }
+    .header { margin-bottom: 2rem; }
+    .header-eyebrow {
+      font-family: var(--font-mono); font-size: 0.66rem; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--color-muted); margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-family: var(--font-title); font-weight: 600;
+      font-size: clamp(1.75rem, 3vw + 1rem, 2.5rem);
+      letter-spacing: -0.02em; line-height: 1.1;
+      color: var(--color-ink); margin-bottom: 0.5rem;
+    }
+    .subtitle { font-size: 1rem; line-height: 1.55; color: var(--color-muted); max-width: 68ch; }
+    .diagram-container { width: 100%; overflow-x: auto; }
+    svg { width: 100%; min-width: 1280px; display: block; }
+    @media print {
+      .diagram-container { overflow-x: visible; }
+      svg { min-width: 0; }
+    }
+    .cards { display: grid; grid-template-columns: 1.15fr 1fr 0.9fr; gap: 1rem; margin-top: 1.5rem; }
+    @media (max-width: 860px) { .cards { grid-template-columns: 1fr; } }
+    .card { background: #ffffff; border-radius: 6px; border: 1px solid var(--color-rule); padding: 1.25rem; min-width: 0; }
+    .card .eyebrow {
+      font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--color-soft); margin-bottom: 0.5rem;
+    }
+    .card-header {
+      display: flex; align-items: center; gap: 0.6rem;
+      margin-bottom: 0.875rem; padding-bottom: 0.875rem;
+      border-bottom: 1px solid var(--color-rule);
+    }
+    .card-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .card-dot.ink    { background: var(--color-ink); }
+    .card-dot.muted  { background: var(--color-muted); }
+    .card-dot.coral  { background: var(--color-accent); }
+    .card-dot.link   { background: var(--color-link); }
+    .card-dot.live   { background: var(--color-live); }
+    .card-dot.teal   { background: var(--color-ondevice); }
+    .card h3 { font-family: var(--font-title); font-size: 0.95rem; font-weight: 600; color: var(--color-ink); }
+    .card ul { list-style: none; color: var(--color-muted); font-size: 0.875rem; line-height: 1.55; }
+    .card li { margin-bottom: 0.3rem; padding-left: 0.875rem; position: relative; }
+    .card li::before { content: '—'; position: absolute; left: 0; color: var(--color-rule-solid); font-size: 0.75rem; }
+    .card code { font-family: var(--font-mono); font-size: 0.8em; color: var(--color-ink); }
+    .bars { display: grid; grid-template-columns: max-content 1fr max-content; gap: 0.45rem 0.75rem; align-items: center; font-size: 0.85rem; color: var(--color-muted); }
+    .bar { height: 8px; border-radius: 2px; background: var(--color-rule-solid); }
+    .bar.teal { background: var(--color-ondevice); }
+    .bar.opt { background: transparent; border: 1px dashed var(--color-rule-solid); }
+    .num { font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-ink); text-align: right; }
+    .footer {
+      margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--color-rule);
+      font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em;
+      color: var(--color-soft); display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p class="header-eyebrow">Architecture · Bridgify v2</p>
+      <h1>System architecture</h1>
+      <p class="subtitle">Everything that sees or hears the user runs in the browser. The server only gets text, sign gloss and landmark packets, and it relays Bridge messages without storing them.</p>
+    </div>
+    <div class="diagram-container">
+<svg viewBox="0 40 1280 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="system-architecture-title system-architecture-desc">
+<title id="system-architecture-title">Bridgify v2 system architecture</title>
+<desc id="system-architecture-desc">Bridgify runs camera and microphone processing inside the browser, in a vision worker and an opt-in speech worker, and sends only text, sign gloss and landmark packets to a Flask server that offers REST endpoints and a Socket.IO relay, with sign.mt, gTTS and static model hosting as the only external services.</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse"><polygon points="0 0, 8 3, 0 6" fill="#4E3F66"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse"><polygon points="0 0, 8 3, 0 6" fill="#3D0075"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse"><polygon points="0 0, 8 3, 0 6" fill="#1F4FA8"/></marker>
+<marker id="arrow-live" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse"><polygon points="0 0, 8 3, 0 6" fill="#A800A8"/></marker>
+<marker id="arrow-teal" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse"><polygon points="0 0, 8 3, 0 6" fill="#0B6E69"/></marker>
+<marker id="arrow-open" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polyline points="0 0, 8 3, 0 6" fill="none" stroke="#4E3F66" stroke-width="1.2"/></marker>
+</defs>
+<rect x="0" y="40" width="1280" height="680" fill="#F8F4FF"/>
+<rect x="40" y="88" width="616" height="528" rx="8" fill="rgba(11,110,105,0.03)" stroke="#0B6E69" stroke-width="1.2" stroke-dasharray="6,4"/>
+<rect x="52" y="82" width="300" height="12" rx="2" fill="#F8F4FF"/>
+<text x="202.0" y="91" fill="#5C4D75" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.14em">BROWSER · REACT 18 SPA (VITE) · INSTALLABLE PWA</text>
+<rect x="532" y="82" width="112" height="12" rx="2" fill="#F8F4FF"/>
+<text x="588.0" y="91" fill="#0B6E69" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" font-weight="500" letter-spacing="0.14em">PRIVACY BOUNDARY</text>
+<rect x="752" y="88" width="280" height="360" rx="8" fill="rgba(26,8,51,0.02)" stroke="rgba(26,8,51,0.18)" stroke-width="0.8"/>
+<rect x="764" y="82" width="164" height="12" rx="2" fill="#F8F4FF"/>
+<text x="846.0" y="91" fill="#5C4D75" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.14em">SERVER · FLASK 3 · DOCKER</text>
+<rect x="1064" y="88" width="176" height="528" rx="8" fill="rgba(26,8,51,0.02)" stroke="rgba(26,8,51,0.18)" stroke-width="0.8" stroke-dasharray="4,4"/>
+<rect x="1076" y="82" width="64" height="12" rx="2" fill="#F8F4FF"/>
+<text x="1108.0" y="91" fill="#5C4D75" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.14em">EXTERNAL</text>
+<line x1="272" y1="180" x2="424" y2="180" stroke="#4E3F66" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="624" y1="168" x2="772" y2="168" stroke="#A800A8" stroke-width="1.4" marker-start="url(#arrow-live)" marker-end="url(#arrow-live)"/>
+<path d="M 624,216 H 696 Q 704,216 704,224 V 344 Q 704,352 712,352 H 772" fill="none" stroke="#1F4FA8" stroke-width="1.2" marker-end="url(#arrow-link)"/>
+<line x1="556" y1="240" x2="556" y2="320" stroke="#4E3F66" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M 492,240 V 272 Q 492,280 484,280 H 180 Q 172,280 172,288 V 320" fill="none" stroke="#4E3F66" stroke-width="1" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+<line x1="524" y1="488" x2="524" y2="424" stroke="#4E3F66" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="1080" y1="532" x2="624" y2="532" stroke="#1F4FA8" stroke-width="1.2" marker-end="url(#arrow-link)"/>
+<line x1="1012" y1="364" x2="1080" y2="364" stroke="#1F4FA8" stroke-width="1.2" marker-end="url(#arrow-link)"/>
+<rect x="662.0" y="148" width="84" height="12" rx="2" fill="#F8F4FF"/>
+<text x="704" y="157" fill="#A800A8" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.06em">TEXT·GLOSS·LM</text>
+<rect x="632" y="284" width="64" height="12" rx="2" fill="#F8F4FF"/>
+<text x="664.0" y="293" fill="#1F4FA8" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.06em">TEXT ONLY</text>
+<rect x="564" y="274" width="48" height="12" rx="2" fill="#F8F4FF"/>
+<text x="588.0" y="283" fill="#4E3F66" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.06em">FRAMES</text>
+<rect x="286.0" y="260" width="92" height="12" rx="2" fill="#F8F4FF"/>
+<text x="332" y="269" fill="#4E3F66" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.06em">NOISY · OPT-IN</text>
+<rect x="468" y="450" width="48" height="12" rx="2" fill="#F8F4FF"/>
+<text x="492.0" y="459" fill="#4E3F66" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.06em">MODELS</text>
+<rect x="818.0" y="512" width="84" height="12" rx="2" fill="#F8F4FF"/>
+<text x="860" y="521" fill="#1F4FA8" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.06em">MODELS · WASM</text>
+<rect x="1026.0" y="344" width="40" height="12" rx="2" fill="#F8F4FF"/>
+<text x="1046" y="353" fill="#1F4FA8" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.06em">PROXY</text>
+<rect x="72" y="136" width="200" height="88" rx="6" fill="#F8F4FF"/>
+<rect x="72" y="136" width="200" height="88" rx="6" fill="#ffffff" stroke="#1A0833" stroke-width="1"/>
+<rect x="80" y="144" width="20" height="12" rx="2" fill="transparent" stroke="#1A0833" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="90.0" y="153" fill="#1A0833" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">UI</text>
+<text x="172.0" y="176" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">App shell + pages</text>
+<text x="172.0" y="192" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">React 18 · tool pages</text>
+<text x="172.0" y="206" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">Zustand prefs · session</text>
+<rect x="424" y="136" width="200" height="104" rx="6" fill="#F8F4FF"/>
+<rect x="424" y="136" width="200" height="104" rx="6" fill="#ffffff" stroke="#1A0833" stroke-width="1"/>
+<rect x="432" y="144" width="20" height="12" rx="2" fill="transparent" stroke="#1A0833" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="442.0" y="153" fill="#1A0833" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">TS</text>
+<text x="524.0" y="176" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">Engines</text>
+<text x="524.0" y="192" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">speech · braille · sign</text>
+<text x="524.0" y="206" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">vision · bridge</text>
+<text x="524.0" y="220" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">pure TS · unit-tested</text>
+<rect x="72" y="320" width="200" height="72" rx="6" fill="#F8F4FF"/>
+<rect x="72" y="320" width="200" height="72" rx="6" fill="rgba(26,8,51,0.02)" stroke="rgba(26,8,51,0.3)" stroke-width="1" stroke-dasharray="4,3"/>
+<rect x="80" y="328" width="40" height="12" rx="2" fill="transparent" stroke="rgba(26,8,51,0.3)" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="100.0" y="337" fill="#5C4D75" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">WORKER</text>
+<text x="172.0" y="360" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">asr.worker</text>
+<text x="172.0" y="376" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">Whisper tiny.en · opt-in</text>
+<rect x="424" y="320" width="200" height="104" rx="6" fill="#F8F4FF"/>
+<rect x="424" y="320" width="200" height="104" rx="6" fill="rgba(61,0,117,0.08)" stroke="#3D0075" stroke-width="1"/>
+<rect x="432" y="328" width="40" height="12" rx="2" fill="transparent" stroke="#3D0075" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="452.0" y="337" fill="#3D0075" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">WORKER</text>
+<text x="524.0" y="360" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">vision.worker</text>
+<text x="524.0" y="376" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">Hand + Face landmarker</text>
+<text x="524.0" y="390" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">JS MLP letters · 0.2 ms</text>
+<text x="524.0" y="404" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">gesture rules</text>
+<rect x="424" y="488" width="200" height="88" rx="6" fill="#F8F4FF"/>
+<rect x="424" y="488" width="200" height="88" rx="6" fill="rgba(26,8,51,0.05)" stroke="#4E3F66" stroke-width="1"/>
+<rect x="432" y="496" width="36" height="12" rx="2" fill="transparent" stroke="#4E3F66" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="450.0" y="505" fill="#4E3F66" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">CACHE</text>
+<text x="524.0" y="528" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">ModelManager</text>
+<text x="524.0" y="544" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">lazy load · versions</text>
+<text x="524.0" y="558" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">Cache API · service worker</text>
+<rect x="772" y="136" width="240" height="88" rx="6" fill="#F8F4FF"/>
+<rect x="772" y="136" width="240" height="88" rx="6" fill="rgba(61,0,117,0.08)" stroke="#3D0075" stroke-width="1"/>
+<rect x="780" y="144" width="20" height="12" rx="2" fill="transparent" stroke="#3D0075" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="790.0" y="153" fill="#3D0075" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">WS</text>
+<text x="892.0" y="176" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">Socket.IO /bridge</text>
+<text x="892.0" y="192" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">rooms of 2 · relay only</text>
+<text x="892.0" y="206" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">never stored · 30 min idle</text>
+<rect x="772" y="264" width="240" height="152" rx="6" fill="#F8F4FF"/>
+<rect x="772" y="264" width="240" height="152" rx="6" fill="#ffffff" stroke="#1A0833" stroke-width="1"/>
+<rect x="780" y="272" width="24" height="12" rx="2" fill="transparent" stroke="#1A0833" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="792.0" y="281" fill="#1A0833" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">API</text>
+<text x="892.0" y="304" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">REST API</text>
+<text x="892.0" y="320" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">POST /api/braille</text>
+<text x="892.0" y="334" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">POST /api/tts</text>
+<text x="892.0" y="348" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">POST /api/sign/gloss</text>
+<text x="892.0" y="362" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">GET /api/sign/pose</text>
+<line x1="788" y1="380" x2="996" y2="380" stroke="#DDD3EE" stroke-width="0.8"/>
+<text x="892" y="400" fill="#5C4D75" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">liblouis · spaCy · pose cache</text>
+<rect x="1080" y="320" width="144" height="88" rx="6" fill="#F8F4FF"/>
+<rect x="1080" y="320" width="144" height="88" rx="6" fill="rgba(26,8,51,0.03)" stroke="rgba(26,8,51,0.3)" stroke-width="1"/>
+<rect x="1088" y="328" width="24" height="12" rx="2" fill="transparent" stroke="rgba(26,8,51,0.3)" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="1100.0" y="337" fill="#5C4D75" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">EXT</text>
+<text x="1152.0" y="360" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">Upstream APIs</text>
+<text x="1152.0" y="376" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">sign.mt · text → pose</text>
+<text x="1152.0" y="390" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">gTTS · text → mp3</text>
+<rect x="1080" y="488" width="144" height="88" rx="6" fill="#F8F4FF"/>
+<rect x="1080" y="488" width="144" height="88" rx="6" fill="rgba(26,8,51,0.03)" stroke="rgba(26,8,51,0.3)" stroke-width="1"/>
+<rect x="1088" y="496" width="24" height="12" rx="2" fill="transparent" stroke="rgba(26,8,51,0.3)" stroke-opacity="0.5" stroke-width="0.8"/>
+<text x="1100.0" y="505" fill="#5C4D75" font-size="7" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle" letter-spacing="0.08em">CDN</text>
+<text x="1152.0" y="528" fill="#1A0833" font-size="12" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="middle" font-weight="600">Model hosting</text>
+<text x="1152.0" y="544" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">Vercel · model bucket</text>
+<text x="1152.0" y="558" fill="#4E3F66" font-size="9" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="middle">HF Hub (opt-in)</text>
+<text x="72" y="508" fill="#0B6E69" font-size="14" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start" font-style="italic">Camera frames and mic audio are</text>
+<text x="72" y="528" fill="#0B6E69" font-size="14" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start" font-style="italic">processed here, then dropped. Only text,</text>
+<text x="72" y="548" fill="#0B6E69" font-size="14" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start" font-style="italic">gloss and Int16 landmarks cross out.</text>
+<line x1="40" y1="640" x2="1240" y2="640" stroke="rgba(26,8,51,0.1)" stroke-width="0.8"/>
+<text x="40" y="660" fill="#4E3F66" font-size="8" font-family="'Geist Mono', ui-monospace, Menlo, monospace" text-anchor="start" letter-spacing="0.18em">LEGEND</text>
+<rect x="120" y="652" width="16" height="10" rx="2" fill="rgba(61,0,117,0.08)" stroke="#3D0075" stroke-width="1"/>
+<text x="144" y="661" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">Focal component</text>
+<rect x="260" y="652" width="16" height="10" rx="2" fill="#ffffff" stroke="#1A0833" stroke-width="1"/>
+<text x="284" y="661" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">Component</text>
+<rect x="400" y="652" width="16" height="10" rx="2" fill="rgba(26,8,51,0.05)" stroke="#4E3F66" stroke-width="1"/>
+<text x="424" y="661" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">Cache / store</text>
+<rect x="540" y="652" width="16" height="10" rx="2" fill="rgba(26,8,51,0.03)" stroke="rgba(26,8,51,0.3)" stroke-width="1"/>
+<text x="564" y="661" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">External service</text>
+<rect x="680" y="652" width="16" height="10" rx="2" fill="rgba(26,8,51,0.02)" stroke="rgba(26,8,51,0.3)" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="704" y="661" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">Opt-in</text>
+<rect x="820" y="652" width="16" height="10" rx="2" fill="rgba(11,110,105,0.03)" stroke="#0B6E69" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="844" y="661" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">Privacy boundary: raw media never leaves</text>
+<line x1="120" y1="684" x2="144" y2="684" stroke="#4E3F66" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="152" y="687" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">Internal call</text>
+<line x1="320" y1="684" x2="344" y2="684" stroke="#1F4FA8" stroke-width="1.2" marker-end="url(#arrow-link)"/>
+<text x="352" y="687" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">HTTP · REST / static fetch</text>
+<line x1="520" y1="684" x2="544" y2="684" stroke="#A800A8" stroke-width="1.2" marker-end="url(#arrow-live)"/>
+<text x="552" y="687" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">Live relay (Socket.IO)</text>
+<line x1="720" y1="684" x2="744" y2="684" stroke="#4E3F66" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+<text x="752" y="687" fill="#4E3F66" font-size="9" font-family="'Atkinson Hyperlegible Next', system-ui, sans-serif" text-anchor="start">Optional path</text>
+</svg>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <p class="eyebrow">Privacy</p>
+        <div class="card-header"><span class="card-dot teal"></span><h3>What crosses the boundary</h3></div>
+        <ul>
+          <li>Out to REST: text for braille, TTS fallback and gloss; text for the sign.mt pose proxy</li>
+          <li>Out to <code>/bridge</code>: <code>text</code>, <code>gloss</code>, <code>status</code> packets, plus <code>lm</code> landmarks only when “show my hands” is on</li>
+          <li>In: models, wasm and sign media, fetched once and cached by ModelManager and the service worker</li>
+          <li>Never: camera frames, mic audio, analytics, accounts or a database</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Accent</p>
+        <div class="card-header"><span class="card-dot coral"></span><h3>Focal paths</h3></div>
+        <ul>
+          <li><code>vision.worker</code> owns HandLandmarker, FaceLandmarker and the letter MLP, shared by Sign→Text, Gesture &amp; Emotion, Practice and Bridge</li>
+          <li>Frames go one at a time as transferred <code>ImageBitmap</code>s: the next frame is sent only after the last result returns</li>
+          <li><code>Socket.IO /bridge</code> relays to the other room member only: max 2 per room, packet ≤ 8 KB, ≤ 40 msgs/s</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Backend</p>
+        <div class="card-header"><span class="card-dot ink"></span><h3>Server, in one container</h3></div>
+        <ul>
+          <li>Flask 3 + Flask-SocketIO on gunicorn, <code>debian:trixie-slim</code></li>
+          <li>liblouis 3.39 for braille tables, spaCy <code>en_core_web_sm</code> for ISL gloss rules</li>
+          <li>Pose responses disk-cached 30 days; TTS mp3 cached by sha1</li>
+          <li>Limits per IP: braille 60/min, TTS 20/min, pose 30/min</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Bridgify v2 · System architecture</span>
+      <span>Bridgify v2 · November 2026</span>
+    </div>
+  </div>
+</body>
+</html>

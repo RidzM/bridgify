@@ -1,0 +1,39 @@
+node_modules/
+.env
+.env.*
+!.env.example
+handoff/
+.claude/state/
+.DS_Store
+*.log
+
+# python
+__pycache__/
+.venv/
+*.pyc
+# web
+dist/
+.vite/
+coverage/
+playwright-report/
+test-results/
+# ml
+ml/data/raw/
+ml/runs/
+# local
+.old/
+.impeccable/cache/
+
+# --- local-only build tooling (never pushed) ---
+AGENTS.md
+CLAUDE.md
+USAGE.md
+.claude/
+.agents/
+skills-lock.json
+.impeccable/
+docs/_local/
+docs/05-SESSIONS/
+docs/state.json
+docs/99-RAW/
+tools/
