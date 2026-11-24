@@ -9,7 +9,7 @@ import { signLang } from '@/lib/signLangs'
 import { loadLexicon, loadFingerspelling, type LetterItem } from './content'
 import { tokenize, type Token } from './tokenize'
 import { islGloss } from './gloss'
-import { readPose } from './poseFile'
+import { isSyntheticFingerspelling, readPose } from './poseFile'
 import { compactPose, type CompactPose } from './poseCompact'
 
 export type SignItem =
@@ -37,6 +37,7 @@ export async function fetchLivePose(text: string, lang: SignLang, timeoutMs = 20
   const url = `https://us-central1-sign-mt.cloudfunctions.net/spoken_text_to_signed_pose?text=${encodeURIComponent(text)}&spoken=${spoken}&signed=${signed}`
   const cache = 'caches' in self ? await caches.open(LIVE_CACHE).catch(() => null) : null
   let res = await cache?.match(url)
+  let fresh = false
   if (!res) {
     // One retry for a server error: the free service sometimes fails on a cold start.
     for (let attempt = 0; ; attempt++) {
@@ -47,9 +48,14 @@ export async function fetchLivePose(text: string, lang: SignLang, timeoutMs = 20
       await new Promise((r) => setTimeout(r, 800))
     }
     if (!res.ok) throw new Error(`no sign (${res.status})`)
-    await cache?.put(url, res.clone()).catch(() => {})
+    fresh = true
   }
-  const c = compactPose(readPose(await res.arrayBuffer()))
+  const buf = await res.arrayBuffer()
+  const pose = readPose(buf)
+  // A 200 can still mean "no sign": sign.mt then spells the word with ASL letters. Use our own fingerspelling instead.
+  if (isSyntheticFingerspelling(pose)) throw new Error('no sign (fingerspelled by the service)')
+  if (fresh) await cache?.put(url, new Response(buf, { headers: { 'Content-Type': 'application/octet-stream' } })).catch(() => {})
+  const c = compactPose(pose)
   if (!c.frames) throw new Error('empty sign')
   return c
 }

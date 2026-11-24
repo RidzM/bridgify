@@ -43,11 +43,12 @@ test.describe('about pages', () => {
 })
 
 test.describe('learn sign language', () => {
-  test('a stored phrase plays as an animation', async ({ page }) => {
+  test('a stored phrase plays as a signer video or an animation', async ({ page }) => {
     await page.goto('/learn/sign/lsf/phrases')
     const item = page.getByRole('listitem').filter({ hasText: 'Bonjour' }).first()
     await item.getByRole('button', { name: 'Show sign' }).click()
-    await expect(item.getByRole('img', { name: /^Sign for / }).first()).toBeVisible({ timeout: 20_000 })
+    await expect(item.locator('[aria-label^="Sign for "], [aria-label^="Signer video for "]').first()).toBeVisible({ timeout: 20_000 })
+    await expect(item.getByText(/No sign found/)).toHaveCount(0)
   })
 
   test('alphabet and numbers show a picture for every handshape', async ({ page }) => {

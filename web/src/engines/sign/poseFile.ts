@@ -52,3 +52,30 @@ export function readPose(buf: ArrayBuffer): PoseFile {
   for (let i = 0; i < nConf; i++) confidence[i] = f32()
   return { version, width, height, depth, components, fps, frames, people, data, confidence, dims, totalPoints }
 }
+
+/**
+ * True when sign.mt answered with synthetic fingerspelling instead of a dictionary sign:
+ * one hand is tracked in every frame and the other in none. Real dictionary clips start and
+ * end with the hands at rest, so they never show that pattern. (sign.mt spells unknown words
+ * this way, using ASL letters even for other sign languages.)
+ */
+export function isSyntheticFingerspelling(p: Pick<PoseFile, 'components' | 'confidence' | 'frames' | 'people' | 'totalPoints'>): boolean {
+  const range: Record<string, [number, number]> = {}
+  let off = 0
+  for (const c of p.components) { range[c.name] = [off, off + c.points.length]; off += c.points.length }
+  const present = (name: string, f: number) => {
+    const r = range[name]
+    if (!r) return false
+    const base = f * p.people * p.totalPoints
+    for (let i = r[0]; i < r[1]; i++) if (p.confidence[base + i]! > 0) return true
+    return false
+  }
+  let left = 0
+  let right = 0
+  for (let f = 0; f < p.frames; f++) {
+    if (present('LEFT_HAND_LANDMARKS', f)) left++
+    if (present('RIGHT_HAND_LANDMARKS', f)) right++
+  }
+  const F = p.frames
+  return F > 0 && ((right === F && left === 0) || (left === F && right === 0))
+}
