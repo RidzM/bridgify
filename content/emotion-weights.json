@@ -1,0 +1,37 @@
+{
+ "happy": {
+  "mouthSmile": 2.0
+ },
+ "surprised": {
+  "browInnerUp": 8.0,
+  "eyeWide": 6.0,
+  "jawOpen": 2.0
+ },
+ "sad": {
+  "mouthFrown": 4.0,
+  "browInnerUp": 8.0,
+  "mouthSmile": 0.0
+ },
+ "angry": {
+  "browDown": 1.0,
+  "mouthPress": 0.0
+ },
+ "disgusted": {
+  "noseSneer": 1.5,
+  "mouthUpperUp": 1.5
+ },
+ "fearful": {
+  "eyeWide": 4.0,
+  "browInnerUp": 8.0,
+  "mouthStretch": 1.0
+ },
+ "bias": {
+  "neutral": -0.25,
+  "happy": -0.15,
+  "surprised": -0.3,
+  "sad": 0.0,
+  "angry": 0.15,
+  "disgusted": 0.35,
+  "fearful": 0.0
+ }
+}

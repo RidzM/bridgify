@@ -1,0 +1,10 @@
+{
+  "thumbs_up": { "label": "Thumbs up", "meaning": "Yes, I agree", "say": "Yes, I agree." },
+  "thumbs_down": { "label": "Thumbs down", "meaning": "No, I don't agree", "say": "No, I don't agree." },
+  "open_palm": { "label": "Open palm", "meaning": "Stop, or wait please", "say": "Please wait." },
+  "pointing": { "label": "Pointing", "meaning": "Look there, or I want that", "say": "I want that one." },
+  "peace": { "label": "Peace sign", "meaning": "I'm fine, all good", "say": "I'm fine, all good." },
+  "fist": { "label": "Closed fist", "meaning": "I need help", "say": "I need help." },
+  "ily": { "label": "I love you", "meaning": "I love you (ASL sign)", "say": "I love you." },
+  "wave": { "label": "Wave", "meaning": "Hello, or goodbye", "say": "Hello!" }
+}

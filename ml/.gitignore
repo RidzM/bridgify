@@ -1,0 +1,12 @@
+.venv/
+data/raw/
+runs/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+# same files as web/public/models/, re-download with scripts/download.sh
+models_src/*.task
+
+# derived features (KDEF terms restrict redistribution); rebuild with the scripts
+data/processed/
