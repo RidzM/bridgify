@@ -20,6 +20,7 @@ import wmc  # noqa: E402  (stdlib only)
 AZ = [chr(65 + i) for i in range(26)]
 DIGITS = [str(d) for d in range(10)]
 MAX_TIP = 90
+DRAWING_VERSION = 2  # solid outlined hands (D-41); bump when the diagrams are redrawn
 
 ASL_TIPS = {
     "A": "Fist with the thumb resting against the side of the index finger.",
@@ -113,7 +114,8 @@ def svg_item(key: str, value: str, lang: str, kind: str, credit: str, tip: str |
              motion: bool = False, **extra) -> dict:
     src = f"/signs/{lang}/{kind}/{value}.svg"
     assert (SIGNS / lang / kind / f"{value}.svg").exists(), src
-    item = {key: value, "media": {"type": "svg", "src": src}, "motion": motion}
+    # Bump DRAWING_VERSION whenever the diagrams are redrawn: /signs/ files are cached as immutable.
+    item = {key: value, "media": {"type": "svg", "src": f"{src}?v={DRAWING_VERSION}"}, "motion": motion}
     if tip:
         assert len(tip) <= MAX_TIP, (lang, value, len(tip), tip)
         item["tip"] = tip

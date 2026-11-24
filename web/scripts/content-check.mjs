@@ -11,7 +11,8 @@ let refs = 0
 const check = (file, src) => {
   if (!src || typeof src !== 'string' || !src.startsWith('/')) return
   refs++
-  if (!existsSync(join(PUBLIC, src))) missing.push(`${file}: ${src}`)
+  // A ?v= query busts browser and offline caches when a file is redrawn; the file itself has no query.
+  if (!existsSync(join(PUBLIC, src.split('?')[0]))) missing.push(`${file}: ${src}`)
 }
 const each = (dir, fn) => {
   const d = join(CONTENT, dir)
