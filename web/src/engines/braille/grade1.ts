@@ -3,7 +3,7 @@
  * digits and common punctuation. The server (liblouis) is the reference;
  * tests keep this in agreement for the supported character set.
  */
-import { dotsToChar, charToDots } from './cells'
+import { dotsToChar, charToDots } from './cells.ts'
 
 const LETTER_DOTS: Record<string, number[]> = {
   a: [1], b: [1, 2], c: [1, 4], d: [1, 4, 5], e: [1, 5], f: [1, 2, 4], g: [1, 2, 4, 5], h: [1, 2, 5],

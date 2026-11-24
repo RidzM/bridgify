@@ -47,3 +47,5 @@ tools/
 
 # local-only helper scripts (never committed)
 tools-local/
+
+.vercel

@@ -51,7 +51,7 @@ export function AppShell() {
       <Sidebar onDisplay={() => setDisplay(true)} />
       <div className="flex min-w-0 flex-1 flex-col">
         <TopBar onMenu={() => setMenu(true)} onDisplay={() => setDisplay(true)} />
-        <main id="content" tabIndex={-1} className="flex-1 outline-none">
+        <main id="content" tabIndex={-1} className="min-h-[calc(100dvh-3.5rem)] flex-1 outline-none lg:min-h-dvh">
           <ErrorBoundary key={pathname}>
             <Suspense fallback={null}>
               <Outlet />
@@ -62,6 +62,7 @@ export function AppShell() {
           <div className="mx-auto flex max-w-[1080px] flex-wrap items-center gap-x-5 gap-y-2">
             <span>A VCET Computer Engineering mini project, 2025–26</span>
             <nav aria-label="Footer" className="flex flex-wrap gap-x-4 gap-y-1">
+              <Link to="/about" className="text-ink-muted">About</Link>
               <Link to="/about/privacy" className="text-ink-muted">Privacy</Link>
               <Link to="/about/evidence" className="text-ink-muted">Evidence</Link>
               <Link to="/about/credits" className="text-ink-muted">Credits</Link>

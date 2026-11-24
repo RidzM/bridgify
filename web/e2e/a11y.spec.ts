@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
 const MODES = ['light', 'dark', 'high-contrast', 'solarized', 'night-blue', 'forest', 'sepia', 'calm', 'focus', 'low-vision', 'autism', 'dyslexia']
-const ROUTES = ['/', '/tools/text-to-speech', '/tools/speech-to-text', '/tools/text-to-braille', '/tools/braille-to-text', '/tools/sign-to-text', '/tools/gesture-emotion', '/does-not-exist']
+const ROUTES = ['/', '/tools/text-to-speech', '/tools/speech-to-text', '/tools/text-to-braille', '/tools/braille-to-text', '/tools/sign-to-text', '/tools/text-to-sign', '/tools/gesture-emotion', '/bridge', '/sos', '/learn/braille/alphabet', '/learn/sign/isl/alphabet', '/about', '/about/evidence', '/about/credits', '/does-not-exist']
 
 for (const mode of MODES) {
   test(`no serious accessibility violations in ${mode} mode`, async ({ page }) => {

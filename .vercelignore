@@ -1,0 +1,14 @@
+# Upload only what the web build needs (Vercel root directory = web).
+/ml
+/server
+/tools-wasm
+/tools-local
+/docs
+/.secrets
+/.cl[a]ude
+/.old
+**/node_modules
+web/dist
+web/test-results
+web/playwright-report
+web/e2e/fixtures/*.wav

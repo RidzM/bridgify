@@ -1,8 +1,12 @@
-import { useMemo, useState, useId, useRef } from 'react'
+import { useEffect, useMemo, useState, useId, useRef } from 'react'
 import { Volume2, Square } from 'lucide-react'
 import { translateGrade1 } from '@/engines/braille/grade1'
 import { toCells, describeCell } from '@/engines/braille/cells'
 import { BrailleCell } from '@/components/shell/BrailleCell'
+import { LetterGlyph } from '@/components/tool/LetterGlyph'
+import { loadFingerspelling, type Fingerspelling } from '@/engines/sign/content'
+import { signLang } from '@/lib/signLangs'
+import { usePrefs } from '@/stores/prefs'
 
 const PHRASES = ['I need water', 'Please speak slowly', 'Can you write it down?', 'I need a doctor']
 
@@ -15,6 +19,14 @@ export function Composer() {
   const inputRef = useRef<HTMLTextAreaElement>(null)
   const words = useMemo(() => text.trim().split(/\s+/).filter(Boolean), [text])
   const braille = useMemo(() => toCells(translateGrade1(text.slice(0, 140)).unicode), [text])
+  const signPref = usePrefs((st) => st.sign.lang)
+  const [fs, setFs] = useState<Fingerspelling | null>(null)
+  useEffect(() => { void loadFingerspelling(signPref).then(setFs) }, [signPref])
+  const spelled = useMemo(() => {
+    if (!fs) return []
+    const m = new Map(fs.letters.map((l) => [l.letter?.toUpperCase(), l]))
+    return [...text.toUpperCase()].slice(0, 40).map((ch, i) => ({ ch, i, item: m.get(ch) ?? null }))
+  }, [fs, text])
 
   const speak = () => {
     const synth = window.speechSynthesis
@@ -85,6 +97,21 @@ export function Composer() {
             <p className="sr-only">{braille.map(describeCell).join(', ')}</p>
           </dd>
         </div>
+        {fs && spelled.some((x) => x.item?.media) && (
+          <div className="border-t border-line px-5 py-5 md:px-7">
+            <dt className="mb-3 text-[0.8125rem] font-medium text-ink-muted">Fingerspelled, {signLang(signPref).code}</dt>
+            <dd className="flex flex-wrap items-end gap-x-1 gap-y-3" aria-label={`Fingerspelling pictures for: ${text}`} role="img">
+              {spelled.map(({ ch, i, item }) => ch === ' '
+                ? <span key={i} className="w-3" />
+                : item?.media ? (
+                  <span key={i} className="flex w-11 flex-col items-center">
+                    <LetterGlyph media={item.media} className="h-11 w-11" />
+                    <span className="text-[0.75rem] text-ink-muted">{ch}</span>
+                  </span>
+                ) : null)}
+            </dd>
+          </div>
+        )}
         <div className="flex-1 border-t border-line px-5 py-5 md:px-7">
           <dt className="mb-1 text-[0.8125rem] font-medium text-ink-muted">Large print</dt>
           <dd className="break-words text-[clamp(1.75rem,1.1rem+2.4vw,2.75rem)] font-semibold uppercase leading-[1.1] tracking-[-0.01em]">

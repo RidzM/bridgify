@@ -7,7 +7,7 @@ test('on-device Whisper transcribes a spoken sentence', async () => {
   const wav = fileURLToPath(new URL('./fixtures/hello-hospital.wav', import.meta.url))
   const browser = await chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream', `--use-file-for-fake-audio-capture=${wav}`] })
   const page = await browser.newPage()
-  await page.goto('http://localhost:4173/tools/speech-to-text')
+  await page.goto((process.env.BASE_URL ?? 'http://localhost:4173') + '/tools/speech-to-text')
   await expect(page.getByRole('button', { name: /Start listening/ })).toBeVisible()
   const noisy = page.getByRole('button', { name: /Noisy room/ })
   if (await noisy.count()) await noisy.click()
