@@ -7,7 +7,7 @@
 import type { SignLang } from '@/stores/prefs'
 import { signLang } from '@/lib/signLangs'
 import { loadLexicon, loadFingerspelling, type LetterItem } from './content'
-import { tokenize } from './tokenize'
+import { tokenize, type Token } from './tokenize'
 import { islGloss } from './gloss'
 import { readPose } from './poseFile'
 import { compactPose, type CompactPose } from './poseCompact'
@@ -38,9 +38,14 @@ export async function fetchLivePose(text: string, lang: SignLang, timeoutMs = 20
   const cache = 'caches' in self ? await caches.open(LIVE_CACHE).catch(() => null) : null
   let res = await cache?.match(url)
   if (!res) {
-    const ctrl = new AbortController()
-    const t = setTimeout(() => ctrl.abort(), timeoutMs)
-    try { res = await fetch(url, { signal: ctrl.signal }) } finally { clearTimeout(t) }
+    // One retry for a server error: the free service sometimes fails on a cold start.
+    for (let attempt = 0; ; attempt++) {
+      const ctrl = new AbortController()
+      const t = setTimeout(() => ctrl.abort(), timeoutMs)
+      try { res = await fetch(url, { signal: ctrl.signal }) } finally { clearTimeout(t) }
+      if (res.ok || res.status < 500 || attempt === 1) break
+      await new Promise((r) => setTimeout(r, 800))
+    }
     if (!res.ok) throw new Error(`no sign (${res.status})`)
     await cache?.put(url, res.clone()).catch(() => {})
   }
@@ -63,17 +68,25 @@ export async function planSigns(text: string, lang: SignLang, opts: { live?: boo
       items.push({ kind: 'letter', label: ch, word, media: l?.media ?? null, motion: l?.motion, tip: l?.tip })
     }
   }
-  for (const t of tokens) {
+  const resolve = async (t: Token, split: boolean): Promise<void> => {
     const e = t.entry
-    if (e?.video) { items.push({ kind: 'video', label: e.gloss, src: e.video.src, poster: e.video.poster }); continue }
+    if (e?.video) { items.push({ kind: 'video', label: e.gloss, src: e.video.src, poster: e.video.poster }); return }
     if (e?.pose) {
-      try { items.push({ kind: 'pose', label: e.gloss, pose: await fetchCompact(e.pose), source: 'lexicon' }); continue } catch { /* fall through */ }
+      try { items.push({ kind: 'pose', label: e.gloss, pose: await fetchCompact(e.pose), source: 'lexicon' }); return } catch { /* fall through */ }
     }
+    const phrase = split && t.text.includes(' ')
     if (opts.live !== false && navigator.onLine) {
-      try { items.push({ kind: 'pose', label: t.text.toUpperCase(), pose: await fetchLivePose(t.text, lang), source: 'live' }); continue }
-      catch { liveFailed.push(t.text) }
+      // Gloss words are upper case; the live service expects ordinary text.
+      try { items.push({ kind: 'pose', label: t.text.toUpperCase(), pose: await fetchLivePose(gloss ? t.text.toLowerCase() : t.text, lang), source: 'live' }); return }
+      catch { if (!phrase) liveFailed.push(t.text) }
+    }
+    // A stored phrase that couldn't load is signed word by word instead.
+    if (phrase) {
+      for (const w of t.text.split(' ')) for (const sub of tokenize(w, entries)) await resolve(sub, false)
+      return
     }
     fingerspell(t.text)
   }
+  for (const t of tokens) await resolve(t, true)
   return { items, gloss, liveFailed }
 }

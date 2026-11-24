@@ -1,0 +1,192 @@
+{
+ "lang": "lis",
+ "code": "LIS",
+ "handed": "one",
+ "source": null,
+ "chart": null,
+ "letters": [
+  {
+   "letter": "A",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "B",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "C",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "D",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "E",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "F",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "G",
+   "media": null,
+   "motion": true
+  },
+  {
+   "letter": "H",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "I",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "J",
+   "media": null,
+   "motion": true
+  },
+  {
+   "letter": "K",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "L",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "M",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "N",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "O",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "P",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "Q",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "R",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "S",
+   "media": null,
+   "motion": true
+  },
+  {
+   "letter": "T",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "U",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "V",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "W",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "X",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "Y",
+   "media": null,
+   "motion": false
+  },
+  {
+   "letter": "Z",
+   "media": null,
+   "motion": true
+  }
+ ],
+ "numbers": [
+  {
+   "value": "0",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "1",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "2",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "3",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "4",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "5",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "6",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "7",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "8",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "9",
+   "media": null,
+   "motion": false
+  }
+ ],
+ "note": "No licence-clean LIS alphabet images were found: Wikimedia Commons has none, and the one public photo set (Kaggle LIS-dataset) is under the RAIL licence, which is not an open licence. Letters and numbers have no media (the app animates them). G, J, S and Z are moving letters."
+}

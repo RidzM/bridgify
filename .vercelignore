@@ -3,6 +3,7 @@
 /server
 /tools-wasm
 /tools-local
+/tools-content
 /docs
 /.secrets
 /.cl[a]ude
@@ -12,3 +13,5 @@ web/dist
 web/test-results
 web/playwright-report
 web/e2e/fixtures/*.wav
+# Copied from node_modules by the postinstall step during the Vercel build
+web/public/wasm/mediapipe

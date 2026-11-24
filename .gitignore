@@ -49,3 +49,8 @@ tools/
 tools-local/
 
 .vercel
+
+# Content build caches (downloads, intermediate files)
+tools-content/**/.cache/
+tools-content/**/__pycache__/
+__pycache__/

@@ -1,0 +1,566 @@
+{
+ "items": [
+  {
+   "id": "asl-hg",
+   "name": "ASL-HG: American Sign Language Hand Gesture Image Dataset (participant-separated split, juanjodurillo/asl-hg)",
+   "author": "Md. Famidul Islam Pranto, Md. Rifatul Islam, Md. Ali Akbor, Nabonita Ghosh, Md. Rahatun Alam, Sudipto Chaki, Md Masudul Islam",
+   "license": "CC-BY-4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://huggingface.co/datasets/juanjodurillo/asl-hg",
+   "usedFor": "ASL letter and number diagrams (and the ISL 0 diagram): line drawings of the MediaPipe hand landmarks of one real photo per class (the class medoid)",
+   "changes": "photos reduced to 21 hand landmarks and redrawn as line art"
+  },
+  {
+   "id": "isl-dwibon",
+   "name": "ISL dataset: MediaPipe hand landmarks (Kaggle dwibonbhargabdeka)",
+   "author": "Dwibon Bhargab Deka (Kaggle)",
+   "license": "CC-BY-SA-4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "url": "https://www.kaggle.com/datasets/dwibonbhargabdeka/isl-dataset-mediapipe-hand-landmarks",
+   "usedFor": "ISL letter diagrams (all letters except H, J, Y); the diagrams are shared under CC BY-SA 4.0",
+   "changes": "landmark rows redrawn as line art; hands mirrored to the viewer's view"
+  },
+  {
+   "id": "isl-kaggle",
+   "name": "Indian Sign Language (ISL) image dataset (Kaggle prathumarikeri)",
+   "author": "prathumarikeri (Kaggle)",
+   "license": "CC-BY-SA-4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "url": "https://www.kaggle.com/datasets/prathumarikeri/indian-sign-language-isl",
+   "usedFor": "ISL diagrams for H, J, Y and the numbers 1-9; the diagrams are shared under CC BY-SA 4.0",
+   "changes": "photos reduced to MediaPipe hand landmarks and redrawn as line art; numbers mirrored to a right hand"
+  },
+  {
+   "id": "commons-lsf",
+   "name": "French manual alphabet (LSF) photos, Wikimedia Commons",
+   "author": "Clairette",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "url": "https://commons.wikimedia.org/wiki/Category:French_manual_alphabet",
+   "usedFor": "LSF (FSL) letters A-Z",
+   "changes": "resized to 240 px tall and converted to WebP",
+   "files": [
+    {
+     "letter": "A",
+     "file": "LSF LettreA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreA.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "B",
+     "file": "LSF LettreB.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreB.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "C",
+     "file": "LSF LettreC.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreC.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "D",
+     "file": "LSF LettreD.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreD.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "E",
+     "file": "LSF LettreE.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreE.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "F",
+     "file": "LSF LettreF.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreF.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "G",
+     "file": "LSF LettreG.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreG.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "H",
+     "file": "LSF LettreH.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreH.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "I",
+     "file": "LSF LettreI.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreI.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "J",
+     "file": "LSF LettreJ.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreJ.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "K",
+     "file": "LSF LettreK.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreK.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "L",
+     "file": "LSF LettreL.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreL.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "M",
+     "file": "LSF LettreM.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreM.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "N",
+     "file": "LSF LettreN.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreN.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "O",
+     "file": "LSF LettreO.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreO.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "P",
+     "file": "LSF LettreP.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreP.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "Q",
+     "file": "LSF LettreQ.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreQ.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "R",
+     "file": "LSF LettreR.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreR.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "S",
+     "file": "LSF LettreS.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreS.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "T",
+     "file": "LSF LettreT.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreT.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "U",
+     "file": "LSF LettreU.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreU.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "V",
+     "file": "LSF LettreV.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreV.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "W",
+     "file": "LSF LettreW.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreW.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "X",
+     "file": "LSF LettreX.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreX.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "Y",
+     "file": "LSF LettreY.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreY.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+     "letter": "Z",
+     "file": "LSF LettreZ.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3ALSF_LettreZ.jpg",
+     "author": "Clairette",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+   ]
+  },
+  {
+   "id": "commons-dgs",
+   "name": "German manual alphabet (DGS) drawings, Wikimedia Commons",
+   "author": "Deutsche Gehörlosenhilfe Bayern e.V; Richard Huber",
+   "license": "CC BY-SA 4.0; CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "url": "https://commons.wikimedia.org/wiki/Category:German_manual_alphabet",
+   "usedFor": "DGS letters A-Z, Ä, Ö, Ü, SCH",
+   "changes": "resized to 240 px tall and converted to WebP",
+   "files": [
+    {
+     "letter": "A",
+     "file": "Fingeralphabet A.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_A.jpg",
+     "author": "Deutsche Gehörlosenhilfe Bayern e.V",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "B",
+     "file": "Fingeralphabet B.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_B.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "C",
+     "file": "Fingeralphabet C.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_C.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "D",
+     "file": "Fingeralphabet D.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_D.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "E",
+     "file": "Fingeralphabet E.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_E.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "F",
+     "file": "Fingeralphabet F.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_F.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "G",
+     "file": "Fingeralphabet G.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_G.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "H",
+     "file": "Fingeralphabet H.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_H.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "I",
+     "file": "Fingeralphabet I.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_I.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "J",
+     "file": "Fingeralphabet J.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_J.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+     "letter": "K",
+     "file": "Fingeralphabet K.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_K.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "L",
+     "file": "Fingeralphabet L.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_L.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "M",
+     "file": "Fingeralphabet M.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_M.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "N",
+     "file": "Fingeralphabet N.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_N.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "O",
+     "file": "Fingeralphabet O.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_O.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "P",
+     "file": "Fingeralphabet P.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_P.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "Q",
+     "file": "Fingeralphabet Q.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_Q.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "R",
+     "file": "Fingeralphabet R.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_R.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "S",
+     "file": "Fingeralphabet S.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_S.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+     "letter": "SCH",
+     "file": "Fingeralphabet Sch.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_Sch.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "T",
+     "file": "Fingeralphabet T.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_T.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "U",
+     "file": "Fingeralphabet U.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_U.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "V",
+     "file": "Fingeralphabet V.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_V.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "W",
+     "file": "Fingeralphabet W.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_W.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "X",
+     "file": "Fingeralphabet X.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_X.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "Y",
+     "file": "Fingeralphabet Y.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_Y.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "Z",
+     "file": "Fingeralphabet Z.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_Z.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "Ä",
+     "file": "Fingeralphabet Ä.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_%C3%84.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "Ö",
+     "file": "Fingeralphabet Ö.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_%C3%96.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "Ü",
+     "file": "Fingeralphabet Ü.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File%3AFingeralphabet_%C3%9C.jpg",
+     "author": "Richard Huber",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   ]
+  },
+  {
+   "id": "commons-lsm",
+   "name": "Deletreo de LSM.png (Mexican Sign Language: the letters L, S, M), Wikimedia Commons",
+   "author": "GUADALUPE GOMEZ TAPIA",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "url": "https://commons.wikimedia.org/wiki/File%3ADeletreo_de_LSM.png",
+   "usedFor": "LSM letters L, S and M",
+   "changes": "the three photos cut apart, each resized to 240 px tall and converted to WebP",
+   "files": [
+    {
+     "letter": "L",
+     "file": "Deletreo de LSM.png",
+     "page": "https://commons.wikimedia.org/wiki/File%3ADeletreo_de_LSM.png",
+     "author": "GUADALUPE GOMEZ TAPIA",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "S",
+     "file": "Deletreo de LSM.png",
+     "page": "https://commons.wikimedia.org/wiki/File%3ADeletreo_de_LSM.png",
+     "author": "GUADALUPE GOMEZ TAPIA",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+     "letter": "M",
+     "file": "Deletreo de LSM.png",
+     "page": "https://commons.wikimedia.org/wiki/File%3ADeletreo_de_LSM.png",
+     "author": "GUADALUPE GOMEZ TAPIA",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   ]
+  },
+  {
+   "id": "mediapipe-hand",
+   "name": "MediaPipe Hand Landmarker",
+   "author": "Google",
+   "license": "Apache-2.0",
+   "url": "https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker",
+   "usedFor": "extracting hand landmarks from the ASL-HG and ISL photos for the diagrams"
+  },
+  {
+   "id": "liblouis",
+   "name": "liblouis 3.39 with the UEB tables (en-ueb-g1.ctb, en-ueb-g2.ctb)",
+   "author": "liblouis contributors",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://liblouis.io",
+   "usedFor": "generating every braille cell in the braille grade 1 and grade 2 tutorials"
+  },
+  {
+   "id": "noto-fonts",
+   "name": "Noto Sans / Noto Naskh Arabic / Noto Nastaliq Urdu (via @fontsource)",
+   "author": "Google and the Noto project authors",
+   "license": "OFL-1.1",
+   "url": "https://fonts.google.com/noto",
+   "usedFor": "rendering the 12 Indian scripts on ISL letter cards (content/scripts/indic-22.json)"
+  }
+ ]
+}

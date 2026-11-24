@@ -1,0 +1,296 @@
+{
+ "lang": "lsf",
+ "code": "FSL",
+ "handed": "one",
+ "source": "commons-lsf",
+ "chart": null,
+ "letters": [
+  {
+   "letter": "A",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/A.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "B",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/B.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "C",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/C.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "D",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/D.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "E",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/E.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "F",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/F.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "G",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/G.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "H",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/H.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "I",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/I.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "J",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/J.webp"
+   },
+   "motion": true,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "K",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/K.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "L",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/L.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "M",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/M.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "N",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/N.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "O",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/O.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "P",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/P.webp"
+   },
+   "motion": true,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "Q",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/Q.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "R",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/R.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "S",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/S.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "T",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/T.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "U",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/U.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "V",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/V.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "W",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/W.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "X",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/X.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "Y",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/Y.webp"
+   },
+   "motion": false,
+   "credit": "commons-lsf"
+  },
+  {
+   "letter": "Z",
+   "media": {
+    "type": "image",
+    "src": "/signs/lsf/letters/Z.webp"
+   },
+   "motion": true,
+   "credit": "commons-lsf"
+  }
+ ],
+ "numbers": [
+  {
+   "value": "0",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "1",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "2",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "3",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "4",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "5",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "6",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "7",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "8",
+   "media": null,
+   "motion": false
+  },
+  {
+   "value": "9",
+   "media": null,
+   "motion": false
+  }
+ ],
+ "note": "Photos by Clairette (Wikimedia Commons). No licence-clean number images were found, so numbers have no media (the app animates them)."
+}

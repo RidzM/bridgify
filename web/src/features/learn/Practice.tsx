@@ -1,4 +1,5 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { ensureModel } from '@/engines/platform/modelManager'
 import { Check } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CameraStage, ConfidenceRing } from '@/components/media/CameraStage'
@@ -13,7 +14,15 @@ import type { LetterItem } from '@/engines/sign/content'
 
 /** Sign the shown letter to the camera; it is marked right once the recogniser commits it. */
 export function Practice({ lang, letters }: { lang: 'asl' | 'isl'; letters: LetterItem[] }) {
-  const pool = useMemo(() => letters.filter((l) => !l.motion && l.letter && l.letter.length === 1), [letters])
+  // Only ask for letters the recogniser was trained on (e.g. ISL has no H, J or Y yet).
+  const [known, setKnown] = useState<Set<string> | null>(null)
+  useEffect(() => {
+    void ensureModel(`${lang}-letters`, 'json')
+      .then((buf) => (JSON.parse(new TextDecoder().decode(buf)) as { labels: string[] }).labels)
+      .then((labels) => setKnown(new Set(labels)))
+      .catch(() => setKnown(null)) // unknown: offer every static letter
+  }, [lang])
+  const pool = useMemo(() => letters.filter((l) => !l.motion && l.letter && l.letter.length === 1 && (!known || known.has(l.letter))), [letters, known])
   const pickNext = (not?: string) => { const o = pool.filter((l) => l.letter !== not); return o[Math.floor(Math.random() * o.length)] ?? pool[0] }
   const [target, setTarget] = useState(() => pickNext())
   const [hands, setHands] = useState<Hand[]>([])
@@ -24,6 +33,7 @@ export function Practice({ lang, letters }: { lang: 'asl' | 'isl'; letters: Lett
   const committer = useRef(new LetterCommitter())
   const targetRef = useRef(target)
   targetRef.current = target
+  useEffect(() => { if (pool.length && (!target || !pool.some((l) => l.letter === target.letter))) setTarget(pickNext()) }, [pool]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const onResult = (r: VisionResult) => {
     setHands(r.hands)

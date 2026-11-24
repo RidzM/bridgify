@@ -1,17 +1,21 @@
 import { useEffect, useState } from 'react'
 
-interface Lang { lang: string; script: string; fontsource?: string; map: Record<string, string> }
+interface Lang { lang: string; code: string; script: string; fontsource?: string; map: Record<string, string>; dir?: 'rtl' }
 interface Data { letters: string; languages: Lang[] }
 const files = import.meta.glob<Data>('@content/scripts/indic-22.json', { import: 'default' })
 // One font package per script, loaded only when that script is chosen.
-const fonts = import.meta.glob('/node_modules/@fontsource/noto-sans-*/400.css')
+const fonts = import.meta.glob(['/node_modules/@fontsource/noto-sans-*/400.css', '/node_modules/@fontsource/noto-naskh-arabic/400.css', '/node_modules/@fontsource/noto-nastaliq-urdu/400.css'])
 
-export interface ScriptState { data: Data | null; index: number; setIndex: (i: number) => void; current: { map: Record<string, string>; lang: string; font?: string } | null }
+export interface ScriptState { data: Data | null; index: number; setIndex: (i: number) => void; current: { map: Record<string, string>; lang: string; name: string; dir?: 'rtl'; font?: string } | null }
 
 export function useIndicScripts(enabled: boolean): ScriptState {
   const [data, setData] = useState<Data | null>(null)
   const [index, setIndex] = useState(0)
-  useEffect(() => { const f = Object.values(files)[0]; if (enabled && f) void f().then(setData) }, [enabled])
+  useEffect(() => {
+    const f = Object.values(files)[0]
+    // Start on Hindi (Devanagari), the most widely read script; the list stays in its own order.
+    if (enabled && f) void f().then((d) => { setData(d); const hi = d.languages.findIndex((l) => l.lang === 'Hindi'); if (hi >= 0) setIndex(hi) })
+  }, [enabled])
   const cur = data?.languages[index] ?? null
   useEffect(() => {
     if (!cur?.fontsource) return
@@ -19,7 +23,8 @@ export function useIndicScripts(enabled: boolean): ScriptState {
     if (key) void fonts[key]!()
   }, [cur])
   const family = cur?.fontsource ? `'${cur.fontsource.replace('@fontsource/', '').split('-').map((w) => w[0]!.toUpperCase() + w.slice(1)).join(' ')}', sans-serif` : undefined
-  return { data, index, setIndex, current: cur ? { map: cur.map, lang: cur.lang, font: family } : null }
+  // `lang` is the BCP 47 code for the lang attribute; `name` is shown to people.
+  return { data, index, setIndex, current: cur ? { map: cur.map, lang: cur.code, name: cur.lang, dir: cur.dir, font: family } : null }
 }
 
 export function ScriptPicker({ state }: { state: ScriptState }) {

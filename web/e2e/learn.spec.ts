@@ -41,3 +41,29 @@ test.describe('about pages', () => {
     await expect(page.getByText(/ASL-HG dataset/)).toBeVisible()
   })
 })
+
+test.describe('learn sign language', () => {
+  test('a stored phrase plays as an animation', async ({ page }) => {
+    await page.goto('/learn/sign/lsf/phrases')
+    const item = page.getByRole('listitem').filter({ hasText: 'Bonjour' }).first()
+    await item.getByRole('button', { name: 'Show sign' }).click()
+    await expect(item.getByRole('img', { name: /^Sign for / }).first()).toBeVisible({ timeout: 20_000 })
+  })
+
+  test('alphabet and numbers show a picture for every handshape', async ({ page }) => {
+    await page.goto('/learn/sign/asl/alphabet')
+    const letters = page.getByRole('list', { name: 'ASL alphabet' }).getByRole('listitem')
+    await expect(letters).toHaveCount(26)
+    await expect(letters.getByRole('img')).toHaveCount(26)
+    await page.getByRole('link', { name: 'Numbers' }).click()
+    await expect(page.getByRole('list', { name: 'ASL numbers' }).getByRole('img')).toHaveCount(10)
+  })
+
+  test('a language without open-licence letter pictures explains why and offers the signer', async ({ page }) => {
+    await page.goto('/learn/sign/lis/alphabet')
+    await expect(page.getByText(/no openly licensed pictures/i)).toBeVisible()
+    await page.getByRole('link', { name: 'Open Text to sign' }).click()
+    await expect(page).toHaveURL(/\/tools\/text-to-sign$/)
+    await expect(page.getByRole('button', { name: 'LIS', pressed: true })).toBeVisible()
+  })
+})

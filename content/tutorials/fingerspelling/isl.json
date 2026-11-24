@@ -1,0 +1,374 @@
+{
+ "lang": "isl",
+ "code": "ISL",
+ "handed": "two",
+ "source": "isl-dwibon",
+ "chart": null,
+ "view": "As the viewer sees a right-handed signer: right hand on the viewer's left.",
+ "note": "Dwibon data stores each hand relative to its own wrist, so in two-handed letters from that set (all but H, J, Y) the hands are placed side by side with a fixed gap: their relative position is schematic, the tip says how they touch. H, J and Y come from photos and keep the real placement.",
+ "letters": [
+  {
+   "letter": "A",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/A.svg"
+   },
+   "motion": false,
+   "tip": "Both fists with thumbs up, thumb tips touching like a peak.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "B",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/B.svg"
+   },
+   "motion": false,
+   "tip": "Both hands make a ring with thumb and index; the rings touch, other fingers up.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "C",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/C.svg"
+   },
+   "motion": false,
+   "tip": "One hand curves thumb and index finger into a C.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "D",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/D.svg"
+   },
+   "motion": false,
+   "tip": "One index points up; the other thumb and index curve against it to make a D.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "E",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/E.svg"
+   },
+   "motion": false,
+   "tip": "One hand makes a C with thumb and index; the other index points into it.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "F",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/F.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers of one hand lie across those of the other hand.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "G",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/G.svg"
+   },
+   "motion": false,
+   "tip": "Both hands in fists, one fist stacked on top of the other.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "H",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/H.svg"
+   },
+   "motion": true,
+   "tip": "Flat hand brushes across the palm of the other, open hand.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "letter": "I",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/I.svg"
+   },
+   "motion": false,
+   "tip": "Index finger points to and touches your own chin.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "J",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/J.svg"
+   },
+   "motion": true,
+   "tip": "One hand makes an L, thumb up; the other index traces along it up to the thumb tip.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "letter": "K",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/K.svg"
+   },
+   "motion": false,
+   "tip": "One index points up; the other hand's bent fingers touch its middle, like a K.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "L",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/L.svg"
+   },
+   "motion": false,
+   "tip": "Index finger up and thumb out to the side, making an L.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "M",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/M.svg"
+   },
+   "motion": false,
+   "tip": "Three fingers of one hand rest on the palm of the other, open hand.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "N",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/N.svg"
+   },
+   "motion": false,
+   "tip": "Two fingers of one hand rest on the palm of the other, open hand.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "O",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/O.svg"
+   },
+   "motion": false,
+   "tip": "Thumb and index fingertip touch to make a ring, like an O.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "P",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/P.svg"
+   },
+   "motion": false,
+   "tip": "One index points up; the other thumb and index make a loop at its tip, like a P.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "Q",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/Q.svg"
+   },
+   "motion": false,
+   "tip": "One thumb and index make a ring; the other index points into it like a tail.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "R",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/R.svg"
+   },
+   "motion": false,
+   "tip": "Bent index finger of one hand rests on the palm of the other hand.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "S",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/S.svg"
+   },
+   "motion": false,
+   "tip": "Both hands in fists, little fingers hooked together.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "T",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/T.svg"
+   },
+   "motion": false,
+   "tip": "One index points up to touch the other, sideways index, making a T.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "U",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/U.svg"
+   },
+   "motion": false,
+   "tip": "Thumb and index finger point up, curved apart like a U.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "V",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/V.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers up and apart in a V.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "W",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/W.svg"
+   },
+   "motion": false,
+   "tip": "Fingers of both hands interlocked, crossing like a W.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "X",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/X.svg"
+   },
+   "motion": false,
+   "tip": "Both index fingers crossed to make an X.",
+   "credit": "isl-dwibon"
+  },
+  {
+   "letter": "Y",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/Y.svg"
+   },
+   "motion": true,
+   "tip": "One thumb and index spread in a V; the other index touches the fork and moves down.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "letter": "Z",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/letters/Z.svg"
+   },
+   "motion": false,
+   "tip": "One flat hand stands upright; the other flat hand's fingertips touch it sideways.",
+   "credit": "isl-dwibon"
+  }
+ ],
+ "numbers": [
+  {
+   "value": "0",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/0.svg"
+   },
+   "motion": false,
+   "tip": "All fingertips curve round to meet the thumb, making an O.",
+   "credit": "asl-hg",
+   "note": "Same O handshape as ASL 0 (ISLRTC numbers chart); drawn from ASL-HG."
+  },
+  {
+   "value": "1",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/1.svg"
+   },
+   "motion": false,
+   "tip": "Index finger up; other fingers folded under the thumb.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "value": "2",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/2.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers up in a V.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "value": "3",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/3.svg"
+   },
+   "motion": false,
+   "tip": "Index, middle and ring fingers up; thumb holds the little finger.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "value": "4",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/4.svg"
+   },
+   "motion": false,
+   "tip": "Four fingers up, thumb folded across the palm.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "value": "5",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/5.svg"
+   },
+   "motion": false,
+   "tip": "Open hand, all five fingers spread.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "value": "6",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/6.svg"
+   },
+   "motion": false,
+   "tip": "Little finger up; thumb across the other folded fingers.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "value": "7",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/7.svg"
+   },
+   "motion": false,
+   "tip": "Index finger up and bent over at the top; other fingers in a fist.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "value": "8",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/8.svg"
+   },
+   "motion": false,
+   "tip": "Thumb, index and middle fingers out; ring and little fingers folded.",
+   "credit": "isl-kaggle"
+  },
+  {
+   "value": "9",
+   "media": {
+    "type": "svg",
+    "src": "/signs/isl/numbers/9.svg"
+   },
+   "motion": false,
+   "tip": "Fist turned sideways with the thumb pointing down.",
+   "credit": "isl-kaggle"
+  }
+ ]
+}

@@ -6,8 +6,8 @@ export function AboutLayout({ title, intro, children }: { title: string; intro?:
   return (
     <div className="mx-auto w-full max-w-[860px] px-4 pb-10 pt-6 md:px-8 lg:pt-12">
       <h1>{title}</h1>
-      {intro && <p className="mt-2 text-lg text-ink-muted">{intro}</p>}
-      <div className="mt-8 flex flex-col gap-8 [&_h2]:mb-2 [&_li]:mt-1.5 [&_p]:mt-2 [&_ul]:list-disc [&_ul]:pl-5">{children}</div>
+      {intro && <p className="mt-2 max-w-[34em] text-lg text-ink-muted">{intro}</p>}
+      <div className="mt-8 flex flex-col gap-8 [&_h2]:mb-2 [&_li]:mt-1.5 [&_li]:max-w-[34em] [&_p]:mt-2 [&_p]:max-w-[34em] [&_ul]:list-disc [&_ul]:pl-5">{children}</div>
     </div>
   )
 }

@@ -19,6 +19,13 @@ export function Composer() {
   const inputRef = useRef<HTMLTextAreaElement>(null)
   const words = useMemo(() => text.trim().split(/\s+/).filter(Boolean), [text])
   const braille = useMemo(() => toCells(translateGrade1(text.slice(0, 140)).unicode), [text])
+  // Only cells that are new or changed raise; the stagger starts at the first change, so typing stays calm.
+  const shown = useRef<string[]>([])
+  const firstChanged = useMemo(() => {
+    const i = braille.findIndex((c, k) => shown.current[k] !== c.char)
+    return i < 0 ? braille.length : i
+  }, [braille])
+  useEffect(() => { shown.current = braille.map((c) => c.char) }, [braille])
   const signPref = usePrefs((st) => st.sign.lang)
   const [fs, setFs] = useState<Fingerspelling | null>(null)
   useEffect(() => { void loadFingerspelling(signPref).then(setFs) }, [signPref])
@@ -89,9 +96,9 @@ export function Composer() {
         <div className="border-t border-line px-5 py-5 md:px-7">
           <dt className="mb-3 text-[0.8125rem] font-medium text-ink-muted">Braille, grade 1</dt>
           <dd>
-            <div key={text} className="raise flex flex-wrap gap-x-1 gap-y-3" role="img" aria-label={`Braille cells for: ${text}`}>
+            <div className="raise flex flex-wrap gap-x-1 gap-y-3" role="img" aria-label={`Braille cells for: ${text}`}>
               {braille.map((c, i) =>
-                c.char === ' ' || c.char === '⠀' ? <span key={i} className="w-3" /> : <BrailleCell key={i} dots={c.dots} size={26} raiseIndex={i} />,
+                c.char === ' ' || c.char === '⠀' ? <span key={`${i}-space`} className="w-3" /> : <BrailleCell key={`${i}-${c.char}`} dots={c.dots} size={26} raiseIndex={Math.max(0, i - firstChanged)} />,
               )}
             </div>
             <p className="sr-only">{braille.map(describeCell).join(', ')}</p>
@@ -100,7 +107,8 @@ export function Composer() {
         {fs && spelled.some((x) => x.item?.media) && (
           <div className="border-t border-line px-5 py-5 md:px-7">
             <dt className="mb-3 text-[0.8125rem] font-medium text-ink-muted">Fingerspelled, {signLang(signPref).code}</dt>
-            <dd className="flex flex-wrap items-end gap-x-1 gap-y-3" aria-label={`Fingerspelling pictures for: ${text}`} role="img">
+            <dd>
+              <div className="flex flex-wrap items-end gap-x-1 gap-y-3" aria-label={`Fingerspelling pictures for: ${text}`} role="img">
               {spelled.map(({ ch, i, item }) => ch === ' '
                 ? <span key={i} className="w-3" />
                 : item?.media ? (
@@ -109,6 +117,7 @@ export function Composer() {
                     <span className="text-[0.75rem] text-ink-muted">{ch}</span>
                   </span>
                 ) : null)}
+              </div>
             </dd>
           </div>
         )}

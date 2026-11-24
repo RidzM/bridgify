@@ -1,0 +1,981 @@
+{
+ "title": "Braille contractions (UEB grade 2)",
+ "code": "UEB",
+ "grade": 2,
+ "generator": {
+  "tool": "liblouis",
+  "version": "3.39.0",
+  "tables": "unicode.dis,en-ueb-g2.ctb"
+ },
+ "source": "liblouis",
+ "dotsFormat": "one string per cell listing its raised dots, e.g. '125' = dots 1, 2 and 5",
+ "categories": [
+  {
+   "id": "alphabetic-wordsign",
+   "name": "Alphabetic wordsigns",
+   "note": "A single letter standing alone as a whole word."
+  },
+  {
+   "id": "strong-contraction",
+   "name": "Strong contractions",
+   "note": "One cell for and, for, of, the, with: as words and inside words."
+  },
+  {
+   "id": "strong-wordsign",
+   "name": "Strong wordsigns",
+   "note": "The ch, sh, th, wh, ou, st cells standing alone as a whole word."
+  },
+  {
+   "id": "strong-groupsign",
+   "name": "Strong groupsigns",
+   "note": "One cell for a group of letters inside a word."
+  },
+  {
+   "id": "lower-wordsign",
+   "name": "Lower wordsigns",
+   "note": "Cells using only dots 2, 3, 5, 6, standing alone as a whole word."
+  },
+  {
+   "id": "initial-letter",
+   "name": "Initial-letter contractions",
+   "note": "Dot 5, dots 4-5 or dots 4-5-6 before the first letter of the word."
+  }
+ ],
+ "entries": [
+  {
+   "word": "but",
+   "braille": "⠃",
+   "dots": [
+    "12"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠃⠥⠞"
+  },
+  {
+   "word": "can",
+   "braille": "⠉",
+   "dots": [
+    "14"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠉⠁⠝"
+  },
+  {
+   "word": "do",
+   "braille": "⠙",
+   "dots": [
+    "145"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠙⠕"
+  },
+  {
+   "word": "every",
+   "braille": "⠑",
+   "dots": [
+    "15"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠑⠧⠑⠗⠽"
+  },
+  {
+   "word": "from",
+   "braille": "⠋",
+   "dots": [
+    "124"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠋⠗⠕⠍"
+  },
+  {
+   "word": "go",
+   "braille": "⠛",
+   "dots": [
+    "1245"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠛⠕"
+  },
+  {
+   "word": "have",
+   "braille": "⠓",
+   "dots": [
+    "125"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠓⠁⠧⠑"
+  },
+  {
+   "word": "just",
+   "braille": "⠚",
+   "dots": [
+    "245"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠚⠥⠎⠞"
+  },
+  {
+   "word": "knowledge",
+   "braille": "⠅",
+   "dots": [
+    "13"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠅⠝⠕⠺⠇⠑⠙⠛⠑"
+  },
+  {
+   "word": "like",
+   "braille": "⠇",
+   "dots": [
+    "123"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠇⠊⠅⠑"
+  },
+  {
+   "word": "more",
+   "braille": "⠍",
+   "dots": [
+    "134"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠍⠕⠗⠑"
+  },
+  {
+   "word": "not",
+   "braille": "⠝",
+   "dots": [
+    "1345"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠝⠕⠞"
+  },
+  {
+   "word": "people",
+   "braille": "⠏",
+   "dots": [
+    "1234"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠏⠑⠕⠏⠇⠑"
+  },
+  {
+   "word": "quite",
+   "braille": "⠟",
+   "dots": [
+    "12345"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠟⠥⠊⠞⠑"
+  },
+  {
+   "word": "rather",
+   "braille": "⠗",
+   "dots": [
+    "1235"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠗⠁⠞⠓⠑⠗"
+  },
+  {
+   "word": "so",
+   "braille": "⠎",
+   "dots": [
+    "234"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠎⠕"
+  },
+  {
+   "word": "that",
+   "braille": "⠞",
+   "dots": [
+    "2345"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠞⠓⠁⠞"
+  },
+  {
+   "word": "us",
+   "braille": "⠥",
+   "dots": [
+    "136"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠥⠎"
+  },
+  {
+   "word": "very",
+   "braille": "⠧",
+   "dots": [
+    "1236"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠧⠑⠗⠽"
+  },
+  {
+   "word": "will",
+   "braille": "⠺",
+   "dots": [
+    "2456"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠺⠊⠇⠇"
+  },
+  {
+   "word": "it",
+   "braille": "⠭",
+   "dots": [
+    "1346"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠊⠞"
+  },
+  {
+   "word": "you",
+   "braille": "⠽",
+   "dots": [
+    "13456"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠽⠕⠥"
+  },
+  {
+   "word": "as",
+   "braille": "⠵",
+   "dots": [
+    "1356"
+   ],
+   "category": "alphabetic-wordsign",
+   "uncontracted": "⠁⠎"
+  },
+  {
+   "word": "and",
+   "braille": "⠯",
+   "dots": [
+    "12346"
+   ],
+   "category": "strong-contraction",
+   "uncontracted": "⠁⠝⠙"
+  },
+  {
+   "word": "for",
+   "braille": "⠿",
+   "dots": [
+    "123456"
+   ],
+   "category": "strong-contraction",
+   "uncontracted": "⠋⠕⠗"
+  },
+  {
+   "word": "of",
+   "braille": "⠷",
+   "dots": [
+    "12356"
+   ],
+   "category": "strong-contraction",
+   "uncontracted": "⠕⠋"
+  },
+  {
+   "word": "the",
+   "braille": "⠮",
+   "dots": [
+    "2346"
+   ],
+   "category": "strong-contraction",
+   "uncontracted": "⠞⠓⠑"
+  },
+  {
+   "word": "with",
+   "braille": "⠾",
+   "dots": [
+    "23456"
+   ],
+   "category": "strong-contraction",
+   "uncontracted": "⠺⠊⠞⠓"
+  },
+  {
+   "word": "child",
+   "braille": "⠡",
+   "dots": [
+    "16"
+   ],
+   "category": "strong-wordsign",
+   "uncontracted": "⠉⠓⠊⠇⠙"
+  },
+  {
+   "word": "shall",
+   "braille": "⠩",
+   "dots": [
+    "146"
+   ],
+   "category": "strong-wordsign",
+   "uncontracted": "⠎⠓⠁⠇⠇"
+  },
+  {
+   "word": "this",
+   "braille": "⠹",
+   "dots": [
+    "1456"
+   ],
+   "category": "strong-wordsign",
+   "uncontracted": "⠞⠓⠊⠎"
+  },
+  {
+   "word": "which",
+   "braille": "⠱",
+   "dots": [
+    "156"
+   ],
+   "category": "strong-wordsign",
+   "uncontracted": "⠺⠓⠊⠉⠓"
+  },
+  {
+   "word": "out",
+   "braille": "⠳",
+   "dots": [
+    "1256"
+   ],
+   "category": "strong-wordsign",
+   "uncontracted": "⠕⠥⠞"
+  },
+  {
+   "word": "still",
+   "braille": "⠌",
+   "dots": [
+    "34"
+   ],
+   "category": "strong-wordsign",
+   "uncontracted": "⠎⠞⠊⠇⠇"
+  },
+  {
+   "word": "ch",
+   "braille": "⠡",
+   "dots": [
+    "16"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "chat",
+    "braille": "⠡⠁⠞",
+    "dots": [
+     "16",
+     "1",
+     "2345"
+    ],
+    "uncontracted": "⠉⠓⠁⠞"
+   }
+  },
+  {
+   "word": "gh",
+   "braille": "⠣",
+   "dots": [
+    "126"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "laugh",
+    "braille": "⠇⠁⠥⠣",
+    "dots": [
+     "123",
+     "1",
+     "136",
+     "126"
+    ],
+    "uncontracted": "⠇⠁⠥⠛⠓"
+   }
+  },
+  {
+   "word": "sh",
+   "braille": "⠩",
+   "dots": [
+    "146"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "ship",
+    "braille": "⠩⠊⠏",
+    "dots": [
+     "146",
+     "24",
+     "1234"
+    ],
+    "uncontracted": "⠎⠓⠊⠏"
+   }
+  },
+  {
+   "word": "th",
+   "braille": "⠹",
+   "dots": [
+    "1456"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "moth",
+    "braille": "⠍⠕⠹",
+    "dots": [
+     "134",
+     "135",
+     "1456"
+    ],
+    "uncontracted": "⠍⠕⠞⠓"
+   }
+  },
+  {
+   "word": "wh",
+   "braille": "⠱",
+   "dots": [
+    "156"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "whip",
+    "braille": "⠱⠊⠏",
+    "dots": [
+     "156",
+     "24",
+     "1234"
+    ],
+    "uncontracted": "⠺⠓⠊⠏"
+   }
+  },
+  {
+   "word": "ed",
+   "braille": "⠫",
+   "dots": [
+    "1246"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "red",
+    "braille": "⠗⠫",
+    "dots": [
+     "1235",
+     "1246"
+    ],
+    "uncontracted": "⠗⠑⠙"
+   }
+  },
+  {
+   "word": "er",
+   "braille": "⠻",
+   "dots": [
+    "12456"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "her",
+    "braille": "⠓⠻",
+    "dots": [
+     "125",
+     "12456"
+    ],
+    "uncontracted": "⠓⠑⠗"
+   }
+  },
+  {
+   "word": "ou",
+   "braille": "⠳",
+   "dots": [
+    "1256"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "loud",
+    "braille": "⠇⠳⠙",
+    "dots": [
+     "123",
+     "1256",
+     "145"
+    ],
+    "uncontracted": "⠇⠕⠥⠙"
+   }
+  },
+  {
+   "word": "ow",
+   "braille": "⠪",
+   "dots": [
+    "246"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "cow",
+    "braille": "⠉⠪",
+    "dots": [
+     "14",
+     "246"
+    ],
+    "uncontracted": "⠉⠕⠺"
+   }
+  },
+  {
+   "word": "st",
+   "braille": "⠌",
+   "dots": [
+    "34"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "stop",
+    "braille": "⠌⠕⠏",
+    "dots": [
+     "34",
+     "135",
+     "1234"
+    ],
+    "uncontracted": "⠎⠞⠕⠏"
+   }
+  },
+  {
+   "word": "ar",
+   "braille": "⠜",
+   "dots": [
+    "345"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "car",
+    "braille": "⠉⠜",
+    "dots": [
+     "14",
+     "345"
+    ],
+    "uncontracted": "⠉⠁⠗"
+   }
+  },
+  {
+   "word": "ing",
+   "braille": "⠬",
+   "dots": [
+    "346"
+   ],
+   "category": "strong-groupsign",
+   "example": {
+    "word": "sing",
+    "braille": "⠎⠬",
+    "dots": [
+     "234",
+     "346"
+    ],
+    "uncontracted": "⠎⠊⠝⠛"
+   }
+  },
+  {
+   "word": "be",
+   "braille": "⠆",
+   "dots": [
+    "23"
+   ],
+   "category": "lower-wordsign",
+   "uncontracted": "⠃⠑"
+  },
+  {
+   "word": "enough",
+   "braille": "⠢",
+   "dots": [
+    "26"
+   ],
+   "category": "lower-wordsign",
+   "uncontracted": "⠑⠝⠕⠥⠛⠓"
+  },
+  {
+   "word": "were",
+   "braille": "⠶",
+   "dots": [
+    "2356"
+   ],
+   "category": "lower-wordsign",
+   "uncontracted": "⠺⠑⠗⠑"
+  },
+  {
+   "word": "his",
+   "braille": "⠦",
+   "dots": [
+    "236"
+   ],
+   "category": "lower-wordsign",
+   "uncontracted": "⠓⠊⠎"
+  },
+  {
+   "word": "in",
+   "braille": "⠔",
+   "dots": [
+    "35"
+   ],
+   "category": "lower-wordsign",
+   "uncontracted": "⠊⠝"
+  },
+  {
+   "word": "was",
+   "braille": "⠴",
+   "dots": [
+    "356"
+   ],
+   "category": "lower-wordsign",
+   "uncontracted": "⠺⠁⠎"
+  },
+  {
+   "word": "day",
+   "braille": "⠐⠙",
+   "dots": [
+    "5",
+    "145"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠙⠁⠽",
+   "prefixDots": "5"
+  },
+  {
+   "word": "ever",
+   "braille": "⠐⠑",
+   "dots": [
+    "5",
+    "15"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠑⠧⠑⠗",
+   "prefixDots": "5"
+  },
+  {
+   "word": "father",
+   "braille": "⠐⠋",
+   "dots": [
+    "5",
+    "124"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠋⠁⠞⠓⠑⠗",
+   "prefixDots": "5"
+  },
+  {
+   "word": "here",
+   "braille": "⠐⠓",
+   "dots": [
+    "5",
+    "125"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠓⠑⠗⠑",
+   "prefixDots": "5"
+  },
+  {
+   "word": "know",
+   "braille": "⠐⠅",
+   "dots": [
+    "5",
+    "13"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠅⠝⠕⠺",
+   "prefixDots": "5"
+  },
+  {
+   "word": "lord",
+   "braille": "⠐⠇",
+   "dots": [
+    "5",
+    "123"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠇⠕⠗⠙",
+   "prefixDots": "5"
+  },
+  {
+   "word": "mother",
+   "braille": "⠐⠍",
+   "dots": [
+    "5",
+    "134"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠍⠕⠞⠓⠑⠗",
+   "prefixDots": "5"
+  },
+  {
+   "word": "name",
+   "braille": "⠐⠝",
+   "dots": [
+    "5",
+    "1345"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠝⠁⠍⠑",
+   "prefixDots": "5"
+  },
+  {
+   "word": "one",
+   "braille": "⠐⠕",
+   "dots": [
+    "5",
+    "135"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠕⠝⠑",
+   "prefixDots": "5"
+  },
+  {
+   "word": "part",
+   "braille": "⠐⠏",
+   "dots": [
+    "5",
+    "1234"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠏⠁⠗⠞",
+   "prefixDots": "5"
+  },
+  {
+   "word": "question",
+   "braille": "⠐⠟",
+   "dots": [
+    "5",
+    "12345"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠟⠥⠑⠎⠞⠊⠕⠝",
+   "prefixDots": "5"
+  },
+  {
+   "word": "right",
+   "braille": "⠐⠗",
+   "dots": [
+    "5",
+    "1235"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠗⠊⠛⠓⠞",
+   "prefixDots": "5"
+  },
+  {
+   "word": "some",
+   "braille": "⠐⠎",
+   "dots": [
+    "5",
+    "234"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠎⠕⠍⠑",
+   "prefixDots": "5"
+  },
+  {
+   "word": "time",
+   "braille": "⠐⠞",
+   "dots": [
+    "5",
+    "2345"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠞⠊⠍⠑",
+   "prefixDots": "5"
+  },
+  {
+   "word": "under",
+   "braille": "⠐⠥",
+   "dots": [
+    "5",
+    "136"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠥⠝⠙⠑⠗",
+   "prefixDots": "5"
+  },
+  {
+   "word": "work",
+   "braille": "⠐⠺",
+   "dots": [
+    "5",
+    "2456"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠺⠕⠗⠅",
+   "prefixDots": "5"
+  },
+  {
+   "word": "young",
+   "braille": "⠐⠽",
+   "dots": [
+    "5",
+    "13456"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠽⠕⠥⠝⠛",
+   "prefixDots": "5"
+  },
+  {
+   "word": "there",
+   "braille": "⠐⠮",
+   "dots": [
+    "5",
+    "2346"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠞⠓⠑⠗⠑",
+   "prefixDots": "5"
+  },
+  {
+   "word": "character",
+   "braille": "⠐⠡",
+   "dots": [
+    "5",
+    "16"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠉⠓⠁⠗⠁⠉⠞⠑⠗",
+   "prefixDots": "5"
+  },
+  {
+   "word": "through",
+   "braille": "⠐⠹",
+   "dots": [
+    "5",
+    "1456"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠞⠓⠗⠕⠥⠛⠓",
+   "prefixDots": "5"
+  },
+  {
+   "word": "where",
+   "braille": "⠐⠱",
+   "dots": [
+    "5",
+    "156"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠺⠓⠑⠗⠑",
+   "prefixDots": "5"
+  },
+  {
+   "word": "ought",
+   "braille": "⠐⠳",
+   "dots": [
+    "5",
+    "1256"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠕⠥⠛⠓⠞",
+   "prefixDots": "5"
+  },
+  {
+   "word": "upon",
+   "braille": "⠘⠥",
+   "dots": [
+    "45",
+    "136"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠥⠏⠕⠝",
+   "prefixDots": "45"
+  },
+  {
+   "word": "word",
+   "braille": "⠘⠺",
+   "dots": [
+    "45",
+    "2456"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠺⠕⠗⠙",
+   "prefixDots": "45"
+  },
+  {
+   "word": "these",
+   "braille": "⠘⠮",
+   "dots": [
+    "45",
+    "2346"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠞⠓⠑⠎⠑",
+   "prefixDots": "45"
+  },
+  {
+   "word": "those",
+   "braille": "⠘⠹",
+   "dots": [
+    "45",
+    "1456"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠞⠓⠕⠎⠑",
+   "prefixDots": "45"
+  },
+  {
+   "word": "whose",
+   "braille": "⠘⠱",
+   "dots": [
+    "45",
+    "156"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠺⠓⠕⠎⠑",
+   "prefixDots": "45"
+  },
+  {
+   "word": "cannot",
+   "braille": "⠸⠉",
+   "dots": [
+    "456",
+    "14"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠉⠁⠝⠝⠕⠞",
+   "prefixDots": "456"
+  },
+  {
+   "word": "had",
+   "braille": "⠸⠓",
+   "dots": [
+    "456",
+    "125"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠓⠁⠙",
+   "prefixDots": "456"
+  },
+  {
+   "word": "many",
+   "braille": "⠸⠍",
+   "dots": [
+    "456",
+    "134"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠍⠁⠝⠽",
+   "prefixDots": "456"
+  },
+  {
+   "word": "spirit",
+   "braille": "⠸⠎",
+   "dots": [
+    "456",
+    "234"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠎⠏⠊⠗⠊⠞",
+   "prefixDots": "456"
+  },
+  {
+   "word": "their",
+   "braille": "⠸⠮",
+   "dots": [
+    "456",
+    "2346"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠞⠓⠑⠊⠗",
+   "prefixDots": "456"
+  },
+  {
+   "word": "world",
+   "braille": "⠸⠺",
+   "dots": [
+    "456",
+    "2456"
+   ],
+   "category": "initial-letter",
+   "uncontracted": "⠺⠕⠗⠇⠙",
+   "prefixDots": "456"
+  }
+ ]
+}

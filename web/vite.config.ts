@@ -47,7 +47,7 @@ function pwa() {
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,woff2,svg,json}'],
-      globIgnores: ['models/**', 'wasm/**', 'signs/**', 'evidence/**', '**/*.map', 'assets/asr.worker-*.js'],
+      globIgnores: ['models/**', 'wasm/**', 'signs/**', 'evidence/**', '**/*.map', 'assets/asr.worker-*.js', 'assets/noto-*'],
       maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
       navigateFallback: 'index.html',
       navigateFallbackDenylist: [/^\/api\//, /^\/(models|wasm|signs)\//],
@@ -79,6 +79,12 @@ function pwa() {
           urlPattern: ({ url, sameOrigin }) => sameOrigin && url.pathname.startsWith('/signs/'),
           handler: 'CacheFirst',
           options: { cacheName: 'bridgify-signs', expiration: { maxEntries: 300, maxAgeSeconds: 90 * DAY, purgeOnQuotaError: true }, cacheableResponse: { statuses: [200] } },
+        },
+        {
+          // Indian-script fonts load only when a lesson shows that script.
+          urlPattern: ({ url, sameOrigin }) => sameOrigin && /^\/assets\/noto-/.test(url.pathname),
+          handler: 'CacheFirst',
+          options: { cacheName: 'bridgify-fonts', expiration: { maxEntries: 60, maxAgeSeconds: 365 * DAY, purgeOnQuotaError: true }, cacheableResponse: { statuses: [200] } },
         },
         {
           urlPattern: ({ url, sameOrigin }) => sameOrigin && url.pathname.startsWith('/api/'),

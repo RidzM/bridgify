@@ -1,0 +1,602 @@
+{
+ "asl": {
+  "classes": {
+   "0": {
+    "distToMean": 0.4276,
+    "file": "P7_O_659.jpg",
+    "mirrored": false,
+    "n": 707,
+    "sameAs": "O",
+    "signer": "P7"
+   },
+   "1": {
+    "distToMean": 0.3367,
+    "file": "P7_1_692.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P7"
+   },
+   "2": {
+    "distToMean": 0.2059,
+    "file": "P7_2_680.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P7"
+   },
+   "3": {
+    "distToMean": 0.3014,
+    "file": "P5_3_401.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P5"
+   },
+   "4": {
+    "distToMean": 0.2276,
+    "file": "P7_4_683.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P7"
+   },
+   "5": {
+    "distToMean": 0.4402,
+    "file": "P2_5_128.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P2"
+   },
+   "6": {
+    "distToMean": 0.2379,
+    "file": "P2_6_125.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P2"
+   },
+   "7": {
+    "distToMean": 0.4373,
+    "file": "P8_7_730.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P8"
+   },
+   "8": {
+    "distToMean": 0.3989,
+    "file": "P6_8_511.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P6"
+   },
+   "9": {
+    "distToMean": 0.2512,
+    "file": "P5_9_435.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P5"
+   },
+   "A": {
+    "distToMean": 0.3076,
+    "file": "P2_A_198.jpg",
+    "mirrored": false,
+    "n": 692,
+    "signer": "P2"
+   },
+   "B": {
+    "distToMean": 0.2387,
+    "file": "P2_B_131.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P2"
+   },
+   "C": {
+    "distToMean": 0.4479,
+    "file": "P3_C_263.jpg",
+    "mirrored": false,
+    "n": 760,
+    "signer": "P3"
+   },
+   "D": {
+    "distToMean": 0.3891,
+    "file": "P4_D_377.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P4"
+   },
+   "E": {
+    "distToMean": 0.3665,
+    "file": "P3_E_282.jpg",
+    "mirrored": false,
+    "n": 783,
+    "signer": "P3"
+   },
+   "F": {
+    "distToMean": 0.1561,
+    "file": "P3_F_215.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P3"
+   },
+   "G": {
+    "distToMean": 0.3224,
+    "file": "P7_G_685.jpg",
+    "mirrored": false,
+    "n": 789,
+    "signer": "P7"
+   },
+   "H": {
+    "distToMean": 0.201,
+    "file": "P2_H_168.jpg",
+    "mirrored": false,
+    "n": 797,
+    "signer": "P2"
+   },
+   "I": {
+    "distToMean": 0.176,
+    "file": "P2_I_160.jpg",
+    "mirrored": false,
+    "n": 799,
+    "signer": "P2"
+   },
+   "J": {
+    "distToMean": 0.411,
+    "file": "P7_J_679.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P7"
+   },
+   "K": {
+    "distToMean": 0.2485,
+    "file": "P4_K_382.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P4"
+   },
+   "L": {
+    "distToMean": 0.3427,
+    "file": "P4_L_359.jpg",
+    "mirrored": false,
+    "n": 798,
+    "signer": "P4"
+   },
+   "M": {
+    "distToMean": 0.5539,
+    "file": "P3_M_243.jpg",
+    "mirrored": false,
+    "n": 610,
+    "signer": "P3"
+   },
+   "N": {
+    "distToMean": 0.429,
+    "file": "P6_N_587.jpg",
+    "mirrored": false,
+    "n": 771,
+    "signer": "P6"
+   },
+   "O": {
+    "distToMean": 0.4276,
+    "file": "P7_O_659.jpg",
+    "mirrored": false,
+    "n": 707,
+    "signer": "P7"
+   },
+   "P": {
+    "distToMean": 0.3408,
+    "file": "P2_P_140.jpg",
+    "mirrored": false,
+    "n": 798,
+    "signer": "P2"
+   },
+   "Q": {
+    "distToMean": 0.4394,
+    "file": "P6_Q_513.jpg",
+    "mirrored": false,
+    "n": 779,
+    "signer": "P6"
+   },
+   "R": {
+    "distToMean": 0.231,
+    "file": "P2_R_178.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P2"
+   },
+   "S": {
+    "distToMean": 0.3918,
+    "file": "P3_S_290.jpg",
+    "mirrored": false,
+    "n": 686,
+    "signer": "P3"
+   },
+   "T": {
+    "distToMean": 0.2027,
+    "file": "P2_T_127.jpg",
+    "mirrored": false,
+    "n": 792,
+    "signer": "P2"
+   },
+   "U": {
+    "distToMean": 0.3504,
+    "file": "P7_U_694.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P7"
+   },
+   "V": {
+    "distToMean": 0.2654,
+    "file": "P2_V_184.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P2"
+   },
+   "W": {
+    "distToMean": 0.2316,
+    "file": "P7_W_687.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P7"
+   },
+   "X": {
+    "distToMean": 0.6283,
+    "file": "P6_X_546.jpg",
+    "mirrored": false,
+    "n": 794,
+    "signer": "P6"
+   },
+   "Y": {
+    "distToMean": 0.3617,
+    "file": "P6_Y_579.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P6"
+   },
+   "Z": {
+    "distToMean": 0.2889,
+    "file": "P6_Z_517.jpg",
+    "mirrored": false,
+    "n": 800,
+    "signer": "P6"
+   }
+  },
+  "source": "ASL-HG (juanjodurillo/asl-hg, train split P1-P8)"
+ },
+ "isl": {
+  "classes": {
+   "0": {
+    "note": "ISL 0 is the O handshape (ISLRTC numbers chart)",
+    "sameAs": "ASL letter O",
+    "source": "asl-hg"
+   },
+   "1": {
+    "distToMean": 0.0918,
+    "file": "Indian/1/226.jpg",
+    "hands": 1,
+    "leftShare": 1.0,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "2": {
+    "distToMean": 0.0903,
+    "file": "Indian/2/677.jpg",
+    "hands": 1,
+    "leftShare": 1.0,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "3": {
+    "distToMean": 0.082,
+    "file": "Indian/3/294.jpg",
+    "hands": 1,
+    "leftShare": 1.0,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "4": {
+    "distToMean": 0.0382,
+    "file": "Indian/4/990.jpg",
+    "hands": 1,
+    "leftShare": 1.0,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "5": {
+    "distToMean": 0.036,
+    "file": "Indian/5/447.jpg",
+    "hands": 1,
+    "leftShare": 1.0,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "6": {
+    "distToMean": 0.0831,
+    "file": "Indian/6/898.jpg",
+    "hands": 1,
+    "leftShare": 1.0,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "7": {
+    "distToMean": 0.1098,
+    "file": "Indian/7/337.jpg",
+    "hands": 1,
+    "leftShare": 1.0,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "8": {
+    "distToMean": 0.0456,
+    "file": "Indian/8/806.jpg",
+    "hands": 1,
+    "leftShare": 1.0,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "9": {
+    "distToMean": 0.7956,
+    "file": "Indian/9/25.jpg",
+    "hands": 1,
+    "leftShare": 0.854,
+    "mirrored": true,
+    "n": 1200,
+    "source": "isl-kaggle"
+   },
+   "A": {
+    "distToMean": 2.1657,
+    "file": "combined_train_dataset.csv row 6923",
+    "hands": 2,
+    "mirrored": true,
+    "n": 600,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "B": {
+    "distToMean": 0.4447,
+    "file": "combined_train_dataset.csv row 379",
+    "hands": 2,
+    "mirrored": true,
+    "n": 600,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "C": {
+    "distToMean": 0.3135,
+    "file": "combined_train_dataset.csv row 7572",
+    "hands": 1,
+    "mirrored": true,
+    "n": 600,
+    "placement": "single",
+    "source": "dwibon"
+   },
+   "D": {
+    "distToMean": 0.4457,
+    "file": "combined_train_dataset.csv row 13995",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1400,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "E": {
+    "distToMean": 0.6427,
+    "file": "combined_train_dataset.csv row 20084",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1395,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "F": {
+    "distToMean": 0.9433,
+    "file": "combined_train_dataset.csv row 1702",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1400,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "G": {
+    "distToMean": 0.6992,
+    "file": "combined_train_dataset.csv row 8946",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1400,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "H": {
+    "distToMean": 0.1099,
+    "file": "Indian/H/443.jpg",
+    "hands": 2,
+    "labelCounts": {
+     "Left/Left": 2,
+     "Right/Left": 1165
+    },
+    "labels": "Right (viewer's left), Left (viewer's right)",
+    "mirrored": false,
+    "n": 1167,
+    "placement": "photo",
+    "source": "isl-kaggle"
+   },
+   "I": {
+    "distToMean": 0.2616,
+    "file": "combined_train_dataset.csv row 18560",
+    "hands": 1,
+    "mirrored": true,
+    "n": 1200,
+    "placement": "single",
+    "source": "dwibon"
+   },
+   "J": {
+    "distToMean": 0.1823,
+    "file": "Indian/J/795.jpg",
+    "hands": 2,
+    "labelCounts": {
+     "Right/Left": 39
+    },
+    "labels": "Right (viewer's left), Left (viewer's right)",
+    "mirrored": false,
+    "n": 39,
+    "placement": "photo",
+    "source": "isl-kaggle"
+   },
+   "K": {
+    "distToMean": 0.939,
+    "file": "combined_train_dataset.csv row 20748",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1400,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "L": {
+    "distToMean": 0.3479,
+    "file": "combined_train_dataset.csv row 9646",
+    "hands": 1,
+    "mirrored": true,
+    "n": 600,
+    "placement": "single",
+    "source": "dwibon"
+   },
+   "M": {
+    "distToMean": 0.8366,
+    "file": "combined_train_dataset.csv row 9951",
+    "hands": 2,
+    "mirrored": true,
+    "n": 600,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "N": {
+    "distToMean": 1.4451,
+    "file": "combined_train_dataset.csv row 10229",
+    "hands": 2,
+    "mirrored": true,
+    "n": 600,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "O": {
+    "distToMean": 0.27,
+    "file": "combined_train_dataset.csv row 10648",
+    "hands": 1,
+    "mirrored": true,
+    "n": 600,
+    "placement": "single",
+    "source": "dwibon"
+   },
+   "P": {
+    "distToMean": 0.4038,
+    "file": "combined_train_dataset.csv row 19096",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1400,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "Q": {
+    "distToMean": 1.3073,
+    "file": "combined_train_dataset.csv row 11105",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1400,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "R": {
+    "distToMean": 1.5693,
+    "file": "combined_train_dataset.csv row 11579",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1336,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "S": {
+    "distToMean": 2.9226,
+    "file": "combined_train_dataset.csv row 4938",
+    "hands": 2,
+    "mirrored": true,
+    "n": 1380,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "T": {
+    "distToMean": 0.6973,
+    "file": "combined_train_dataset.csv row 5338",
+    "hands": 2,
+    "mirrored": true,
+    "n": 600,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "U": {
+    "distToMean": 0.1828,
+    "file": "combined_train_dataset.csv row 12552",
+    "hands": 1,
+    "mirrored": true,
+    "n": 600,
+    "placement": "single",
+    "source": "dwibon"
+   },
+   "V": {
+    "distToMean": 0.4621,
+    "file": "combined_train_dataset.csv row 12807",
+    "hands": 1,
+    "mirrored": true,
+    "n": 600,
+    "placement": "single",
+    "source": "dwibon"
+   },
+   "W": {
+    "distToMean": 0.6731,
+    "file": "combined_train_dataset.csv row 6080",
+    "hands": 2,
+    "mirrored": true,
+    "n": 376,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "X": {
+    "distToMean": 0.4699,
+    "file": "combined_train_dataset.csv row 13498",
+    "hands": 2,
+    "mirrored": true,
+    "n": 592,
+    "placement": "schematic",
+    "source": "dwibon"
+   },
+   "Y": {
+    "distToMean": 0.2683,
+    "file": "Indian/Y/192.jpg",
+    "hands": 2,
+    "labelCounts": {
+     "Right/Left": 1103
+    },
+    "labels": "Right (viewer's left), Left (viewer's right)",
+    "mirrored": false,
+    "n": 1103,
+    "placement": "photo",
+    "source": "isl-kaggle"
+   },
+   "Z": {
+    "distToMean": 0.3981,
+    "file": "combined_train_dataset.csv row 6876",
+    "hands": 2,
+    "mirrored": true,
+    "n": 597,
+    "placement": "schematic",
+    "source": "dwibon"
+   }
+  },
+  "motion": [
+   "H",
+   "J",
+   "Y"
+  ]
+ }
+}

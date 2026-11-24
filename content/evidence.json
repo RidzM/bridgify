@@ -1,17 +1,75 @@
 {
   "updated": "2026-11-24",
   "models": [
-    { "id": "asl-letters", "name": "ASL fingerspelling (24 static letters)", "metric": "Macro-F1 on signers never seen in training", "value": 0.962, "detail": "Small neural network on hand landmarks. Trained on 8 signers of ASL-HG, tested on signers P9–P10 (4,799 frames). Baselines: kNN 0.924, logistic regression 0.928, SVM 0.956.", "chart": "/evidence/confusion-asl.png" },
-    { "id": "isl-letters", "name": "ISL fingerspelling (23 static letters, two hands)", "metric": "Macro-F1 on a signer never seen in training", "value": 0.989, "detail": "Logistic regression on two-hand landmarks. Trained on 6 signers, tested on a 7th (1,150 frames).", "chart": "/evidence/confusion-isl.png" },
-    { "id": "gestures", "name": "Hand gestures (6 types)", "metric": "Accuracy on 626 people never seen in tuning", "value": 0.973, "detail": "Geometry rules on hand landmarks, tuned on HaGRID (9,467 test hands).", "chart": "/evidence/confusion-gestures.png" },
-    { "id": "emotion", "name": "Facial expression (7 classes)", "metric": "Macro-F1 on 20 people never seen in training", "value": 0.744, "detail": "Logistic regression on 52 face-movement scores from MediaPipe, trained on KDEF. Shown as approximate.", "chart": "/evidence/confusion-emotion-model.png" }
+    {
+      "id": "asl-letters",
+      "name": "ASL fingerspelling (24 static letters)",
+      "metric": "Macro-F1 on signers never seen in training",
+      "value": 0.962,
+      "detail": "Small neural network on hand landmarks. Trained on 8 signers of ASL-HG, tested on signers P9–P10 (4,799 frames). Baselines: kNN 0.924, logistic regression 0.928, SVM 0.956.",
+      "chart": "/evidence/confusion-asl.png"
+    },
+    {
+      "id": "isl-letters",
+      "name": "ISL fingerspelling (23 static letters, two hands)",
+      "metric": "Macro-F1 on a signer never seen in training",
+      "value": 0.989,
+      "detail": "Logistic regression on two-hand landmarks. Trained on 6 signers, tested on a 7th (1,150 frames).",
+      "chart": "/evidence/confusion-isl.png"
+    },
+    {
+      "id": "gestures",
+      "name": "Hand gestures (6 types)",
+      "metric": "Accuracy on 626 people never seen in tuning",
+      "value": 0.973,
+      "detail": "Geometry rules on hand landmarks, tuned on HaGRID (9,467 test hands).",
+      "chart": "/evidence/confusion-gestures.png"
+    },
+    {
+      "id": "emotion",
+      "name": "Facial expression (7 classes)",
+      "metric": "Macro-F1 on 20 people never seen in training",
+      "value": 0.744,
+      "detail": "Logistic regression on 52 face-movement scores from MediaPipe, trained on KDEF. Shown as approximate.",
+      "chart": "/evidence/confusion-emotion-model.png"
+    }
   ],
   "checks": [
-    { "name": "Braille matches liblouis 3.39 exactly", "value": "59 / 59 golden cases" },
-    { "name": "Browser maths matches the Python training code", "value": "100 / 100 parity tests" },
-    { "name": "Accessibility (axe, WCAG 2.2 AA): serious or critical problems", "value": "0 across every page × 12 display modes" },
-    { "name": "Colour contrast checks", "value": "12 modes × 12 colour pairs, 0 failures" },
-    { "name": "End-to-end tests", "value": "Every tool, on desktop and on a phone-sized screen" },
-    { "name": "First load (JavaScript, gzip)", "value": "≈113 KB" }
+    {
+      "name": "Braille matches liblouis 3.39 exactly",
+      "value": "59 / 59 golden cases"
+    },
+    {
+      "name": "Browser maths matches the Python training code",
+      "value": "100 / 100 parity tests"
+    },
+    {
+      "name": "Accessibility (axe, WCAG 2.2 AA): serious or critical problems",
+      "value": "0 across every page × 12 display modes"
+    },
+    {
+      "name": "Colour contrast checks",
+      "value": "12 modes × 12 colour pairs, 0 failures"
+    },
+    {
+      "name": "End-to-end tests",
+      "value": "Every tool, on desktop and on a phone-sized screen"
+    },
+    {
+      "name": "Bridge: showing your hands to the other phone",
+      "value": "13.8 kbps for a moving hand (target under 15)"
+    },
+    {
+      "name": "Bridge: connect time between two tabs (laptop)",
+      "value": "0.36–0.58 s"
+    },
+    {
+      "name": "SOS opens offline (first card on screen)",
+      "value": "103–287 ms"
+    },
+    {
+      "name": "First load (JavaScript, gzip)",
+      "value": "≈122 KB"
+    }
   ]
 }

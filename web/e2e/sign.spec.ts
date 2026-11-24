@@ -27,9 +27,12 @@ test.describe('text to sign', () => {
     await page.addInitScript(() => localStorage.setItem('bridgify.prefs.v1', JSON.stringify({ state: { sign: { lang: 'isl' } }, version: 1 })))
     await page.route('**/spoken_text_to_signed_pose**', (r) => r.fulfill({ status: 500, body: '{}' }))
     await page.goto('/tools/text-to-sign')
-    await page.getByLabel('Text').fill('Where is the hospital?')
+    await page.getByLabel('Text', { exact: true }).fill('Where is the hospital?')
     await page.getByRole('button', { name: 'Show signs' }).click()
-    await expect(page.getByText('HOSPITAL WHERE')).toBeVisible()
+    await expect(page.getByRole('region', { name: 'Words' })).toContainText('HOSPITAL WHERE')
+    // Stored ISL signs play even when the live service is down: no fingerspelling fallback.
+    await expect(page.getByRole('img', { name: /^Sign for / }).first()).toBeVisible({ timeout: 20_000 })
+    await expect(page.getByText(/No sign found/)).toHaveCount(0)
   })
 
   test('all six languages are available', async ({ page }) => {

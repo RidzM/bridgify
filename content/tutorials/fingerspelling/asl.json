@@ -1,0 +1,372 @@
+{
+ "lang": "asl",
+ "code": "ASL",
+ "handed": "one",
+ "source": "asl-hg",
+ "chart": null,
+ "view": "As the viewer sees a right-handed signer. Diagrams are drawn from the MediaPipe hand landmarks of a real signer's photo (the class medoid).",
+ "letters": [
+  {
+   "letter": "A",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/A.svg"
+   },
+   "motion": false,
+   "tip": "Fist with the thumb resting against the side of the index finger.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "B",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/B.svg"
+   },
+   "motion": false,
+   "tip": "Flat hand, fingers together pointing up, thumb folded across the palm.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "C",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/C.svg"
+   },
+   "motion": false,
+   "tip": "Fingers and thumb curved into the shape of a C.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "D",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/D.svg"
+   },
+   "motion": false,
+   "tip": "Index finger up; the other fingertips touch the thumb in a circle.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "E",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/E.svg"
+   },
+   "motion": false,
+   "tip": "Fingertips bent down to rest on the thumb, which is tucked across the palm.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "F",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/F.svg"
+   },
+   "motion": false,
+   "tip": "Thumb and index fingertips touch in a circle; other three fingers up and apart.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "G",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/G.svg"
+   },
+   "motion": false,
+   "tip": "Index finger and thumb point sideways, parallel; other fingers folded.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "H",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/H.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers together, pointing sideways; other fingers folded.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "I",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/I.svg"
+   },
+   "motion": false,
+   "tip": "Little finger up; other fingers folded with the thumb across them.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "J",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/J.svg"
+   },
+   "motion": true,
+   "tip": "Make the I hand, then draw a J in the air with the little finger.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "K",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/K.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers up in a V, thumb touching the middle finger.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "L",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/L.svg"
+   },
+   "motion": false,
+   "tip": "Index finger up and thumb out to the side, making an L.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "M",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/M.svg"
+   },
+   "motion": false,
+   "tip": "Thumb tucked under the first three fingers.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "N",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/N.svg"
+   },
+   "motion": false,
+   "tip": "Thumb tucked under the first two fingers.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "O",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/O.svg"
+   },
+   "motion": false,
+   "tip": "All fingertips curve round to meet the thumb, making an O.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "P",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/P.svg"
+   },
+   "motion": false,
+   "tip": "Like K, but the hand is turned so the fingers point down.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "Q",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/Q.svg"
+   },
+   "motion": false,
+   "tip": "Like G, but the thumb and index finger point down.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "R",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/R.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers up and crossed.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "S",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/S.svg"
+   },
+   "motion": false,
+   "tip": "Fist with the thumb across the front of the fingers.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "T",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/T.svg"
+   },
+   "motion": false,
+   "tip": "Fist with the thumb tucked between the index and middle fingers.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "U",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/U.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers up, held together.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "V",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/V.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers up and apart.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "W",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/W.svg"
+   },
+   "motion": false,
+   "tip": "Index, middle and ring fingers up and apart.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "X",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/X.svg"
+   },
+   "motion": false,
+   "tip": "Index finger bent into a hook; other fingers folded.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "Y",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/Y.svg"
+   },
+   "motion": false,
+   "tip": "Thumb and little finger stretched out; other fingers folded.",
+   "credit": "asl-hg"
+  },
+  {
+   "letter": "Z",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/letters/Z.svg"
+   },
+   "motion": true,
+   "tip": "Index finger draws a Z in the air (it looks reversed to the viewer).",
+   "credit": "asl-hg"
+  }
+ ],
+ "numbers": [
+  {
+   "value": "0",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/0.svg"
+   },
+   "motion": false,
+   "tip": "All fingertips curve round to meet the thumb, making an O.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "1",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/1.svg"
+   },
+   "motion": false,
+   "tip": "Index finger up; other fingers folded.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "2",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/2.svg"
+   },
+   "motion": false,
+   "tip": "Index and middle fingers up and apart.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "3",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/3.svg"
+   },
+   "motion": false,
+   "tip": "Thumb, index and middle fingers up.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "4",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/4.svg"
+   },
+   "motion": false,
+   "tip": "Four fingers up and apart, thumb folded in.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "5",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/5.svg"
+   },
+   "motion": false,
+   "tip": "Open hand, all five fingers spread.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "6",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/6.svg"
+   },
+   "motion": false,
+   "tip": "Thumb touches the little finger; other three fingers up.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "7",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/7.svg"
+   },
+   "motion": false,
+   "tip": "Thumb touches the ring finger; other fingers up.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "8",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/8.svg"
+   },
+   "motion": false,
+   "tip": "Thumb touches the middle finger; other fingers up.",
+   "credit": "asl-hg"
+  },
+  {
+   "value": "9",
+   "media": {
+    "type": "svg",
+    "src": "/signs/asl/numbers/9.svg"
+   },
+   "motion": false,
+   "tip": "Thumb touches the index finger; other fingers up.",
+   "credit": "asl-hg"
+  }
+ ]
+}

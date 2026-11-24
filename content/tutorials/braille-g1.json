@@ -1,0 +1,566 @@
+{
+ "title": "Braille alphabet (UEB grade 1, uncontracted)",
+ "code": "UEB",
+ "grade": 1,
+ "generator": {
+  "tool": "liblouis",
+  "version": "3.39.0",
+  "tables": "unicode.dis,en-ueb-g1.ctb"
+ },
+ "source": "liblouis",
+ "dotsFormat": "one string per cell listing its raised dots, e.g. '125' = dots 1, 2 and 5",
+ "letters": [
+  {
+   "char": "a",
+   "braille": "⠁",
+   "dots": [
+    "1"
+   ]
+  },
+  {
+   "char": "b",
+   "braille": "⠃",
+   "dots": [
+    "12"
+   ]
+  },
+  {
+   "char": "c",
+   "braille": "⠉",
+   "dots": [
+    "14"
+   ]
+  },
+  {
+   "char": "d",
+   "braille": "⠙",
+   "dots": [
+    "145"
+   ]
+  },
+  {
+   "char": "e",
+   "braille": "⠑",
+   "dots": [
+    "15"
+   ]
+  },
+  {
+   "char": "f",
+   "braille": "⠋",
+   "dots": [
+    "124"
+   ]
+  },
+  {
+   "char": "g",
+   "braille": "⠛",
+   "dots": [
+    "1245"
+   ]
+  },
+  {
+   "char": "h",
+   "braille": "⠓",
+   "dots": [
+    "125"
+   ]
+  },
+  {
+   "char": "i",
+   "braille": "⠊",
+   "dots": [
+    "24"
+   ]
+  },
+  {
+   "char": "j",
+   "braille": "⠚",
+   "dots": [
+    "245"
+   ]
+  },
+  {
+   "char": "k",
+   "braille": "⠅",
+   "dots": [
+    "13"
+   ]
+  },
+  {
+   "char": "l",
+   "braille": "⠇",
+   "dots": [
+    "123"
+   ]
+  },
+  {
+   "char": "m",
+   "braille": "⠍",
+   "dots": [
+    "134"
+   ]
+  },
+  {
+   "char": "n",
+   "braille": "⠝",
+   "dots": [
+    "1345"
+   ]
+  },
+  {
+   "char": "o",
+   "braille": "⠕",
+   "dots": [
+    "135"
+   ]
+  },
+  {
+   "char": "p",
+   "braille": "⠏",
+   "dots": [
+    "1234"
+   ]
+  },
+  {
+   "char": "q",
+   "braille": "⠟",
+   "dots": [
+    "12345"
+   ]
+  },
+  {
+   "char": "r",
+   "braille": "⠗",
+   "dots": [
+    "1235"
+   ]
+  },
+  {
+   "char": "s",
+   "braille": "⠎",
+   "dots": [
+    "234"
+   ]
+  },
+  {
+   "char": "t",
+   "braille": "⠞",
+   "dots": [
+    "2345"
+   ]
+  },
+  {
+   "char": "u",
+   "braille": "⠥",
+   "dots": [
+    "136"
+   ]
+  },
+  {
+   "char": "v",
+   "braille": "⠧",
+   "dots": [
+    "1236"
+   ]
+  },
+  {
+   "char": "w",
+   "braille": "⠺",
+   "dots": [
+    "2456"
+   ]
+  },
+  {
+   "char": "x",
+   "braille": "⠭",
+   "dots": [
+    "1346"
+   ]
+  },
+  {
+   "char": "y",
+   "braille": "⠽",
+   "dots": [
+    "13456"
+   ]
+  },
+  {
+   "char": "z",
+   "braille": "⠵",
+   "dots": [
+    "1356"
+   ]
+  }
+ ],
+ "numbers": [
+  {
+   "char": "1",
+   "braille": "⠼⠁",
+   "dots": [
+    "3456",
+    "1"
+   ],
+   "letter": "a"
+  },
+  {
+   "char": "2",
+   "braille": "⠼⠃",
+   "dots": [
+    "3456",
+    "12"
+   ],
+   "letter": "b"
+  },
+  {
+   "char": "3",
+   "braille": "⠼⠉",
+   "dots": [
+    "3456",
+    "14"
+   ],
+   "letter": "c"
+  },
+  {
+   "char": "4",
+   "braille": "⠼⠙",
+   "dots": [
+    "3456",
+    "145"
+   ],
+   "letter": "d"
+  },
+  {
+   "char": "5",
+   "braille": "⠼⠑",
+   "dots": [
+    "3456",
+    "15"
+   ],
+   "letter": "e"
+  },
+  {
+   "char": "6",
+   "braille": "⠼⠋",
+   "dots": [
+    "3456",
+    "124"
+   ],
+   "letter": "f"
+  },
+  {
+   "char": "7",
+   "braille": "⠼⠛",
+   "dots": [
+    "3456",
+    "1245"
+   ],
+   "letter": "g"
+  },
+  {
+   "char": "8",
+   "braille": "⠼⠓",
+   "dots": [
+    "3456",
+    "125"
+   ],
+   "letter": "h"
+  },
+  {
+   "char": "9",
+   "braille": "⠼⠊",
+   "dots": [
+    "3456",
+    "24"
+   ],
+   "letter": "i"
+  },
+  {
+   "char": "0",
+   "braille": "⠼⠚",
+   "dots": [
+    "3456",
+    "245"
+   ],
+   "letter": "j"
+  }
+ ],
+ "indicators": [
+  {
+   "id": "capital",
+   "name": "Capital letter",
+   "braille": "⠠",
+   "dots": [
+    "6"
+   ],
+   "example": {
+    "text": "A",
+    "braille": "⠠⠁"
+   }
+  },
+  {
+   "id": "capital-word",
+   "name": "Capitalised word",
+   "braille": "⠠⠠",
+   "dots": [
+    "6",
+    "6"
+   ],
+   "example": {
+    "text": "ABC",
+    "braille": "⠠⠠⠁⠃⠉"
+   }
+  },
+  {
+   "id": "number",
+   "name": "Number sign",
+   "braille": "⠼",
+   "dots": [
+    "3456"
+   ],
+   "example": {
+    "text": "10",
+    "braille": "⠼⠁⠚"
+   }
+  },
+  {
+   "id": "grade1",
+   "name": "Grade 1 indicator",
+   "braille": "⠰",
+   "dots": [
+    "56"
+   ],
+   "example": {
+    "text": "b",
+    "braille": "⠰⠃"
+   },
+   "note": "In contracted (grade 2) braille, marks a letter that would otherwise read as a word."
+  }
+ ],
+ "punctuation": [
+  {
+   "char": ".",
+   "name": "Full stop",
+   "braille": "⠲",
+   "dots": [
+    "256"
+   ],
+   "example": {
+    "text": "a.",
+    "braille": "⠁⠲"
+   }
+  },
+  {
+   "char": ",",
+   "name": "Comma",
+   "braille": "⠂",
+   "dots": [
+    "2"
+   ],
+   "example": {
+    "text": "a,",
+    "braille": "⠁⠂"
+   }
+  },
+  {
+   "char": "?",
+   "name": "Question mark",
+   "braille": "⠦",
+   "dots": [
+    "236"
+   ],
+   "example": {
+    "text": "a?",
+    "braille": "⠁⠦"
+   }
+  },
+  {
+   "char": "!",
+   "name": "Exclamation mark",
+   "braille": "⠖",
+   "dots": [
+    "235"
+   ],
+   "example": {
+    "text": "a!",
+    "braille": "⠁⠖"
+   }
+  },
+  {
+   "char": "'",
+   "name": "Apostrophe",
+   "braille": "⠄",
+   "dots": [
+    "3"
+   ],
+   "example": {
+    "text": "a'b",
+    "braille": "⠁⠄⠃"
+   }
+  },
+  {
+   "char": "-",
+   "name": "Hyphen",
+   "braille": "⠤",
+   "dots": [
+    "36"
+   ],
+   "example": {
+    "text": "a-b",
+    "braille": "⠁⠤⠃"
+   }
+  },
+  {
+   "char": "—",
+   "name": "Dash",
+   "braille": "⠠⠤",
+   "dots": [
+    "6",
+    "36"
+   ],
+   "example": {
+    "text": "a—b",
+    "braille": "⠁⠠⠤⠃"
+   }
+  },
+  {
+   "char": ":",
+   "name": "Colon",
+   "braille": "⠒",
+   "dots": [
+    "25"
+   ],
+   "example": {
+    "text": "a:",
+    "braille": "⠁⠒"
+   }
+  },
+  {
+   "char": ";",
+   "name": "Semicolon",
+   "braille": "⠆",
+   "dots": [
+    "23"
+   ],
+   "example": {
+    "text": "a;",
+    "braille": "⠁⠆"
+   }
+  },
+  {
+   "char": "“",
+   "name": "Opening double quote",
+   "braille": "⠦",
+   "dots": [
+    "236"
+   ],
+   "example": {
+    "text": "“a”",
+    "braille": "⠦⠁⠴"
+   }
+  },
+  {
+   "char": "”",
+   "name": "Closing double quote",
+   "braille": "⠴",
+   "dots": [
+    "356"
+   ],
+   "example": {
+    "text": "“a”",
+    "braille": "⠦⠁⠴"
+   }
+  },
+  {
+   "char": "(",
+   "name": "Opening bracket",
+   "braille": "⠐⠣",
+   "dots": [
+    "5",
+    "126"
+   ],
+   "example": {
+    "text": "(a)",
+    "braille": "⠐⠣⠁⠐⠜"
+   }
+  },
+  {
+   "char": ")",
+   "name": "Closing bracket",
+   "braille": "⠐⠜",
+   "dots": [
+    "5",
+    "345"
+   ],
+   "example": {
+    "text": "(a)",
+    "braille": "⠐⠣⠁⠐⠜"
+   }
+  },
+  {
+   "char": "/",
+   "name": "Slash",
+   "braille": "⠸⠌",
+   "dots": [
+    "456",
+    "34"
+   ],
+   "example": {
+    "text": "a/b",
+    "braille": "⠁⠸⠌⠃"
+   }
+  },
+  {
+   "char": "@",
+   "name": "At sign",
+   "braille": "⠈⠁",
+   "dots": [
+    "4",
+    "1"
+   ],
+   "example": {
+    "text": "a@b",
+    "braille": "⠁⠈⠁⠃"
+   }
+  },
+  {
+   "char": "&",
+   "name": "Ampersand",
+   "braille": "⠈⠯",
+   "dots": [
+    "4",
+    "12346"
+   ],
+   "example": {
+    "text": "a&b",
+    "braille": "⠁⠈⠯⠃"
+   }
+  },
+  {
+   "char": "$",
+   "name": "Dollar sign",
+   "braille": "⠈⠎",
+   "dots": [
+    "4",
+    "234"
+   ],
+   "example": {
+    "text": "$5",
+    "braille": "⠈⠎⠼⠑"
+   }
+  },
+  {
+   "char": "%",
+   "name": "Percent sign",
+   "braille": "⠨⠴",
+   "dots": [
+    "46",
+    "356"
+   ],
+   "example": {
+    "text": "5%",
+    "braille": "⠼⠑⠨⠴"
+   }
+  }
+ ]
+}
