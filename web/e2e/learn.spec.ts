@@ -29,7 +29,7 @@ test.describe('learn braille', () => {
 test.describe('about pages', () => {
   test('evidence shows measured accuracy for every model', async ({ page }) => {
     await page.goto('/about/evidence')
-    for (const n of ['0.962', '0.989', '97.3%', '0.744']) await expect(page.getByText(n, { exact: true })).toBeVisible()
+    for (const n of ['0.962', '0.993', '97.3%', '0.744']) await expect(page.getByText(n, { exact: true })).toBeVisible()
   })
   test('privacy explains what stays on the device', async ({ page }) => {
     await page.goto('/about/privacy')

@@ -63,3 +63,30 @@ def load_isl() -> tuple[dict, dict]:
 
 def subset(d: dict, idx) -> dict:
     return {k: v[idx] for k, v in d.items()}
+
+
+def load_isl_kaggle() -> dict:
+    """Kaggle "Indian Sign Language (ISL)" photos (prathumarikeri, CC BY-SA 4.0), landmarks from
+    extract_isl_kaggle. Slots follow features.isl_features: two hands -> slot 0 = smaller wrist x;
+    one hand -> slot 0 if MediaPipe says "Left"."""
+    df = pd.read_parquet(PROC / "isl_kaggle_landmarks.parquet")
+    df = df[df.n > 0].reset_index(drop=True)
+    n = len(df)
+    lm0 = np.zeros((n, 21, 3)); lm1 = np.zeros((n, 21, 3))
+    p0 = np.zeros(n, bool); p1 = np.zeros(n, bool)
+    for i, (lms, hds) in enumerate(zip(df.lm, df.hd)):
+        hs = [np.asarray(v, np.float64).reshape(21, 3) for v in lms]
+        if len(hs) >= 2:
+            a, b = (hs[0], hs[1]) if hs[0][0, 0] <= hs[1][0, 0] else (hs[1], hs[0])
+            lm0[i], lm1[i], p0[i], p1[i] = a, b, True, True
+        elif hds[0] == "Left":
+            lm0[i], p0[i] = hs[0], True
+        else:
+            lm1[i], p1[i] = hs[0], True
+    return dict(lm0=lm0, lm1=lm1, p0=p0, p1=p1, aspect=df.aspect.to_numpy(np.float64),
+                y=df.letter.to_numpy(), group=np.full(n, "kaggle"))
+
+
+def merge(*ds: dict) -> dict:
+    keys = set(ds[0]).intersection(*ds[1:])
+    return {k: np.concatenate([d[k] for d in ds]) for k in keys}

@@ -39,50 +39,50 @@
    "version": "1.0.0",
    "featureSpec": "v1",
    "url": "/models/asl-letters.json",
-   "bytes": 5660,
-   "sha256": "1548e14f4812cd7ed535ee13ba51410f5e468fe924497bb1317cd9fdb7cf1cb5",
+   "bytes": 5666,
+   "sha256": "e30a3feac130c52f1cafc4fcb6005c71d222c01091f9456cc0df4b6b13864551",
    "files": {
     "json": {
      "url": "/models/asl-letters.json",
-     "bytes": 5660,
-     "sha256": "1548e14f4812cd7ed535ee13ba51410f5e468fe924497bb1317cd9fdb7cf1cb5"
+     "bytes": 5666,
+     "sha256": "e30a3feac130c52f1cafc4fcb6005c71d222c01091f9456cc0df4b6b13864551"
     },
     "bin": {
      "url": "/models/asl-letters.bin",
      "bytes": 86368,
-     "sha256": "31b5d5b7806276ae4243b3ad1d610236f391721a233b60b716195e1ba0a3f992"
+     "sha256": "3bedb4d0d10808f6e0bbdd5c01e8d3d9401fba570d0f6bcc2ddeb4d894c4816b"
     }
    },
    "licence": "Weights: Bridgify. Training data ASL-HG (CC-BY-4.0, attribution required).",
    "source": "HF juanjodurillo/asl-hg (landmarks extracted with hand_landmarker.task)",
    "metrics": {
-    "heldOutMacroF1": 0.9622977813107254
+    "heldOutMacroF1": 0.9622127964337039
    }
   },
   {
    "id": "isl-letters",
-   "kind": "dense-logreg",
+   "kind": "dense-mlp",
    "version": "1.0.0",
    "featureSpec": "v1",
    "url": "/models/isl-letters.json",
-   "bytes": 9559,
-   "sha256": "2954fd68a2db11ddc53915c303d11b1191cc4b6f6f34bdc6307a83d86cedc538",
+   "bytes": 9962,
+   "sha256": "e2022ad5e72a2e5fb13f36fdaaaeda67c23b5c03f329a25588f771f6547be808",
    "files": {
     "json": {
      "url": "/models/isl-letters.json",
-     "bytes": 9559,
-     "sha256": "2954fd68a2db11ddc53915c303d11b1191cc4b6f6f34bdc6307a83d86cedc538"
+     "bytes": 9962,
+     "sha256": "e2022ad5e72a2e5fb13f36fdaaaeda67c23b5c03f329a25588f771f6547be808"
     },
     "bin": {
      "url": "/models/isl-letters.bin",
-     "bytes": 17020,
-     "sha256": "294bc0c693ea1620a10c646c660a45611e0cd1a6e2c28077063e96b4f0f651b4"
+     "bytes": 133724,
+     "sha256": "c553e7462459983abdbb18fc8b60328dad0e77fc9e8239019de89c9757995876"
     }
    },
-   "licence": "CC-BY-SA-4.0 (derived from the Dwibon ISL landmark dataset; share-alike).",
-   "source": "Kaggle dwibonbhargabdeka/isl-dataset-mediapipe-hand-landmarks",
+   "licence": "CC-BY-SA-4.0 (derived from the Dwibon ISL landmark dataset and the prathumarikeri ISL photo set, both CC-BY-SA-4.0; share-alike).",
+   "source": "Kaggle dwibonbhargabdeka/isl-dataset-mediapipe-hand-landmarks + Kaggle prathumarikeri/indian-sign-language-isl (landmarks extracted with hand_landmarker.task)",
    "metrics": {
-    "heldOutMacroF1": 0.9885440391730266
+    "heldOutMacroF1": 0.992833570281046
    }
   },
   {

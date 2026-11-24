@@ -33,7 +33,7 @@ def plot(cm, labels, title, path, ylabels=None):
 
 
 for lang in ("asl", "isl"):
-    r = json.loads((ML / f"runs/2026-11-24-{lang}-final/report.json").read_text())
+    r = json.loads((ML / f"runs/2026-11-25-{lang}-robust2/report.json").read_text())
     plot(r["confusion"], r["labels"], f"{lang.upper()} held-out ({r['chosen']}), macro-F1 {r['held_out_macro_f1']:.3f}",
          OUT / f"confusion-{lang}.png")
 g = json.loads((ML / "runs/gestures/report.json").read_text())

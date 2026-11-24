@@ -112,8 +112,8 @@ export function Composer() {
               {spelled.map(({ ch, i, item }) => ch === ' '
                 ? <span key={i} className="w-3" />
                 : item?.media ? (
-                  <span key={i} className="flex w-11 flex-col items-center">
-                    <LetterGlyph media={item.media} className="h-11 w-11" />
+                  <span key={i} className="flex w-14 flex-col items-center">
+                    <LetterGlyph media={item.media} className="h-14 w-14" />
                     <span className="text-[0.75rem] text-ink-muted">{ch}</span>
                   </span>
                 ) : null)}

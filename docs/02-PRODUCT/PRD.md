@@ -232,7 +232,7 @@ These are what the team should update in the report after v2. Each is stronger t
 | Report says | v2 does | Why |
 |---|---|---|
 | "custom TensorFlow.js ASL classifier" | Small classifier trained in PyTorch, exported as plain weights and run with **about 60 lines of JS** (no ML runtime) | Keeps the site light: about 100 KB instead of 2–10 MB of runtime `[D-03]` |
-| Live recognition "currently works for ASL" | **ASL and ISL** fingerspelling: ASL 0.962 and ISL 0.989 macro-F1 on signers the models never saw (docs/EVAL.md) | Future work done |
+| Live recognition "currently works for ASL" | **ASL and ISL** fingerspelling: ASL 0.962 and ISL 0.993 macro-F1 on signers the models never saw (docs/EVAL.md) | Future work done |
 | "face-api.js ExpressionNet … AffectNet" | Logistic model on MediaPipe face blendshapes, 0.744 macro-F1 on 20 unseen people (KDEF); gestures by tuned rules, 97.3% on 626 unseen people (HaGRID) | Measured, light (1.5 KB model) |
 | MS-ASL / ASLLRP training data | ASL-HG (10 signers, CC-BY), ISL landmark set (CC-BY-SA), HaGRID, KDEF | Licence-clean, multi-signer, held-out evaluation |
 | Whisper on Flask as fallback | **Whisper tiny.en in the browser** (opt-in ~40 MB download) | Future work done; private; no heavy server |

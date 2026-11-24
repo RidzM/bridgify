@@ -10,6 +10,10 @@ for (const mode of MODES) {
     for (const route of ROUTES) {
       await page.goto(route)
       await expect(page.locator('main')).toBeVisible()
+      // Let lazy routes, content and fonts settle, so axe sees the finished page rather than a loading state.
+      await page.waitForLoadState('networkidle').catch(() => {})
+      await page.waitForFunction(() => !document.querySelector('main')?.textContent?.includes('Loading'), null, { timeout: 10_000 }).catch(() => {})
+      await page.evaluate(() => document.fonts.ready)
       const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).analyze()
       const bad = res.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical')
       expect(bad.map((v) => `${route}: ${v.id} (${v.nodes.length}) ${v.nodes[0]?.target}`)).toEqual([])

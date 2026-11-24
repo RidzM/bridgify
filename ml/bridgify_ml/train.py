@@ -30,7 +30,8 @@ from sklearn.svm import SVC
 from torch import nn
 
 from . import features as F
-from .data import ASL_LABELS, load_asl, load_isl, subset
+from .robustness import rot, view_change
+from .data import ASL_LABELS, load_asl, load_isl, load_isl_kaggle, merge, subset
 
 ROOT = Path(__file__).resolve().parents[1]
 RUNS = ROOT / "runs"
@@ -62,6 +63,11 @@ def augment_normalised(p: np.ndarray, rng: np.random.Generator, cfg: dict) -> np
     x, y = q[..., 0].copy(), q[..., 1].copy()
     q[..., 0] = c[:, None] * x - s[:, None] * y
     q[..., 1] = s[:, None] * x + c[:, None] * y
+    if cfg.get("turn", 0) > 0:
+        # The camera sees the hand from a slightly different angle: turn it left/right and up/down in 3-D.
+        t = np.deg2rad(cfg["turn"])
+        q = view_change(q - q[:, :1], rot(rng.uniform(-t, t, n), rng.uniform(-t, t, n), np.zeros(n)))
+        x, y = q[..., 0].copy(), q[..., 1].copy()
     q[..., 0] *= rng.uniform(*cfg["sx"], n)[:, None]
     q[..., 1] *= rng.uniform(*cfg["sy"], n)[:, None]
     q += rng.normal(0, cfg["jitter"], q.shape)
@@ -227,6 +233,7 @@ def run(lang: str, name: str, cfg: dict):
         lines.append(s)
 
     feat = Featuriser(lang)
+    extra_tests: dict = {}
     if lang == "asl":
         d = load_asl()
         labels = ASL_LABELS
@@ -244,9 +251,25 @@ def run(lang: str, name: str, cfg: dict):
         tr, va = subset(dtrain, itr), subset(dtrain, iva)
         split = dict(train="Dwibon combined_train 85% (stratified, seed 0)",
                      val="Dwibon combined_train 15%", test="Dwibon held_out_dataset.csv (1 unseen signer)")
+        if cfg.get("kaggle"):
+            # Add the Kaggle ISL photos (another signer, another camera): 600 per letter for training
+            # (matching Dwibon), 120 for validation, the rest kept as a second, same-signer test set.
+            if cfg.get("labels_all"):
+                labels = sorted(set(labels) | {"H", "J", "Y"})
+            k = load_isl_kaggle()
+            k = subset(k, np.isin(k["y"], labels))
+            rs = np.random.default_rng(0)
+            ktr, kva, kte = [], [], []
+            for l in labels:
+                ix = rs.permutation(np.flatnonzero(k["y"] == l))
+                ktr += list(ix[:600]); kva += list(ix[600:720]); kte += list(ix[720:])
+            tr, va = merge(tr, subset(k, np.array(ktr))), merge(va, subset(k, np.array(kva)))
+            extra_tests["kaggle_same_signer"] = subset(k, np.array(kte))
+            split.update(train=split["train"] + " + Kaggle ISL 600/letter", val=split["val"] + " + Kaggle ISL 120/letter",
+                         extra_test="Kaggle ISL remaining images (same signer as its training images)")
         signers_test = ["dwibon_heldout_signer"]
     lab2i = {l: i for i, l in enumerate(labels)}
-    for s in (tr, va, te):
+    for s in (tr, va, te, *extra_tests.values()):
         s["yi"] = np.array([lab2i[v] for v in s["y"]])
     n_cls = len(labels)
 
@@ -311,6 +334,12 @@ def run(lang: str, name: str, cfg: dict):
     else:
         ptest = best_lr.predict_proba(Zte)
     ypred = ptest.argmax(1)
+    extra = {}
+    for nm, d in extra_tests.items():
+        Xe = feat.clean(d)
+        pe = np.mean([mlp_predict_proba(m, Xe, mean, std) for m in models], 0) if chosen == "mlp" else best_lr.predict_proba((Xe - mean) / std)
+        extra[nm] = dict(n=len(Xe), macro_f1=macro_f1(d["yi"], pe.argmax(1)), acc=float(accuracy_score(d["yi"], pe.argmax(1))))
+        log(f"  extra test {nm}: macro-F1 {extra[nm]['macro_f1']:.4f} acc {extra[nm]['acc']:.4f} (n={len(Xe)})")
     per_class = f1_score(te["yi"], ypred, average=None, labels=range(n_cls))
     cm = confusion_matrix(te["yi"], ypred, labels=range(n_cls))
     report = dict(
@@ -319,7 +348,7 @@ def run(lang: str, name: str, cfg: dict):
         chosen=chosen, held_out_macro_f1=macro_f1(te["yi"], ypred),
         held_out_acc=float(accuracy_score(te["yi"], ypred)),
         per_class_f1={l: float(v) for l, v in zip(labels, per_class)}, confusion=cm.tolist(),
-        signers_test=signers_test, seconds=time.time() - t0,
+        signers_test=signers_test, extra_tests=extra, seconds=time.time() - t0,
     )
     json.dump(report, open(out / "report.json", "w"), indent=1)
     torch.save(dict(states=[m.state_dict() for m in models], hidden=cfg["hidden"], F=feat.F, C=n_cls), out / "model.pt")

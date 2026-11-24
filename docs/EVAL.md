@@ -289,3 +289,27 @@ Measured on one laptop: two tabs, and two browser contexts through the public Pe
 | Hands stream, moving hand, 30 fps input | 183 B per packet for one hand (295 B for two), 9.4 packets/s = **13.8 kbps** (target < 15 kbps) |
 | Hands stream, still hand | about 1.6–1.9 kbps (keyframes only) |
 | SOS offline, navigation → first card | 103–287 ms (target 300 ms) |
+
+
+## 10. Real-world robustness and the 25 Nov retrain `[OBSERVED]`
+
+The team reported that live recognition "always detects R". Held-out scores were high, but they were measured on the same capture setups the models were trained on. Real cameras, people and hand angles differ. Measured with `bridgify_ml.eval_ood` and `bridgify_ml.robustness`, using datasets for evaluation only, never trained on unless stated:
+
+| Test | Old models (24 Nov) | New models (25 Nov) |
+|---|---|---|
+| ASL, webcam photos of another person ("ASL Alphabet Test", 708 hands) | 77.4% | **79.5%** |
+| ASL held-out signers P9–P10 (macro-F1) | 0.962 | 0.962 |
+| ISL, Kaggle ISL photos (prathumarikeri, 1,378 hands) | **41.6%**; R was the most-predicted letter | trained on (see below) |
+| ISL, third independent set (rushilverma07, another signer and camera, 884 hands) | **18.1%**; U and R dominated | **60.2%** |
+| ISL held-out Dwibon signer (macro-F1) | 0.989 | 0.993 |
+
+**What changed**
+- **ISL training data:** the 6 Dwibon signers plus the Kaggle ISL photo set (CC BY-SA 4.0), 600 photos per letter, for a second signer and camera.
+- **Camera-angle augmentation:** in-plane roll went from ±15° to ±25°, and a new 3-D turn of ±25° left/right and up/down was added.
+- **Model choice:** the augmented MLP is shipped for both languages. The selection rule changed from "best validation score" (saturated at 0.999 for ISL) to "trained for camera-angle robustness" (D-40).
+
+**Still weak:**
+- ASL T, D, N, M and R on webcam photos. These are letters that differ by thumb position and finger crossing, which 2-D landmarks see poorly.
+- About 40% of ISL letters on a completely new signer.
+
+A 3-person live check with the team (CURRENT-STATE) remains the real test.

@@ -6,15 +6,15 @@
       "name": "ASL fingerspelling (24 static letters)",
       "metric": "Macro-F1 on signers never seen in training",
       "value": 0.962,
-      "detail": "Small neural network on hand landmarks. Trained on 8 signers of ASL-HG, tested on signers P9–P10 (4,799 frames). Baselines: kNN 0.924, logistic regression 0.928, SVM 0.956.",
+      "detail": "Small neural network on hand landmarks, trained on 8 signers of ASL-HG with camera-angle augmentation, tested on signers P9–P10 (4,799 frames). On webcam photos of another person (ASL Alphabet Test) it gets 79.5% right.",
       "chart": "/evidence/confusion-asl.png"
     },
     {
       "id": "isl-letters",
       "name": "ISL fingerspelling (23 static letters, two hands)",
       "metric": "Macro-F1 on a signer never seen in training",
-      "value": 0.989,
-      "detail": "Logistic regression on two-hand landmarks. Trained on 6 signers, tested on a 7th (1,150 frames).",
+      "value": 0.993,
+      "detail": "Small neural network on two-hand landmarks, trained on 6 Dwibon signers plus the Kaggle ISL photo set, with camera-angle augmentation. Tested on a 7th signer it never saw (1,150 frames). On a third, independent ISL dataset (another signer and camera) it gets 60.2% of letters right; the first model got 18.1%.",
       "chart": "/evidence/confusion-isl.png"
     },
     {

@@ -1,13 +1,10 @@
 """Line-art hand diagrams (SVG) from MediaPipe hand landmarks.
 
-Style (one colour, so the app can tint it: stroke/fill = currentColor):
+Style (fixed colours; the app shows these as images):
   * 200 x 200 viewBox, drawing fitted with padding, no text inside
-  * palm polygon 0-1-5-9-13-17 filled at opacity .12
-  * the 21 MediaPipe hand connections as round-capped strokes, a dot on every joint,
-    a slightly larger dot on each fingertip
-  * depth cue: every bone / joint falls in one of three depth bands (far, mid, near)
-    from MediaPipe z (smaller z = nearer the camera = nearer the viewer); nearer bands
-    are thicker and darker. Each band is one <g> with group opacity, drawn far to near.
+  * a solid hand: white palm and finger capsules with a dark outline (sign-dictionary style),
+    painted far to near by MediaPipe z so nearer fingers cover the ones behind them
+  * the outline is thick enough to read at 44 px
   * optional motion arrow (dashed path + marker arrowhead)
 
 Coordinates in: per hand an array (21, 3) of x right, y down, z depth, all in the same
@@ -74,33 +71,44 @@ def _xy(q) -> str:
     return f"{fmt(q[0])} {fmt(q[1])}"
 
 
+INK = "#2a2235"   # outline
+SKIN = "#ffffff"  # hand fill (classic sign-dictionary style: white hand, dark outline)
+OUTLINE = 3.4     # outline width in viewBox units (stays visible at 44 px)
+# Finger chains drawn as capsules (thumb from its base joint, fingers from the knuckle).
+FINGERS = ((1, 2, 3, 4), (5, 6, 7, 8), (9, 10, 11, 12), (13, 14, 15, 16), (17, 18, 19, 20))
+WIDTH = (0.27, 0.23, 0.235, 0.22, 0.19)  # finger widths in hand-size units (wrist -> middle knuckle)
+
+
 def hand_svg(p: np.ndarray, fit: Fit) -> str:
-    """SVG fragment for one hand (palm + three depth bands)."""
+    """One hand as a solid illustration: white palm and fingers with a dark outline.
+
+    Parts are painted far to near using MediaPipe z (smaller = nearer), each part as an
+    outline pass then a fill pass, so a nearer finger cleanly covers what is behind it.
+    """
     q = fit(p[:, :2])
-    jb, cb = bands(p)
-    out = ['<path fill="currentColor" fill-opacity=".12" stroke="none" d="M'
-           + "L".join(_xy(q[i]) for i in PALM) + 'z"/>']
-    for b in (0, 1, 2):
-        w, op = BANDS[b]
-        bones = "".join(f"M{_xy(q[a])}L{_xy(q[c])}" for (a, c), bb in zip(CONNECTIONS, cb) if bb == b)
-        joints = "".join(f"M{_xy(q[i])}h0" for i in range(21) if jb[i] == b and i not in TIPS)
-        tips = "".join(f"M{_xy(q[i])}h0" for i in TIPS if jb[i] == b)
-        if not (bones or joints or tips):
-            continue
-        g = [f'<g stroke-width="{fmt(w)}"' + (f' opacity="{fmt(op)}"' if op < 1 else "") + ">"]
-        if bones:
-            g.append(f'<path d="{bones}"/>')
-        if joints:
-            g.append(f'<path stroke-width="{fmt(w + 2)}" d="{joints}"/>')
-        if tips:
-            g.append(f'<path stroke-width="{fmt(w + 4.4)}" d="{tips}"/>')
-        g.append("</g>")
-        out.append("".join(g))
-    return "".join(out)
+    s_view = hand_size(p) * fit.k
+    z = p[:, 2]
+    parts = []  # (depth, svg)
+    # Palm: rounded polygon wrist - thumb base - knuckles, widened by a thick round-joined stroke.
+    palm_pts = [0, 1, 5, 9, 13, 17]
+    d = "M" + "L".join(_xy(q[i]) for i in palm_pts) + "z"
+    edge = 0.16 * s_view
+    palm = (f'<path d="{d}" fill="{INK}" stroke="{INK}" stroke-width="{fmt(edge + 2 * OUTLINE)}"/>'
+            f'<path d="{d}" fill="{SKIN}" stroke="{SKIN}" stroke-width="{fmt(edge)}"/>')
+    parts.append((float(np.mean(z[palm_pts])), palm))
+    for chain, wf in zip(FINGERS, WIDTH):
+        w = wf * s_view
+        d = "M" + "L".join(_xy(q[i]) for i in chain)
+        svg = (f'<path d="{d}" stroke="{INK}" stroke-width="{fmt(w + 2 * OUTLINE)}"/>'
+               f'<path d="{d}" stroke="{SKIN}" stroke-width="{fmt(w)}"/>')
+        # A finger curled behind the palm sits further away than the palm, so it is painted first.
+        parts.append((float(np.mean(z[list(chain[1:])])), svg))
+    parts.sort(key=lambda t: -t[0])
+    return "".join(svg for _, svg in parts)
 
 
 ARROW_DEFS = ('<defs><marker id="a" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="3.6" '
-              'markerHeight="3.6" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor" '
+              'markerHeight="3.6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2a2235" '
               'stroke="none"/></marker></defs>')
 
 
@@ -113,7 +121,7 @@ def arrow_svg(points: np.ndarray, fit: Fit, curve: bool) -> str:
         d = f"M{_xy(q[0])}C" + " ".join(_xy(v) for v in q[1:])
     else:
         d = f"M{_xy(q[0])}" + "".join(f"L{_xy(v)}" for v in q[1:])
-    return (f'<path d="{d}" stroke-width="2.6" stroke-dasharray="6 4.5" stroke-linecap="butt" '
+    return (f'<path d="{d}" stroke="{INK}" stroke-width="3.4" stroke-dasharray="7 5" stroke-linecap="butt" '
             f'marker-end="url(#a)"/>')
 
 
@@ -128,7 +136,7 @@ def render(title: str, hands: list[np.ndarray], arrow: tuple[np.ndarray, bool] |
     pts = [h[:, :2] for h in hands]
     if arrow is not None:
         pts.append(arrow[0])
-    fit = Fit(np.concatenate(pts), margin=3.0)
+    fit = Fit(np.concatenate(pts), margin=16.0)  # room for finger width and outline
     # MediaPipe z is relative to each hand's own wrist, so hands cannot be depth-sorted
     # against each other: they are drawn in the order given.
     body = "".join(hand_svg(h, fit) for h in hands)

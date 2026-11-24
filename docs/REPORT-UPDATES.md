@@ -6,7 +6,7 @@ The Sem 6 report describes the first version of Bridgify. v2 keeps every feature
 
 ## Abstract: add after the first paragraph
 
-> The deployed version runs entirely in the browser at https://bridgify-vcet.vercel.app. Its fingerspelling recognisers reach a macro-F1 of 0.962 (ASL) and 0.989 (ISL) on signers they never saw during training. Braille output is produced by liblouis 3.39 compiled to WebAssembly and matches the native library on all 59 reference cases. Every page passes automated WCAG 2.2 AA checks in all twelve display modes.
+> The deployed version runs entirely in the browser at https://bridgify-vcet.vercel.app. Its fingerspelling recognisers reach a macro-F1 of 0.962 (ASL) and 0.993 (ISL) on signers they never saw during training. Braille output is produced by liblouis 3.39 compiled to WebAssembly and matches the native library on all 59 reference cases. Every page passes automated WCAG 2.2 AA checks in all twelve display modes.
 
 ## 1.4 Scope: replace the paragraph on live recognition
 
@@ -48,7 +48,7 @@ The Sem 6 report describes the first version of Bridgify. v2 keeps every feature
 >
 > Predictions are smoothed over time. A letter is accepted only after it has been held for 0.7 seconds at 80% confidence or more. When the recogniser is unsure, it says so and offers its top three guesses to tap.
 >
-> **Training and testing** used public datasets with separate people for testing: ASL-HG (10 signers) and an ISL landmark dataset (7 signers). On signers never seen in training, macro-F1 is **0.962 for ASL** and **0.989 for ISL**. The browser computes exactly the same features and outputs as the Python training code; 100 automated parity tests check this.
+> **Training and testing** used public datasets with separate people for testing: ASL-HG (10 signers) and an ISL landmark dataset (7 signers). On signers never seen in training, macro-F1 is **0.962 for ASL** and **0.993 for ISL**. The browser computes exactly the same features and outputs as the Python training code; 100 automated parity tests check this.
 
 ## 3.3.5 Text to Sign Language: replace "emoji-annotated sign diagrams"
 
@@ -96,7 +96,7 @@ All screenshots are in `docs/screens/`, and the user guide has them too.
 |---|---|---|
 | Text to braille | 59 reference cases vs native liblouis | 59 / 59 identical |
 | Sign to text (ASL) | held-out signers P9–P10, 4,799 frames | macro-F1 0.962 |
-| Sign to text (ISL) | held-out signer, 1,150 frames | macro-F1 0.989 |
+| Sign to text (ISL) | held-out signer, 1,150 frames | macro-F1 0.993 |
 | Gestures | 626 held-out people, 9,467 hands | 97.3% |
 | Expression | 20 held-out people, 838 images | macro-F1 0.744 |
 | Accessibility | axe on every page × 12 modes | 0 serious or critical issues |

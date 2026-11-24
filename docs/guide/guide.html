@@ -434,7 +434,7 @@
   <h3>The numbers to remember</h3>
   <div class="two">
     <div><p class="num">0.962</p><p>ASL fingerspelling, macro-F1 on two signers never seen in training</p></div>
-    <div><p class="num">0.989</p><p>ISL fingerspelling, macro-F1 on a signer never seen in training</p></div>
+    <div><p class="num">0.993</p><p>ISL fingerspelling, macro-F1 on a signer never seen in training</p></div>
     <div><p class="num">97.3%</p><p>Hand gestures, on 626 people not used for tuning</p></div>
     <div><p class="num">59 / 59</p><p>Braille cases identical to native liblouis</p></div>
   </div>
@@ -491,7 +491,7 @@
     <tr><td>43</td><td>Display settings</td><td>Choose <b>High contrast</b>, reload</td><td>Black and yellow, still set after reload</td><td class="tick">☐</td></tr>
     <tr><td>44</td><td>Display settings</td><td>Phone, largest text size</td><td>No sideways scrolling</td><td class="tick">☐</td></tr>
     <tr><td>45</td><td>Any page</td><td>Use only <span class="kbd">Tab</span> and <span class="kbd">Enter</span></td><td>A visible outline shows where you are; every button works</td><td class="tick">☐</td></tr>
-    <tr><td>46</td><td><a href="{{BASE}}/about/evidence">Evidence</a></td><td>Open the page</td><td>0.962, 0.989, 97.3% and 0.744 with charts</td><td class="tick">☐</td></tr>
+    <tr><td>46</td><td><a href="{{BASE}}/about/evidence">Evidence</a></td><td>Open the page</td><td>0.962, 0.993, 97.3% and 0.744 with charts</td><td class="tick">☐</td></tr>
     <tr><td>47</td><td><a href="{{BASE}}/does-not-exist">Any wrong link</a></td><td>Open a link that doesn't exist</td><td><b>That page doesn't exist</b>, with links to every tool</td><td class="tick">☐</td></tr>
     <tr><td>48</td><td>Phone</td><td>Install the site (chapter 1)</td><td>A Bridgify icon on the home screen that opens full screen</td><td class="tick">☐</td></tr>
   </table>
@@ -525,7 +525,7 @@
   <h3>How does sign recognition work?</h3>
   <p>MediaPipe finds 21 points on each hand in every camera frame. We turn them into 91 numbers per hand: positions, finger angles, fingertip distances and palm direction. A small neural network (ASL) or logistic regression (ISL) picks the letter. A letter is accepted only when it is held for 0.7 seconds with at least 80% confidence.</p>
   <h3>How accurate is it, and how was that measured?</h3>
-  <p>We trained on public datasets and tested on people left out of training: ASL macro-F1 0.962 on two unseen signers, and ISL 0.989 on an unseen signer. Testing on new people matters, because a model can score highly on people it has already seen and still fail on new ones.</p>
+  <p>We trained on public datasets and tested on people left out of training: ASL macro-F1 0.962 on two unseen signers, and ISL 0.993 on an unseen signer. Testing on new people matters, because a model can score highly on people it has already seen and still fail on new ones.</p>
   <h3>Why does it run in the browser instead of on a server?</h3>
   <p>Privacy, because the camera picture never leaves the device. It also costs nothing to host, and it keeps working offline. The models are small: 12 MB for Sign to text, downloaded once.</p>
   <h3>Is this full sign-language translation?</h3>

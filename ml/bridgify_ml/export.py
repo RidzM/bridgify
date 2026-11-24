@@ -133,8 +133,8 @@ def main():
     specs = [
         ("asl-letters", Path(a.asl), "asl", "Weights: Bridgify. Training data ASL-HG (CC-BY-4.0, attribution required).",
          "HF juanjodurillo/asl-hg (landmarks extracted with hand_landmarker.task)"),
-        ("isl-letters", Path(a.isl), "isl", "CC-BY-SA-4.0 (derived from the Dwibon ISL landmark dataset; share-alike).",
-         "Kaggle dwibonbhargabdeka/isl-dataset-mediapipe-hand-landmarks"),
+        ("isl-letters", Path(a.isl), "isl", "CC-BY-SA-4.0 (derived from the Dwibon ISL landmark dataset and the prathumarikeri ISL photo set, both CC-BY-SA-4.0; share-alike).",
+         "Kaggle dwibonbhargabdeka/isl-dataset-mediapipe-hand-landmarks + Kaggle prathumarikeri/indian-sign-language-isl (landmarks extracted with hand_landmarker.task)"),
     ]
     for mid, run, lang, lic, src in specs:
         run = run if run.is_absolute() else ROOT / run

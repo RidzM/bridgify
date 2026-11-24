@@ -60,3 +60,19 @@ Seeds are fixed (numpy/torch seed 0, split seeds 0). Copy `hand_landmarker.task`
 
 The shipped ISL weights are derived from CC-BY-SA data, and the emotion weights from KDEF
 (non-commercial). Both licences are recorded in `web/public/models/manifest.json`.
+
+## Real-world checks (25 Nov)
+
+| Path | What |
+|---|---|
+| `bridgify_ml/robustness.py` | Held-out signers under simulated camera angles, and in-between poses |
+| `bridgify_ml/eval_ood.py` | Shipped models on photos from other datasets (evaluation only; downloads in `data/raw/eval/`) |
+| `bridgify_ml/extract_isl_kaggle.py` | Landmarks from the Kaggle ISL photo set (prathumarikeri, CC BY-SA 4.0), used in ISL training since D-40 |
+
+```bash
+uv run python -m bridgify_ml.extract_isl_kaggle --workers 6
+uv run python -m bridgify_ml.train --lang isl --name robust2 --cfg '{"kaggle": true, "force": "mlp", "aug": {"rot": 25, "turn": 25}, "epochs": 80, "patience": 25}'
+uv run python -m bridgify_ml.train --lang asl --name robust2 --cfg '{"force": "mlp", "aug": {"rot": 25, "turn": 25}, "epochs": 80, "patience": 25}'
+uv run python -m bridgify_ml.export --asl runs/2026-11-25-asl-robust2 --isl runs/2026-11-25-isl-robust2
+uv run python -m bridgify_ml.fixtures && uv run python -m bridgify_ml.robustness && uv run python -m bridgify_ml.eval_ood
+```
