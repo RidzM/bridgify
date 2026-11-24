@@ -45,16 +45,16 @@ confidence: medium
 
 | # | Task | When | Who |
 |---|---|---|---|
-| H1 | Give a GitHub token (private repo) and say which name/email commits should carry | Before the first push (P0.6) | Owner |
-| H2 | Choose the backend host: Render free (needs a Render account) **or** an existing server | P0.6 | Owner |
-| H3 | **Recording session:** ≥ 5 people sign ASL + ISL letters in `/lab/collector` (about 20 min each), plus 8 gestures and 7 acted emotions | During P1 (day 1–2) | Team / friends |
+| H1 | ✅ GitHub token given; repo RidzM/bridgify | Done | — |
+| H2 | ✅ No backend host (D-24) | Done | — |
+| H3 | ~~Recording session~~ dropped 24 Nov: train and evaluate on public multi-signer datasets instead (Q-08) | — | — |
 | H4 | Review the sign lexicon word list for ISL (regional variants) | P5 | Team |
 | H5 | Patent: file the provisional before removing the passcode gate | After P8 | Team / college IPR cell |
 | H6 | Two-phone Bridge demo rehearsal | P7 end | Team |
 
 ---
 
-## Phase 0: foundation (difficulty 2) 🟡 (0.1–0.5 ✅ 24 Nov; 0.6 waits on Q-02/Q-03)
+## Phase 0: foundation (difficulty 2) ✅ 24 Nov
 
 **Goal:** an empty but real, deployed, accessible shell in all 12 modes, plus a running API.
 
@@ -157,7 +157,7 @@ confidence: medium
 
 **Acceptance:** `docker build` + `docker run -p 8000:8000`, then `curl /api/health` shows `louis` ≥ 3.33 and lists tables `en-ueb-g1.ctb`, `en-ueb-g2.ctb`, `hi-in-g1.utb`.
 
-### 0.6 First deploy (de-risk hosting early) ⬜ blocked on Q-02 (repo account) + Q-03 (API host)
+### 0.6 First deploy (de-risk hosting early) ✅ 24 Nov: https://bridgify-vcet.vercel.app (Vercel), repo github.com/RidzM/bridgify (public). No always-on API (D-24); braille moves to WASM in P4
 
 **Steps:**
 1. `web/vercel.json`:

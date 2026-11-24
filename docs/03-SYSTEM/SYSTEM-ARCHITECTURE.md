@@ -21,7 +21,15 @@ confidence: high
 >
 > Open them locally in a browser.
 >
-> **State:** nothing is built yet. Everything below is the *intended* design `[DECISION]`. Current reality lives in `../04-DELIVERY/CURRENT-STATE.md`.
+> **State:** see `../04-DELIVERY/CURRENT-STATE.md`.
+>
+> **Deployment change (D-24, 24 Nov):** there is **no always-on server** in production.
+> - Braille: liblouis runs as **WebAssembly in the browser**.
+> - gTTS: a small **Flask function on Vercel** (`web/api/`).
+> - ISL gloss: rules run in the browser.
+> - Bridge: **WebRTC peer-to-peer** via the free PeerJS broker.
+>
+> The Flask + Socket.IO server described in §7 stays in `server/` as a self-hostable reference and the source of the liblouis golden tests. Where §6–§8 say "server", read the D-24 mapping above.
 
 ---
 

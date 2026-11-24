@@ -2,6 +2,8 @@
 
 **Speak your way. Be heard every way.**
 
+**Live:** https://bridgify-vcet.vercel.app
+
 Bridgify is a free, browser-based communication platform for people who are Deaf, hard of hearing, mute, non-verbal, blind, low vision, autistic or dyslexic, and for the people who talk with them. Speech, text, braille and sign, in every direction, in one place. Camera and microphone processing stays on the device.
 
 Mini project, Semester VI Computer Engineering, Vidyavardhini's College of Engineering & Technology (University of Mumbai), A.Y. 2025–26.

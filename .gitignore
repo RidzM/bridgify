@@ -40,3 +40,6 @@ tools/
 
 # CI workflow kept local until a token with workflow scope is available
 .github/
+
+# local secrets (never committed)
+.secrets/
