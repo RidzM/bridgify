@@ -43,3 +43,4 @@ tools/
 
 # local secrets (never committed)
 .secrets/
+.mcp.json

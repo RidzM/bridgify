@@ -18,7 +18,7 @@ export const NO_MOTION_MODES: readonly Mode[] = ['calm', 'focus', 'autism']
 
 /** Swatch colours for the mode picker (bg, ink, brand), kept in sync with modes.css. */
 export const MODE_SWATCH: Record<Mode, [string, string, string]> = {
-  light: ['#f8f4ff', '#1a0833', '#3d0075'],
+  light: ['#f6f5f8', '#18131f', '#3d0075'],
   dark: ['#0e0014', '#efe8fa', '#c9a6ff'],
   'high-contrast': ['#000000', '#ffffff', '#ffe600'],
   solarized: ['#fdf6e3', '#073642', '#3f45a8'],
@@ -26,7 +26,7 @@ export const MODE_SWATCH: Record<Mode, [string, string, string]> = {
   forest: ['#f1f5ee', '#17301f', '#2e6b3f'],
   sepia: ['#f4ecd8', '#3b2a1a', '#6b3f1d'],
   calm: ['#eef3f6', '#24323d', '#3e6a86'],
-  focus: ['#f8f4ff', '#1a0833', '#3d0075'],
+  focus: ['#f6f5f8', '#18131f', '#3d0075'],
   'low-vision': ['#ffffff', '#000000', '#2b0058'],
   autism: ['#eef4f1', '#283a33', '#3f6f62'],
   dyslexia: ['#faf3e3', '#2a2320', '#4a2a7a'],

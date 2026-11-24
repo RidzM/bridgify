@@ -19,9 +19,9 @@ export function PersonalizePanel({ open, onOpenChange }: { open: boolean; onOpen
   }
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange} side="left" title="Personalize" description="Changes apply everywhere straight away and are saved on this device.">
+    <Sheet open={open} onOpenChange={onOpenChange} side="left" title="Display settings" description="Saved on this device. Changes apply everywhere at once.">
       <section aria-labelledby="pz-mode">
-        <h2 id="pz-mode" className="mb-3 text-lg">Display mode</h2>
+        <h2 id="pz-mode" className="mb-3 text-base">Mode</h2>
         <RadioGroup
           value={p.mode}
           onValueChange={(v) => change('mode', v as Mode, `${MODES.find((m) => m.id === v)?.label} mode on`)}
@@ -34,13 +34,13 @@ export function PersonalizePanel({ open, onOpenChange }: { open: boolean; onOpen
               <Radio.Root
                 key={m.id}
                 value={m.id}
-                className="group flex min-h-11 flex-col items-start gap-1.5 rounded-[var(--radius-control)] border border-line-strong bg-surface p-2.5 text-left data-[checked]:border-2 data-[checked]:border-brand"
+                className="press group flex min-h-11 flex-col items-start gap-1.5 rounded-[10px] border border-line bg-surface p-2 text-left hover:border-line-strong data-[checked]:border-brand data-[checked]:shadow-[0_0_0_1px_var(--brand)]"
               >
-                <span className="flex h-7 w-full items-center gap-1.5 rounded-[4px] border border-line px-1.5" style={{ background: bg }} aria-hidden>
+                <span className="flex h-8 w-full items-center gap-1.5 rounded-[6px] border border-line px-2" style={{ background: bg }} aria-hidden>
                   <span className="text-[0.8rem] font-bold" style={{ color: ink, fontFamily: m.id === 'dyslexia' ? 'OpenDyslexic' : undefined }}>Aa</span>
                   <span className="ml-auto h-3 w-3 rounded-full" style={{ background: brand }} />
                 </span>
-                <span className="text-[0.95rem] leading-tight">{m.label}</span>
+                <span className="px-0.5 text-[0.875rem] leading-tight">{m.label}</span>
                 <Radio.Indicator className="sr-only">selected</Radio.Indicator>
               </Radio.Root>
             )
@@ -65,15 +65,14 @@ export function PersonalizePanel({ open, onOpenChange }: { open: boolean; onOpen
       </section>
 
       <section className="mt-7" aria-labelledby="pz-tools">
-        <h2 id="pz-tools" className="mb-1 text-lg">Show or hide tools</h2>
-        <p className="mb-2 text-sm text-ink-muted">Hidden tools disappear from the home page and menus.</p>
+        <h2 id="pz-tools" className="mb-1 text-base">Tools in the menu</h2>
         {TOOLS.map((t) => (
           <Switch key={t.id} label={t.name} checked={!p.hiddenTools.includes(t.id)} onChange={() => p.toggleTool(t.id)} />
         ))}
       </section>
 
       <section className="mt-7" aria-labelledby="pz-more">
-        <h2 id="pz-more" className="mb-1 text-lg">More</h2>
+        <h2 id="pz-more" className="mb-1 text-base">More</h2>
         <Switch label="Underline all links" checked={p.underlineLinks} onChange={(v) => p.set('underlineLinks', v)} />
         <Switch label="Large cursor" checked={p.largeCursor} onChange={(v) => p.set('largeCursor', v)} />
         <Switch

@@ -17,29 +17,33 @@ for (const mode of MODES) {
   })
 }
 
-test('personalize panel works by keyboard and persists without a flash', async ({ page }) => {
+test('display settings work by keyboard and persist without a flash', async ({ page }) => {
   await page.goto('/')
-  await page.getByRole('button', { name: 'Personalize' }).focus()
+  const trigger = page.getByRole('button', { name: 'Display settings' }).first()
+  await trigger.focus()
   await page.keyboard.press('Enter')
-  const dialog = page.getByRole('dialog', { name: 'Personalize' })
+  const dialog = page.getByRole('dialog', { name: 'Display settings' })
   await expect(dialog).toBeVisible()
   await dialog.getByRole('radio', { name: /High contrast/ }).click()
   await expect(page.locator('html')).toHaveAttribute('data-mode', 'high-contrast')
   await page.keyboard.press('Escape')
   await expect(dialog).toBeHidden()
-  await expect(page.getByRole('button', { name: 'Personalize' })).toBeFocused()
+  await expect(trigger).toBeFocused()
   await page.reload({ waitUntil: 'commit' })
   await expect(page.locator('html')).toHaveAttribute('data-mode', 'high-contrast')
 })
 
-test('hiding a tool removes it from the home page and survives reload', async ({ page }) => {
+test('hiding a tool removes it from the menu and survives reload', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 })
   await page.goto('/')
-  await page.getByRole('button', { name: 'Personalize' }).click()
+  const nav = page.getByRole('navigation', { name: 'Main' })
+  await expect(nav.getByRole('link', { name: 'Gesture and emotion' })).toBeVisible()
+  await page.getByRole('button', { name: 'Display settings' }).first().click()
   await page.getByRole('switch', { name: 'Gesture and emotion' }).click()
   await page.keyboard.press('Escape')
-  await expect(page.getByRole('link', { name: /Gesture and emotion/ })).toHaveCount(0)
+  await expect(nav.getByRole('link', { name: 'Gesture and emotion' })).toHaveCount(0)
   await page.reload()
-  await expect(page.getByRole('link', { name: /Gesture and emotion/ })).toHaveCount(0)
+  await expect(nav.getByRole('link', { name: 'Gesture and emotion' })).toHaveCount(0)
 })
 
 test('200% text reflows without horizontal scroll at 320px', async ({ page }) => {

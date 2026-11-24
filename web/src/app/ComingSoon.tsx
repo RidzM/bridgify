@@ -4,10 +4,10 @@ import { useDocumentTitle } from '@/lib/useDocumentTitle'
 export function ComingSoon({ title }: { title: string }) {
   useDocumentTitle(title)
   return (
-    <div className="mx-auto max-w-[1200px] px-4 py-12 md:px-6">
+    <div className="mx-auto max-w-[1080px] px-4 pb-8 pt-10 md:px-8">
       <h1>{title}</h1>
-      <p className="mt-3 text-ink-muted">This part is being built. Try another tool from the home page.</p>
-      <Link to="/" className="mt-6 inline-flex min-h-11 items-center">Go to home</Link>
+      <p className="mt-2 text-ink-muted">This tool is being built. The others in the menu work now.</p>
+      <Link to="/" className="mt-4 inline-flex min-h-11 items-center">Back to home</Link>
     </div>
   )
 }

@@ -67,7 +67,20 @@ flowchart LR
 
 ## 3. Data
 
-### 3.1 Sources
+### 3.1 Sources (revision 2, 24 Nov: public data only, D-27)
+
+| Need | Primary | Signers / people | Licence | Size | Held-out plan |
+|---|---|---|---|---|---|
+| ASL letters | HF `juanjodurillo/asl-hg` (ASL-HG) | 10, with a `participant_id` column (P1–P10) | CC-BY-4.0 | ~1.1 GB parquet | Train P1–P7, val P8, **test P9–P10** |
+| ASL letters (extra test) | Pugeault & Bowden "Dataset A" (`cvssp.org/FingerSpellingKinect2011/fingerspelling5.tar.bz2`, or Kaggle `mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out`) | 5 (A–E) | Research use | 2.25 GB | Cross-dataset test on a different camera and people |
+| ISL letters | Kaggle `dwibonbhargabdeka/isl-dataset-mediapipe-hand-landmarks` | 6 train + 1 held-out file | CC-BY-SA-4.0 | 25 MB | Their held-out signer file. Columns are wrist-relative xyz, left then right, with zeros for a missing hand; **re-scale to our features** |
+| ISL letters (extra test) | Mendeley ISLAN `rc349j45m5` | 6, organised by signer | CC-BY-4.0 | small | Cross-dataset check |
+| Gestures | Kaggle `kapitanov/hagrid` annotations (21 **2D** landmarks + `user_id`) | 95+ users | CC-BY-SA-4.0 | 354 MB, no images | Tune the rules on a held-out set of users. Mapping: like→thumbs up, dislike→thumbs down, palm/stop→open palm, one→pointing, peace, fist. There is no I-love-you set, so that rule is checked with a manual test |
+| Emotion | KDEF (Kaggle `muhammadnafian/kdef-dataset`), frontal and half-profile views | 70 people | Non-commercial research | 509 MB | Tune the blendshape weights on 50 people, **test on 20** |
+
+Our own recordings are **not** used (Q-08). The collector page stays as an optional lab tool.
+
+### 3.1a Original plan (superseded)
 
 | Set | Contents | Licence | Use |
 |---|---|---|---|

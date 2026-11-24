@@ -1,53 +1,60 @@
 import { Link } from 'react-router-dom'
-import { EveryWayDemo } from './EveryWayDemo'
-import { ToolDirectory } from './ToolDirectory'
+import { Captions, ScanLine, Volume2, MessagesSquare, ChevronRight } from 'lucide-react'
+import { Composer } from './Composer'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'
+import { usePrefs } from '@/stores/prefs'
+import type { ToolId } from '@/lib/tools'
 
-const WHO = [
-  ['Deaf or hard of hearing', 'Live captions, sign tools, and a way to be understood without an interpreter in the room.'],
-  ['Mute or non-verbal', 'Say what you need in one tap, out loud, in your own words.'],
-  ['Blind or low vision', 'Braille in and out, large print, and a high-contrast interface.'],
-  ['Autistic', 'Calm, predictable screens with no motion, and gestures that speak for you.'],
-  ['Dyslexic', 'OpenDyslexic, wider spacing, and anything read aloud.'],
-  ['Caregivers, teachers, doctors', 'Talk with everyone above, and learn braille and sign along the way.'],
-]
+const START = [
+  { to: '/tools/speech-to-text', tool: 'speech-to-text', icon: Captions, title: 'Caption a conversation', body: 'Live text of what someone is saying.' },
+  { to: '/tools/sign-to-text', tool: 'sign-to-text', icon: ScanLine, title: 'Fingerspell to the camera', body: 'ASL or ISL letters, read on this device.' },
+  { to: '/tools/text-to-speech', tool: 'text-to-speech', icon: Volume2, title: 'Speak for me', body: 'Type or tap a phrase and it is said aloud.' },
+] as const
 
 export default function HomePage() {
   useDocumentTitle('')
+  const hidden = usePrefs((s) => s.hiddenTools)
+  const start = START.filter((s) => !hidden.includes(s.tool as ToolId))
   return (
-    <div className="mx-auto w-full max-w-[1200px] px-4 md:px-6">
-      <div className="pb-6 pt-8 md:pt-12">
-        <h1 className="max-w-[18ch] text-[clamp(2.1rem,1.2rem+3.4vw,3.5rem)]">Say it your way. Be understood every way.</h1>
-        <p className="mt-4 text-lg text-ink-muted">One free tool for speech, text, braille and sign. Your camera and microphone stay on this device.</p>
-      </div>
+    <div className="mx-auto w-full max-w-[1080px] px-4 pb-8 pt-6 md:px-8 lg:pt-12">
+      <h1 className="sr-only">Bridgify</h1>
+      <p className="mb-6 max-w-[56ch] text-[1.0625rem] text-ink-muted">
+        Type once and Bridgify shows it as speech, braille and large print. Camera and microphone tools run on this device.
+      </p>
 
-      <EveryWayDemo />
+      <Composer />
 
-      <div className="mt-14">
-        <ToolDirectory />
-      </div>
+      {start.length > 0 && (
+        <nav aria-labelledby="start" className="mt-8 lg:hidden">
+          <h2 id="start" className="mb-2 text-base">Or start with</h2>
+          <ul className="overflow-hidden rounded-[12px] border border-line bg-surface">
+            {start.map((s) => (
+              <li key={s.to}>
+                <Link to={s.to} className="flex min-h-16 items-center gap-3 px-4 py-3 text-ink no-underline hover:bg-surface-2">
+                  <s.icon aria-hidden size={20} strokeWidth={1.75} className="shrink-0 text-ink-muted" />
+                  <span className="flex-1">
+                    <span className="block font-medium">{s.title}</span>
+                    <span className="block text-[0.9375rem] text-ink-muted">{s.body}</span>
+                  </span>
+                  <ChevronRight aria-hidden size={18} className="text-ink-muted" />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
-      <section aria-labelledby="bridge-band" className="focus-hide mt-14 grid gap-6 border-y-2 border-brand py-8 md:grid-cols-[1fr_auto] md:items-center">
-        <div>
-          <h2 id="bridge-band">Bridge: two phones, one conversation</h2>
-          <p className="mt-2 text-ink-muted">One person signs or types, the other speaks. Each phone shows the conversation the way its owner takes it in: captions, speech, braille or signs.</p>
+      <section aria-labelledby="bridge" className="focus-hide mt-8 flex flex-col gap-4 rounded-[12px] border border-line bg-surface p-5 md:flex-row md:items-center md:justify-between">
+        <div className="flex gap-3">
+          <MessagesSquare aria-hidden size={20} strokeWidth={1.75} className="mt-0.5 shrink-0 text-brand" />
+          <div>
+            <h2 id="bridge" className="text-base">Talking with someone on another phone?</h2>
+            <p className="mt-0.5 text-[0.9375rem] text-ink-muted">Bridge links two phones. Each person reads or hears the conversation in their own way.</p>
+          </div>
         </div>
-        <div className="flex flex-wrap gap-3">
-          <Link to="/bridge" className="inline-flex min-h-12 items-center rounded-[var(--radius-control)] bg-brand px-5 font-bold text-brand-ink no-underline">Start a conversation</Link>
-          <Link to="/bridge?join=1" className="inline-flex min-h-12 items-center rounded-[var(--radius-control)] border border-line-strong px-5 text-ink no-underline">Join with a code</Link>
-        </div>
-      </section>
-
-      <section aria-labelledby="who" className="focus-hide my-14">
-        <h2 id="who">Who it's for</h2>
-        <dl className="mt-4 grid gap-x-12 md:grid-cols-2">
-          {WHO.map(([who, why]) => (
-            <div key={who} className="border-t border-line py-4">
-              <dt className="font-bold">{who}</dt>
-              <dd className="mt-1 text-ink-muted">{why}</dd>
-            </div>
-          ))}
-        </dl>
+        <Link to="/bridge" className="press inline-flex min-h-11 shrink-0 items-center justify-center rounded-[10px] border border-line px-4 font-medium text-ink no-underline hover:border-line-strong">
+          Start a Bridge
+        </Link>
       </section>
     </div>
   )

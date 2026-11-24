@@ -1,16 +1,16 @@
 /* Semantic tokens. Components use these via Tailwind utilities only. */
 :root {
   --text-scale: 1;
-  --bg: #f8f4ff;
+  --bg: #f6f5f8;
   --surface: #ffffff;
-  --surface-2: #f1ebfb;
-  --ink: #1a0833;
-  --ink-muted: #4e3f66;
-  --line: #ddd3ee;
-  --line-strong: #8c7ba8;
+  --surface-2: #efedf3;
+  --ink: #18131f;
+  --ink-muted: #595363;
+  --line: #e5e2ea;
+  --line-strong: #8a8396;
   --brand: #3d0075;
   --brand-ink: #ffffff;
-  --brand-soft: #ebe1fa;
+  --brand-soft: #efe8f8;
   --live: #a800a8;
   --live-fill: #c700c7;
   --ok: #0b6e69;
@@ -20,9 +20,14 @@
   --focus: #c700c7;
   --dot-raised: var(--ok);
   --dot-flat: var(--line-strong);
-  --shadow-sheet: 0 12px 24px rgb(26 8 51 / 0.12);
+  --shadow-sheet: 0 16px 40px rgb(24 19 31 / 0.14);
+  --ease-out: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-press: 140ms;
+  --dur-sheet: 240ms;
 
-  --font-display: 'Syne', 'Atkinson Hyperlegible Next', system-ui, sans-serif;
+  --font-display: 'Atkinson Hyperlegible Next', system-ui, sans-serif;
   --font-body: 'Atkinson Hyperlegible Next', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-braille: 'Noto Sans Symbols 2', 'Segoe UI Symbol', 'Apple Braille', sans-serif;
 
@@ -49,9 +54,13 @@ html {
 body { margin: 0; min-height: 100dvh; font-size: 1.0625rem; }
 
 :where(h1, h2, h3) { line-height: 1.2; margin: 0; }
-h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.875rem, 1.3rem + 2.2vw, 2.5rem); letter-spacing: -0.01em; }
-h2 { font-size: 1.5rem; font-weight: 700; }
-h3 { font-size: 1.1875rem; font-weight: 700; }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem); letter-spacing: -0.02em; }
+h2 { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; }
+h3 { font-size: 1.0625rem; font-weight: 600; }
+:where(button, a) { -webkit-tap-highlight-color: transparent; }
+.press { transition: transform var(--dur-press) var(--ease-out), background-color 150ms ease, color 150ms ease, border-color 150ms ease; }
+.press:active { transform: scale(0.96); }
+.tabular { font-variant-numeric: tabular-nums; }
 p { max-width: var(--measure); text-wrap: pretty; }
 h1, h2 { text-wrap: balance; }
 

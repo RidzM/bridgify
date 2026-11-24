@@ -11,6 +11,31 @@ confidence: medium
 >
 > **Method:** the frontend-design guidance. Plan → check against generic defaults → revise → build → screenshot critique. Impeccable `detect` runs in CI.
 
+## 0. Revision 2 (24 Nov): what changed and why
+
+An audit of the first build against the "AI slop" sign lists (Unslop, Impeccable) found these problems:
+- big headline words above a card
+- lavender-on-lavender surfaces
+- an icon on every list row
+- thick decorative rules
+- a generic "who it's for" block
+- Syne bold headlines
+
+Revision 2 makes these changes:
+
+| Area | Now |
+|---|---|
+| Direction | **Product:** one message turned into speech, braille, sign and large print.<br>**Character:** steady, plain-spoken, tactile.<br>**World:** embossed braille paper and the reception desk where these conversations happen.<br>**Moment:** the composer is the home page, and the message appears in every form as you type.<br>**Signature:** the braille cell (logo and output) |
+| Concept | "Say it once; everyone receives it their way." |
+| Shell | An app layout: a sticky left **sidebar** on desktop, grouped by Hick's law (Say it · Understand it · Together · Learn), with SOS at the top and Display settings at the bottom. Mobile has a top bar with a menu sheet and SOS always visible. The right-hand Tutorials panel is replaced by the Learn group (Jakob's law: apps navigate from a sidebar) |
+| Colour | Light mode neutral ramp tinted slightly toward violet: bg #F6F5F8, surface #FFF, ink #18131F, muted #595363, hairline #E5E2EA. Violet #3D0075 is the **only** chrome accent (the primary action). Magenta only means *live*. No gradients, glows or coloured shadows |
+| Type | **Atkinson Hyperlegible Next only** (400/500/600), with hierarchy from size. Syne is dropped: it reads poorly at UI sizes, and one family with character is stronger. Large print in the composer is the one display moment |
+| Spacing and radius | 4-pt grid. Radius 8 for controls, 10 for inputs and primary, 12 for cards, 16 for the composer. Depth comes from a hairline border only |
+| Motion | Tokens `--ease-out` cubic-bezier(.32,.72,0,1), `--ease-in`, `--ease-in-out`; 140 ms press (scale .96), 240 ms sheets. Nothing moves on its own except the one-shot braille raise; reduced-motion modes switch it off |
+| Copy | No hero slogan. One plain sentence of what it does, then the tool |
+
+Sections 2–4 below are the original plan; where they conflict, this section wins.
+
 ## 1. Subject, audience, job
 
 - **Subject:** turning one message into every form a person can receive it in: speech, text, braille, sign.

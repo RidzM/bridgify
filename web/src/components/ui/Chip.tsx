@@ -5,8 +5,8 @@ export function Chip({ className = '', selected, ...rest }: ButtonHTMLAttributes
     <button
       type="button"
       aria-pressed={selected}
-      className={`min-h-11 rounded-full border px-4 py-1.5 text-[0.95rem] transition-colors ${
-        selected ? 'border-brand bg-brand text-brand-ink' : 'border-line-strong bg-surface text-ink hover:bg-surface-2'
+      className={`press min-h-11 rounded-[8px] border px-3.5 py-1.5 text-[0.9375rem] ${
+        selected ? 'border-brand bg-brand text-brand-ink' : 'border-line bg-surface text-ink hover:border-line-strong'
       } ${className}`}
       {...rest}
     />

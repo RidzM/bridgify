@@ -13,9 +13,9 @@ for (const vp of [{ name: 'desktop', width: 1280, height: 900 }, { name: 'mobile
     const page = await ctx.newPage()
     for (const r of routesArg.split(',')) {
       await page.goto(base + r, { waitUntil: 'networkidle' })
-      if (open === 'personalize') await page.getByRole('button', { name: 'Personalize' }).click()
-      if (open === 'tutorials') await page.getByRole('button', { name: 'Tutorials' }).click()
-      await page.waitForTimeout(400)
+      if (open === 'personalize') await page.getByRole('button', { name: 'Display settings' }).first().click()
+      if (open === 'menu') await page.getByRole('button', { name: 'Open menu' }).click()
+            await page.waitForTimeout(400)
       const slug = r === '/' ? 'home' : r.replace(/^\//, '').replace(/\//g, '_')
       await page.screenshot({ path: `${out}/${slug}-${mode}-${vp.name}${open ? '-' + open : ''}.png`, fullPage: !open })
     }
