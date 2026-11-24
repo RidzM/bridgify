@@ -65,7 +65,7 @@ flowchart LR
   B[[Bridgify PWA<br/>in the browser]]
   B -->|braille, gTTS, gloss, pose proxy,<br/>Bridge relay| S[(Bridgify API<br/>Flask + Socket.IO)]
   B -->|models, wasm| CDN[(Vercel static +<br/>Google model bucket +<br/>HF Hub)]
-  S -->|text → pose| SM[(sign.mt public API)]
+  S -.->|prepared once, offline| SM[(sign.mt public API)]
   S -->|text → mp3| GT[(Google Translate TTS<br/>via gTTS)]
 ```
 
@@ -149,7 +149,7 @@ Versions are as of 24 Nov 2026. Pin exact versions in `package.json` and `requir
 | Classifier runtime | **None: our own `mlp.ts`** (Float32 matmul + ReLU + softmax, about 60 lines) | — | The letter MLPs are tiny (~25k params), so a runtime library (onnxruntime-web is ~10 MB of WASM) is not worth it `[DECISION D-03]` |
 | Emotion | MediaPipe FaceLandmarker blendshapes, then `emotion.ts` scorer | — | Same runtime as the hands. Transparent rules, labelled approximate `[DECISION D-05]` |
 | ASR fallback (opt-in) | **@huggingface/transformers** | 4.3.2 | `onnx-community/whisper-tiny.en` (~40 MB q8), loaded only after the user agrees. Its chunk is dynamically imported, so it is never in the main bundle |
-| Sign pose render | **pose-viewer** web component (+ `pose-format`) | 1.2.0 | Renders sign.mt `.pose` files and our Bridge landmark streams |
+| Sign pose render | Own `.pose` reader + compact JSON + canvas renderer (`engines/sign/`) | — | Replaced pose-viewer/pose-format (D-30): smaller, CSP-safe; Bridge hands use `RemoteHands` |
 | Realtime | **socket.io-client** | 4.8.x | Matches Flask-SocketIO (the report says Socket.IO) |
 | Storage | `idb-keyval` | 6.3.x | Session logs, collected samples, pose cache. Small and promise-based |
 | PWA | **vite-plugin-pwa** (Workbox) | 2.0.x | Precaches the shell, runtime-caches models and media |
@@ -516,7 +516,7 @@ All JSON uses UTF-8. Errors look like `{error:{code, message}}`, with HTTP 400, 
 | `POST /api/braille/back` | `{unicode, table}` | `{text}` | ≤ 5,000 cells |
 | `POST /api/tts` | `{text, lang:"en"\|"hi"\|…}` | `audio/mpeg` (browser-cached for a day) | ≤ 600 chars (413); 20/min per IP per instance (429); upstream failure 503 |
 | `POST /api/sign/gloss` | `{text, lang:"isl"\|"asl"}` | `{gloss:[..], tokens:[{text,lemma,pos,dep}], rules:[applied]}` | ≤ 300 chars |
-| `GET /api/sign/pose` | `?text=&spoken=en&signed=ins` | `application/pose` (proxied from sign.mt, disk-cached 30 days) | 30/min/IP; 8 s upstream timeout, 502 on fail |
+| ~~`GET /api/sign/pose`~~ | — | — | **Not built** (D-24, D-39): there is no sign.mt proxy; the app uses stored lexicons only |
 
 Table names map to liblouis files:
 
@@ -693,7 +693,7 @@ There is no database. All state is client-side or ephemeral. Details are in `DAT
 |---|---|
 | Camera or mic data leaking | All vision and default STT run on the device. A Playwright test asserts no request body > 2 KB while the camera runs, outside Bridge. The privacy strip shows the active path |
 | Bridge eavesdropping | WSS only, random 6-char code (~1e9 space), 2-member cap, 30 min expiry, no server logging of `msg` payloads (logger filter). *Stretch:* an E2E key in the QR fragment (AES-GCM via WebCrypto; the server sees ciphertext only) |
-| Abuse of proxies (gTTS, sign.mt) | Flask-Limiter, input length caps, upstream timeouts, response caching |
+| Abuse of the gTTS function | 20/min per IP per instance, 600-character cap, upstream timeout → 503 |
 | XSS | React escaping, no `dangerouslySetInnerHTML`, CSP on Vercel (`default-src 'self'`; `connect-src` API + HF + Google model bucket; `media-src 'self' blob:`; `worker-src 'self' blob:`; `script-src 'self' 'wasm-unsafe-eval'`) |
 | Permissions | `Permissions-Policy: camera=(self), microphone=(self), geolocation=(self)` |
 | Supply chain | Pinned versions, lockfiles, `npm audit` / `pip-audit` in CI. Trail of Bits `supply-chain-risk-auditor` and `insecure-defaults` before deploy |
@@ -756,7 +756,7 @@ Full list in `../04-DELIVERY/SCENARIOS.md`.
 | Camera denied | Steps for this browser, plus a "Try again" button | No retry loop |
 | Model download fails | "Couldn't download the sign model. Retry / use smaller model" | Sha mismatch means purge and retry once |
 | WebGPU crash | Nothing visible | ModelManager falls back to WASM and remembers per device |
-| sign.mt down | Fingerspelling fallback, with a note | 8 s timeout, 502 |
+| sign.mt down or blocking | No effect: the app doesn't call it (D-39); unknown words are fingerspelled, with a note | — |
 | Brave STT | "Using on-device Whisper (Brave blocks Google speech)" | Auto path B |
 | Low light / no hand | "Can't see your hand clearly: more light, hand inside the frame" | After 3 s with no hands |
 

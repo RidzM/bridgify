@@ -16,7 +16,6 @@ export default function PrivacyPage() {
         <ul>
           <li>Speech to text in Chrome, Edge or Safari uses the browser's own speech service unless you turn on on-device recognition.</li>
           <li>The server voice (used only when your device has no voices) sends the text to be spoken.</li>
-          <li>Text to sign asks the free sign.mt service for words that are not already in Bridgify.</li>
           <li>Bridge sends only the messages you choose to send (and, if you turn it on, hand-point coordinates, never video) directly to the other phone.</li>
         </ul>
       </section>

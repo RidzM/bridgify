@@ -42,13 +42,21 @@ test.describe('about pages', () => {
   })
 })
 
+test('Grade 2 contractions are grouped and show their braille', async ({ page }) => {
+  await page.goto('/learn/braille/contractions')
+  const strong = page.getByRole('region', { name: /Strong contractions/ })
+  await expect(strong.getByRole('listitem')).toHaveCount(5)
+  await expect(strong).toContainText('the')
+  await expect(page.getByRole('heading', { name: /Alphabetic wordsigns/ })).toBeVisible()
+})
+
 test.describe('learn sign language', () => {
   test('a stored phrase plays as a signer video or an animation', async ({ page }) => {
     await page.goto('/learn/sign/lsf/phrases')
     const item = page.getByRole('listitem').filter({ hasText: 'Bonjour' }).first()
     await item.getByRole('button', { name: 'Show sign' }).click()
     await expect(item.locator('[aria-label^="Sign for "], [aria-label^="Signer video for "]').first()).toBeVisible({ timeout: 20_000 })
-    await expect(item.getByText(/No sign found/)).toHaveCount(0)
+    await expect(item.getByText(/no stored sign/i)).toHaveCount(0)
   })
 
   test('alphabet and numbers show a picture for every handshape', async ({ page }) => {

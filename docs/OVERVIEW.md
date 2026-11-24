@@ -86,9 +86,9 @@ ISL letters use both hands, so the ISL model reads two hands at once.
 ### Text to sign
 1. Your sentence is split into words. For ISL, the browser first reorders it into approximate ISL grammar ("Where is the hospital?" → HOSPITAL WHERE).
 2. Each word or stored phrase is looked up, in this order:
-   1. A **stored sign**: an animation kept in the site (prepared from sign.mt), or for German Sign Language a real signer video from SignDict.
-   2. If there is none, a **live animation** from the free sign.mt service.
-   3. If there is none, **fingerspelling**, letter by letter.
+   1. A **stored sign**: an animation kept in the site (prepared from sign.mt), or a real signer video (German from SignDict, French from Lingua Libre).
+   2. If there is none, **fingerspelling**, letter by letter. The page names the words it spelled.
+   (Live sign.mt requests are off: since 24 Nov 2026 sign.mt refuses requests from other websites, D-39.)
 3. Every sign shows where it came from. A note says this is a word-by-word lookup, not an interpreter.
 
 ### Gesture and emotion

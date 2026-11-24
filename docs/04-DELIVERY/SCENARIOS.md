@@ -12,7 +12,7 @@ confidence: medium
 | S1 | The letter models don't reach 0.90 held-out | The report's claim is weak | More signers and targeted letters; angle features; publish the honest number and the "not sure" UX; ship logistic regression if it's better |
 | S2 | The team can't record data in time | No held-out test | Use public data with a public held-out signer (ISL), and recruit 2 friends for 15 min |
 | S3 | The voice function is cold or the internet drops during the demo | A short wait, or no server voice | Browser voices are the default; braille, SOS and (after one use) camera tools work offline; open each page once before the demo |
-| S4 | sign.mt API goes down | Words outside the stored lexicons lose animation | Everyday words and phrases are stored in the repo for all six languages; other words are fingerspelled |
+| S4 | sign.mt goes down or blocks us (it has blocked other websites since 24 Nov 2026) | No effect on the live site | The app never calls it at runtime (D-39); stored words and phrases play, other words are fingerspelled |
 | S5 | The demo laptop's browser is Brave | STT fails | Auto-detected; Whisper opt-in; recommend Chrome for the demo |
 | S6 | Camera permission denied on the projector machine | Camera tools blocked | Recovery steps; a phone as backup |
 | S7 | The patent gets disclosed early (public link or repo) | Novelty is lost | The team chose a public repo and link (D-25); file the provisional as early as possible |

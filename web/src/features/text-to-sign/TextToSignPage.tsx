@@ -46,7 +46,7 @@ export default function TextToSignPage() {
   useEffect(() => { setText(EXAMPLE[lang]); setPlan(null) }, [lang])
 
   return (
-    <ToolFrame title="Text to sign" purpose="Type words and see them signed. Unknown words are fingerspelled letter by letter." privacy={{ where: 'device', detail: 'Animations load from Bridgify; new words from the free sign.mt service' }}>
+    <ToolFrame title="Text to sign" purpose="Type words and see them signed. Unknown words are fingerspelled letter by letter." privacy={{ where: 'device', detail: 'Signs are stored in Bridgify and work offline once loaded' }}>
       <div className="mb-4 flex flex-wrap gap-2" role="group" aria-label="Sign language">
         {SIGN_LANGS.map((l) => (
           <Chip key={l.id} selected={lang === l.id} onClick={() => setPref('sign', { lang: l.id })} title={l.name}>{l.code}</Chip>
@@ -66,7 +66,7 @@ export default function TextToSignPage() {
             <Button size="lg" onClick={() => speaker.speak(text, { lang: info.speechLang })} disabled={!text.trim()} icon={<Volume2 aria-hidden size={18} />}>Speak</Button>
           </div>
           {plan?.gloss && <p className="text-[0.9375rem]"><span className="text-ink-muted">ISL word order (approximate): </span><span className="font-medium tracking-wide">{plan.gloss.join(' ')}</span></p>}
-          {plan && plan.liveFailed.length > 0 && <p className="text-[0.9375rem] text-ink-muted">No sign found for {plan.liveFailed.map((w) => `"${w}"`).join(', ')}, so {plan.liveFailed.length > 1 ? 'they are' : 'it is'} fingerspelled.</p>}
+          {plan && plan.spelled.length > 0 && <p className="text-[0.9375rem] text-ink-muted">Bridgify has no stored sign for {plan.spelled.map((w) => `"${w}"`).join(', ')}, so {plan.spelled.length === 1 ? 'it is' : 'they are'} fingerspelled letter by letter.</p>}
           {error && <p role="alert">{error}</p>}
           <p className="mt-auto text-[0.8125rem] text-ink-muted">Word-by-word sign lookup. It is not a full translation and does not replace an interpreter.</p>
         </Panel>

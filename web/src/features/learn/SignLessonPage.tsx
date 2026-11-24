@@ -55,7 +55,7 @@ export default function SignLessonPage() {
   const tabs = [{ id: 'alphabet', label: 'Alphabet' }, { id: 'numbers', label: 'Numbers' }, { id: 'phrases', label: 'Phrases' }, ...(canPractice ? [{ id: 'practice', label: 'Practice with camera' }] : [])]
 
   return (
-    <ToolFrame title={`Learn ${info.name}`} purpose={info.recognition ? 'Learn the letters, numbers and everyday phrases, then practise fingerspelling with your camera.' : 'Learn the letters, numbers and everyday phrases.'} privacy={{ where: 'device', detail: info.recognition ? 'Camera practice stays on this device' : 'Animations load from Bridgify; new words from the free sign.mt service' }}>
+    <ToolFrame title={`Learn ${info.name}`} purpose={info.recognition ? 'Learn the letters, numbers and everyday phrases, then practise fingerspelling with your camera.' : 'Learn the letters, numbers and everyday phrases.'} privacy={{ where: 'device', detail: info.recognition ? 'Camera practice stays on this device' : 'Signs are stored in Bridgify' }}>
       <nav aria-label="Sign language" className="mb-4 flex flex-wrap gap-2">
         {SIGN_LANGS.map((l) => (
           <Link key={l.id} to={`/learn/sign/${l.id}/${section === 'practice' && !l.recognition ? 'alphabet' : section}`} aria-current={l.id === lang ? 'page' : undefined}

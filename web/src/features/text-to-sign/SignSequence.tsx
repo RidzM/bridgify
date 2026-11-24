@@ -23,7 +23,7 @@ export function SignSequence({ text, lang, autoPlay = true, compact = true, pose
     setPlan(null); setFailed(false)
     const run: Promise<SignPlan> = pose
       ? fetchCompact(pose).then(
-          (c): SignPlan => ({ items: [{ kind: 'pose', label: (poseLabel ?? text).toUpperCase(), pose: c, source: 'lexicon' }], gloss: null, liveFailed: [] }),
+          (c): SignPlan => ({ items: [{ kind: 'pose', label: (poseLabel ?? text).toUpperCase(), pose: c, source: 'lexicon' }], gloss: null, spelled: [] }),
           () => planSigns(text, lang),
         )
       : planSigns(text, lang)

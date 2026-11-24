@@ -24,6 +24,7 @@ Ranked by how much each one blocks the build.
 | Q-11 | Can someone do a manual screen-reader pass (TalkBack on Android, NVDA on Windows or VoiceOver on iPhone) on Home, Text to speech, Braille, Sign to text and Bridge? Automated axe checks pass, but a person has not listened through yet | NFR-01 sign-off | Report the automated results only |
 | Q-12 | Can a Deaf ISL user review the ISL signs (the animations come from sign.mt's model, not a recorded signer)? | Sign-content quality | Keep the disclaimer on every sign page |
 | Q-13 | Q-07 is no longer relevant: the Kaggle ASL images were not used (D-27, ASL-HG only) | — | — |
+| Q-14 | sign.mt now blocks other websites (D-39). If the team ever wants live sign lookups or commercial use of the stored animations, ask the sign.mt authors for permission first | Live Text to sign for unstored words | Stored words + fingerspelling |
 
 ## Contradictions
 

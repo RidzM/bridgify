@@ -1,7 +1,8 @@
 /**
  * Turns text into a playable sign sequence for one sign language:
  *   1. lexicon entry with a prepared animation (or real signer video)
- *   2. otherwise a live animation from the free sign.mt service (cached)
+ *   2. only when asked (opts.live): a live animation from sign.mt. Off in the app: since 24 Nov 2026 sign.mt
+ *      refuses requests from other websites (HTTP 403 "Access denied"), and Bridgify respects that (D-39)
  *   3. otherwise fingerspelling, one letter card per letter
  */
 import type { SignLang } from '@/stores/prefs'
@@ -17,7 +18,8 @@ export type SignItem =
   | { kind: 'video'; label: string; src: string; poster?: string }
   | { kind: 'letter'; label: string; word: string; media: LetterItem['media']; motion?: boolean; tip?: string }
 
-export interface SignPlan { items: SignItem[]; gloss: string[] | null; liveFailed: string[] }
+/** `spelled` lists the words that had no stored sign and are fingerspelled instead. */
+export interface SignPlan { items: SignItem[]; gloss: string[] | null; spelled: string[] }
 
 const poseCache = new Map<string, Promise<CompactPose>>()
 const LIVE_CACHE = 'bridgify-signs-live-v1'
@@ -67,8 +69,9 @@ export async function planSigns(text: string, lang: SignLang, opts: { live?: boo
   const tokens = tokenize(gloss ? gloss.join(' ') : text, entries)
   const letterMap = new Map((fs?.letters ?? []).map((l) => [(l.letter ?? '').toUpperCase(), l]))
   const items: SignItem[] = []
-  const liveFailed: string[] = []
+  const spelled: string[] = []
   const fingerspell = (word: string) => {
+    if (!spelled.includes(word)) spelled.push(word)
     for (const ch of word.toUpperCase().replace(/[^\p{L}\p{N}]/gu, '')) {
       const l = letterMap.get(ch)
       items.push({ kind: 'letter', label: ch, word, media: l?.media ?? null, motion: l?.motion, tip: l?.tip })
@@ -81,10 +84,10 @@ export async function planSigns(text: string, lang: SignLang, opts: { live?: boo
       try { items.push({ kind: 'pose', label: e.gloss, pose: await fetchCompact(e.pose), source: 'lexicon' }); return } catch { /* fall through */ }
     }
     const phrase = split && t.text.includes(' ')
-    if (opts.live !== false && navigator.onLine) {
+    if (opts.live === true && navigator.onLine) {
       // Gloss words are upper case; the live service expects ordinary text.
       try { items.push({ kind: 'pose', label: t.text.toUpperCase(), pose: await fetchLivePose(gloss ? t.text.toLowerCase() : t.text, lang), source: 'live' }); return }
-      catch { if (!phrase) liveFailed.push(t.text) }
+      catch { /* fall back below */ }
     }
     // A stored phrase that couldn't load is signed word by word instead.
     if (phrase) {
@@ -94,5 +97,5 @@ export async function planSigns(text: string, lang: SignLang, opts: { live?: boo
     fingerspell(t.text)
   }
   for (const t of tokens) await resolve(t, true)
-  return { items, gloss, liveFailed }
+  return { items, gloss, spelled }
 }

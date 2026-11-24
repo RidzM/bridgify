@@ -430,7 +430,7 @@ confidence: medium
 
 ## Phase 5: Text→Sign and content (difficulty 4) ✅ 24 Nov (FR-TS-*)
 
-> Built without a server (D-24): the browser calls sign.mt directly; animations use our own `.pose` reader and compact format (D-30); ISL gloss runs in JS (D-31). Screenshots: `docs/screens/p5-p8/`.
+> Built without a server (D-24): stored animations use our own `.pose` reader and compact format (D-30); ISL gloss runs in JS (D-31); the live sign.mt fallback is off because sign.mt now refuses other websites (D-39). Screenshots: `docs/screens/p5-p8/`.
 
 ### 5.1 Content pipeline ✅ 24 Nov
 `tools-content/signs/` prepares word and phrase animations from sign.mt (`fetch-poses.mjs` → compact JSON) and DGS signer videos from SignDict (`fetch-videos.mjs`, per-video CC licences); `verify.mjs` checks everything with the app's own tokenizer and decoder. Lexicons in `content/lexicons/<lang>.json` for ISL, ASL, FSL, LSM, LIS and DGS (everyday words plus the quick-access phrases); credits in `content/credits/signs.json` (shown on /about/credits, grouped). `web/scripts/content-check.mjs` fails the build if any lexicon, phrase or letter file points at a missing file. **Evidence:** all media references resolve (see the build log); sign media is about 38 MB, loaded only when shown and cached on first use. No Lifeprint, Handspeak, Spread The Sign, Sématos or DGS-Korpus media.
@@ -438,8 +438,8 @@ confidence: medium
 ### 5.2 Gloss ✅ 24 Nov (JS, D-31)
 `engines/sign/gloss.ts`. **Evidence:** 12 unit tests, including "Where is the hospital?" → `HOSPITAL WHERE` and "I am not hungry" → `I HUNGRY NOT`.
 
-### 5.3 Pose fallback (sign.mt) ✅ 24 Nov
-Direct browser request (CORS `*`), language codes ase/ins/fsl/mfs/ise/gsg, 20 s timeout and one retry on a server error, Cache API `bridgify-signs-live-v1`; our own `.pose` reader (no pose-viewer). **Evidence:** `poseFile`/`poseCompact` unit tests; e2e under the production CSP.
+### 5.3 Pose fallback (sign.mt) ✅ 24 Nov, then switched off (D-39)
+The browser client exists (`fetchLivePose`: language codes ase/ins/fsl/mfs/ise/gsg, 20 s timeout, one retry on a server error, Cache API, and rejection of sign.mt's synthetic ASL-letter fingerspelling), but the app no longer calls it: on 24 Nov 2026 sign.mt began answering 403 "Access denied" to requests whose Referer is another website, and Bridgify respects that rather than working around it. Unknown words are fingerspelled with Bridgify's own letters, and the page names them. **Evidence:** `poseFile`/`poseCompact` unit tests (including the fingerspelling detector, checked against live answers); an e2e test asserts that no sign.mt request leaves the page.
 
 ### 5.4 Player and page ✅ 24 Nov
 `/tools/text-to-sign`: six language chips, Show signs, Speak, ISL word-order line, SignPlayer (play/pause, previous/next, speed, loop, strip), per-language quick phrases, disclaimer. Stored lexicon → live sign.mt → fingerspelling; a stored phrase that fails to load is signed word by word. The figure renderer draws a person, not a skeleton (D-35). **Evidence:** `e2e/sign.spec.ts` on desktop and Pixel 7 (ASL "hello" plays, names are fingerspelled, ISL order line with stored signs while sign.mt is down, all six languages present).

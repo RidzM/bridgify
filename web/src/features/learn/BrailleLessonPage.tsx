@@ -10,8 +10,9 @@ import { Speaker } from '@/engines/speech/tts'
 import { LessonTabs } from './LessonTabs'
 
 const speaker = new Speaker()
-const g2files = import.meta.glob<{ [k: string]: unknown }>('@content/tutorials/braille-g2.json', { import: 'default' })
-interface G2Item { word: string; unicode: string; category?: string; example?: string }
+interface G2Entry { word: string; braille: string; category: string; example?: { word: string; braille: string } }
+interface G2Data { categories: { id: string; name: string; note?: string }[]; entries: G2Entry[] }
+const g2files = import.meta.glob<G2Data>('@content/tutorials/braille-g2.json', { import: 'default' })
 
 function Cell({ unicode, label, sub }: { unicode: string; label: string; sub?: string }) {
   return (
@@ -49,13 +50,16 @@ function Quiz() {
 
 export default function BrailleLessonPage() {
   const { section = 'alphabet' } = useParams()
-  const [g2, setG2] = useState<G2Item[] | null>(null)
+  // undefined while loading, null if the file is missing or malformed.
+  const [g2, setG2] = useState<G2Data | null | undefined>(undefined)
   useEffect(() => {
     const load = Object.values(g2files)[0]
-    if (section === 'contractions' && load) void load().then((d) => {
-      const all = Object.values(d).filter(Array.isArray).flat() as G2Item[]
-      setG2(all.filter((x) => x && typeof x.word === 'string' && typeof x.unicode === 'string'))
-    })
+    if (section !== 'contractions') return
+    if (!load) { setG2(null); return }
+    void load().then(
+      (d) => setG2(Array.isArray(d?.entries) && Array.isArray(d?.categories) ? { categories: d.categories, entries: d.entries.filter((x) => typeof x?.word === 'string' && typeof x?.braille === 'string') } : null),
+      () => setG2(null),
+    )
   }, [section])
 
   return (
@@ -85,11 +89,21 @@ export default function BrailleLessonPage() {
       {section === 'contractions' && (
         <div className="flex flex-col gap-4">
           <p>Grade 2 braille shortens common words and letter groups. Fluent readers use it everywhere.</p>
-          {g2 ? (
-            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-6">
-              {g2.map((x) => <Cell key={`${x.word}-${x.unicode}`} unicode={x.unicode.replace(/⠀/g, '')} label={x.word} sub={x.example ? `as in ${x.example}` : x.category} />)}
-            </ul>
-          ) : <p className="text-ink-muted" role="status">Loading contractions…</p>}
+          {g2 === undefined && <p className="text-ink-muted" role="status">Loading contractions…</p>}
+          {g2 === null && <p className="text-ink-muted">The contractions list couldn't load. Reload the page to try again.</p>}
+          {g2 && g2.categories.map((cat) => {
+            const items = g2.entries.filter((x) => x.category === cat.id)
+            if (!items.length) return null
+            return (
+              <section key={cat.id} aria-labelledby={`g2-${cat.id}`} className="flex flex-col gap-2">
+                <h2 id={`g2-${cat.id}`} className="text-lg">{cat.name} <span className="font-normal text-ink-muted tabular">({items.length})</span></h2>
+                {cat.note && <p className="max-w-[40em] text-[0.9375rem] text-ink-muted">{cat.note}</p>}
+                <ul className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-6">
+                  {items.map((x) => <Cell key={`${x.word}-${x.braille}`} unicode={x.braille.replace(/⠀/g, '')} label={x.word} sub={x.example ? `as in ${x.example.word}` : undefined} />)}
+                </ul>
+              </section>
+            )
+          })}
         </div>
       )}
       <div className="mt-6"><Button variant="quiet" onClick={() => speaker.speak('Braille has six dots in two columns. Dots one, two and three are on the left, four, five and six on the right.')} icon={<Volume2 aria-hidden size={16} />}>Hear how braille cells work</Button></div>

@@ -52,7 +52,7 @@ The Sem 6 report describes the first version of Bridgify. v2 keeps every feature
 
 ## 3.3.5 Text to Sign Language: replace "emoji-annotated sign diagrams"
 
-> Each word is first looked up in a per-language lexicon of prepared sign animations, generated with the open sign.mt project and stored in a compact format of about 20 KB per word. Words not in the lexicon are fetched live from sign.mt, and anything still unknown is fingerspelled letter by letter.
+> Each word or phrase is first looked up in a per-language lexicon of stored signs: animations prepared with the open sign.mt project (about 70 everyday words and 30 phrases per language, kept in a compact format of about 20 KB per word) and, for German and French Sign Language, real signer videos from SignDict and Lingua Libre. Anything not in the lexicon is fingerspelled letter by letter, and the page names those words. Everything runs from Bridgify's own files, so it works offline once loaded.
 >
 > For ISL, the input is first rearranged into an approximate ISL word order. Articles and forms of "be" are dropped, time words go first, question words go last and the verb goes at the end. For example, "Where is the hospital?" becomes HOSPITAL WHERE. A note reminds users that this is a word-by-word lookup, not an interpreter.
 

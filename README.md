@@ -181,7 +181,7 @@ The [user guide](docs/Bridgify-User-Guide.pdf) has the full checklist of 40+ che
 flowchart LR
   A[Your browser] -->|camera frames| W[Vision worker<br/>MediaPipe hands + face<br/>small classifiers]
   A -->|text| B[liblouis braille<br/>WebAssembly]
-  A -->|text| S[Sign lexicon<br/>+ sign.mt animations]
+  A -->|text| S[Stored sign animations<br/>and signer videos]
   A -->|voice| R[Speech recognition<br/>browser or on-device Whisper]
   A <-->|messages only| P[Other phone<br/>Bridge, peer to peer]
   W --> A
