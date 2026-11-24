@@ -37,3 +37,6 @@ docs/05-SESSIONS/
 docs/state.json
 docs/99-RAW/
 tools/
+
+# CI workflow kept local until a token with workflow scope is available
+.github/
