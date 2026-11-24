@@ -67,6 +67,19 @@ test.describe('Bridge between two tabs (same-browser link)', () => {
     console.log(`[bridge] local link: both connected ${connectedAfter} ms after the guest opened the link`)
   })
 
+  test('receiving as sign plays the stored ISL sign for a typed message', async ({ context, page }) => {
+    const code = await startHost(page, 'Asha')
+    const guest = await guestTab(context, 'Riya')
+    await guest.goto(`/bridge/${code}?via=local`)
+    await expect(guest.getByRole('heading', { name: 'Talking with Asha' })).toBeVisible()
+    await guest.getByRole('radio', { name: 'Sign' }).click()
+    await page.getByLabel('Your message').fill('I need a doctor')
+    await page.getByRole('button', { name: 'Send', exact: true }).click()
+    // The guest's phone converts the text itself: ISL word order, then the stored phrase animation.
+    await expect(latest(guest).locator('[aria-label^="Sign for "], [aria-label^="Signer video for "]').first()).toBeVisible({ timeout: 20_000 })
+    await expect(latest(guest)).not.toContainText('no stored sign')
+  })
+
   test('keyboard only: type a messy code, Tab to Join, Enter, then send with Enter', async ({ context, page, isMobile }) => {
     test.skip(isMobile, 'physical keyboard flow')
     const code = await startHost(page)

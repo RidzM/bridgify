@@ -19,12 +19,12 @@ confidence: high
 | Gesture and emotion | 8 gestures (rules, 97.3% on unseen people for the 6 HaGRID types), expression model 0.744 macro-F1, log + CSV | **Real.** I-love-you and wave have no public test set; expression is labelled approximate |
 | Text to sign | Six languages. Stored animations for everyday words and phrases (prepared from sign.mt), 73 DGS and 14 LSF signer videos, then fingerspelling (the page names the spelled words); ISL word order. No live sign.mt requests (D-39) | **Real.** Animations come from sign.mt's model, not a recorded signer (Q-12); the page says it is a word-by-word lookup |
 | Learn | Braille alphabet, numbers, Grade 2 and a quiz. Sign alphabets for ISL/ASL/FSL/DGS, numbers for ISL/ASL, 30 phrases × 6 languages, 22 Indian scripts for ISL letters, camera practice for ISL/ASL | **Real.** LSM and LIS alphabets have no licence-clean pictures, and the page says so |
-| Bridge | Two phones over WebRTC (PeerJS broker) or two tabs (BroadcastChannel); four send and four receive modes; hands stream | **Real.** Measured on one laptop only (EVAL §9); **not measured on two real phones** (Q-10). Gloss packets are received but no send mode emits them yet. No braille display support |
+| Bridge | Two phones over WebRTC (PeerJS broker) or two tabs (BroadcastChannel); four send and four receive modes; hands stream | **Real.** Measured on one laptop only (EVAL §9); **not measured on two real phones** (Q-10). Receivers convert text to captions, speech, braille or signs themselves (tested for braille and sign). No braille display support |
 | SOS | Preset cards with a Hindi line, Speak, full screen, signs, contact call, location share; offline | **Real.** Hindi lines need a native check (Q-09) |
 | Offline / install | PWA with an update prompt; SOS, TTS, braille and (after one use) camera tools work offline | **Real** (e2e: TTS and SOS offline) |
 | About pages | About, Privacy, Evidence (numbers + confusion charts), Credits (grouped, 90+ entries) | **Real** |
 | Security | Strict CSP; pnpm/pip audits clean; gitleaks clean (1 false positive); Trail of Bits insecure-defaults (0 findings) and supply-chain (0 advisories) audits | **Real** |
-| Tests | Unit 267 + parity; e2e on desktop and Pixel 7 (axe across 16 routes × 12 modes); slow camera and Whisper suites | **Real** |
+| Tests | Unit 270 (incl. 100 parity); e2e 101 on desktop and Pixel 7 (axe across 16 routes × 12 modes); slow camera, Whisper and hands-stream suites; the same suites against production | **Real** |
 
 ## Known limits
 - J and Z (ASL) and H, J and Y (ISL) are typed, not recognised from the camera.

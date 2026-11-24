@@ -54,7 +54,7 @@ export default function TextToSignPage() {
       </div>
       <div className="grid gap-4 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
         <Panel label="Words" className="flex flex-col gap-4 p-5">
-          <p className="text-[0.9375rem] text-ink-muted">{info.name}. Type in {info.spoken === 'Hindi' ? 'English or Hindi' : `English or ${info.spoken}`}.</p>
+          <p className="text-[0.9375rem] text-ink-muted">{info.name}. Type in {info.spoken === 'English' ? 'English' : `English or ${info.spoken}`}.</p>
           <div>
             <label htmlFor={inputId} className="mb-1.5 block font-medium">Text</label>
             <textarea id={inputId} value={text} rows={3} onChange={(e) => setText(e.target.value)}

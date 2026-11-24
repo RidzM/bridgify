@@ -118,7 +118,7 @@ Each mode overrides the same tokens under `[data-mode]`.
 | Focus | inherits Light | Hides everything outside the active tool (nav extras, footer, dashboard extras); hidden rather than faded so contrast stays AA. **Motion off** |
 | Low Vision | #FFFFFF / #000000 / #2B0058 / #8A008A | Base text 125%, min 20 px. Bold weights. Thicker focus ring. AAA |
 | Autism-Friendly | #EEF4F1 / #283A33 / #3F6F62 / #5B7FA0 | Soft pastels, no pure white. **Motion off.** No auto-play. Fewer simultaneous elements (quick-access trays collapsed by default) |
-| Dyslexia | #FAF3E3 (cream) / #2A2320 / #4A2A7A / #8A2E7A | **OpenDyslexic**, letter-spacing 0.05em, word-spacing 0.14em, line-height 1.8, max line 65ch, left-aligned, no italics |
+| Dyslexia | #FAF3E3 (cream) / #2A2320 / #4A2A7A / #8A2E7A | **OpenDyslexic** (its own wide spacing; no extra letter-spacing, 25 Nov), word-spacing 0.14em, line-height 1.8, max line 65ch, left-aligned, no italics |
 
 ### 4.3 Type
 

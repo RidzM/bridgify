@@ -58,10 +58,11 @@
   --live: #8a2e7a; --live-fill: #a2398f; --ok: #2f6650; --warn: #6e4d00; --danger: #9c2a22; --focus: #8a2e7a;
   --font-body: 'OpenDyslexic', 'Atkinson Hyperlegible Next', sans-serif;
   --font-display: 'OpenDyslexic', sans-serif;
-  --letter-spacing: 0.05em; --word-spacing: 0.14em; --line-height: 1.8; --measure: 65ch;
+  /* OpenDyslexic already has wide built-in spacing; extra tracking made words fall apart. */
+  --letter-spacing: 0; --word-spacing: 0.14em; --line-height: 1.8; --measure: 65ch;
 }
 [data-mode='dyslexia'] :is(p, li, td, label, textarea, input) { text-align: left !important; font-style: normal; }
-[data-mode='dyslexia'] h1 { letter-spacing: 0.02em; }
+[data-mode='dyslexia'] h1 { letter-spacing: 0; }
 
 /* Focus mode: remove everything that is not the active task. (Hidden rather than faded,
    so remaining text keeps full contrast.) */
