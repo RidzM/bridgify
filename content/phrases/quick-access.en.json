@@ -1,0 +1,11 @@
+{
+  "lang": "en-IN",
+  "categories": [
+    { "id": "words", "label": "Common words", "items": ["Yes", "No", "Please", "Thank you", "Sorry", "Excuse me", "Help", "Stop", "Wait", "More", "Okay", "I understand", "I don't understand", "Can you repeat that?", "Speak slowly please", "I need assistance", "Good morning", "Good night"] },
+    { "id": "phrases", "label": "Phrases", "items": ["I would like some water", "I am feeling unwell", "Please call someone for me", "I need to sit down", "I cannot speak right now", "Please be patient with me", "I use assistive communication", "Can you write that down?", "I need more time to respond", "Please face me when you speak", "I am hard of hearing", "I am visually impaired", "I have a disability", "Please speak clearly", "I need a quiet environment"] },
+    { "id": "sentences", "label": "Everyday sentences", "items": ["My name is written on this device", "I live at this address", "My emergency contact is saved here", "Please call my caregiver", "I take medication daily", "I have a medical condition", "I need my wheelchair", "I cannot stand for long", "Please help me find a seat", "I need to use the restroom", "I am lost and need directions", "Please call this number for me", "I am waiting for someone", "Can you help me get home?", "I need to charge my device"] },
+    { "id": "intro", "label": "Introduce yourself", "items": ["Hello, I use a communication device to speak", "I communicate using assistive technology", "I may take longer to respond, please be patient", "I am Deaf and communicate using sign language", "Nice to meet you"] },
+    { "id": "needs", "label": "Basic needs", "items": ["I need water", "I need food", "I am in pain", "I need a doctor", "I am cold", "I am tired", "I need my medicine"] },
+    { "id": "emergency", "label": "Emergency", "items": ["I need help now", "Call an ambulance", "Call the police", "I am having trouble breathing", "I am allergic to this", "Please call my family"] }
+  ]
+}
