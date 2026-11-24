@@ -100,7 +100,7 @@ All screenshots are in `docs/screens/`, and the user guide has them too.
 | Gestures | 626 held-out people, 9,467 hands | 97.3% |
 | Expression | 20 held-out people, 838 images | macro-F1 0.744 |
 | Accessibility | axe on every page × 12 modes | 0 serious or critical issues |
-| Performance (Lighthouse, mobile) | home page | 96 performance, 100 accessibility, 100 best practices |
+| Performance (Lighthouse, mobile) | home page | 99 performance, 100 accessibility, 100 best practices |
 
 ## 3.7 Future work: remove what is now done
 

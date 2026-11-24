@@ -14,7 +14,7 @@
 ![ISL letters](https://img.shields.io/badge/ISL%20letters-0.993%20F1%20on%20a%20new%20signer-0b6e69?style=flat-square)
 ![Braille](https://img.shields.io/badge/braille-59%2F59%20match%20liblouis-0b6e69?style=flat-square)
 ![Accessibility](https://img.shields.io/badge/WCAG%202.2%20AA-0%20issues%20in%2012%20modes-0b6e69?style=flat-square)
-![Lighthouse](https://img.shields.io/badge/Lighthouse-96%20%C2%B7%20100%20%C2%B7%20100-0b6e69?style=flat-square)
+![Lighthouse](https://img.shields.io/badge/Lighthouse-99%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-0b6e69?style=flat-square)
 ![Licence](https://img.shields.io/badge/licence-MIT-595363?style=flat-square)
 
 <br>

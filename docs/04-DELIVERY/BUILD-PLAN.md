@@ -497,7 +497,7 @@ Int16 x/y hand points (z dropped, D-37) with keyframes; the receiver draws the o
 axe (WCAG 2.2 AA) over 16 routes × 12 modes: 0 serious or critical issues; Bridge and SOS have their own 12-mode sweeps. Keyboard-only tests (display settings, Bridge join, braille keys, lesson tabs); 200% text at 320 px without sideways scrolling. Two issues found and fixed in this phase: a `dd` with `role="img"` inside the home definition list, and script letters using a language name instead of a code in `lang`. **Not done:** a manual screen-reader pass by a person (Q-11).
 
 ### 8.2 Performance ✅ 24 Nov (NFR-02)
-Entry 121.8 KB gzip of 180 (React Router 7 added 9 KB, D-36). Text no longer shifts as fonts load: the interface fonts are preloaded and the main area reserves its height (CLS 0.144 → 0). `robots.txt` added. Lighthouse (mobile, production): see `PERF` below.
+Entry 121.8 KB gzip of 180 (React Router 7 added 9 KB, D-36). Text no longer shifts as fonts load: the interface fonts are preloaded and the main area reserves its height (CLS 0.144 → 0). `robots.txt` added. Lighthouse (mobile, production, 25 Nov): home 99 / 100 / 100 / 100 (performance, accessibility, best practices, SEO), LCP 1.8 s, CLS 0; Sign to text 98 / 100 / 100 / 100, LCP 2.0 s.
 
 ### 8.3 Security ✅ 24 Nov
 - **CSP:** strict, and checked at build (D-32). Every flow was tested under it, locally with `scripts/serve-prod.mjs` and in production.
@@ -519,4 +519,4 @@ Entry 121.8 KB gzip of 180 (React Router 7 added 9 KB, D-36). Text no longer shi
 - A fresh clone of the public repo installs and builds with `pnpm install && pnpm build` (no Docker needed since D-24).
 
 ### 8.7 Ship ✅ 24 Nov
-Pushed to `RidzM/bridgify`, where `RidzM` is the only contributor; the mirror is synced. Production deploy to https://bridgify-vcet.vercel.app, and the e2e suite run against production (see `SHIP` below). The passcode gate was dropped by D-25 (public).
+Pushed to `RidzM/bridgify`, where `RidzM` is the only contributor; the mirror is synced. Production deploy to https://bridgify-vcet.vercel.app, and the e2e suite run against production: 101 passed, 0 failed (6 expected skips), plus the slow camera, Whisper and hand-stream suites one at a time. The passcode gate was dropped by D-25 (public).
