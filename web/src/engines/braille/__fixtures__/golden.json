@@ -1,0 +1,365 @@
+{
+  "generator": "tools-wasm/gen-golden.py (native python3-louis)",
+  "liblouis": "3.39.0",
+  "tables": {
+    "en-ueb-g1": "unicode.dis,en-ueb-g1.ctb",
+    "en-ueb-g2": "unicode.dis,en-ueb-g2.ctb",
+    "hi-in-g1": "unicode.dis,hi-in-g1.utb"
+  },
+  "cases": [
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "HELLO, HOW ARE YOU?",
+      "expected": "⠠⠠⠠⠓⠑⠇⠇⠕⠂⠀⠓⠕⠺⠀⠁⠗⠑⠀⠽⠕⠥⠦⠠⠄"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "Hello world",
+      "expected": "⠠⠓⠑⠇⠇⠕⠀⠺⠕⠗⠇⠙"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "The quick brown fox jumps over the lazy dog.",
+      "expected": "⠠⠞⠓⠑⠀⠟⠥⠊⠉⠅⠀⠃⠗⠕⠺⠝⠀⠋⠕⠭⠀⠚⠥⠍⠏⠎⠀⠕⠧⠑⠗⠀⠞⠓⠑⠀⠇⠁⠵⠽⠀⠙⠕⠛⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "Room 42 is on the 3rd floor.",
+      "expected": "⠠⠗⠕⠕⠍⠀⠼⠙⠃⠀⠊⠎⠀⠕⠝⠀⠞⠓⠑⠀⠼⠉⠗⠙⠀⠋⠇⠕⠕⠗⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "I need HELP now",
+      "expected": "⠠⠊⠀⠝⠑⠑⠙⠀⠠⠠⠓⠑⠇⠏⠀⠝⠕⠺"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "Call me at 9:30 tomorrow.",
+      "expected": "⠠⠉⠁⠇⠇⠀⠍⠑⠀⠁⠞⠀⠼⠊⠒⠼⠉⠚⠀⠞⠕⠍⠕⠗⠗⠕⠺⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "Is it 25% off? Yes!",
+      "expected": "⠠⠊⠎⠀⠊⠞⠀⠼⠃⠑⠨⠴⠀⠕⠋⠋⠦⠀⠠⠽⠑⠎⠖"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "Mumbai, Delhi and Chennai",
+      "expected": "⠠⠍⠥⠍⠃⠁⠊⠂⠀⠠⠙⠑⠇⠓⠊⠀⠁⠝⠙⠀⠠⠉⠓⠑⠝⠝⠁⠊"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "Price: 1,250 rupees",
+      "expected": "⠠⠏⠗⠊⠉⠑⠒⠀⠼⠁⠂⠃⠑⠚⠀⠗⠥⠏⠑⠑⠎"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "She said \"wait\" and left.",
+      "expected": "⠠⠎⠓⠑⠀⠎⠁⠊⠙⠀⠦⠺⠁⠊⠞⠴⠀⠁⠝⠙⠀⠇⠑⠋⠞⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "Don't stop; keep going.",
+      "expected": "⠠⠙⠕⠝⠄⠞⠀⠎⠞⠕⠏⠆⠀⠅⠑⠑⠏⠀⠛⠕⠊⠝⠛⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "UNESCO and NASA are acronyms",
+      "expected": "⠠⠠⠥⠝⠑⠎⠉⠕⠀⠁⠝⠙⠀⠠⠠⠝⠁⠎⠁⠀⠁⠗⠑⠀⠁⠉⠗⠕⠝⠽⠍⠎"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "McDonald's opens at 7am",
+      "expected": "⠠⠍⠉⠠⠙⠕⠝⠁⠇⠙⠄⠎⠀⠕⠏⠑⠝⠎⠀⠁⠞⠀⠼⠛⠰⠁⠍"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "3a and 5b",
+      "expected": "⠼⠉⠰⠁⠀⠁⠝⠙⠀⠼⠑⠰⠃"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "The year 2026 ends soon.",
+      "expected": "⠠⠞⠓⠑⠀⠽⠑⠁⠗⠀⠼⠃⠚⠃⠋⠀⠑⠝⠙⠎⠀⠎⠕⠕⠝⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "email: info@example.com",
+      "expected": "⠑⠍⠁⠊⠇⠒⠀⠊⠝⠋⠕⠈⠁⠑⠭⠁⠍⠏⠇⠑⠲⠉⠕⠍"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "Chapter 1 (Introduction)",
+      "expected": "⠠⠉⠓⠁⠏⠞⠑⠗⠀⠼⠁⠀⠐⠣⠠⠊⠝⠞⠗⠕⠙⠥⠉⠞⠊⠕⠝⠐⠜"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "x-ray, e-mail, re-enter",
+      "expected": "⠭⠤⠗⠁⠽⠂⠀⠑⠤⠍⠁⠊⠇⠂⠀⠗⠑⠤⠑⠝⠞⠑⠗"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g1",
+      "input": "WAIT for the GREEN light, then cross.",
+      "expected": "⠠⠠⠺⠁⠊⠞⠀⠋⠕⠗⠀⠞⠓⠑⠀⠠⠠⠛⠗⠑⠑⠝⠀⠇⠊⠛⠓⠞⠂⠀⠞⠓⠑⠝⠀⠉⠗⠕⠎⠎⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "THE RED FORT",
+      "expected": "⠠⠠⠠⠮⠀⠗⠫⠀⠿⠞⠠⠄"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "the and for of with",
+      "expected": "⠮⠀⠯⠀⠿⠀⠷⠀⠾"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "knowledge is power",
+      "expected": "⠅⠀⠊⠎⠀⠏⠪⠻"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "people like to read",
+      "expected": "⠏⠀⠇⠀⠞⠕⠀⠗⠂⠙"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "The children went to the market.",
+      "expected": "⠠⠮⠀⠡⠝⠀⠺⠢⠞⠀⠞⠕⠀⠮⠀⠍⠜⠅⠑⠞⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Bridgify helps blind students learn.",
+      "expected": "⠠⠃⠗⠊⠙⠛⠊⠋⠽⠀⠓⠑⠇⠏⠎⠀⠃⠇⠀⠌⠥⠙⠢⠞⠎⠀⠇⠑⠜⠝⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Thank you for your help.",
+      "expected": "⠠⠹⠁⠝⠅⠀⠽⠀⠿⠀⠽⠗⠀⠓⠑⠇⠏⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "We will meet again tomorrow.",
+      "expected": "⠠⠺⠑⠀⠺⠀⠍⠑⠑⠞⠀⠁⠛⠀⠞⠍⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Knowledge and wisdom go together.",
+      "expected": "⠠⠅⠀⠯⠀⠺⠊⠎⠙⠕⠍⠀⠛⠀⠞⠛⠗⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "This is the house that Jack built.",
+      "expected": "⠠⠹⠀⠊⠎⠀⠮⠀⠓⠳⠎⠑⠀⠞⠀⠠⠚⠁⠉⠅⠀⠃⠥⠊⠇⠞⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Every child should have the right to read.",
+      "expected": "⠠⠑⠀⠡⠀⠩⠙⠀⠓⠀⠮⠀⠐⠗⠀⠞⠕⠀⠗⠂⠙⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Out of sight, out of mind.",
+      "expected": "⠠⠳⠀⠷⠀⠎⠊⠣⠞⠂⠀⠳⠀⠷⠀⠍⠔⠙⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Where there is a will, there is a way.",
+      "expected": "⠠⠐⠱⠀⠐⠮⠀⠊⠎⠀⠁⠀⠺⠂⠀⠐⠮⠀⠊⠎⠀⠁⠀⠺⠁⠽⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Mother and father were there.",
+      "expected": "⠠⠐⠍⠀⠯⠀⠐⠋⠀⠶⠀⠐⠮⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "She could not understand the question.",
+      "expected": "⠠⠩⠑⠀⠉⠙⠀⠝⠀⠐⠥⠌⠯⠀⠮⠀⠐⠟⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Little by little, one travels far.",
+      "expected": "⠠⠇⠇⠀⠃⠽⠀⠇⠇⠂⠀⠐⠕⠀⠞⠗⠁⠧⠑⠇⠎⠀⠋⠜⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Ought we to go through the forest?",
+      "expected": "⠠⠐⠳⠀⠺⠑⠀⠞⠕⠀⠛⠀⠐⠹⠀⠮⠀⠿⠑⠌⠦"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "Today is Monday, 24 November.",
+      "expected": "⠠⠞⠙⠀⠊⠎⠀⠠⠍⠕⠝⠐⠙⠂⠀⠼⠃⠙⠀⠠⠝⠕⠧⠑⠍⠃⠻⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "en-ueb-g2",
+      "input": "The ship sailed with the wind.",
+      "expected": "⠠⠮⠀⠩⠊⠏⠀⠎⠁⠊⠇⠫⠀⠾⠀⠮⠀⠺⠔⠙⠲"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "नमस्ते",
+      "expected": "⠝⠍⠈⠎⠞⠑"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "भारत",
+      "expected": "⠘⠜⠗⠞"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "हिन्दी",
+      "expected": "⠓⠊⠈⠝⠙⠔"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "मेरा नाम राम है",
+      "expected": "⠍⠑⠗⠜⠀⠝⠜⠍⠀⠗⠜⠍⠀⠓⠌"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "आप कैसे हैं?",
+      "expected": "⠜⠏⠀⠅⠌⠎⠑⠀⠓⠌⠰⠦"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "पानी",
+      "expected": "⠏⠜⠝⠔"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "विद्यालय",
+      "expected": "⠧⠊⠈⠙⠽⠜⠇⠽"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "धन्यवाद",
+      "expected": "⠮⠈⠝⠽⠧⠜⠙"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "किताब पढ़ो",
+      "expected": "⠅⠊⠞⠜⠃⠀⠏⠐⠻⠕"
+    },
+    {
+      "kind": "translate",
+      "table": "hi-in-g1",
+      "input": "भारत एक महान देश है।",
+      "expected": "⠘⠜⠗⠞⠀⠑⠅⠀⠍⠓⠜⠝⠀⠙⠑⠩⠀⠓⠌⠲"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g1",
+      "input": "⠠⠓⠑⠇⠇⠕⠀⠺⠕⠗⠇⠙",
+      "expected": "Hello world"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g1",
+      "input": "⠠⠠⠠⠓⠑⠇⠇⠕⠂⠀⠓⠕⠺⠀⠁⠗⠑⠀⠽⠕⠥⠦⠠⠄",
+      "expected": "Hello, how are you?"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g1",
+      "input": "⠠⠗⠕⠕⠍⠀⠼⠙⠃",
+      "expected": "Room 42"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g1",
+      "input": "⠽⠑⠎⠖⠀⠝⠕⠦",
+      "expected": "yes! no?"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g1",
+      "input": "⠠⠊⠎⠀⠊⠞⠀⠼⠃⠑⠨⠴⠀⠕⠋⠋⠦",
+      "expected": "Is it 25% off?"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g2",
+      "input": "⠠⠠⠠⠮⠀⠗⠫⠀⠿⠞⠠⠄",
+      "expected": "The red fort"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g2",
+      "input": "⠮⠀⠯⠀⠿⠀⠷⠀⠾",
+      "expected": "the and for of with"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g2",
+      "input": "⠅⠀⠊⠎⠀⠏⠪⠻",
+      "expected": "knowledge is power"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g2",
+      "input": "⠏⠀⠇⠀⠞⠕⠀⠗⠂⠙",
+      "expected": "people like to read"
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g2",
+      "input": "⠠⠹⠁⠝⠅⠀⠽⠀⠿⠀⠽⠗⠀⠓⠑⠇⠏⠲",
+      "expected": "Thank you for your help."
+    },
+    {
+      "kind": "back",
+      "table": "en-ueb-g2",
+      "input": "⠠⠮⠀⠡⠝⠀⠺⠢⠞⠀⠞⠕⠀⠮⠀⠍⠜⠅⠑⠞⠲",
+      "expected": "The children went to the market."
+    }
+  ]
+}
