@@ -1,0 +1,1327 @@
+{
+  "lang": "lsm",
+  "version": 1,
+  "spoken": "es",
+  "entries": [
+    {
+      "gloss": "HOLA",
+      "en": "hello",
+      "words": [
+        "hola",
+        "hello",
+        "hi"
+      ],
+      "pose": "/signs/lsm/words/hola.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ADIÓS",
+      "en": "goodbye",
+      "words": [
+        "adiós",
+        "adios",
+        "hasta luego",
+        "goodbye",
+        "bye",
+        "good bye",
+        "farewell"
+      ],
+      "pose": "/signs/lsm/words/adios.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SÍ",
+      "en": "yes",
+      "words": [
+        "sí",
+        "yes"
+      ],
+      "pose": "/signs/lsm/words/si.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NO",
+      "en": "no",
+      "words": [
+        "no"
+      ],
+      "pose": "/signs/lsm/words/no.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "POR-FAVOR",
+      "en": "please",
+      "words": [
+        "por favor",
+        "please"
+      ],
+      "pose": "/signs/lsm/words/favor.json",
+      "video": null,
+      "source": "sign.mt (signed as: favor)"
+    },
+    {
+      "gloss": "GRACIAS",
+      "en": "thank you",
+      "words": [
+        "gracias",
+        "muchas gracias",
+        "thank you",
+        "thanks"
+      ],
+      "pose": "/signs/lsm/words/gracias.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PERDÓN",
+      "en": "sorry",
+      "words": [
+        "perdón",
+        "perdon",
+        "lo siento",
+        "disculpa",
+        "disculpe",
+        "sorry"
+      ],
+      "pose": "/signs/lsm/words/disculpe.json",
+      "video": null,
+      "source": "sign.mt (signed as: disculpe)"
+    },
+    {
+      "gloss": "AYUDA",
+      "en": "help",
+      "words": [
+        "ayuda",
+        "ayudar",
+        "auxilio",
+        "help"
+      ],
+      "pose": "/signs/lsm/words/ayuda.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PARAR",
+      "en": "stop",
+      "words": [
+        "parar",
+        "alto",
+        "detener",
+        "basta",
+        "stop"
+      ],
+      "pose": "/signs/lsm/words/alto.json",
+      "video": null,
+      "source": "sign.mt (signed as: alto)"
+    },
+    {
+      "gloss": "ESPERAR",
+      "en": "wait",
+      "words": [
+        "esperar",
+        "espera",
+        "espere",
+        "wait"
+      ],
+      "pose": "/signs/lsm/words/esperar.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MÁS",
+      "en": "more",
+      "words": [
+        "más",
+        "more"
+      ],
+      "pose": "/signs/lsm/words/mas.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ESTÁ-BIEN",
+      "en": "okay",
+      "words": [
+        "está bien",
+        "esta bien",
+        "ok",
+        "de acuerdo",
+        "okay"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "BUENO",
+      "en": "good",
+      "words": [
+        "bueno",
+        "bien",
+        "buena",
+        "good"
+      ],
+      "pose": "/signs/lsm/words/bueno.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MALO",
+      "en": "bad",
+      "words": [
+        "malo",
+        "mal",
+        "mala",
+        "bad"
+      ],
+      "pose": "/signs/lsm/words/malo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AGUA",
+      "en": "water",
+      "words": [
+        "agua",
+        "water"
+      ],
+      "pose": "/signs/lsm/words/agua.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "COMIDA",
+      "en": "food",
+      "words": [
+        "comida",
+        "alimento",
+        "food"
+      ],
+      "pose": "/signs/lsm/words/comida.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "COMER",
+      "en": "eat",
+      "words": [
+        "comer",
+        "eat"
+      ],
+      "pose": "/signs/lsm/words/comer.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BEBER",
+      "en": "drink",
+      "words": [
+        "beber",
+        "bebida",
+        "drink"
+      ],
+      "pose": "/signs/lsm/words/beber.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOCTOR",
+      "en": "doctor",
+      "words": [
+        "doctor",
+        "médico",
+        "medico",
+        "doctora"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "HOSPITAL",
+      "en": "hospital",
+      "words": [
+        "hospital"
+      ],
+      "pose": "/signs/lsm/words/hospital.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MEDICINA",
+      "en": "medicine",
+      "words": [
+        "medicina",
+        "medicamento",
+        "medicinas",
+        "remedio",
+        "pastilla",
+        "medicine",
+        "medication"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "DOLOR",
+      "en": "pain",
+      "words": [
+        "dolor",
+        "pain",
+        "hurt"
+      ],
+      "pose": "/signs/lsm/words/dolor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ENFERMO",
+      "en": "sick",
+      "words": [
+        "enfermo",
+        "enferma",
+        "sick",
+        "ill",
+        "unwell"
+      ],
+      "pose": "/signs/lsm/words/enfermo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BAÑO",
+      "en": "toilet",
+      "words": [
+        "baño",
+        "bano",
+        "sanitario",
+        "toilet",
+        "bathroom",
+        "restroom"
+      ],
+      "pose": "/signs/lsm/words/bano.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CASA",
+      "en": "home",
+      "words": [
+        "casa",
+        "hogar",
+        "home",
+        "house"
+      ],
+      "pose": "/signs/lsm/words/casa.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ESCUELA",
+      "en": "school",
+      "words": [
+        "escuela",
+        "school"
+      ],
+      "pose": "/signs/lsm/words/escuela.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FAMILIA",
+      "en": "family",
+      "words": [
+        "familia",
+        "family"
+      ],
+      "pose": "/signs/lsm/words/familia.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MADRE",
+      "en": "mother",
+      "words": [
+        "madre",
+        "mamá",
+        "mother",
+        "mom",
+        "mum"
+      ],
+      "pose": "/signs/lsm/words/mama.json",
+      "video": null,
+      "source": "sign.mt (signed as: mamá)"
+    },
+    {
+      "gloss": "PADRE",
+      "en": "father",
+      "words": [
+        "padre",
+        "papá",
+        "father",
+        "dad"
+      ],
+      "pose": "/signs/lsm/words/papa.json",
+      "video": null,
+      "source": "sign.mt (signed as: papá)"
+    },
+    {
+      "gloss": "AMIGO",
+      "en": "friend",
+      "words": [
+        "amigo",
+        "amiga",
+        "friend"
+      ],
+      "pose": "/signs/lsm/words/amigo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NOMBRE",
+      "en": "name",
+      "words": [
+        "nombre",
+        "name"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "SORDO",
+      "en": "deaf",
+      "words": [
+        "sordo",
+        "sorda",
+        "deaf"
+      ],
+      "pose": "/signs/lsm/words/sordo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "OYENTE",
+      "en": "hearing",
+      "words": [
+        "oyente",
+        "hearing"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "SEÑA",
+      "en": "sign",
+      "words": [
+        "seña",
+        "sena",
+        "señas",
+        "senas",
+        "sign"
+      ],
+      "pose": "/signs/lsm/words/sena.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LENGUA",
+      "en": "language",
+      "words": [
+        "lengua",
+        "idioma",
+        "lenguaje",
+        "language"
+      ],
+      "pose": "/signs/lsm/words/lengua.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ENTENDER",
+      "en": "understand",
+      "words": [
+        "entender",
+        "comprender",
+        "entiendo",
+        "understand"
+      ],
+      "pose": "/signs/lsm/words/entender.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SABER",
+      "en": "know",
+      "words": [
+        "saber",
+        "conocer",
+        "know"
+      ],
+      "pose": "/signs/lsm/words/saber.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "QUERER",
+      "en": "want",
+      "words": [
+        "querer",
+        "quiero",
+        "want"
+      ],
+      "pose": "/signs/lsm/words/querer.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NECESITAR",
+      "en": "need",
+      "words": [
+        "necesitar",
+        "necesito",
+        "need"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "GUSTAR",
+      "en": "like",
+      "words": [
+        "gustar",
+        "me gusta",
+        "like"
+      ],
+      "pose": "/signs/lsm/words/gustar.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AMOR",
+      "en": "love",
+      "words": [
+        "amor",
+        "amar",
+        "love"
+      ],
+      "pose": "/signs/lsm/words/amor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FELIZ",
+      "en": "happy",
+      "words": [
+        "feliz",
+        "contento",
+        "contenta",
+        "happy"
+      ],
+      "pose": "/signs/lsm/words/feliz.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TRISTE",
+      "en": "sad",
+      "words": [
+        "triste",
+        "sad"
+      ],
+      "pose": "/signs/lsm/words/triste.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CANSADO",
+      "en": "tired",
+      "words": [
+        "cansado",
+        "cansada",
+        "tired"
+      ],
+      "pose": "/signs/lsm/words/cansado.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HAMBRE",
+      "en": "hungry",
+      "words": [
+        "hambre",
+        "hambriento",
+        "hungry"
+      ],
+      "pose": "/signs/lsm/words/hambre.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SED",
+      "en": "thirsty",
+      "words": [
+        "sed",
+        "sediento",
+        "thirsty"
+      ],
+      "pose": "/signs/lsm/words/sed.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FRÍO",
+      "en": "cold",
+      "words": [
+        "frío",
+        "frio",
+        "cold"
+      ],
+      "pose": "/signs/lsm/words/frio.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CALIENTE",
+      "en": "hot",
+      "words": [
+        "caliente",
+        "calor",
+        "hot"
+      ],
+      "pose": "/signs/lsm/words/caliente.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOY",
+      "en": "today",
+      "words": [
+        "hoy",
+        "today"
+      ],
+      "pose": "/signs/lsm/words/hoy.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MAÑANA",
+      "en": "tomorrow",
+      "words": [
+        "mañana",
+        "manana",
+        "tomorrow"
+      ],
+      "pose": "/signs/lsm/words/manana.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AYER",
+      "en": "yesterday",
+      "words": [
+        "ayer",
+        "yesterday"
+      ],
+      "pose": "/signs/lsm/words/ayer.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AHORA",
+      "en": "now",
+      "words": [
+        "ahora",
+        "now"
+      ],
+      "pose": "/signs/lsm/words/ahora.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MÁS-TARDE",
+      "en": "later",
+      "words": [
+        "más tarde",
+        "mas tarde",
+        "luego",
+        "después",
+        "despues",
+        "later"
+      ],
+      "pose": "/signs/lsm/words/mas-tarde.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LA-MAÑANA",
+      "en": "morning",
+      "words": [
+        "la mañana",
+        "la manana",
+        "madrugada",
+        "morning"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "NOCHE",
+      "en": "night",
+      "words": [
+        "noche",
+        "night"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "DÓNDE",
+      "en": "where",
+      "words": [
+        "dónde",
+        "donde",
+        "where"
+      ],
+      "pose": "/signs/lsm/words/donde.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "QUÉ",
+      "en": "what",
+      "words": [
+        "qué",
+        "what"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "QUIÉN",
+      "en": "who",
+      "words": [
+        "quién",
+        "quien",
+        "who"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "CUÁNDO",
+      "en": "when",
+      "words": [
+        "cuándo",
+        "cuando",
+        "when"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "POR-QUÉ",
+      "en": "why",
+      "words": [
+        "por qué",
+        "por que",
+        "why"
+      ],
+      "pose": "/signs/lsm/words/porque.json",
+      "video": null,
+      "source": "sign.mt (signed as: porque)"
+    },
+    {
+      "gloss": "CÓMO",
+      "en": "how",
+      "words": [
+        "cómo",
+        "how"
+      ],
+      "pose": "/signs/lsm/words/como.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "IR",
+      "en": "go",
+      "words": [
+        "ir",
+        "go"
+      ],
+      "pose": "/signs/lsm/words/ir.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "VENIR",
+      "en": "come",
+      "words": [
+        "venir",
+        "ven"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "VER",
+      "en": "see",
+      "words": [
+        "ver",
+        "see"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "DAR",
+      "en": "give",
+      "words": [
+        "dar",
+        "dame",
+        "give"
+      ],
+      "pose": "/signs/lsm/words/dar.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AYÚDAME",
+      "en": "help me",
+      "words": [
+        "ayúdame",
+        "ayudame",
+        "ayúdeme",
+        "ayudeme",
+        "help me"
+      ],
+      "pose": "/signs/lsm/words/ayudar.json",
+      "video": null,
+      "source": "sign.mt (signed as: ayudar)"
+    },
+    {
+      "gloss": "LLAMAR",
+      "en": "call",
+      "words": [
+        "llamar",
+        "llama",
+        "call"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "TELÉFONO",
+      "en": "phone",
+      "words": [
+        "teléfono",
+        "telefono",
+        "celular",
+        "phone",
+        "telephone",
+        "mobile"
+      ],
+      "pose": "/signs/lsm/words/telefono.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "POLICÍA",
+      "en": "police",
+      "words": [
+        "policía",
+        "policia",
+        "police"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "EMERGENCIA",
+      "en": "emergency",
+      "words": [
+        "emergencia",
+        "urgencia",
+        "emergency"
+      ],
+      "pose": "/signs/lsm/words/emergencia.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AUTOBÚS",
+      "en": "bus",
+      "words": [
+        "autobús",
+        "autobus",
+        "camión",
+        "camion",
+        "bus"
+      ],
+      "pose": "/signs/lsm/words/camion.json",
+      "video": null,
+      "source": "sign.mt (signed as: camión)"
+    },
+    {
+      "gloss": "DINERO",
+      "en": "money",
+      "words": [
+        "dinero",
+        "money"
+      ],
+      "pose": "/signs/lsm/words/dinero.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BUENOS-DÍAS",
+      "en": "Good morning",
+      "words": [
+        "buenos días",
+        "buenos dias",
+        "good morning"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "BUENAS-NOCHES",
+      "en": "Good night",
+      "words": [
+        "buenas noches",
+        "good night"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "NO-ENTIENDO",
+      "en": "I don't understand",
+      "words": [
+        "no entiendo",
+        "i don't understand"
+      ],
+      "pose": "/signs/lsm/phrases/no-entiendo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PUEDE-REPETIRLO",
+      "en": "Can you repeat that?",
+      "words": [
+        "puede repetirlo",
+        "can you repeat that"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "HABLE-DESPACIO-POR-FAVOR",
+      "en": "Please speak slowly",
+      "words": [
+        "hable despacio por favor",
+        "please speak slowly"
+      ],
+      "pose": "/signs/lsm/phrases/hable-despacio-por-favor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PUEDE-ESCRIBIRLO",
+      "en": "Can you write it down?",
+      "words": [
+        "puede escribirlo",
+        "can you write it down"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "TENGA-PACIENCIA-CONMIGO-POR-FAVOR",
+      "en": "Please be patient with me",
+      "words": [
+        "tenga paciencia conmigo por favor",
+        "please be patient with me"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "MÍREME-CUANDO-HABLE-POR-FAVOR",
+      "en": "Please face me when you speak",
+      "words": [
+        "míreme cuando hable por favor",
+        "mireme cuando hable por favor",
+        "please face me when you speak"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "UN-MOMENTO-POR-FAVOR",
+      "en": "One moment, please",
+      "words": [
+        "un momento por favor",
+        "one moment please"
+      ],
+      "pose": "/signs/lsm/phrases/un-momento-por-favor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SOY-SORDO",
+      "en": "I am deaf",
+      "words": [
+        "soy sordo",
+        "i am deaf"
+      ],
+      "pose": "/signs/lsm/phrases/soy-sordo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TENGO-PÉRDIDA-AUDITIVA",
+      "en": "I am hard of hearing",
+      "words": [
+        "tengo pérdida auditiva",
+        "tengo perdida auditiva",
+        "i am hard of hearing"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "USO-LENGUA-DE-SEÑAS",
+      "en": "I use sign language",
+      "words": [
+        "uso lengua de señas",
+        "uso lengua de senas",
+        "i use sign language"
+      ],
+      "pose": "/signs/lsm/phrases/uso-lengua-de-senas.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CÓMO-SE-LLAMA",
+      "en": "What is your name?",
+      "words": [
+        "cómo se llama",
+        "como se llama",
+        "what is your name"
+      ],
+      "pose": "/signs/lsm/phrases/como-se-llama.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MUCHO-GUSTO",
+      "en": "Nice to meet you",
+      "words": [
+        "mucho gusto",
+        "nice to meet you"
+      ],
+      "pose": "/signs/lsm/phrases/mucho-gusto.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "USO-ESTA-APLICACIÓN-PARA-COMUNICARME",
+      "en": "I use this app to communicate",
+      "words": [
+        "uso esta aplicación para comunicarme",
+        "uso esta aplicacion para comunicarme",
+        "i use this app to communicate"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "NECESITO-AGUA",
+      "en": "I need water",
+      "words": [
+        "necesito agua",
+        "i need water"
+      ],
+      "pose": "/signs/lsm/phrases/necesito-agua.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NECESITO-COMIDA",
+      "en": "I need food",
+      "words": [
+        "necesito comida",
+        "i need food"
+      ],
+      "pose": "/signs/lsm/phrases/necesito-comida.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TENGO-HAMBRE",
+      "en": "I am hungry",
+      "words": [
+        "tengo hambre",
+        "i am hungry"
+      ],
+      "pose": "/signs/lsm/phrases/tengo-hambre.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TENGO-SED",
+      "en": "I am thirsty",
+      "words": [
+        "tengo sed",
+        "i am thirsty"
+      ],
+      "pose": "/signs/lsm/phrases/tengo-sed.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ESTOY-CANSADO",
+      "en": "I am tired",
+      "words": [
+        "estoy cansado",
+        "i am tired"
+      ],
+      "pose": "/signs/lsm/phrases/estoy-cansado.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TENGO-FRÍO",
+      "en": "I am cold",
+      "words": [
+        "tengo frío",
+        "tengo frio",
+        "i am cold"
+      ],
+      "pose": "/signs/lsm/phrases/tengo-frio.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NECESITO-IR-AL-BAÑO",
+      "en": "I need the toilet",
+      "words": [
+        "necesito ir al baño",
+        "necesito ir al bano",
+        "i need the toilet"
+      ],
+      "pose": "/signs/lsm/phrases/necesito-ir-al-bano.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NECESITO-MI-MEDICINA",
+      "en": "I need my medicine",
+      "words": [
+        "necesito mi medicina",
+        "i need my medicine"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "NECESITO-AYUDA-AHORA",
+      "en": "I need help now",
+      "words": [
+        "necesito ayuda ahora",
+        "i need help now"
+      ],
+      "pose": "/signs/lsm/phrases/necesito-ayuda-ahora.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LLAME-A-UNA-AMBULANCIA",
+      "en": "Call an ambulance",
+      "words": [
+        "llame a una ambulancia",
+        "call an ambulance"
+      ],
+      "pose": "/signs/lsm/phrases/llame-a-una-ambulancia.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LLAME-A-LA-POLICÍA",
+      "en": "Call the police",
+      "words": [
+        "llame a la policía",
+        "llame a la policia",
+        "call the police"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "NECESITO-UN-DOCTOR",
+      "en": "I need a doctor",
+      "words": [
+        "necesito un doctor",
+        "i need a doctor"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "TENGO-DOLOR",
+      "en": "I am in pain",
+      "words": [
+        "tengo dolor",
+        "i am in pain"
+      ],
+      "pose": "/signs/lsm/phrases/tengo-dolor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LLAME-A-MI-FAMILIA-POR-FAVOR",
+      "en": "Please call my family",
+      "words": [
+        "llame a mi familia por favor",
+        "please call my family"
+      ],
+      "pose": "/signs/lsm/phrases/llame-a-mi-familia-por-favor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DÓNDE-ESTÁ-EL-BAÑO",
+      "en": "Where is the toilet?",
+      "words": [
+        "dónde está el baño",
+        "donde esta el bano",
+        "where is the toilet"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "DÓNDE-ESTÁ-EL-HOSPITAL",
+      "en": "Where is the hospital?",
+      "words": [
+        "dónde está el hospital",
+        "donde esta el hospital",
+        "where is the hospital"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "DÓNDE-ESTÁ-LA-PARADA-DEL-AUTOBÚS",
+      "en": "Where is the bus stop?",
+      "words": [
+        "dónde está la parada del autobús",
+        "donde esta la parada del autobus",
+        "where is the bus stop"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "QUÉ-HORA-ES",
+      "en": "What time is it?",
+      "words": [
+        "qué hora es",
+        "que hora es",
+        "what time is it"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "CUÁNTO-CUESTA",
+      "en": "How much does it cost?",
+      "words": [
+        "cuánto cuesta",
+        "cuanto cuesta",
+        "how much does it cost"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "ME-PUEDE-AYUDAR",
+      "en": "Can you help me?",
+      "words": [
+        "me puede ayudar",
+        "can you help me"
+      ],
+      "pose": "/signs/lsm/phrases/me-puede-ayudar.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CÓMO-ESTÁ",
+      "en": "How are you?",
+      "words": [
+        "cómo está",
+        "como esta",
+        "how are you"
+      ],
+      "pose": "/signs/lsm/phrases/como-esta.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ESTOY-BIEN-GRACIAS",
+      "en": "I am fine, thank you",
+      "words": [
+        "estoy bien gracias",
+        "i am fine thank you"
+      ],
+      "pose": "/signs/lsm/phrases/estoy-bien-gracias.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HASTA-MAÑANA",
+      "en": "See you tomorrow",
+      "words": [
+        "hasta mañana",
+        "hasta manana",
+        "see you tomorrow"
+      ],
+      "pose": "/signs/lsm/phrases/hasta-manana.json",
+      "video": null,
+      "source": "sign.mt"
+    }
+  ]
+}

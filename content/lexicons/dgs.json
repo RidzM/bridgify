@@ -1,0 +1,1635 @@
+{
+  "lang": "dgs",
+  "version": 1,
+  "spoken": "de",
+  "entries": [
+    {
+      "gloss": "HALLO",
+      "en": "hello",
+      "words": [
+        "hallo",
+        "guten tag",
+        "hello",
+        "hi"
+      ],
+      "pose": "/signs/dgs/words/hallo.json",
+      "video": {
+        "src": "/signs/dgs/video/hallo.webm",
+        "poster": "/signs/dgs/video/hallo.webp",
+        "credit": "signdict-332"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TSCHÜSS",
+      "en": "goodbye",
+      "words": [
+        "tschüss",
+        "tschuess",
+        "tschuss",
+        "auf wiedersehen",
+        "tschüs",
+        "tschues",
+        "tschus",
+        "goodbye",
+        "bye",
+        "good bye",
+        "farewell"
+      ],
+      "pose": null,
+      "video": {
+        "src": "/signs/dgs/video/tschuess.webm",
+        "poster": "/signs/dgs/video/tschuess.webp",
+        "credit": "signdict-3839"
+      },
+      "source": null
+    },
+    {
+      "gloss": "JA",
+      "en": "yes",
+      "words": [
+        "ja",
+        "yes"
+      ],
+      "pose": "/signs/dgs/words/ja.json",
+      "video": {
+        "src": "/signs/dgs/video/ja.webm",
+        "poster": "/signs/dgs/video/ja.webp",
+        "credit": "signdict-422"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NEIN",
+      "en": "no",
+      "words": [
+        "nein",
+        "no"
+      ],
+      "pose": null,
+      "video": {
+        "src": "/signs/dgs/video/nein.webm",
+        "poster": "/signs/dgs/video/nein.webp",
+        "credit": "signdict-595"
+      },
+      "source": null
+    },
+    {
+      "gloss": "BITTE",
+      "en": "please",
+      "words": [
+        "bitte",
+        "please"
+      ],
+      "pose": "/signs/dgs/words/bitte.json",
+      "video": {
+        "src": "/signs/dgs/video/bitte.webm",
+        "poster": "/signs/dgs/video/bitte.webp",
+        "credit": "signdict-121"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DANKE",
+      "en": "thank you",
+      "words": [
+        "danke",
+        "danke schön",
+        "danke schoen",
+        "danke schon",
+        "vielen dank",
+        "thank you",
+        "thanks"
+      ],
+      "pose": "/signs/dgs/words/danke.json",
+      "video": {
+        "src": "/signs/dgs/video/danke.webm",
+        "poster": "/signs/dgs/video/danke.webp",
+        "credit": "signdict-151"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ENTSCHULDIGUNG",
+      "en": "sorry",
+      "words": [
+        "entschuldigung",
+        "tut mir leid",
+        "sorry"
+      ],
+      "pose": "/signs/dgs/words/entschuldigung.json",
+      "video": {
+        "src": "/signs/dgs/video/entschuldigung.webm",
+        "poster": "/signs/dgs/video/entschuldigung.webp",
+        "credit": "signdict-221"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HELFEN",
+      "en": "help",
+      "words": [
+        "hilfe",
+        "helfen",
+        "help"
+      ],
+      "pose": "/signs/dgs/words/hilfe.json",
+      "video": {
+        "src": "/signs/dgs/video/helfen.webm",
+        "poster": "/signs/dgs/video/helfen.webp",
+        "credit": "signdict-346"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "STOPP",
+      "en": "stop",
+      "words": [
+        "stopp",
+        "halt",
+        "anhalten",
+        "stop"
+      ],
+      "pose": "/signs/dgs/words/anhalten.json",
+      "video": {
+        "src": "/signs/dgs/video/stopp.webm",
+        "poster": "/signs/dgs/video/stopp.webp",
+        "credit": "signdict-5570"
+      },
+      "source": "sign.mt (signed as: anhalten)"
+    },
+    {
+      "gloss": "WARTEN",
+      "en": "wait",
+      "words": [
+        "warten",
+        "warte",
+        "warten sie",
+        "wait"
+      ],
+      "pose": "/signs/dgs/words/warten.json",
+      "video": {
+        "src": "/signs/dgs/video/warten.webm",
+        "poster": "/signs/dgs/video/warten.webp",
+        "credit": "signdict-892"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MEHR",
+      "en": "more",
+      "words": [
+        "mehr",
+        "more"
+      ],
+      "pose": "/signs/dgs/words/mehr.json",
+      "video": {
+        "src": "/signs/dgs/video/mehr.webm",
+        "poster": "/signs/dgs/video/mehr.webp",
+        "credit": "signdict-2741"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "OKAY",
+      "en": "okay",
+      "words": [
+        "okay",
+        "ok",
+        "in ordnung",
+        "einverstanden"
+      ],
+      "pose": "/signs/dgs/words/in-ordnung.json",
+      "video": {
+        "src": "/signs/dgs/video/okay.webm",
+        "poster": "/signs/dgs/video/okay.webp",
+        "credit": "signdict-2991"
+      },
+      "source": "sign.mt (signed as: in ordnung)"
+    },
+    {
+      "gloss": "GUT",
+      "en": "good",
+      "words": [
+        "gut",
+        "good"
+      ],
+      "pose": "/signs/dgs/words/gut.json",
+      "video": {
+        "src": "/signs/dgs/video/gut.webm",
+        "poster": "/signs/dgs/video/gut.webp",
+        "credit": "signdict-324"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SCHLECHT",
+      "en": "bad",
+      "words": [
+        "schlecht"
+      ],
+      "pose": "/signs/dgs/words/schlecht.json",
+      "video": {
+        "src": "/signs/dgs/video/schlecht.webm",
+        "poster": "/signs/dgs/video/schlecht.webp",
+        "credit": "signdict-3374"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WASSER",
+      "en": "water",
+      "words": [
+        "wasser",
+        "water"
+      ],
+      "pose": "/signs/dgs/words/wasser.json",
+      "video": {
+        "src": "/signs/dgs/video/wasser.webm",
+        "poster": "/signs/dgs/video/wasser.webp",
+        "credit": "signdict-895"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ESSEN",
+      "en": "food / eat",
+      "words": [
+        "essen",
+        "nahrung",
+        "lebensmittel",
+        "food",
+        "iss",
+        "isst",
+        "eat"
+      ],
+      "pose": "/signs/dgs/words/essen.json",
+      "video": {
+        "src": "/signs/dgs/video/essen.webm",
+        "poster": "/signs/dgs/video/essen.webp",
+        "credit": "signdict-1750"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TRINKEN",
+      "en": "drink",
+      "words": [
+        "trinken",
+        "getränk",
+        "getraenk",
+        "getrank",
+        "drink"
+      ],
+      "pose": "/signs/dgs/words/trinken.json",
+      "video": {
+        "src": "/signs/dgs/video/trinken.webm",
+        "poster": "/signs/dgs/video/trinken.webp",
+        "credit": "signdict-3832"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ARZT",
+      "en": "doctor",
+      "words": [
+        "arzt",
+        "ärztin",
+        "aerztin",
+        "arztin",
+        "doktor",
+        "doctor"
+      ],
+      "pose": "/signs/dgs/words/arzt.json",
+      "video": {
+        "src": "/signs/dgs/video/arzt.webm",
+        "poster": "/signs/dgs/video/arzt.webp",
+        "credit": "signdict-50"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "KRANKENHAUS",
+      "en": "hospital",
+      "words": [
+        "krankenhaus",
+        "klinik",
+        "hospital"
+      ],
+      "pose": "/signs/dgs/words/krankenhaus.json",
+      "video": {
+        "src": "/signs/dgs/video/krankenhaus.webm",
+        "poster": "/signs/dgs/video/krankenhaus.webp",
+        "credit": "signdict-478"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MEDIKAMENT",
+      "en": "medicine",
+      "words": [
+        "medikament",
+        "medizin",
+        "medikamente",
+        "medicine",
+        "medication"
+      ],
+      "pose": "/signs/dgs/words/medikament.json",
+      "video": {
+        "src": "/signs/dgs/video/medikament.webm",
+        "poster": "/signs/dgs/video/medikament.webp",
+        "credit": "signdict-544"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SCHMERZEN",
+      "en": "pain",
+      "words": [
+        "schmerzen",
+        "schmerz",
+        "weh",
+        "pain",
+        "hurt"
+      ],
+      "pose": "/signs/dgs/words/schmerzen.json",
+      "video": {
+        "src": "/signs/dgs/video/schmerzen.webm",
+        "poster": "/signs/dgs/video/schmerzen.webp",
+        "credit": "signdict-3385"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "KRANK",
+      "en": "sick",
+      "words": [
+        "krank",
+        "sick",
+        "ill",
+        "unwell"
+      ],
+      "pose": "/signs/dgs/words/krank.json",
+      "video": {
+        "src": "/signs/dgs/video/krank.webm",
+        "poster": "/signs/dgs/video/krank.webp",
+        "credit": "signdict-2525"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TOILETTE",
+      "en": "toilet",
+      "words": [
+        "toilette",
+        "klo",
+        "wc",
+        "toilet",
+        "bathroom",
+        "restroom"
+      ],
+      "pose": "/signs/dgs/words/toilette.json",
+      "video": {
+        "src": "/signs/dgs/video/toilette.webm",
+        "poster": "/signs/dgs/video/toilette.webp",
+        "credit": "signdict-837"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ZUHAUSE",
+      "en": "home",
+      "words": [
+        "zuhause",
+        "haus",
+        "heim",
+        "home",
+        "house"
+      ],
+      "pose": "/signs/dgs/words/haus.json",
+      "video": {
+        "src": "/signs/dgs/video/zuhause.webm",
+        "poster": "/signs/dgs/video/zuhause.webp",
+        "credit": "signdict-4264"
+      },
+      "source": "sign.mt (signed as: haus)"
+    },
+    {
+      "gloss": "SCHULE",
+      "en": "school",
+      "words": [
+        "schule",
+        "school"
+      ],
+      "pose": "/signs/dgs/words/schule.json",
+      "video": {
+        "src": "/signs/dgs/video/schule.webm",
+        "poster": "/signs/dgs/video/schule.webp",
+        "credit": "signdict-732"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FAMILIE",
+      "en": "family",
+      "words": [
+        "familie",
+        "family"
+      ],
+      "pose": "/signs/dgs/words/familie.json",
+      "video": {
+        "src": "/signs/dgs/video/familie.webm",
+        "poster": "/signs/dgs/video/familie.webp",
+        "credit": "signdict-243"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MUTTER",
+      "en": "mother",
+      "words": [
+        "mutter",
+        "mama",
+        "mother",
+        "mom",
+        "mum"
+      ],
+      "pose": "/signs/dgs/words/mutter.json",
+      "video": {
+        "src": "/signs/dgs/video/mutter.webm",
+        "poster": "/signs/dgs/video/mutter.webp",
+        "credit": "signdict-583"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "VATER",
+      "en": "father",
+      "words": [
+        "vater",
+        "papa",
+        "father",
+        "dad"
+      ],
+      "pose": "/signs/dgs/words/vater.json",
+      "video": {
+        "src": "/signs/dgs/video/vater.webm",
+        "poster": "/signs/dgs/video/vater.webp",
+        "credit": "signdict-863"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FREUND",
+      "en": "friend",
+      "words": [
+        "freund",
+        "freundin",
+        "friend"
+      ],
+      "pose": "/signs/dgs/words/freund.json",
+      "video": {
+        "src": "/signs/dgs/video/freund.webm",
+        "poster": "/signs/dgs/video/freund.webp",
+        "credit": "signdict-1886"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NAME",
+      "en": "name",
+      "words": [
+        "name"
+      ],
+      "pose": "/signs/dgs/words/name.json",
+      "video": {
+        "src": "/signs/dgs/video/name.webm",
+        "poster": "/signs/dgs/video/name.webp",
+        "credit": "signdict-590"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GEHÖRLOS",
+      "en": "deaf",
+      "words": [
+        "gehörlos",
+        "gehoerlos",
+        "gehorlos",
+        "taub",
+        "deaf"
+      ],
+      "pose": "/signs/dgs/words/gehoerlos.json",
+      "video": {
+        "src": "/signs/dgs/video/gehoerlos.webm",
+        "poster": "/signs/dgs/video/gehoerlos.webp",
+        "credit": "signdict-296"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HÖREND",
+      "en": "hearing",
+      "words": [
+        "hörend",
+        "hoerend",
+        "horend",
+        "hörende",
+        "hoerende",
+        "horende",
+        "hearing"
+      ],
+      "pose": null,
+      "video": {
+        "src": "/signs/dgs/video/hoerend.webm",
+        "poster": "/signs/dgs/video/hoerend.webp",
+        "credit": "signdict-2215"
+      },
+      "source": null
+    },
+    {
+      "gloss": "GEBÄRDEN",
+      "en": "sign",
+      "words": [
+        "gebärde",
+        "gebaerde",
+        "gebarde",
+        "gebärden",
+        "gebaerden",
+        "gebarden",
+        "sign"
+      ],
+      "pose": "/signs/dgs/words/gebaerde.json",
+      "video": {
+        "src": "/signs/dgs/video/gebaerden.webm",
+        "poster": "/signs/dgs/video/gebaerden.webp",
+        "credit": "signdict-290"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SPRACHE",
+      "en": "language",
+      "words": [
+        "sprache",
+        "language"
+      ],
+      "pose": "/signs/dgs/words/sprache.json",
+      "video": {
+        "src": "/signs/dgs/video/sprache.webm",
+        "poster": "/signs/dgs/video/sprache.webp",
+        "credit": "signdict-4369"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "VERSTEHEN",
+      "en": "understand",
+      "words": [
+        "verstehen",
+        "verstehe",
+        "verstanden",
+        "understand"
+      ],
+      "pose": "/signs/dgs/words/verstehen.json",
+      "video": {
+        "src": "/signs/dgs/video/verstehen.webm",
+        "poster": "/signs/dgs/video/verstehen.webp",
+        "credit": "signdict-874"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WISSEN",
+      "en": "know",
+      "words": [
+        "wissen",
+        "weiß",
+        "weiss",
+        "kennen",
+        "know"
+      ],
+      "pose": "/signs/dgs/words/wissen.json",
+      "video": {
+        "src": "/signs/dgs/video/wissen.webm",
+        "poster": "/signs/dgs/video/wissen.webp",
+        "credit": "signdict-920"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WOLLEN",
+      "en": "want",
+      "words": [
+        "wollen",
+        "will",
+        "möchte",
+        "moechte",
+        "mochte",
+        "want"
+      ],
+      "pose": "/signs/dgs/words/wollen.json",
+      "video": {
+        "src": "/signs/dgs/video/wollen.webm",
+        "poster": "/signs/dgs/video/wollen.webp",
+        "credit": "signdict-4186"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BRAUCHEN",
+      "en": "need",
+      "words": [
+        "brauchen",
+        "brauche",
+        "need"
+      ],
+      "pose": "/signs/dgs/words/brauchen.json",
+      "video": {
+        "src": "/signs/dgs/video/brauchen.webm",
+        "poster": "/signs/dgs/video/brauchen.webp",
+        "credit": "signdict-130"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MÖGEN",
+      "en": "like",
+      "words": [
+        "mögen",
+        "moegen",
+        "mogen",
+        "mag",
+        "gefallen",
+        "like"
+      ],
+      "pose": "/signs/dgs/words/moegen.json",
+      "video": {
+        "src": "/signs/dgs/video/moegen.webm",
+        "poster": "/signs/dgs/video/moegen.webp",
+        "credit": "signdict-2809"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LIEBE",
+      "en": "love",
+      "words": [
+        "liebe",
+        "lieben",
+        "love"
+      ],
+      "pose": "/signs/dgs/words/liebe.json",
+      "video": {
+        "src": "/signs/dgs/video/liebe.webm",
+        "poster": "/signs/dgs/video/liebe.webp",
+        "credit": "signdict-4965"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GLÜCKLICH",
+      "en": "happy",
+      "words": [
+        "glücklich",
+        "gluecklich",
+        "glucklich",
+        "froh",
+        "happy"
+      ],
+      "pose": "/signs/dgs/words/gluecklich.json",
+      "video": {
+        "src": "/signs/dgs/video/gluecklich.webm",
+        "poster": "/signs/dgs/video/gluecklich.webp",
+        "credit": "signdict-2050"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TRAURIG",
+      "en": "sad",
+      "words": [
+        "traurig",
+        "sad"
+      ],
+      "pose": "/signs/dgs/words/traurig.json",
+      "video": {
+        "src": "/signs/dgs/video/traurig.webm",
+        "poster": "/signs/dgs/video/traurig.webp",
+        "credit": "signdict-3822"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MÜDE",
+      "en": "tired",
+      "words": [
+        "müde",
+        "muede",
+        "mude",
+        "tired"
+      ],
+      "pose": "/signs/dgs/words/muede.json",
+      "video": {
+        "src": "/signs/dgs/video/muede.webm",
+        "poster": "/signs/dgs/video/muede.webp",
+        "credit": "signdict-2836"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HUNGER",
+      "en": "hungry",
+      "words": [
+        "hunger",
+        "hungrig",
+        "hungry"
+      ],
+      "pose": "/signs/dgs/words/hunger.json",
+      "video": {
+        "src": "/signs/dgs/video/hunger.webm",
+        "poster": "/signs/dgs/video/hunger.webp",
+        "credit": "signdict-367"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DURST",
+      "en": "thirsty",
+      "words": [
+        "durst",
+        "durstig",
+        "thirsty"
+      ],
+      "pose": "/signs/dgs/words/durst.json",
+      "video": {
+        "src": "/signs/dgs/video/durst.webm",
+        "poster": "/signs/dgs/video/durst.webp",
+        "credit": "signdict-1625"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "KALT",
+      "en": "cold",
+      "words": [
+        "kalt",
+        "cold"
+      ],
+      "pose": "/signs/dgs/words/kalt.json",
+      "video": {
+        "src": "/signs/dgs/video/kalt.webm",
+        "poster": "/signs/dgs/video/kalt.webp",
+        "credit": "signdict-2349"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HEISS",
+      "en": "hot",
+      "words": [
+        "heiß",
+        "heiss",
+        "hot"
+      ],
+      "pose": "/signs/dgs/words/heiss.json",
+      "video": {
+        "src": "/signs/dgs/video/heiss.webm",
+        "poster": "/signs/dgs/video/heiss.webp",
+        "credit": "signdict-2171"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HEUTE",
+      "en": "today",
+      "words": [
+        "heute",
+        "today"
+      ],
+      "pose": "/signs/dgs/words/heute.json",
+      "video": {
+        "src": "/signs/dgs/video/heute.webm",
+        "poster": "/signs/dgs/video/heute.webp",
+        "credit": "signdict-350"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MORGEN",
+      "en": "tomorrow",
+      "words": [
+        "morgen",
+        "tomorrow"
+      ],
+      "pose": "/signs/dgs/words/morgen.json",
+      "video": {
+        "src": "/signs/dgs/video/morgen.webm",
+        "poster": "/signs/dgs/video/morgen.webp",
+        "credit": "signdict-573"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GESTERN",
+      "en": "yesterday",
+      "words": [
+        "gestern",
+        "yesterday"
+      ],
+      "pose": "/signs/dgs/words/gestern.json",
+      "video": {
+        "src": "/signs/dgs/video/gestern.webm",
+        "poster": "/signs/dgs/video/gestern.webp",
+        "credit": "signdict-307"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "JETZT",
+      "en": "now",
+      "words": [
+        "jetzt",
+        "now"
+      ],
+      "pose": "/signs/dgs/words/jetzt.json",
+      "video": {
+        "src": "/signs/dgs/video/jetzt.webm",
+        "poster": "/signs/dgs/video/jetzt.webp",
+        "credit": "signdict-2320"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SPÄTER",
+      "en": "later",
+      "words": [
+        "später",
+        "spaeter",
+        "spater",
+        "later"
+      ],
+      "pose": "/signs/dgs/words/spaeter.json",
+      "video": {
+        "src": "/signs/dgs/video/spaeter.webm",
+        "poster": "/signs/dgs/video/spaeter.webp",
+        "credit": "signdict-3576"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "VORMITTAG",
+      "en": "morning",
+      "words": [
+        "morgens",
+        "vormittag",
+        "morning"
+      ],
+      "pose": null,
+      "video": {
+        "src": "/signs/dgs/video/vormittag.webm",
+        "poster": "/signs/dgs/video/vormittag.webp",
+        "credit": "signdict-4037"
+      },
+      "source": null
+    },
+    {
+      "gloss": "NACHT",
+      "en": "night",
+      "words": [
+        "nacht",
+        "night"
+      ],
+      "pose": "/signs/dgs/words/nacht.json",
+      "video": {
+        "src": "/signs/dgs/video/nacht.webm",
+        "poster": "/signs/dgs/video/nacht.webp",
+        "credit": "signdict-2875"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WO",
+      "en": "where",
+      "words": [
+        "wo",
+        "where"
+      ],
+      "pose": "/signs/dgs/words/wo.json",
+      "video": {
+        "src": "/signs/dgs/video/wo.webm",
+        "poster": "/signs/dgs/video/wo.webp",
+        "credit": "signdict-925"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WAS",
+      "en": "what",
+      "words": [
+        "was",
+        "what"
+      ],
+      "pose": "/signs/dgs/words/was.json",
+      "video": {
+        "src": "/signs/dgs/video/was.webm",
+        "poster": "/signs/dgs/video/was.webp",
+        "credit": "signdict-5198"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WER",
+      "en": "who",
+      "words": [
+        "wer",
+        "who"
+      ],
+      "pose": "/signs/dgs/words/wer.json",
+      "video": {
+        "src": "/signs/dgs/video/wer.webm",
+        "poster": "/signs/dgs/video/wer.webp",
+        "credit": "signdict-8061"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WANN",
+      "en": "when",
+      "words": [
+        "wann",
+        "when"
+      ],
+      "pose": "/signs/dgs/words/wann.json",
+      "video": {
+        "src": "/signs/dgs/video/wann.webm",
+        "poster": "/signs/dgs/video/wann.webp",
+        "credit": "signdict-8059"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WARUM",
+      "en": "why",
+      "words": [
+        "warum",
+        "why"
+      ],
+      "pose": "/signs/dgs/words/warum.json",
+      "video": {
+        "src": "/signs/dgs/video/warum.webm",
+        "poster": "/signs/dgs/video/warum.webp",
+        "credit": "signdict-4071"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WIE",
+      "en": "how",
+      "words": [
+        "wie",
+        "how"
+      ],
+      "pose": "/signs/dgs/words/wie.json",
+      "video": {
+        "src": "/signs/dgs/video/wie.webm",
+        "poster": "/signs/dgs/video/wie.webp",
+        "credit": "signdict-908"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GEHEN",
+      "en": "go",
+      "words": [
+        "gehen",
+        "geh",
+        "go"
+      ],
+      "pose": "/signs/dgs/words/gehen.json",
+      "video": {
+        "src": "/signs/dgs/video/gehen.webm",
+        "poster": "/signs/dgs/video/gehen.webp",
+        "credit": "signdict-4299"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "KOMMEN",
+      "en": "come",
+      "words": [
+        "kommen",
+        "komm",
+        "come"
+      ],
+      "pose": "/signs/dgs/words/kommen.json",
+      "video": {
+        "src": "/signs/dgs/video/kommen.webm",
+        "poster": "/signs/dgs/video/kommen.webp",
+        "credit": "signdict-2474"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SEHEN",
+      "en": "see",
+      "words": [
+        "sehen"
+      ],
+      "pose": "/signs/dgs/words/sehen.json",
+      "video": {
+        "src": "/signs/dgs/video/sehen.webm",
+        "poster": "/signs/dgs/video/sehen.webp",
+        "credit": "signdict-5652"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GEBEN",
+      "en": "give",
+      "words": [
+        "geben",
+        "gib",
+        "give"
+      ],
+      "pose": "/signs/dgs/words/geben.json",
+      "video": {
+        "src": "/signs/dgs/video/geben.webm",
+        "poster": "/signs/dgs/video/geben.webp",
+        "credit": "signdict-293"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HILF-MIR",
+      "en": "help me",
+      "words": [
+        "hilf mir",
+        "helfen sie mir",
+        "help me"
+      ],
+      "pose": "/signs/dgs/words/helfen.json",
+      "video": null,
+      "source": "sign.mt (signed as: helfen)"
+    },
+    {
+      "gloss": "ANRUFEN",
+      "en": "call",
+      "words": [
+        "anrufen",
+        "rufen",
+        "call"
+      ],
+      "pose": "/signs/dgs/words/rufen.json",
+      "video": {
+        "src": "/signs/dgs/video/anrufen.webm",
+        "poster": "/signs/dgs/video/anrufen.webp",
+        "credit": "signdict-1090"
+      },
+      "source": "sign.mt (signed as: rufen)"
+    },
+    {
+      "gloss": "TELEFON",
+      "en": "phone",
+      "words": [
+        "telefon",
+        "handy",
+        "phone",
+        "telephone",
+        "mobile"
+      ],
+      "pose": "/signs/dgs/words/telefon.json",
+      "video": {
+        "src": "/signs/dgs/video/telefon.webm",
+        "poster": "/signs/dgs/video/telefon.webp",
+        "credit": "signdict-3759"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "POLIZEI",
+      "en": "police",
+      "words": [
+        "polizei",
+        "police"
+      ],
+      "pose": "/signs/dgs/words/polizei.json",
+      "video": {
+        "src": "/signs/dgs/video/polizei.webm",
+        "poster": "/signs/dgs/video/polizei.webp",
+        "credit": "signdict-3100"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NOTRUF",
+      "en": "emergency",
+      "words": [
+        "notfall",
+        "notruf",
+        "emergency"
+      ],
+      "pose": "/signs/dgs/words/notfall.json",
+      "video": {
+        "src": "/signs/dgs/video/notruf.webm",
+        "poster": "/signs/dgs/video/notruf.webp",
+        "credit": "signdict-614"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BUS",
+      "en": "bus",
+      "words": [
+        "bus"
+      ],
+      "pose": "/signs/dgs/words/bus.json",
+      "video": {
+        "src": "/signs/dgs/video/bus.webm",
+        "poster": "/signs/dgs/video/bus.webp",
+        "credit": "signdict-136"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GELD",
+      "en": "money",
+      "words": [
+        "geld",
+        "money"
+      ],
+      "pose": "/signs/dgs/words/geld.json",
+      "video": {
+        "src": "/signs/dgs/video/geld.webm",
+        "poster": "/signs/dgs/video/geld.webp",
+        "credit": "signdict-298"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ENTSCHULDIGEN-SIE",
+      "en": "Excuse me",
+      "words": [
+        "entschuldigen sie",
+        "excuse me"
+      ],
+      "pose": "/signs/dgs/phrases/entschuldigen-sie.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GUTEN-MORGEN",
+      "en": "Good morning",
+      "words": [
+        "guten morgen",
+        "good morning"
+      ],
+      "pose": "/signs/dgs/phrases/guten-morgen.json",
+      "video": {
+        "src": "/signs/dgs/video/guten-morgen.webm",
+        "poster": "/signs/dgs/video/guten-morgen.webp",
+        "credit": "signdict-2093"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GUTE-NACHT",
+      "en": "Good night",
+      "words": [
+        "gute nacht",
+        "good night"
+      ],
+      "pose": "/signs/dgs/phrases/gute-nacht.json",
+      "video": {
+        "src": "/signs/dgs/video/gute-nacht.webm",
+        "poster": "/signs/dgs/video/gute-nacht.webp",
+        "credit": "signdict-4608"
+      },
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-VERSTEHE",
+      "en": "I understand",
+      "words": [
+        "ich verstehe",
+        "i understand"
+      ],
+      "pose": "/signs/dgs/phrases/ich-verstehe.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-VERSTEHE-NICHT",
+      "en": "I don't understand",
+      "words": [
+        "ich verstehe nicht",
+        "i don't understand"
+      ],
+      "pose": "/signs/dgs/phrases/ich-verstehe-nicht.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "KÖNNEN-SIE-DAS-WIEDERHOLEN",
+      "en": "Can you repeat that?",
+      "words": [
+        "können sie das wiederholen",
+        "koennen sie das wiederholen",
+        "konnen sie das wiederholen",
+        "can you repeat that"
+      ],
+      "pose": "/signs/dgs/phrases/koennen-sie-das-wiederholen.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BITTE-SPRECHEN-SIE-LANGSAM",
+      "en": "Please speak slowly",
+      "words": [
+        "bitte sprechen sie langsam",
+        "please speak slowly"
+      ],
+      "pose": "/signs/dgs/phrases/bitte-sprechen-sie-langsam.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "KÖNNEN-SIE-DAS-AUFSCHREIBEN",
+      "en": "Can you write it down?",
+      "words": [
+        "können sie das aufschreiben",
+        "koennen sie das aufschreiben",
+        "konnen sie das aufschreiben",
+        "can you write it down"
+      ],
+      "pose": "/signs/dgs/phrases/koennen-sie-das-aufschreiben.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BITTE-HABEN-SIE-GEDULD-MIT-MIR",
+      "en": "Please be patient with me",
+      "words": [
+        "bitte haben sie geduld mit mir",
+        "please be patient with me"
+      ],
+      "pose": "/signs/dgs/phrases/bitte-haben-sie-geduld-mit-mir.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BITTE-SEHEN-SIE-MICH-BEIM-SPRECHEN-AN",
+      "en": "Please face me when you speak",
+      "words": [
+        "bitte sehen sie mich beim sprechen an",
+        "please face me when you speak"
+      ],
+      "pose": "/signs/dgs/phrases/bitte-sehen-sie-mich-beim-sprechen-an.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "EINEN-MOMENT-BITTE",
+      "en": "One moment, please",
+      "words": [
+        "einen moment bitte",
+        "one moment please"
+      ],
+      "pose": "/signs/dgs/phrases/einen-moment-bitte.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-BIN-GEHÖRLOS",
+      "en": "I am deaf",
+      "words": [
+        "ich bin gehörlos",
+        "ich bin gehoerlos",
+        "ich bin gehorlos",
+        "i am deaf"
+      ],
+      "pose": "/signs/dgs/phrases/ich-bin-gehoerlos.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-BIN-SCHWERHÖRIG",
+      "en": "I am hard of hearing",
+      "words": [
+        "ich bin schwerhörig",
+        "ich bin schwerhoerig",
+        "ich bin schwerhorig",
+        "i am hard of hearing"
+      ],
+      "pose": "/signs/dgs/phrases/ich-bin-schwerhoerig.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-BENUTZE-GEBÄRDENSPRACHE",
+      "en": "I use sign language",
+      "words": [
+        "ich benutze gebärdensprache",
+        "ich benutze gebaerdensprache",
+        "ich benutze gebardensprache",
+        "i use sign language"
+      ],
+      "pose": "/signs/dgs/phrases/ich-benutze-gebaerdensprache.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WIE-HEISSEN-SIE",
+      "en": "What is your name?",
+      "words": [
+        "wie heißen sie",
+        "wie heissen sie",
+        "what is your name"
+      ],
+      "pose": "/signs/dgs/phrases/wie-heissen-sie.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FREUT-MICH",
+      "en": "Nice to meet you",
+      "words": [
+        "freut mich",
+        "nice to meet you"
+      ],
+      "pose": "/signs/dgs/phrases/freut-mich.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-NUTZE-DIESE-APP-ZUM-KOMMUNIZIEREN",
+      "en": "I use this app to communicate",
+      "words": [
+        "ich nutze diese app zum kommunizieren",
+        "i use this app to communicate"
+      ],
+      "pose": "/signs/dgs/phrases/ich-nutze-diese-app-zum-kommunizieren.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-BRAUCHE-WASSER",
+      "en": "I need water",
+      "words": [
+        "ich brauche wasser",
+        "i need water"
+      ],
+      "pose": "/signs/dgs/phrases/ich-brauche-wasser.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-BRAUCHE-ETWAS-ZU-ESSEN",
+      "en": "I need food",
+      "words": [
+        "ich brauche etwas zu essen",
+        "i need food"
+      ],
+      "pose": "/signs/dgs/phrases/ich-brauche-etwas-zu-essen.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-HABE-HUNGER",
+      "en": "I am hungry",
+      "words": [
+        "ich habe hunger",
+        "i am hungry"
+      ],
+      "pose": "/signs/dgs/phrases/ich-habe-hunger.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-HABE-DURST",
+      "en": "I am thirsty",
+      "words": [
+        "ich habe durst",
+        "i am thirsty"
+      ],
+      "pose": "/signs/dgs/phrases/ich-habe-durst.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-BIN-MÜDE",
+      "en": "I am tired",
+      "words": [
+        "ich bin müde",
+        "ich bin muede",
+        "ich bin mude",
+        "i am tired"
+      ],
+      "pose": "/signs/dgs/phrases/ich-bin-muede.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MIR-IST-KALT",
+      "en": "I am cold",
+      "words": [
+        "mir ist kalt",
+        "i am cold"
+      ],
+      "pose": "/signs/dgs/phrases/mir-ist-kalt.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-MUSS-AUF-DIE-TOILETTE",
+      "en": "I need the toilet",
+      "words": [
+        "ich muss auf die toilette",
+        "i need the toilet"
+      ],
+      "pose": "/signs/dgs/phrases/ich-muss-auf-die-toilette.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-BRAUCHE-MEINE-MEDIKAMENTE",
+      "en": "I need my medicine",
+      "words": [
+        "ich brauche meine medikamente",
+        "i need my medicine"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "ICH-BRAUCHE-SOFORT-HILFE",
+      "en": "I need help now",
+      "words": [
+        "ich brauche sofort hilfe",
+        "i need help now"
+      ],
+      "pose": "/signs/dgs/phrases/ich-brauche-sofort-hilfe.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "RUFEN-SIE-EINEN-KRANKENWAGEN",
+      "en": "Call an ambulance",
+      "words": [
+        "rufen sie einen krankenwagen",
+        "call an ambulance"
+      ],
+      "pose": "/signs/dgs/phrases/rufen-sie-einen-krankenwagen.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "RUFEN-SIE-DIE-POLIZEI",
+      "en": "Call the police",
+      "words": [
+        "rufen sie die polizei",
+        "call the police"
+      ],
+      "pose": "/signs/dgs/phrases/rufen-sie-die-polizei.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-BRAUCHE-EINEN-ARZT",
+      "en": "I need a doctor",
+      "words": [
+        "ich brauche einen arzt",
+        "i need a doctor"
+      ],
+      "pose": "/signs/dgs/phrases/ich-brauche-einen-arzt.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ICH-HABE-SCHMERZEN",
+      "en": "I am in pain",
+      "words": [
+        "ich habe schmerzen",
+        "i am in pain"
+      ],
+      "pose": "/signs/dgs/phrases/ich-habe-schmerzen.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BITTE-RUFEN-SIE-MEINE-FAMILIE-AN",
+      "en": "Please call my family",
+      "words": [
+        "bitte rufen sie meine familie an",
+        "please call my family"
+      ],
+      "pose": "/signs/dgs/phrases/bitte-rufen-sie-meine-familie-an.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WO-IST-DIE-TOILETTE",
+      "en": "Where is the toilet?",
+      "words": [
+        "wo ist die toilette",
+        "where is the toilet"
+      ],
+      "pose": "/signs/dgs/phrases/wo-ist-die-toilette.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WO-IST-DAS-KRANKENHAUS",
+      "en": "Where is the hospital?",
+      "words": [
+        "wo ist das krankenhaus",
+        "where is the hospital"
+      ],
+      "pose": "/signs/dgs/phrases/wo-ist-das-krankenhaus.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WO-IST-DIE-BUSHALTESTELLE",
+      "en": "Where is the bus stop?",
+      "words": [
+        "wo ist die bushaltestelle",
+        "where is the bus stop"
+      ],
+      "pose": "/signs/dgs/phrases/wo-ist-die-bushaltestelle.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WIE-SPÄT-IST-ES",
+      "en": "What time is it?",
+      "words": [
+        "wie spät ist es",
+        "wie spaet ist es",
+        "wie spat ist es",
+        "what time is it"
+      ],
+      "pose": "/signs/dgs/phrases/wie-spaet-ist-es.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WIE-VIEL-KOSTET-DAS",
+      "en": "How much does it cost?",
+      "words": [
+        "wie viel kostet das",
+        "how much does it cost"
+      ],
+      "pose": "/signs/dgs/phrases/wie-viel-kostet-das.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "KÖNNEN-SIE-MIR-HELFEN",
+      "en": "Can you help me?",
+      "words": [
+        "können sie mir helfen",
+        "koennen sie mir helfen",
+        "konnen sie mir helfen",
+        "can you help me"
+      ],
+      "pose": "/signs/dgs/phrases/koennen-sie-mir-helfen.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WIE-GEHT-ES-IHNEN",
+      "en": "How are you?",
+      "words": [
+        "wie geht es ihnen",
+        "how are you"
+      ],
+      "pose": "/signs/dgs/phrases/wie-geht-es-ihnen.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MIR-GEHT-ES-GUT-DANKE",
+      "en": "I am fine, thank you",
+      "words": [
+        "mir geht es gut danke",
+        "i am fine thank you"
+      ],
+      "pose": "/signs/dgs/phrases/mir-geht-es-gut-danke.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BIS-MORGEN",
+      "en": "See you tomorrow",
+      "words": [
+        "bis morgen",
+        "see you tomorrow"
+      ],
+      "pose": "/signs/dgs/phrases/bis-morgen.json",
+      "video": null,
+      "source": "sign.mt"
+    }
+  ]
+}

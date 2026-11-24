@@ -145,8 +145,8 @@ Per-hand vector: 63 + 15 + 10 + 3 = **91**.
   - random finger dropout (zero 1 finger, p = 0.1)
   - small z noise
 - **Baselines** (sanity check, logged): kNN (k=5), logistic regression, RBF-SVM. The MLP should beat logistic regression by ≥ 3 points of macro-F1, or we ship the simpler model.
-- **Emotion weights:** a small grid search over the rule weights (§6 of the architecture) on the team's own 7-emotion clips (each person acts each emotion for 5 s). Objective: macro-F1 on held-out people. Reported honestly, because acted emotions are not real ones.
-- **Gesture rules:** thresholds tuned on the team's 8-gesture recordings. Target ≥ 90% accuracy.
+- **Emotion (as built):** a logistic regression on all 52 blendshapes, trained on KDEF (posed photos, 70 adults) with 20 people held out: macro-F1 0.744 (`docs/EVAL.md` §6b). The plan-v1 idea of tuning rule weights on the team's own clips was dropped, because there are no team recordings (D-27). Reported honestly, because acted emotions are not felt ones.
+- **Gesture rules (as built):** thresholds tuned on HaGRID, then tested on 626 people not used for tuning: 97.3% over the 6 HaGRID types (`docs/EVAL.md` §5). I-love-you and wave have no public test set.
 
 ## 6. Evaluation (published on `/about/evidence` and in `docs/EVAL.md`)
 

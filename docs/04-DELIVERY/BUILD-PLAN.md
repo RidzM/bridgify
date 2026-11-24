@@ -428,240 +428,95 @@ confidence: medium
 
 ---
 
-## Phase 5: Text→Sign and content (difficulty 4) ⬜ (FR-TS-*)
+## Phase 5: Text→Sign and content (difficulty 4) ✅ 24 Nov (FR-TS-*)
 
-### 5.1 Content pipeline ⬜
+> Built without a server (D-24): the browser calls sign.mt directly; animations use our own `.pose` reader and compact format (D-30); ISL gloss runs in JS (D-31). Screenshots: `docs/screens/p5-p8/`.
 
-**Steps:**
-1. `content/lexicons/{lang}.json` schema:
+### 5.1 Content pipeline ✅ 24 Nov
+`tools-content/signs/` prepares word and phrase animations from sign.mt (`fetch-poses.mjs` → compact JSON) and DGS signer videos from SignDict (`fetch-videos.mjs`, per-video CC licences); `verify.mjs` checks everything with the app's own tokenizer and decoder. Lexicons in `content/lexicons/<lang>.json` for ISL, ASL, FSL, LSM, LIS and DGS (everyday words plus the quick-access phrases); credits in `content/credits/signs.json` (shown on /about/credits, grouped). `web/scripts/content-check.mjs` fails the build if any lexicon, phrase or letter file points at a missing file. **Evidence:** all media references resolve (see the build log); sign media is about 38 MB, loaded only when shown and cached on first use. No Lifeprint, Handspeak, Spread The Sign, Sématos or DGS-Korpus media.
 
-   ```json
-   {gloss, words:[...], media:{type:'video'|'image', src, poster?}, source, license, author, url}
-   ```
+### 5.2 Gloss ✅ 24 Nov (JS, D-31)
+`engines/sign/gloss.ts`. **Evidence:** 12 unit tests, including "Where is the hospital?" → `HOSPITAL WHERE` and "I am not hungry" → `I HUNGRY NOT`.
 
-   Plus `content/CREDITS.json`.
-2. `content/tools/fetch-media.mjs`:
-   - per-source fetchers for **free, licence-clean sources only**: ASL Signbank (CC BY-NC-SA), SignDict API (DGS, per-video CC), Wikimedia Commons (LSF Lingua Libre / Elix, fingerspelling sets), ISLRTC (research use with credit)
-   - downloads and transcodes to **WebM VP9, 240p, ≤ 120 KB** (ffmpeg locally)
-   - writes the credit entries
-3. Word list per language: the quick-access phrases' words plus ~60 everyday words (hello, thank you, help, water, doctor, pain, yes, no, family, school…), so ≈ 60–80 words × 4 languages ≈ 25–35 MB total. Served from `/signs/`, fetched only when shown, never precached except SOS.
-4. CI check: every file in `web/public/signs` has a `CREDITS.json` entry, and the size budget is ≤ 40 MB.
+### 5.3 Pose fallback (sign.mt) ✅ 24 Nov
+Direct browser request (CORS `*`), language codes ase/ins/fsl/mfs/ise/gsg, 20 s timeout and one retry on a server error, Cache API `bridgify-signs-live-v1`; our own `.pose` reader (no pose-viewer). **Evidence:** `poseFile`/`poseCompact` unit tests; e2e under the production CSP.
 
-**Acceptance:** the lexicon validates against a zod schema. The licence check passes. **H4** review is done for ISL.
-
-### 5.2 Gloss service ⬜
-
-**Steps:**
-1. `gloss_svc.py`: spaCy `en_core_web_sm`; ISL rules (SYSTEM-ARCHITECTURE §7.2); ASL WH-last.
-2. `/api/sign/gloss`.
-3. 30 test sentences.
-4. JS fallback with simple rules for offline use.
-
-**Acceptance:** "Where is the hospital?" → `HOSPITAL WHERE`. "I am not hungry" → `I HUNGRY NOT`.
-
-### 5.3 Pose fallback (sign.mt) ⬜
-
-**Steps:**
-1. `/api/sign/pose` proxy: param allowlist, 8 s timeout, disk cache, rate limit, credit header.
-2. Language codes: ase, ins, fsl (+ spoken=fr), mfs, ise, gsg.
-3. Client: lazy-load `pose-viewer` **only** when a pose is needed. Cache `.pose` blobs in IndexedDB.
-4. If sign.mt is down: fingerspell.
-
-**Acceptance:** "amigo" (LSM) and "scusa" (LIS) render as poses, matching the report §3.6 cases.
-
-### 5.4 Player and page ⬜
-
-**Steps:**
-1. `tokenize.ts` (greedy multi-word match), `sequence.ts` state machine (preload next 2), `fingerspell.ts`.
-2. Page:
-   - language chips (6)
-   - input, Show Signs, Speak Aloud
-   - gloss line (ISL)
-   - SignPlayer (play/pause, speed, loop, step)
-   - cards strip showing the source type badge (Video / Animation / Fingerspelling) and credit
-3. Localised quick access per language (`quick-access.{hi,fr,es,it,de,en}.json`) with English in brackets.
-4. Disclaimer (FR-TS-08).
-
-**Acceptance:** all 6 report test words render. Reduced motion means step mode. axe clean.
+### 5.4 Player and page ✅ 24 Nov
+`/tools/text-to-sign`: six language chips, Show signs, Speak, ISL word-order line, SignPlayer (play/pause, previous/next, speed, loop, strip), per-language quick phrases, disclaimer. Stored lexicon → live sign.mt → fingerspelling; a stored phrase that fails to load is signed word by word. The figure renderer draws a person, not a skeleton (D-35). **Evidence:** `e2e/sign.spec.ts` on desktop and Pixel 7 (ASL "hello" plays, names are fingerspelled, ISL order line with stored signs while sign.mt is down, all six languages present).
 
 ---
 
-## Phase 6: home demo, Tutorials (difficulty 2) ⬜ (FR-SH-03, FR-TU-*)
+## Phase 6: home demo, Tutorials (difficulty 2) ✅ 24 Nov (FR-SH-03, FR-TU-*)
 
-### 6.1 Home "Every way" demo ⬜
+### 6.1 Home "Every way" demo ✅ 24 Nov
+Composer rows: Spoken, Braille (grade 1), Fingerspelled (in the chosen sign language, when pictures exist), Large print. Only new or changed braille cells animate. **Evidence:** Lighthouse mobile on `/` (see 8.2); axe clean in 12 modes.
 
-**Steps:**
-1. Input, then four rows (Spoken, Braille, Fingerspelt, Large print), reusing the TTS engine, `grade1.ts` (instant, no network), the fingerspelling images and CSS.
-2. The dot-raise animation (the only orchestrated motion), off in no-motion modes.
-3. Tool directory ("Say it" / "Understand it" columns, with braille initials), Bridge band, "Who it's for" rows, privacy note.
+### 6.2 Braille tutorials ✅ 24 Nov
+`/learn/braille/{alphabet,numbers,contractions}` from `content/tutorials/braille-g1.json` and `braille-g2.json` (generated with liblouis 3.39; 85 Grade 2 entries, all matching liblouis), "Hear how braille cells work", and a quiz. **Evidence:** `e2e/learn.spec.ts`.
 
-**Acceptance:** LCP ≤ 2.5 s (Lighthouse mobile). Works with no backend.
+### 6.3 Sign tutorials ✅ 24 Nov (with documented gaps)
+- **Alphabets:** ISL 26/26 (two hands; H, J and Y from photos), ASL 26/26, FSL 26/26 (Commons photos), DGS 30/30 (A–Z, Ä, Ö, Ü, SCH).
+- **Numbers:** ISL 10/10, ASL 10/10.
+- **Phrases:** 30 per language. Each plays its own stored animation where one exists, and is otherwise planned word by word.
+- **Scripts:** ISL letters can be shown in 22 Indian scripts (13 Noto fonts, loaded on demand).
+- **Gaps:** LSM and LIS have no openly licensed alphabet pictures (LSM: L, S and M only). Their pages say so and offer the animated signer. Numbers for FSL, LSM, LIS and DGS likewise have no pictures. ISL tips need a signer's check (Q-12).
+- **Evidence:** `e2e/learn.spec.ts` (26 ASL letter pictures, 10 number pictures, a stored LSF phrase plays, the LIS page explains and switches Text to sign to LIS).
 
-**Visual check:** 4 modes, plus a critique against the DESIGN-SYSTEM §3 table.
-
-### 6.2 Braille tutorials ⬜
-
-**Steps:**
-1. `content/tutorials/braille-g1.json` (A–Z with dots), numbers, `braille-g2.json` (whole-word and part-word contractions, generated from liblouis and then curated).
-2. Pages and panel views. "Hear it" button. A quiz: show a cell, pick the letter.
-
-**Acceptance:** content matches liblouis.
-
-### 6.3 Sign tutorials ⬜
-
-**Steps:**
-1. For each of the 6 languages:
-   - A–Z: Commons images for ASL/LSF/DGS, Zenodo for LSM, sign.mt pose for LIS/ISL letters where no open images exist, ISLRTC where licensed
-   - numbers
-   - 30 phrases (reusing lexicon media, then pose, then fingerspelling)
-2. ISL letter cards with the **22-script row** (`content/scripts/indic-22.json`, Noto fonts on demand).
-
-**Acceptance:** 6 × (26 + 10 + 30) cards render, each with credit. Each script renders (font check).
-
-### 6.4 Practice mode ⬜ (FR-TU-04)
-
-**Steps:** target letter, then the camera (reuse P1), then a pass when the committer emits the target letter, then the next letter. Score shown.
-
-**Acceptance:** works for ASL and ISL.
+### 6.4 Practice mode ✅ 24 Nov (FR-TU-04)
+`/learn/sign/{asl,isl}/practice`: target letter, camera, Well done, Next letter, score. It only asks for letters the model was trained on (D-34).
 
 ---
 
-## Phase 7: Bridge, SOS, PWA (difficulty 4) ⬜ (FR-BG-*, FR-SOS-*, FR-PWA-01)
+## Phase 7: Bridge, SOS, PWA (difficulty 4) ✅ 24 Nov (FR-BG-*, FR-SOS-*, FR-PWA-01)
 
-### 7.1 Server rooms ⬜
+> Built peer to peer (D-24, D-37), so 7.1 "server rooms" became the PeerJS + same-browser transport. Evidence: `docs/EVAL.md` §9, screenshots `docs/screens/p7/` (88: /bridge, /sos and 9 conversation states × 4 modes × desktop and mobile).
 
-**Steps:**
-1. `realtime/bridge.py`: events per SYSTEM-ARCHITECTURE §7.3; room code generator; 2-member cap; token-bucket rate limit; 8 KB packet cap; sweeper thread; a logger filter that drops `msg` payloads.
-2. Tests with `socketio.test_client`: create, join, full, relay, rate, expire.
+### 7.1 Rooms ✅ 24 Nov (peer to peer instead of a server)
+PeerJS on the free broker (`bridgify-CODE` host id) plus a BroadcastChannel path for a second tab; 6-character codes; two-person cap (`full` packet); 8 KB packet cap, field-by-field validation, 50 packets/s limit; 30-minute idle expiry. **Evidence:** 28 unit tests (`engines/bridge/*.test.ts`), including the QR encoder checked bit for bit against qrencode 4.1.1.
 
-**Acceptance:** pytest green.
+### 7.2 Client room and router ✅ 24 Nov
+`/bridge` start and join (code, QR, read-aloud, copy link), `/bridge/:code` conversation with "How you send", "How you receive", a meter (bytes/s, round trip) and status. Reconnects after 15 s of silence and queues typed messages; rejoins within 30 s after navigating away. **Evidence:** two-tab e2e (type → receive → switch to braille → leave), keyboard-only join, bad codes, third person turned away; an `@online` test through the public broker. Connect 0.36–0.58 s (tabs), 1.6–3.1 s (broker).
 
-### 7.2 Client room and router ⬜
+### 7.3 Send modes ✅ 24 Nov
+Send: Type, Speak (STT engine; each sentence sent on a pause), Quick phrases, Fingerspell (letters held steady build a word; Send word). Receive: captions, speech, braille cells, sign (the P5 player). **Not done:** no send mode emits `gloss` packets yet (they are received and rendered); a connected braille display (WebHID) is future work.
 
-**Steps:**
-1. `bridge/socket.ts` (connect lazily, reconnect with back-off), `room.ts`, `packets.ts` (zod-validated), `router.ts` (receive profile to renderer), `metrics.ts`.
-2. Pages:
-   - `/bridge`: Start (shows the code, a QR of the `/bridge/CODE` URL, read-aloud) and Join (code input)
-   - `/bridge/:code`: conversation view with two lanes, "how I receive" and "how I send" selectors, a meter (bytes/s, RTT), and status (typing, listening, signing)
+### 7.4 "Show my hands" stream and metrics ✅ 24 Nov
+Int16 x/y hand points (z dropped, D-37) with keyframes; the receiver draws the outline (`RemoteHands`). **Evidence:** 13.8 kbps for a continuously moving hand at 30 fps input (target < 15 kbps), 1.6–1.9 kbps when still; round trip median 0.8–2.7 ms on one machine. Real-phone numbers: Q-10.
 
-**Acceptance:** two Playwright browser contexts exchange text both ways. Connected in < 2 s.
+### 7.5 SOS ✅ 24 Nov
+`/sos`: preset cards from `content/phrases/sos.json` (each with a Hindi line), Speak, Show full screen (with Turn text around), Sign it (signs on demand), Your details (name, emergency contact, medical notes, stored on the device), Call contact, Share my location. **Evidence:** e2e (presets, Speak, contact survives reload, offline after one visit); first card in 103–287 ms offline (target 300 ms). Hindi lines need a native check (Q-09).
 
-### 7.3 Send modes ⬜
-
-**Steps:** wire each send mode into the room:
-- Type
-- Speak (STT engine)
-- Fingerspell (Sign→Text committer; a word is sent on Space)
-- Quick phrases
-
-Receive modes:
-- captions
-- speech (TTS)
-- braille (DotGrid, plus a WebHID display if connected, stretch)
-- sign (P5 player)
-
-**Acceptance:** the demo script (H6) runs end to end on two phones.
-
-### 7.4 "Show my hands" stream and metrics ⬜ (FR-BG-03, 04)
-
-**Steps:**
-1. Quantise landmarks to Int16 (×1000) and send at 15 Hz as base64.
-2. The receiver draws a skeleton (lightweight canvas renderer, not pose-viewer).
-3. Log the metrics. An evidence script computes median and p95 bandwidth and latency over a 2-minute session.
-
-**Acceptance:** < 15 kbps average and < 250 ms median RTT on the same Wi-Fi, recorded in EVAL.md.
-
-### 7.5 SOS ⬜
-
-**Steps:**
-1. `/sos` full-screen card. Presets from `content/phrases/sos.json` plus the user's notes (prefs.sos).
-2. Shows large text, ISL video (cached), braille cells, a Speak button, Share location, and a Call contact link.
-3. Settings form in Personalize.
-
-**Acceptance:** opens in < 300 ms offline (after the first visit).
-
-### 7.6 PWA ⬜
-
-**Steps:**
-1. `vite-plugin-pwa`:
-   - manifest (name, icons from the braille "b" mark, theme colour)
-   - precache the shell, SOS and SOS media
-   - runtime caching rules (SYSTEM-ARCHITECTURE §6.8)
-   - update prompt toast
-2. ModelManager's Cache API makes models available offline after first use.
-
-**Acceptance:**
-- Lighthouse: installable.
-- Airplane-mode test: TTS, braille G1, Sign→Text (after one use) and SOS all work.
+### 7.6 PWA ✅ 24 Nov
+`vite-plugin-pwa` generateSW with a prompt-to-reload toast (`src/app/pwa.ts`, loaded after the page); manifest with braille-"b" icons, maskable icons and SOS/Bridge shortcuts; caching per SYSTEM-ARCHITECTURE §6.8 (D-38). **Evidence:** e2e checks the manifest and icon sizes, that the worker registers without precaching models, that Text to speech works offline, and that SOS works offline.
 
 ---
 
-## Phase 8: hardening and ship (difficulty 3) ⬜
+## Phase 8: hardening and ship (difficulty 3) ✅ 24 Nov
 
-### 8.1 Accessibility sweep ⬜ (NFR-01)
+### 8.1 Accessibility sweep ✅ 24 Nov (NFR-01)
+axe (WCAG 2.2 AA) over 16 routes × 12 modes: 0 serious or critical issues; Bridge and SOS have their own 12-mode sweeps. Keyboard-only tests (display settings, Bridge join, braille keys, lesson tabs); 200% text at 320 px without sideways scrolling. Two issues found and fixed in this phase: a `dd` with `role="img"` inside the home definition list, and script letters using a language name instead of a code in `lang`. **Not done:** a manual screen-reader pass by a person (Q-11).
 
-**Steps:**
-1. axe over every route × 12 modes in CI.
-2. Keyboard-only Playwright scripts per tool.
-3. Manual screen-reader pass with NVDA (Windows, if available) **or** Orca (Linux), plus VoiceOver (iOS) on Home, TTS, Braille, Sign→Text and Bridge. Findings recorded in `docs/A11Y.md`.
-4. 200% zoom and 320 px reflow check.
+### 8.2 Performance ✅ 24 Nov (NFR-02)
+Entry 121.8 KB gzip of 180 (React Router 7 added 9 KB, D-36). Text no longer shifts as fonts load: the interface fonts are preloaded and the main area reserves its height (CLS 0.144 → 0). `robots.txt` added. Lighthouse (mobile, production): see `PERF` below.
 
-**Acceptance:** 0 serious/critical issues. Manual findings fixed or recorded.
+### 8.3 Security ✅ 24 Nov
+- **CSP:** strict, and checked at build (D-32). Every flow was tested under it, locally with `scripts/serve-prod.mjs` and in production.
+- **Dependency audits:** `pnpm audit --prod` 0 vulnerabilities after the React Router 7 upgrade; `pip-audit` on the function's requirements 0.
+- **Secret scan:** gitleaks over all commits found 1 false positive (a localStorage key name), listed in `.gitleaksignore`.
+- **Insecure-defaults audit (Trail of Bits):** 4,921 files, 6 categories, 71 patterns. 15 candidates, all refuted on verification; 0 findings. Its optional notes were applied: a 20/min-per-IP limit on `/api/tts` (per warm instance), and the local test server now binds to 127.0.0.1 and refuses paths outside `dist/`.
+- **Supply-chain audit (Trail of Bits):** 50 direct dependencies, 0 known advisories. Three unused packages were removed (`socket.io-client`, `@fontsource/syne`, `idb-keyval`), and React and Lucide are pinned exactly.
 
-### 8.2 Performance ⬜ (NFR-02)
+### 8.4 Design QA ✅ 24 Nov
+`npx impeccable detect` on the new routes: 0 anti-patterns. One line-length finding on About was fixed with a 34em measure. Screenshots: `docs/screens/p5-p8/` (8 routes × Light, Dark, High Contrast, Dyslexia × desktop and phone) and `docs/screens/p7/`. Fixes from looking at them: the sign figure renderer (D-35), and an honest panel instead of empty letter cards for LSM and LIS.
 
-**Steps:**
-1. Lighthouse CI on `/`, `/tools/text-to-speech` and `/tools/sign-to-text`.
-2. Bundle visualiser review.
-3. Font subsetting (Latin + Latin-ext for Atkinson; Syne display weight only).
+### 8.5 Evidence ✅ 24 Nov (FR-EV-01)
+`/about/evidence` renders `content/evidence.json`: four model numbers with confusion matrices, plus checks for braille, parity, accessibility, contrast, e2e, Bridge bandwidth and connect time, SOS offline time, and bundle size. Every number traces to `docs/EVAL.md` or a test.
 
-**Acceptance:** Lighthouse Performance ≥ 90, Accessibility ≥ 98, entry ≤ 180 KB gz.
+### 8.6 Docs for the team ✅ 24 Nov
+- `README.md`: an animated banner and demo clips, a deep-link table of every page, step-by-step use, a five-minute test, how it works, and run-locally steps.
+- `docs/Bridgify-User-Guide.pdf`: built by `web/scripts/make-guide.mjs`, with screenshots from the live site, a link per page, a 48-row checklist, a demo script and viva questions.
+- `docs/REPORT-UPDATES.md`: paste-ready report text.
+- A fresh clone of the public repo installs and builds with `pnpm install && pnpm build` (no Docker needed since D-24).
 
-### 8.3 Security ⬜
-
-**Steps:**
-1. Final CSP.
-2. Rate limits verified.
-3. `pnpm audit`, `pip-audit`.
-4. Static review for insecure defaults and supply-chain risk.
-5. Confirm no secrets in the repo (`gitleaks detect`).
-
-**Acceptance:** no high findings left open.
-
-### 8.4 Design QA ⬜
-
-**Steps:**
-1. `npx impeccable detect` on the source and the running URL.
-2. Screenshot every route in Light, Dark, High Contrast and Dyslexia, desktop and mobile.
-3. Critique against DESIGN-SYSTEM §3 and fix.
-
-**Acceptance:** no unexplained findings. The screens folder is complete.
-
-### 8.5 Evidence ⬜ (FR-EV-01)
-
-**Steps:**
-1. `docs/EVAL.md` final.
-2. `/about/evidence` renders `manifest.json` metrics, confusion-matrix images, axe summary JSON (from CI artefacts, copied at build) and Bridge numbers.
-3. `/about/credits` from `CREDITS.json`, plus the liblouis LGPL source link.
-
-**Acceptance:** every number on the page traces to a file in the repo.
-
-### 8.6 Docs for the team ⬜
-
-**Steps:**
-1. `README.md`: what it is, the feature list mapped to report figures, run locally (web, server, ml), deploy, architecture diagram link.
-2. `docs/REPORT-UPDATES.md`: PRD §9 written as paste-ready paragraphs for the report.
-3. Team-facing docs contain no tooling or authorship notes.
-
-**Acceptance:** a fresh clone runs with `docker compose up` + `pnpm dev` following the README only.
-
-### 8.7 Ship ⬜
-
-**Steps:**
-1. Private repo push (H1 identity; the pre-push hook passes).
-2. Vercel production deploy, project `bridgify`, passcode gate ON (Q-01).
-3. Backend production.
-4. Smoke test on a phone and a laptop.
-5. Hand the link and passcode to the team.
-
-**Acceptance:** the smoke checklist (all 7 tools + Bridge + SOS) passes on the production URL.
+### 8.7 Ship ✅ 24 Nov
+Pushed to `RidzM/bridgify`, where `RidzM` is the only contributor; the mirror is synced. Production deploy to https://bridgify-vcet.vercel.app, and the e2e suite run against production (see `SHIP` below). The passcode gate was dropped by D-25 (public).

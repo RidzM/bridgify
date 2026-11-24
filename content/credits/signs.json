@@ -1,0 +1,896 @@
+{
+  "items": [
+    {
+      "id": "signmt",
+      "name": "sign.mt / spoken-to-signed translation",
+      "license": "CC BY-NC-SA 4.0 (app) — poses generated via the public API",
+      "url": "https://sign.mt",
+      "usedFor": "sign animations"
+    },
+    {
+      "id": "lingualibre-au-revoir",
+      "name": "Lingua Libre: au revoir (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-au_revoir.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/b/b0/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-au_revoir.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: au revoir"
+    },
+    {
+      "id": "lingualibre-bonjour",
+      "name": "Lingua Libre: bonjour (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-bonjour.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/0/0b/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-bonjour.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: bonjour"
+    },
+    {
+      "id": "lingualibre-encore",
+      "name": "Lingua Libre: encore (LSF sign video)",
+      "author": "Yug",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Yug-encore.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/e/ea/LL-Q33302_%28fsl%29-Yug-encore.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: encore"
+    },
+    {
+      "id": "lingualibre-je-ne-comprends-pas",
+      "name": "Lingua Libre: je ne comprends pas (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-je_ne_comprends_pas.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/5/50/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-je_ne_comprends_pas.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: je ne comprends pas"
+    },
+    {
+      "id": "lingualibre-manger",
+      "name": "Lingua Libre: manger (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-manger.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/9/9a/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-manger.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: manger"
+    },
+    {
+      "id": "lingualibre-merci",
+      "name": "Lingua Libre: merci (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-merci.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/f/f1/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-merci.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: merci"
+    },
+    {
+      "id": "lingualibre-ou",
+      "name": "Lingua Libre: où (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-o%C3%B9.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/5/50/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-o%C3%B9.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: où"
+    },
+    {
+      "id": "lingualibre-oui",
+      "name": "Lingua Libre: oui (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-oui.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/d/d9/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-oui.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: oui"
+    },
+    {
+      "id": "lingualibre-pardon",
+      "name": "Lingua Libre: pardon (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-pardon.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/d/dd/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-pardon.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: pardon"
+    },
+    {
+      "id": "lingualibre-pourquoi",
+      "name": "Lingua Libre: pourquoi (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-pourquoi.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/5/5f/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-pourquoi.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: pourquoi"
+    },
+    {
+      "id": "lingualibre-quand",
+      "name": "Lingua Libre: quand (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-quand.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/f/f9/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-quand.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: quand"
+    },
+    {
+      "id": "lingualibre-qui",
+      "name": "Lingua Libre: qui (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-qui.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/4/42/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-qui.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: qui"
+    },
+    {
+      "id": "lingualibre-sil-vous-plait",
+      "name": "Lingua Libre: s'il vous plait (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-s%27il_vous_plait.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/5/57/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-s%27il_vous_plait.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: s'il vous plait"
+    },
+    {
+      "id": "lingualibre-toilettes",
+      "name": "Lingua Libre: toilettes (LSF sign video)",
+      "author": "Hugo en résidence",
+      "license": "CC0 1.0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:LL-Q33302_(fsl)-Hugo_en_r%C3%A9sidence-toilettes.webm",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/7/7b/LL-Q33302_%28fsl%29-Hugo_en_r%C3%A9sidence-toilettes.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "usedFor": "LSF sign video: toilettes"
+    },
+    {
+      "id": "signdict-1090",
+      "name": "SignDict: anrufen (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/968",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=87",
+      "usedFor": "DGS sign video: anrufen",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-121",
+      "name": "SignDict: Bitte (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/110",
+      "source": "http://dgs.wikisign.org/Bitte_(Wunsch)",
+      "usedFor": "DGS sign video: Bitte"
+    },
+    {
+      "id": "signdict-130",
+      "name": "SignDict: brauchen (DGS sign video)",
+      "author": "Lessi96 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1255",
+      "source": "http://dgs.wikisign.org/Brauchen",
+      "usedFor": "DGS sign video: brauchen"
+    },
+    {
+      "id": "signdict-136",
+      "name": "SignDict: Bus (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/125",
+      "source": "http://dgs.wikisign.org/Bus",
+      "usedFor": "DGS sign video: Bus"
+    },
+    {
+      "id": "signdict-151",
+      "name": "SignDict: danke (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1360",
+      "source": "http://dgs.wikisign.org/Danke",
+      "usedFor": "DGS sign video: danke"
+    },
+    {
+      "id": "signdict-1625",
+      "name": "SignDict: Durst (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1440",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=88",
+      "usedFor": "DGS sign video: Durst",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-1750",
+      "name": "SignDict: essen (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1553",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=88",
+      "usedFor": "DGS sign video: essen",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-1886",
+      "name": "SignDict: Freund (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/244",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=88",
+      "usedFor": "DGS sign video: Freund",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2050",
+      "name": "SignDict: glücklich (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1821",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=88",
+      "usedFor": "DGS sign video: glücklich",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2093",
+      "name": "SignDict: guten Morgen (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1859",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=88",
+      "usedFor": "DGS sign video: guten Morgen",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2171",
+      "name": "SignDict: heiß (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1928",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=89",
+      "usedFor": "DGS sign video: heiß",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-221",
+      "name": "SignDict: Entschuldigung (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/196",
+      "source": "http://dgs.wikisign.org/Entschuldigung",
+      "usedFor": "DGS sign video: Entschuldigung"
+    },
+    {
+      "id": "signdict-2215",
+      "name": "SignDict: hörend (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1966",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=89",
+      "usedFor": "DGS sign video: hörend",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2320",
+      "name": "SignDict: jetzt (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2059",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=89",
+      "usedFor": "DGS sign video: jetzt",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2349",
+      "name": "SignDict: kalt (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2084",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=89",
+      "usedFor": "DGS sign video: kalt",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-243",
+      "name": "SignDict: Familie (DGS sign video)",
+      "author": "Cellx - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/216",
+      "source": "http://dgs.wikisign.org/Familie",
+      "usedFor": "DGS sign video: Familie"
+    },
+    {
+      "id": "signdict-2474",
+      "name": "SignDict: kommen (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2200",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=89",
+      "usedFor": "DGS sign video: kommen",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2525",
+      "name": "SignDict: krank (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2249",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=89",
+      "usedFor": "DGS sign video: krank",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2741",
+      "name": "SignDict: mehr (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2441",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=90",
+      "usedFor": "DGS sign video: mehr",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2809",
+      "name": "SignDict: mögen (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2499",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=90",
+      "usedFor": "DGS sign video: mögen",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2836",
+      "name": "SignDict: müde (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2521",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=90",
+      "usedFor": "DGS sign video: müde",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-2875",
+      "name": "SignDict: Nacht (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2557",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=90",
+      "usedFor": "DGS sign video: Nacht",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-290",
+      "name": "SignDict: gebärden (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1719",
+      "source": "http://dgs.wikisign.org/Geb%C3%A4rden",
+      "usedFor": "DGS sign video: gebärden"
+    },
+    {
+      "id": "signdict-293",
+      "name": "SignDict: geben (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1723",
+      "source": "http://dgs.wikisign.org/Geben",
+      "usedFor": "DGS sign video: geben"
+    },
+    {
+      "id": "signdict-296",
+      "name": "SignDict: gehörlos (DGS sign video)",
+      "author": "Baltus33 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1748",
+      "source": "http://dgs.wikisign.org/Geh%C3%B6rlos",
+      "usedFor": "DGS sign video: gehörlos"
+    },
+    {
+      "id": "signdict-298",
+      "name": "SignDict: Geld (DGS sign video)",
+      "author": "134.130.170.112 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/264",
+      "source": "http://dgs.wikisign.org/Geld",
+      "usedFor": "DGS sign video: Geld"
+    },
+    {
+      "id": "signdict-2991",
+      "name": "SignDict: okay (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2662",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=90",
+      "usedFor": "DGS sign video: okay",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-307",
+      "name": "SignDict: gestern (DGS sign video)",
+      "author": "Cellx - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1793",
+      "source": "http://dgs.wikisign.org/Gestern",
+      "usedFor": "DGS sign video: gestern"
+    },
+    {
+      "id": "signdict-3100",
+      "name": "SignDict: Polizei (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/2756",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=90",
+      "usedFor": "DGS sign video: Polizei",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-324",
+      "name": "SignDict: Gut (DGS sign video)",
+      "author": "134.130.170.112 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/285",
+      "source": "http://dgs.wikisign.org/Gut",
+      "usedFor": "DGS sign video: Gut"
+    },
+    {
+      "id": "signdict-332",
+      "name": "SignDict: Hallo (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/293",
+      "source": "http://dgs.wikisign.org/Hallo",
+      "usedFor": "DGS sign video: Hallo"
+    },
+    {
+      "id": "signdict-3374",
+      "name": "SignDict: schlecht (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3008",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=91",
+      "usedFor": "DGS sign video: schlecht",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-3385",
+      "name": "SignDict: Schmerzen (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3019",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=91",
+      "usedFor": "DGS sign video: Schmerzen",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-346",
+      "name": "SignDict: helfen (DGS sign video)",
+      "author": "134.130.170.112 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1931",
+      "source": "http://dgs.wikisign.org/Helfen",
+      "usedFor": "DGS sign video: helfen"
+    },
+    {
+      "id": "signdict-350",
+      "name": "SignDict: heute (DGS sign video)",
+      "author": "Cellx - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/1945",
+      "source": "http://dgs.wikisign.org/Heute",
+      "usedFor": "DGS sign video: heute"
+    },
+    {
+      "id": "signdict-3576",
+      "name": "SignDict: später (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3188",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=91",
+      "usedFor": "DGS sign video: später",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-367",
+      "name": "SignDict: Hunger (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/325",
+      "source": "http://dgs.wikisign.org/Hunger",
+      "usedFor": "DGS sign video: Hunger"
+    },
+    {
+      "id": "signdict-3759",
+      "name": "SignDict: Telefon (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3354",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=176",
+      "usedFor": "DGS sign video: Telefon",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-3822",
+      "name": "SignDict: traurig (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3405",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=176",
+      "usedFor": "DGS sign video: traurig",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-3832",
+      "name": "SignDict: trinken (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3415",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=176",
+      "usedFor": "DGS sign video: trinken",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-3839",
+      "name": "SignDict: tschüss (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3421",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=176",
+      "usedFor": "DGS sign video: tschüss",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-4037",
+      "name": "SignDict: Vormittag (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3602",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=176",
+      "usedFor": "DGS sign video: Vormittag",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-4071",
+      "name": "SignDict: warum (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3635",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=176",
+      "usedFor": "DGS sign video: warum",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-4186",
+      "name": "SignDict: wollen (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3740",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=176",
+      "usedFor": "DGS sign video: wollen",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-422",
+      "name": "SignDict: Ja (DGS sign video)",
+      "author": "Cellx - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/377",
+      "source": "http://dgs.wikisign.org/Ja",
+      "usedFor": "DGS sign video: Ja"
+    },
+    {
+      "id": "signdict-4264",
+      "name": "SignDict: zuhause (DGS sign video)",
+      "author": "Henrike Maria Bartsch - Gebärden lernen, uploaded by gebaerdenlernen.de",
+      "license": "CC BY-NC-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3810",
+      "source": "http://www.gebaerdenlernen.de/index.php?article_id=176",
+      "usedFor": "DGS sign video: zuhause",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-4299",
+      "name": "SignDict: gehen (DGS sign video)",
+      "author": "uploaded by Bodo Tasche",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://signdict.org/entry/3839",
+      "usedFor": "DGS sign video: gehen"
+    },
+    {
+      "id": "signdict-4369",
+      "name": "SignDict: Sprache (DGS sign video)",
+      "author": "uploaded by gulp21",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://signdict.org/entry/3214",
+      "usedFor": "DGS sign video: Sprache"
+    },
+    {
+      "id": "signdict-4608",
+      "name": "SignDict: Gute Nacht (DGS sign video)",
+      "author": "GebLex - GebLex, uploaded by GebLex",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "url": "https://signdict.org/entry/3925",
+      "usedFor": "DGS sign video: Gute Nacht",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-478",
+      "name": "SignDict: Krankenhaus (DGS sign video)",
+      "author": "134.130.170.99 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/426",
+      "source": "http://dgs.wikisign.org/Krankenhaus",
+      "usedFor": "DGS sign video: Krankenhaus"
+    },
+    {
+      "id": "signdict-4965",
+      "name": "SignDict: Liebe (DGS sign video)",
+      "author": "GebLex - GebLex, uploaded by GebLex",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "url": "https://signdict.org/entry/4115",
+      "usedFor": "DGS sign video: Liebe",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-50",
+      "name": "SignDict: Arzt (DGS sign video)",
+      "author": "Marco - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/48",
+      "source": "http://dgs.wikisign.org/Arzt",
+      "usedFor": "DGS sign video: Arzt"
+    },
+    {
+      "id": "signdict-5198",
+      "name": "SignDict: was (DGS sign video)",
+      "author": "GebLex - GebLex, uploaded by GebLex",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "url": "https://signdict.org/entry/4549",
+      "usedFor": "DGS sign video: was",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-544",
+      "name": "SignDict: Medikament (DGS sign video)",
+      "author": "134.130.170.99 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/482",
+      "source": "http://dgs.wikisign.org/Medikament",
+      "usedFor": "DGS sign video: Medikament"
+    },
+    {
+      "id": "signdict-5570",
+      "name": "SignDict: stopp (DGS sign video)",
+      "author": "GebLex - GebLex, uploaded by GebLex",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "url": "https://signdict.org/entry/4704",
+      "usedFor": "DGS sign video: stopp",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-5652",
+      "name": "SignDict: sehen (DGS sign video)",
+      "author": "GebLex - GebLex, uploaded by GebLex",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "url": "https://signdict.org/entry/4739",
+      "usedFor": "DGS sign video: sehen",
+      "nonCommercial": true
+    },
+    {
+      "id": "signdict-573",
+      "name": "SignDict: Morgen (DGS sign video)",
+      "author": "Cellx - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/507",
+      "source": "http://dgs.wikisign.org/Morgen_(kommender_Tag)",
+      "usedFor": "DGS sign video: Morgen"
+    },
+    {
+      "id": "signdict-583",
+      "name": "SignDict: Mutter (DGS sign video)",
+      "author": "134.130.170.112 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/514",
+      "source": "http://dgs.wikisign.org/Mutter",
+      "usedFor": "DGS sign video: Mutter"
+    },
+    {
+      "id": "signdict-590",
+      "name": "SignDict: Name (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/520",
+      "source": "http://dgs.wikisign.org/Name",
+      "usedFor": "DGS sign video: Name"
+    },
+    {
+      "id": "signdict-595",
+      "name": "SignDict: Nein (DGS sign video)",
+      "author": "Cellx - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/525",
+      "source": "http://dgs.wikisign.org/Nein",
+      "usedFor": "DGS sign video: Nein"
+    },
+    {
+      "id": "signdict-614",
+      "name": "SignDict: Notruf (DGS sign video)",
+      "author": "134.130.170.99 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/541",
+      "source": "http://dgs.wikisign.org/Notruf",
+      "usedFor": "DGS sign video: Notruf"
+    },
+    {
+      "id": "signdict-732",
+      "name": "SignDict: Schule (DGS sign video)",
+      "author": "Yesilgoez - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/644",
+      "source": "http://dgs.wikisign.org/Schule",
+      "usedFor": "DGS sign video: Schule"
+    },
+    {
+      "id": "signdict-8059",
+      "name": "SignDict: wann (DGS sign video)",
+      "author": "uploaded by senidevelop.de",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://signdict.org/entry/3629",
+      "usedFor": "DGS sign video: wann"
+    },
+    {
+      "id": "signdict-8061",
+      "name": "SignDict: wer (DGS sign video)",
+      "author": "uploaded by senidevelop.de",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://signdict.org/entry/4653",
+      "usedFor": "DGS sign video: wer"
+    },
+    {
+      "id": "signdict-837",
+      "name": "SignDict: Toilette (DGS sign video)",
+      "author": "134.130.170.112 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/735",
+      "source": "http://dgs.wikisign.org/Toilette",
+      "usedFor": "DGS sign video: Toilette"
+    },
+    {
+      "id": "signdict-863",
+      "name": "SignDict: Vater (DGS sign video)",
+      "author": "134.130.170.101 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/759",
+      "source": "http://dgs.wikisign.org/Vater",
+      "usedFor": "DGS sign video: Vater"
+    },
+    {
+      "id": "signdict-874",
+      "name": "SignDict: verstehen (DGS sign video)",
+      "author": "134.130.170.112 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3561",
+      "source": "http://dgs.wikisign.org/Verstehen",
+      "usedFor": "DGS sign video: verstehen"
+    },
+    {
+      "id": "signdict-892",
+      "name": "SignDict: warten (DGS sign video)",
+      "author": "Lessi96 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3634",
+      "source": "http://dgs.wikisign.org/Warten",
+      "usedFor": "DGS sign video: warten"
+    },
+    {
+      "id": "signdict-895",
+      "name": "SignDict: Wasser (DGS sign video)",
+      "author": "Philipps - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/788",
+      "source": "http://dgs.wikisign.org/Wasser",
+      "usedFor": "DGS sign video: Wasser"
+    },
+    {
+      "id": "signdict-908",
+      "name": "SignDict: wie (DGS sign video)",
+      "author": "134.130.170.112 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3692",
+      "source": "http://dgs.wikisign.org/Wie",
+      "usedFor": "DGS sign video: wie"
+    },
+    {
+      "id": "signdict-920",
+      "name": "SignDict: Wissen (DGS sign video)",
+      "author": "Lessi96 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/810",
+      "source": "http://dgs.wikisign.org/Wissen",
+      "usedFor": "DGS sign video: Wissen"
+    },
+    {
+      "id": "signdict-925",
+      "name": "SignDict: wo (DGS sign video)",
+      "author": "134.130.170.112 - dgs.wikisign.org, uploaded by Wikisign DGS",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "url": "https://signdict.org/entry/3727",
+      "source": "http://dgs.wikisign.org/Wo",
+      "usedFor": "DGS sign video: wo"
+    }
+  ]
+}

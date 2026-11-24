@@ -44,10 +44,12 @@ It also has 12 display modes so the interface itself fits the person. Camera and
 
 | | |
 |---|---|
-| Stage | Phases 0–4 done and live: all speech, braille, sign-to-text and gesture/emotion tools work |
-| Next | Phase 5 (text to sign + content), then tutorials, Bridge, SOS, offline |
+| Stage | **All phases (0–8) built and live**: every tool, Text to sign in six sign languages, lessons with camera practice, Bridge, SOS, offline install, About/Privacy/Evidence/Credits |
+| Next | Team checks that need people: Q-09 to Q-12 in `04-DELIVERY/OPEN-QUESTIONS.md` (native Hindi check, real phones for Bridge, a screen-reader pass, Deaf review of ISL) |
 | Blocking questions | none |
 | Live link | https://bridgify-vcet.vercel.app |
+| User guide | `docs/Bridgify-User-Guide.pdf`: every page with a direct link, steps, expected results, a 48-row test checklist and a demo script |
+| Report text | `docs/REPORT-UPDATES.md`: paste-ready paragraphs for the report |
 
 ## Hard rules
 
@@ -55,7 +57,7 @@ It also has 12 display modes so the interface itself fits the person. Camera and
 2. Free services only.
 3. Light site: first load ≤ 180 KB JS; ML loads only on the page that uses it.
 4. Nothing is called done if it is mocked. `CURRENT-STATE.md` stays honest.
-5. Repo private, and the live link behind a passcode until the patent's provisional is filed.
+5. The repo and link are public (D-25). File the patent's provisional early, because public disclosure counts against novelty.
 
 ## Truth labels
 

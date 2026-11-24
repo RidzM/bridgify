@@ -1,0 +1,216 @@
+{
+  "lang": "isl",
+  "spoken": "hi",
+  "phrases": [
+    {
+      "text": "सुप्रभात",
+      "en": "Good morning",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/good-morning.json"
+      }
+    },
+    {
+      "text": "शुभ रात्रि",
+      "en": "Good night",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/good-night.json"
+      }
+    },
+    {
+      "text": "आप कैसे हैं?",
+      "en": "How are you?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/how-are-you.json"
+      }
+    },
+    {
+      "text": "मैं ठीक हूँ, धन्यवाद",
+      "en": "I am fine, thank you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-am-fine-thank-you.json"
+      }
+    },
+    {
+      "text": "आपसे मिलकर खुशी हुई",
+      "en": "Nice to meet you",
+      "media": null
+    },
+    {
+      "text": "कल मिलते हैं",
+      "en": "See you tomorrow",
+      "media": null
+    },
+    {
+      "text": "आपका नाम क्या है?",
+      "en": "What is your name?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/what-is-your-name.json"
+      }
+    },
+    {
+      "text": "मैं बधिर हूँ",
+      "en": "I am deaf",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-am-deaf.json"
+      }
+    },
+    {
+      "text": "मैं सांकेतिक भाषा का उपयोग करता हूँ",
+      "en": "I use sign language",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-use-sign-language.json"
+      }
+    },
+    {
+      "text": "मैं समझ गया",
+      "en": "I understand",
+      "media": null
+    },
+    {
+      "text": "मैं नहीं समझा",
+      "en": "I don't understand",
+      "media": null
+    },
+    {
+      "text": "कृपया दोहराइए",
+      "en": "Please repeat",
+      "media": null
+    },
+    {
+      "text": "कृपया धीरे बोलिए",
+      "en": "Please speak slowly",
+      "media": null
+    },
+    {
+      "text": "क्या आप यह लिख सकते हैं?",
+      "en": "Can you write this down?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/can-you-write-this-down.json"
+      }
+    },
+    {
+      "text": "मुझे पानी चाहिए",
+      "en": "I need water",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-need-water.json"
+      }
+    },
+    {
+      "text": "मुझे खाना चाहिए",
+      "en": "I need food",
+      "media": null
+    },
+    {
+      "text": "मुझे भूख लगी है",
+      "en": "I am hungry",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-am-hungry.json"
+      }
+    },
+    {
+      "text": "मुझे प्यास लगी है",
+      "en": "I am thirsty",
+      "media": null
+    },
+    {
+      "text": "मैं थका हुआ हूँ",
+      "en": "I am tired",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-am-tired.json"
+      }
+    },
+    {
+      "text": "मुझे दवाई चाहिए",
+      "en": "I need medicine",
+      "media": null
+    },
+    {
+      "text": "मेरी मदद कीजिए",
+      "en": "Help me",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/words/help-me.json"
+      }
+    },
+    {
+      "text": "मुझे अभी मदद चाहिए",
+      "en": "I need help now",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-need-help-now.json"
+      }
+    },
+    {
+      "text": "एम्बुलेंस बुलाइए",
+      "en": "Call an ambulance",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/call-an-ambulance.json"
+      }
+    },
+    {
+      "text": "पुलिस बुलाइए",
+      "en": "Call the police",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/call-the-police.json"
+      }
+    },
+    {
+      "text": "मुझे डॉक्टर चाहिए",
+      "en": "I need a doctor",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-need-a-doctor.json"
+      }
+    },
+    {
+      "text": "मुझे दर्द हो रहा है",
+      "en": "I am in pain",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/i-am-in-pain.json"
+      }
+    },
+    {
+      "text": "कृपया मेरे परिवार को फ़ोन कीजिए",
+      "en": "Please call my family",
+      "media": null
+    },
+    {
+      "text": "शौचालय कहाँ है?",
+      "en": "Where is the toilet?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/where-is-the-toilet.json"
+      }
+    },
+    {
+      "text": "अस्पताल कहाँ है?",
+      "en": "Where is the hospital?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/where-is-the-hospital.json"
+      }
+    },
+    {
+      "text": "इसकी कीमत कितनी है?",
+      "en": "How much does it cost?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/isl/phrases/how-much-does-it-cost.json"
+      }
+    }
+  ]
+}

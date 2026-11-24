@@ -76,7 +76,7 @@ Bridgify is a website that turns a message into whatever form the other person c
 4. **Commit a letter only when it's steady.** It must be held for 0.7 s at 80% or higher confidence. Otherwise the app shows "Not sure" and the top 3 guesses to tap.
 
 **How the model was made** (details in `03-SYSTEM/ML-PIPELINE.md`):
-- **Data:** public landmark data plus the team's own recordings. Only hand points are saved, never video.
+- **Data:** public multi-signer datasets (ASL-HG, an ISL landmark set). There were no team recordings (D-27).
 - **Training:** in Python, with augmentation (rotation, scaling, jitter).
 - **Testing:** on **people the model never saw**. That held-out number is the honest accuracy, published on the Evidence page.
 - **Parity check:** an automated test proves the browser computes exactly the same numbers as Python did in training.
@@ -84,16 +84,16 @@ Bridgify is a website that turns a message into whatever form the other person c
 ISL letters use both hands, so the ISL model reads two hands at once.
 
 ### Text to sign
-1. Your sentence is split into words. For ISL, the server also reorders it into ISL grammar ("Where is the hospital?" → HOSPITAL WHERE).
-2. Each word is looked up, in this order:
-   1. A **real signer video** from openly licensed dictionaries.
-   2. If there is none, a **sign animation** from the free sign.mt service.
+1. Your sentence is split into words. For ISL, the browser first reorders it into approximate ISL grammar ("Where is the hospital?" → HOSPITAL WHERE).
+2. Each word or stored phrase is looked up, in this order:
+   1. A **stored sign**: an animation kept in the site (prepared from sign.mt), or for German Sign Language a real signer video from SignDict.
+   2. If there is none, a **live animation** from the free sign.mt service.
    3. If there is none, **fingerspelling**, letter by letter.
 3. Every sign shows where it came from. A note says this is a word-by-word lookup, not an interpreter.
 
 ### Gesture and emotion
 - The **same hand points** tell us the gesture through simple geometry, e.g. "only the index finger is straight" = pointing. A **wave** is an open palm moving side to side.
-- Emotion uses Google's face model, which outputs 52 "face movement" scores (smile, brow raise, jaw open…). A small set of weighted rules, tuned on the team's own clips, turns them into one of 7 emotions.
+- Emotion uses Google's face model, which outputs 52 "face movement" scores (smile, brow raise, jaw open…). A small trained model (logistic regression on KDEF photos) turns them into one of 7 emotions: macro-F1 0.744 on 20 people it never saw.
 - It is labelled **approximate**, and it shows which face movements drove the guess.
 
 ### Personalisation
@@ -105,10 +105,10 @@ ISL letters use both hands, so the ISL model reads two hands at once.
 1. Phone A starts a conversation and shows a 6-letter code and a QR.
 2. Phone B joins.
 3. Each person chooses **how they send** (type, speak, fingerspell, quick phrases) and **how they receive** (captions, speech, braille, signs).
-4. Only small text messages (about 100 bytes) travel through the server, which never stores them. Each phone converts them on arrival.
+4. Messages go **directly from phone to phone** (WebRTC). A free PeerJS server only introduces the two phones. A text message is about 120 bytes, and each phone converts it on arrival. Two tabs on one laptop can also talk, for demos.
 5. An optional "show my hands" mode sends hand **points** instead of video, at under 15 kbps, versus hundreds of kbps for video.
 
-The meter on screen shows the real bandwidth and delay. This relay is the idea the team may patent.
+The meter on screen shows the real bandwidth and delay. This per-person conversion of one conversation is the idea the team may patent.
 
 ### SOS (new)
 One tap shows a full-screen card ("I am Deaf, please write") with an ISL clip, braille and a speak button, plus location share and call contact. It works offline.

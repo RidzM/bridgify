@@ -166,9 +166,9 @@ Versions are as of 24 Nov 2026. Pin exact versions in `package.json` and `requir
 | Realtime | **Flask-SocketIO** in `threading` mode with **simple-websocket** | 5.7.2 / 1.1.0 | Real WebSocket transport without eventlet/gevent (both are poorly maintained on Python 3.13+) |
 | WSGI | **gunicorn**, 1 worker, `--threads 50` | 27.x | One worker keeps rooms in memory (no Redis needed at this scale) `[DECISION D-13]` |
 | CORS | Flask-CORS | 6.0.5 | Allowlist: the Vercel domain and localhost |
-| Rate limiting | Flask-Limiter (in-memory) | 4.1.x | Protects gTTS and pose proxying |
+| Rate limiting | In-function limiter in `web/api/tts.py` (20/min per IP, per warm instance) | — | Protects the gTTS fallback (D-24: there is no pose proxy; the browser calls sign.mt directly) |
 | Braille | **liblouis 3.39** via Debian `python3-louis` + `liblouis-data` (trixie-backports) | 3.39.0 | Real UEB G1/G2 and Bharati. **Never `pip install louis`**: that PyPI package is unrelated |
-| TTS fallback | gTTS | 2.5.4 | The report says gTTS. Responses cached by hash |
+| TTS fallback | gTTS | 2.5.4 | The report says gTTS. A Vercel Python function; responses carry `Cache-Control: public, max-age=86400` (browser cache) |
 | Gloss | **spaCy** `en_core_web_sm` | 3.8.x | Dependency parse for ISL SOV reordering. ~15 MB model, fits in 512 MB |
 | Python | 3.13 (Debian trixie system Python) | | Matches the `python3-louis` binding |
 | Lint/test | Ruff, pytest, pytest-socketio-style tests via `socketio.test_client` | | |
@@ -473,14 +473,20 @@ Each module lists its engine call chain, fallbacks and edge states.
 
 ### 6.8 PWA and caching
 
+Built by `vite-plugin-pwa` (generateSW, `registerType: 'prompt'`) in `web/vite.config.ts`. `src/app/pwa.ts` registers the worker after the page loads and shows "A new version is ready / Reload" instead of refreshing on its own `[OBSERVED]`.
+
 | What | Strategy | Cache |
 |---|---|---|
-| App shell, fonts, route chunks | precache (build manifest) | workbox-precache |
-| `/models/*`, MediaPipe `.task` + wasm | CacheFirst, versioned by manifest | `bridgify-models-v1` (ModelManager) |
-| `/signs/*` media | CacheFirst, max 300 entries / 200 MB | `bridgify-signs-v1` |
-| HF Hub Whisper files (opt-in only) | transformers.js browser cache | its own |
-| `/api/*` | NetworkOnly (offline falls back in the engines) | |
-| `/sos` | precached, including SOS ISL clips | |
+| App shell, route chunks, fonts, content JSON | precache (about 99 files, 1.2 MB before compression) | workbox precache |
+| `/models/manifest.json` | NetworkFirst (4 s timeout), cached copy offline | `bridgify-model-list` |
+| `/models/*` (task, json, bin) | NetworkOnly in the worker; the app's ModelManager keeps one SHA-256-checked copy | `bridgify-models-v1` |
+| `/wasm/*` (MediaPipe, liblouis) | CacheFirst, 180 days | `bridgify-wasm` |
+| `/signs/*` (poses, videos, letter pictures) | CacheFirst, 300 entries, 90 days | `bridgify-signs` |
+| On-device Whisper worker (`/assets/asr.worker-*.js`) | not precached; CacheFirst on first use | `bridgify-asr` |
+| Whisper model files (Hugging Face) | transformers.js browser cache | its own |
+| `/api/*` | NetworkOnly; offline falls back in the engines | |
+
+`/sos` and its preset cards are part of the precached shell, so SOS opens offline after one visit (103–287 ms to the first card in tests).
 
 No cross-origin isolation is needed (no threaded WASM), so COOP/COEP are **not** set. That keeps embeds and HF downloads simple `[DECISION D-15]`.
 
@@ -508,7 +514,7 @@ All JSON uses UTF-8. Errors look like `{error:{code, message}}`, with HTTP 400, 
 | `GET /api/health` | — | `{ok:true, version, louis:"3.39.0", tables:[...], gloss:bool}` | — |
 | `POST /api/braille/translate` | `{text, table:"en-ueb-g1"\|"en-ueb-g2"\|"hi-in-g1", mode:"forward"}` | `{unicode, cells:[{dots:[..], src}], brf, table}` | text ≤ 5,000 chars; 60/min/IP |
 | `POST /api/braille/back` | `{unicode, table}` | `{text}` | ≤ 5,000 cells |
-| `POST /api/tts` | `{text, lang:"en"\|"hi"\|…, slow:bool}` | `audio/mpeg` (cached by sha1) | ≤ 600 chars; 20/min/IP |
+| `POST /api/tts` | `{text, lang:"en"\|"hi"\|…}` | `audio/mpeg` (browser-cached for a day) | ≤ 600 chars (413); 20/min per IP per instance (429); upstream failure 503 |
 | `POST /api/sign/gloss` | `{text, lang:"isl"\|"asl"}` | `{gloss:[..], tokens:[{text,lemma,pos,dep}], rules:[applied]}` | ≤ 300 chars |
 | `GET /api/sign/pose` | `?text=&spoken=en&signed=ins` | `application/pose` (proxied from sign.mt, disk-cached 30 days) | 30/min/IP; 8 s upstream timeout, 502 on fail |
 
@@ -533,54 +539,42 @@ Translation uses `louis.translateString(tables, text, None, 0)`. Back-translatio
 
 The rules are unit-tested on 30 sentences in `tests/test_gloss.py`. ASL uses topic-comment ordering only for WH questions (WH last); the rest stays as input order.
 
-### 7.3 Socket.IO: `/bridge`
+### 7.3 Bridge protocol (peer to peer, D-24)
 
-```text
-client → server
-  create_room {profile}                       → ack {code, expiresAt}
-  join_room   {code, profile}                 → ack {ok, peers:[profile]} | {error:'not_found'|'full'}
-  leave_room  {}
-  msg         Packet                          (server relays to the room except sender; never stored or logged)
-  ping        {t0}                            → ack {t0, tServer}
-server → client
-  peer_joined {profile} · peer_left {} · msg Packet · room_expired {}
-```
+The Socket.IO room server described in plan v1 is **not used**. Bridge runs directly between the two browsers `[OBSERVED]`:
 
-- **Rooms**: an in-memory dict `code → {members:set(sid), createdAt, lastActivity}`. Maximum 2 members (one-to-one, by design).
-- **Room codes**: 6 characters from `23456789ABCDEFGHJKMNPQRSTUVWXYZ` (no 0/O/1/I/L).
-- **Expiry**: a sweeper thread runs every 60 s and removes rooms idle for 30 min.
-- **Limits**:
-  - packet ≤ 8 KB
-  - ≤ 40 msgs/s per socket (token bucket); over the limit, drop and send `{error:'rate'}`
+- **Room code:** 6 characters from `23456789ABCDEFGHJKMNPQRSTUVWXYZ` (no 0/O/1/I/L). The host is reachable as PeerJS id `bridgify-CODE` on the free broker `0.peerjs.com`. The guest uses its own random id and dials only after its broker connection is open (PeerJS 1.5.5 drops earlier signalling).
+- **Same-device mode:** the host also listens on a `BroadcastChannel` (`bridgify-bridge-CODE`), so a second tab joins without the internet. `?via=local` or `?via=peer` forces a path. The guest checks the local channel for about 350 ms while PeerJS connects in parallel.
+- **Transport:** a reliable WebRTC data channel carrying JSON strings. STUN and TURN come from PeerJS defaults; CSP needs only `wss://0.peerjs.com`.
 
-**Packet schema** (`engines/bridge/packets.ts`, JSON):
+**Packets** (`engines/bridge/packets.ts`). Every incoming packet is size-checked (≤ 8 KB), rebuilt field by field and rate-limited (50/s); nothing is shown before the peer's `hello`.
 
 ```ts
 type Packet =
- | { k:'text';   id, ts, from, text, lang, src:'typed'|'speech'|'quick'|'fingerspell'|'sign-word' }
- | { k:'gloss';  id, ts, from, gloss:string[], lang:SignLang }
- | { k:'lm';     ts, from, hands: Int16Array-as-base64 /* 2×21×3 quantised ×1000 */, mask:number }  // only if "show my hands"
- | { k:'status'; ts, from, typing?:boolean, listening?:boolean, signing?:boolean }
- | { k:'receipt';id, ts }
+ | { k:'hello';   id, ts, from, profile }                 // first packet; the host locks onto the first guest
+ | { k:'text';    id, ts, from, text, lang, src:'typed'|'speech'|'quick'|'fingerspell' }
+ | { k:'gloss';   id, ts, from, gloss:string[], lang }    // received and rendered; no send mode emits it yet
+ | { k:'lm';      ts, from, hands /* base64 Int16, x and y only */, mask }   // "show my hands"
+ | { k:'status';  ts, from, typing?, listening?, signing? }
+ | { k:'receipt'; id, ts }
+ | { k:'ping' | 'pong'; t0 }                               // every 5 s: round trip and liveness
+ | { k:'bye' } | { k:'full' }                             // leave; a third person is turned away
 ```
 
-Each receiver renders by **its own profile** (`router.ts`):
+**States:** 15 s of silence shows "Reconnecting" and redials (typed messages queue and send on reconnect); 30 s without the peer shows "lost"; 30 min without messages ends the room; Leave ends it for both. Navigating away and back within 30 s rejoins, and the transcript is kept in `sessionStorage`.
+
+Each receiver renders by **its own profile**:
 
 | Receive mode | How `text` and `gloss` packets are shown |
 |---|---|
-| `captions` | Large captions |
-| `speech` | TTS |
-| `braille` | Braille cells, plus a WebHID/Web Serial display if connected |
-| `sign` | Text→Sign sequence |
+| Captions | Large text |
+| Speech | Read aloud (TTS) |
+| Braille | Braille cells (a connected braille display is future work) |
+| Sign | Text→Sign sequence in the chosen sign language |
 
-`lm` packets go to the pose-viewer skeleton.
+`lm` packets are drawn as a hand outline by `RemoteHands`.
 
-**Metrics** (`metrics.ts`):
-- bytes/s (send and receive, from the serialised length)
-- round-trip time from `ping` acks every 5 s
-- `ts`-to-render latency for text packets
-
-These are shown in the Bridge meter and logged so `/about/evidence` can report median and p95.
+**Measured on one machine** (`docs/EVAL.md` §Bridge): connect 0.36–0.58 s between tabs and 1.6–3.1 s through the public broker; round trip median 0.8–2.7 ms; a text message is 117–141 B; the hands stream is 13.8 kbps for a continuously moving hand (target < 15 kbps). Phone-to-phone numbers are not measured yet `[UNKNOWN]`.
 
 ### 7.4 Config (env)
 

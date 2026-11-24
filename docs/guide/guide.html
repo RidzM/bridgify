@@ -1,0 +1,572 @@
+<!-- Body of the Bridgify user guide. Built into docs/Bridgify-User-Guide.pdf by web/scripts/make-guide.mjs.
+     {{BASE}} is replaced with the live site address and {{QR}} with a QR code for it. -->
+
+<section class="cover">
+  <div class="mark" aria-hidden="true"><span class="on"></span><span></span><span class="on"></span><span></span><span></span><span></span></div>
+  <h1>Bridgify</h1>
+  <p style="font-size:15pt;margin-top:2pt">User guide and test checklist</p>
+  <p class="muted" style="max-width:150mm">A free website that lets people talk across speech, text, braille and sign language. This guide shows every page, step by step, and how to check that each one works.</p>
+  <div class="live two" style="align-items:center">
+    <div>
+      <p class="muted" style="margin:0">Open the website</p>
+      <a href="{{BASE}}">{{BASE}}</a>
+      <p class="muted" style="margin-top:6pt">Each chapter starts with a link that opens that exact page. Click it in the PDF, or scan this code with a phone camera to open the site.</p>
+    </div>
+    <div style="text-align:center">{{QR}}</div>
+  </div>
+  <p class="muted" style="margin-top:12mm;font-size:10pt">Mini project, Semester VI, Computer Engineering, Vidyavardhini's College of Engineering &amp; Technology (University of Mumbai), 2025–26.<br>Riddhi Mehta, Vedika Misal, Siddhi Bhosale, Om Panjari. Mentor: Prof. Manali Payghan.</p>
+</section>
+
+<section class="chapter toc">
+  <h2>What is in this guide</h2>
+  <ol>
+    <li><a href="#before">Before you start</a></li>
+    <li><a href="#tour">A quick tour of the website</a></li>
+    <li><a href="#home">Home: say it every way</a></li>
+    <li><a href="#tts">Text to speech</a></li>
+    <li><a href="#stt">Speech to text</a></li>
+    <li><a href="#t2b">Text to braille</a></li>
+    <li><a href="#b2t">Braille to text</a></li>
+    <li><a href="#s2t">Sign to text</a></li>
+    <li><a href="#t2s">Text to sign</a></li>
+    <li><a href="#gesture">Gesture and emotion</a></li>
+    <li><a href="#bridge">Bridge: two phones, one conversation</a></li>
+    <li><a href="#sos">SOS</a></li>
+    <li><a href="#learn">Learn braille and sign language</a></li>
+    <li><a href="#settings">Display settings (12 modes)</a></li>
+    <li><a href="#about">About, privacy, evidence and credits</a></li>
+    <li><a href="#checklist">Full test checklist</a></li>
+    <li><a href="#demo">Demo script for the review</a></li>
+    <li><a href="#viva">Questions you may be asked</a></li>
+    <li><a href="#links">Every link in one place</a></li>
+  </ol>
+  <h3>How each chapter is laid out</h3>
+  <p><span class="pill">Open</span> the exact link for that page. <b>Steps</b> tell you what to press, in order. <b>Check it works</b> gives an input and the result you should see. <b>If something goes wrong</b> tells you what to try.</p>
+  <p>Button names in this guide are written in <b>bold</b>, exactly as they appear on the screen.</p>
+</section>
+
+<section class="chapter" id="before">
+  <h2>1. Before you start</h2>
+  <h3>Which browser</h3>
+  <ul>
+    <li><b>Best:</b> Google Chrome or Microsoft Edge, on a laptop or an Android phone.</li>
+    <li><b>Also fine:</b> Safari on iPhone or Mac.</li>
+    <li><b>Firefox and Brave:</b> everything works except the browser's own speech recognition. On the Speech to text page, turn on <b>on-device recognition</b> instead (chapter 5).</li>
+  </ul>
+  <h3>Camera and microphone</h3>
+  <p>Sign to text, Gesture and emotion, sign practice and fingerspelling in Bridge use the <b>camera</b>. Speech to text and speaking in Bridge use the <b>microphone</b>. When the browser asks, press <b>Allow</b>.</p>
+  <div class="box trouble">
+    <h4>Pressed Block by mistake?</h4>
+    <p><b>Laptop (Chrome or Edge):</b> click the icon to the left of the web address, switch <b>Camera</b> or <b>Microphone</b> to <b>Allow</b>, then reload the page.</p>
+    <p><b>Android:</b> tap the icon to the left of the address, then <b>Permissions</b>, and allow the camera or microphone.</p>
+    <p><b>iPhone:</b> Settings, then Safari, then Camera or Microphone, then <b>Allow</b>.</p>
+  </div>
+  <h3>Internet and downloads</h3>
+  <ul>
+    <li>The first visit needs internet. The site itself is small and opens quickly.</li>
+    <li>Camera tools download their models the first time you press <b>Start camera</b>: about 12 MB for Sign to text and 16 MB for Gesture and emotion. On-device speech recognition is about 40 MB. Each download happens only once.</li>
+    <li>After that, most pages keep working without internet. Text to sign needs internet for words that are not already stored in the site.</li>
+  </ul>
+  <h3>Install it like an app (optional)</h3>
+  <ul>
+    <li><b>Chrome or Edge on a laptop:</b> click the install icon at the right end of the address bar, or open the browser menu and choose <b>Install</b>.</li>
+    <li><b>Android:</b> browser menu (⋮), then <b>Add to Home screen</b> or <b>Install app</b>.</li>
+    <li><b>iPhone:</b> the Share button, then <b>Add to Home Screen</b>.</li>
+  </ul>
+  <h3>What stays private</h3>
+  <p>Camera pictures never leave your device; the models run inside the browser. Bridgify has no accounts and keeps nothing about you on a server. Speech to text in Chrome, Edge or Safari uses the browser's own speech service unless you turn on on-device recognition. The <a href="{{BASE}}/about/privacy">privacy page</a> explains this in full.</p>
+</section>
+
+<section class="chapter" id="tour">
+  <h2>2. A quick tour of the website</h2>
+  <a class="open" href="{{BASE}}/">{{BASE}}/</a>
+  <img class="shot" src="shots/home.jpg" alt="The home page on a laptop">
+  <ul>
+    <li><b>Left menu (laptop):</b> every tool, grouped by what you want to do. On a phone, tap <b>Open menu</b> (☰) at the top left to see it.</li>
+    <li><b>SOS:</b> the red button. It opens the emergency card from any page.</li>
+    <li><b>Display settings:</b> at the bottom of the left menu, or the sliders icon at the top right on a phone. Change the colours, text size and font here (chapter 14).</li>
+    <li><b>Footer:</b> links to About, Privacy, Evidence and Credits.</li>
+    <li><b>Keyboard:</b> every page works without a mouse. <span class="kbd">Tab</span> moves between controls, <span class="kbd">Enter</span> presses a button and <span class="kbd">Esc</span> closes a panel.</li>
+  </ul>
+  <img class="shot phone" src="shots/home-mobile.jpg" alt="The home page on a phone">
+  <p>On a phone the layout changes to one column with large buttons, so everything can be reached with a thumb.</p>
+  <div class="clear"></div>
+</section>
+
+<section class="chapter" id="home">
+  <h2>3. Home: say it every way</h2>
+  <a class="open" href="{{BASE}}/">{{BASE}}/</a>
+  <p>Type one message and see it at once as speech, braille, fingerspelling and large print. This is the quickest way to show someone what you mean.</p>
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>Click the box <b>What do you want to say?</b> and type a message. Or tap one of the suggestions under it, such as <b>I need water</b>.</li>
+    <li>The rows underneath update as you type: <b>Spoken</b>, <b>Braille, grade 1</b>, the fingerspelling pictures and <b>Large print</b>.</li>
+    <li>Press <b>Speak it</b> to hear the message.</li>
+    <li>Under <b>Or start with</b>, three shortcuts open the most-used tools: <b>Speak for me</b>, <b>Caption a conversation</b> and <b>Fingerspell to the camera</b>.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <p>Type <b>Hello world</b>. The braille row shows <b>⠠⠓⠑⠇⠇⠕⠀⠺⠕⠗⠇⠙</b>. The first cell (⠠) means "the next letter is a capital". Press <b>Speak it</b> and you hear "Hello world".</p>
+  </div>
+  <div class="box trouble">
+    <h4>If something goes wrong</h4>
+    <p>No sound: turn up the volume and check the phone is not on silent. Then try the Text to speech page and choose another voice.</p>
+  </div>
+</section>
+
+<section class="chapter" id="tts">
+  <h2>4. Text to speech</h2>
+  <a class="open" href="{{BASE}}/tools/text-to-speech">{{BASE}}/tools/text-to-speech</a>
+  <p>For someone who cannot speak: type, or tap a ready-made phrase, and the phone says it aloud. Each word lights up as it is spoken.</p>
+  <img class="shot" src="shots/tts.jpg" alt="Text to speech with the Emergency phrases open">
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>Type in <b>Your message</b>, or open a phrase group (<b>Common words</b>, <b>Phrases</b>, <b>Emergency</b> and more) and tap a phrase. A tapped phrase is spoken straight away.</li>
+    <li>If you like, change the <b>Language</b> (English or Hindi), the <b>Voice</b> and the <b>Speed</b>.</li>
+    <li>Press <b>Speak</b>. Watch the <b>Live caption</b>: the word being spoken is highlighted.</li>
+    <li>Use <b>Pause</b>, <b>Resume</b>, <b>Stop</b> or <b>Repeat</b> while it speaks.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <ol class="steps">
+      <li>Open <b>Emergency</b> and tap <b>Call an ambulance</b>. You hear it at once, and the words light up one by one.</li>
+      <li>Type a long paragraph (five or more sentences) and press <b>Speak</b>. It reads to the end without cutting off.</li>
+      <li>Choose Hindi as the <b>Language</b> and tap a Hindi phrase. It is spoken in Hindi.</li>
+    </ol>
+  </div>
+  <div class="box trouble">
+    <h4>If something goes wrong</h4>
+    <p>No voice, or a robotic voice: open <b>Voice</b> and pick another one. <b>Server voice</b> always works when you are online, even on devices with no voices installed.</p>
+  </div>
+</section>
+
+<section class="chapter" id="stt">
+  <h2>5. Speech to text</h2>
+  <a class="open" href="{{BASE}}/tools/speech-to-text">{{BASE}}/tools/speech-to-text</a>
+  <p>For someone who is Deaf or hard of hearing: live captions of what the other person says, with punctuation added.</p>
+  <img class="shot" src="shots/stt.jpg" alt="Speech to text page">
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>Press <b>Start listening</b> and allow the microphone.</li>
+    <li>Speak normally. Words appear as you talk, then settle into sentences with full stops and question marks.</li>
+    <li>Press <b>Captions view</b> for very large text, to hold up across a table.</li>
+    <li>When you are finished, <b>Speak</b>, <b>Copy</b>, <b>Download</b> or <b>Clear</b> the transcript.</li>
+  </ol>
+  <h3>On-device recognition (for Firefox, Brave or noisy rooms)</h3>
+  <ol class="steps">
+    <li>Under <b>On-device recognition</b>, press <b>Download and turn on</b>. It downloads about 40 MB once.</li>
+    <li>Press <b>Start listening</b> again. Speech is now recognised inside the browser, and no audio leaves the device. It works in English only.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <p>Say "where is the nearest hospital". You see <b>Where is the nearest hospital?</b>, with the capital letter and question mark added for you.</p>
+  </div>
+  <div class="box trouble">
+    <h4>If something goes wrong</h4>
+    <p>Nothing appears: check the microphone permission (chapter 1) and that no other app is using the microphone. In Brave or Firefox, use on-device recognition.</p>
+  </div>
+</section>
+
+<section class="chapter" id="t2b">
+  <h2>6. Text to braille</h2>
+  <a class="open" href="{{BASE}}/tools/text-to-braille">{{BASE}}/tools/text-to-braille</a>
+  <p>Turns text into braille in three standards. It uses liblouis, the same braille translator that screen readers use.</p>
+  <img class="shot" src="shots/t2b.jpg" alt="Text to braille showing HELLO, HOW ARE YOU?">
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>Choose <b>Grade 1</b> (letter by letter), <b>Grade 2</b> (contracted, the way most braille books are written) or <b>Hindi (Bharati)</b>.</li>
+    <li>Type your text. The braille appears underneath as you type, with each cell shown as dots.</li>
+    <li>Press <b>Copy braille</b> to paste it anywhere. Press <b>Download .txt</b> for a text file with everything you converted, or <b>Download .brf</b> for a braille embosser.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <table>
+      <tr><th>Choose</th><th>Type</th><th>You should see</th></tr>
+      <tr><td>Grade 1</td><td>Hello world</td><td>⠠⠓⠑⠇⠇⠕⠀⠺⠕⠗⠇⠙</td></tr>
+      <tr><td>Grade 1</td><td>HELLO, HOW ARE YOU?</td><td>⠠⠠⠠⠓⠑⠇⠇⠕⠂⠀⠓⠕⠺⠀⠁⠗⠑⠀⠽⠕⠥⠦⠠⠄</td></tr>
+      <tr><td>Grade 2</td><td>the and for of with</td><td>⠮⠀⠯⠀⠿⠀⠷⠀⠾ (one cell per word)</td></tr>
+      <tr><td>Grade 2</td><td>THE RED FORT</td><td>⠠⠠⠠⠮⠀⠗⠫⠀⠿⠞⠠⠄</td></tr>
+      <tr><td>Hindi (Bharati)</td><td>नमस्ते</td><td>⠝⠍⠈⠎⠞⠑</td></tr>
+    </table>
+    <p>These are the same cells that native liblouis produces. The site is checked against 59 such cases.</p>
+  </div>
+</section>
+
+<section class="chapter" id="b2t">
+  <h2>7. Braille to text</h2>
+  <a class="open" href="{{BASE}}/tools/braille-to-text">{{BASE}}/tools/braille-to-text</a>
+  <p>Write braille and read it as text. On a laptop you type like on a Perkins brailler. On a phone you tap the dots.</p>
+  <img class="shot" src="shots/b2t.jpg" alt="Braille to text after writing the word hi">
+  <h3>Steps on a laptop</h3>
+  <ol class="steps">
+    <li>Click inside the <b>Brailler</b> box.</li>
+    <li>Six keys are the six dots: <span class="kbd">F</span> = dot 1, <span class="kbd">D</span> = dot 2, <span class="kbd">S</span> = dot 3, <span class="kbd">J</span> = dot 4, <span class="kbd">K</span> = dot 5, <span class="kbd">L</span> = dot 6.</li>
+    <li>Press the keys for one cell <b>together</b>, then let go. The cell is added when you release.</li>
+    <li><span class="kbd">Space</span> adds a space and <span class="kbd">Backspace</span> deletes the last cell.</li>
+  </ol>
+  <h3>Steps on a phone</h3>
+  <ol class="steps">
+    <li>Under <b>Or tap the dots</b>, tap the dots you want. They turn dark.</li>
+    <li>Press <b>Add cell</b>. Repeat for each letter. Use <b>Space</b> between words.</li>
+  </ol>
+  <p>The <b>Result</b> box shows the text. Press <b>Speak</b> to hear it, <b>Copy</b> to copy it or <b>Clear</b> to start again.</p>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <ol class="steps">
+      <li>Press <span class="kbd">F</span> alone and release. The result shows <b>a</b>.</li>
+      <li>Press <span class="kbd">F</span> <span class="kbd">D</span> <span class="kbd">K</span> together (dots 1 2 5), release, then <span class="kbd">D</span> <span class="kbd">J</span> together (dots 2 4). The result shows <b>hi</b>.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="chapter" id="s2t">
+  <h2>8. Sign to text</h2>
+  <a class="open" href="{{BASE}}/tools/sign-to-text">{{BASE}}/tools/sign-to-text</a>
+  <p>Fingerspell to the camera and the letters become text. Recognition runs on your device; the camera picture is never uploaded. It reads <b>ISL</b> and <b>ASL</b> fingerspelling.</p>
+  <img class="shot" src="shots/s2t.jpg" alt="Sign to text before the camera starts">
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>Under <b>Sign language</b>, choose <b>ISL</b> or <b>ASL</b>.</li>
+    <li>Press <b>Start camera</b> and allow the camera. The first time it downloads about 12 MB.</li>
+    <li>Sit about an arm's length from the camera in good light, with your hand fully in view.</li>
+    <li>Make a letter and <b>hold it still</b>. A ring fills around the letter it sees. After about 0.7 seconds the letter is added to <b>Detected text</b>.</li>
+    <li>Press <b>Space</b> between words, then <b>Speak</b> to say the word aloud. Use <b>Copy</b>, <b>Clear</b> or the delete button to fix mistakes.</li>
+    <li>If it is unsure, it shows its three best guesses. Tap the right one.</li>
+    <li>Not sure how a letter looks? Open the <b>alphabet reference</b> under the camera.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works (ASL)</h4>
+    <ol class="steps">
+      <li><b>L</b>: thumb and index finger up in an L shape, other fingers closed. <b>L</b> is added.</li>
+      <li><b>V</b>: index and middle fingers up and apart. <b>V</b> is added.</li>
+      <li><b>B</b>: flat hand, fingers together, thumb across the palm. <b>B</b> is added.</li>
+      <li>Spell <b>L</b>, <b>O</b>, <b>V</b>, <b>E</b>, lowering your hand between letters. <b>LOVE</b> appears.</li>
+    </ol>
+  </div>
+  <div class="box trouble">
+    <h4>If something goes wrong</h4>
+    <ul>
+      <li>Nothing detected: add light, move back so the whole hand is in the frame, and use a plain background.</li>
+      <li>A letter repeats: lower your hand briefly between letters.</li>
+      <li>Letters that need movement are typed instead. In ASL these are J and Z. In ISL, H, J and Y are not recognised yet.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="chapter" id="t2s">
+  <h2>9. Text to sign</h2>
+  <a class="open" href="{{BASE}}/tools/text-to-sign">{{BASE}}/tools/text-to-sign</a>
+  <p>Type words and an animated signer shows each sign. It covers six sign languages: <b>ISL</b> (Indian), <b>ASL</b> (American), <b>FSL</b> (French), <b>LSM</b> (Mexican), <b>LIS</b> (Italian) and <b>DGS</b> (German). Words it doesn't know are fingerspelled letter by letter.</p>
+  <img class="shot" src="shots/t2s.jpg" alt="Text to sign playing a sign">
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>Choose a sign language at the top.</li>
+    <li>Type words in <b>Text</b>, or tap a quick phrase.</li>
+    <li>Press <b>Show signs</b>. After "Preparing signs…" the signer starts.</li>
+    <li>Use the player: play or pause, <b>Previous sign</b> and <b>Next sign</b>, the speed menu and <b>Loop</b>. The strip under the player shows every sign; tap one to jump to it.</li>
+    <li>Press <b>Speak</b> to also hear the text.</li>
+    <li>For ISL, a line above the player shows the words in ISL order. For example, "Where is the hospital?" becomes <b>HOSPITAL WHERE</b>, because ISL puts question words last.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <ol class="steps">
+      <li>ASL, type <b>hello</b>, then <b>Show signs</b>. A figure signs HELLO.</li>
+      <li>Any language, type a name such as <b>Riddhi</b>. It is fingerspelled, one letter card at a time.</li>
+      <li>ISL, type <b>Where is the hospital?</b>. The order line shows <b>HOSPITAL WHERE</b>.</li>
+    </ol>
+  </div>
+  <div class="box trouble">
+    <h4>If something goes wrong</h4>
+    <p>"Signs couldn't load": words that are not stored in the site are fetched from the free sign.mt service, which needs internet. Check the connection and press <b>Show signs</b> again.</p>
+  </div>
+  <p class="muted">This looks up signs word by word. It is not a sign-language interpreter.</p>
+</section>
+
+<section class="chapter" id="gesture">
+  <h2>10. Gesture and emotion</h2>
+  <a class="open" href="{{BASE}}/tools/gesture-emotion">{{BASE}}/tools/gesture-emotion</a>
+  <p>Show a hand gesture or a facial expression and see what it means. It can say the meaning aloud, which helps someone who cannot speak.</p>
+  <img class="shot" src="shots/gesture.jpg" alt="Gesture and emotion page">
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>Press <b>Start camera</b>. The first time it downloads about 16 MB.</li>
+    <li>Show one of the gestures below and hold it for a moment.</li>
+    <li>Turn on <b>Speak meanings aloud</b> to hear the meaning each time a gesture is recognised.</li>
+    <li>Your facial <b>Expression (approximate)</b> is shown next to it.</li>
+    <li>Every gesture goes into the <b>Session log</b>. Press <b>Export CSV</b> to save it, or clear it with the bin button.</li>
+  </ol>
+  <table>
+    <tr><th>Gesture</th><th>Meaning shown</th><th>Spoken</th></tr>
+    <tr><td>Thumbs up</td><td>Yes, I agree</td><td>"Yes, I agree."</td></tr>
+    <tr><td>Thumbs down</td><td>No, I don't agree</td><td>"No, I don't agree."</td></tr>
+    <tr><td>Open palm</td><td>Stop, or wait please</td><td>"Please wait."</td></tr>
+    <tr><td>Pointing</td><td>Look there, or I want that</td><td>"I want that one."</td></tr>
+    <tr><td>Peace sign</td><td>I'm fine, all good</td><td>"I'm fine, all good."</td></tr>
+    <tr><td>Closed fist</td><td>I need help</td><td>"I need help."</td></tr>
+    <tr><td>I love you</td><td>I love you (ASL sign)</td><td>"I love you."</td></tr>
+    <tr><td>Wave (open hand moving side to side)</td><td>Hello, or goodbye</td><td>"Hello!"</td></tr>
+  </table>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <p>Hold a thumbs up. <b>Thumbs up</b> and <b>Yes, I agree</b> appear and a line is added to the log. Smile widely and the expression changes to <b>Happy</b>.</p>
+  </div>
+</section>
+
+<section class="chapter" id="bridge">
+  <h2>11. Bridge: two phones, one conversation</h2>
+  <a class="open" href="{{BASE}}/bridge">{{BASE}}/bridge</a>
+  <p>Two people, two phones, one conversation. Each person chooses how they send messages and how they want to receive them. For example, a Deaf person types and reads captions, while a hearing person speaks and listens. Messages go directly from phone to phone, and nothing is stored.</p>
+  <img class="shot" src="shots/bridge.jpg" alt="Bridge start screen">
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li><b>Phone A:</b> open the link above. Type <b>Your name</b> if you like, choose <b>How you want to receive messages</b> (<b>Captions</b>, <b>Speech</b>, <b>Braille</b> or <b>Sign</b>), then press <b>Start a conversation</b>.</li>
+    <li>Phone A now shows the <b>Code for the other phone</b> (six characters) and a QR code under <b>Scan to join</b>. <b>Read code aloud</b> and <b>Copy link</b> help you share it.</li>
+    <li><b>Phone B:</b> scan the QR code with the phone camera. Or open the same link, press <b>Join with a code</b>, type the code in <b>Code from the other phone</b> and press <b>Join</b>.</li>
+    <li>When both show the conversation, each person picks <b>How you send</b>: <b>Type</b>, <b>Speak</b>, <b>Quick phrases</b> or <b>Fingerspell</b>. You can change <b>How you receive</b> at any time too.</li>
+    <li>Messages arrive in the form the other person chose. <b>Repeat</b> plays the last one again.</li>
+    <li>With <b>Fingerspell</b>, letters you hold steady build a word; <b>Send word</b> sends it. Turn on <b>Show my hands</b> to send the outline of your hands (never video).</li>
+    <li>Press <b>Leave</b> to end the conversation for both phones.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <ol class="steps">
+      <li>Phone A receives <b>Captions</b> and starts. Phone B joins with the code and receives <b>Speech</b>.</li>
+      <li>Phone A types "Hello, can you hear me?" and presses <b>Send</b>. Phone B reads it aloud.</li>
+      <li>Phone B chooses <b>Speak</b>, presses <b>Start listening</b> and says a sentence. It appears as a caption on phone A.</li>
+      <li>Phone A switches <b>How you receive</b> to <b>Braille</b>. The next message from B arrives as braille cells.</li>
+    </ol>
+    <p><b>Only one laptop?</b> On the waiting screen, press <b>Open it in another tab on this device</b> and talk between the two tabs. The tabs talk to each other directly, so the messages don't need the internet.</p>
+  </div>
+  <div class="box trouble">
+    <h4>If something goes wrong</h4>
+    <ul>
+      <li>The phones don't connect: both need internet for the first connection. Some college or office Wi-Fi blocks phone-to-phone links, so switch one phone to mobile data and press <b>Try again</b>.</li>
+      <li>"This conversation already has two people": a third phone tried to join. Start a new conversation for a new code.</li>
+      <li>"Reconnecting": the link dropped for a moment. It reconnects by itself, and messages typed meanwhile are sent when it is back.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="chapter" id="sos">
+  <h2>12. SOS</h2>
+  <a class="open" href="{{BASE}}/sos">{{BASE}}/sos</a>
+  <p>Emergency cards that anyone can understand, in large text with braille, and signs on request. Bridgify can speak a card aloud, call your emergency contact and share your location. SOS works without internet once the site has been opened.</p>
+  <img class="shot" src="shots/sos.jpg" alt="SOS page">
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>Press the red <b>SOS</b> button at the top of any page.</li>
+    <li>Find the card you need, for example "I am Deaf. Please write it down." Each card has a Hindi line under it.</li>
+    <li>Press <b>Speak</b> to say it aloud, <b>Show full screen</b> to hold it up to someone (<b>Turn text around</b> flips it for the person opposite), or <b>Sign it</b> to play the signs.</li>
+    <li>Under <b>Your details</b>, press <b>Edit</b> once to add your name, an <b>Emergency contact</b> and <b>Medical notes</b>. They stay on this phone only.</li>
+    <li>Once a contact is saved, a red <b>Call</b> button rings them. <b>Share my location</b> sends a map link, or copies it so you can paste it into a message.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <ol class="steps">
+      <li>Press <b>Speak</b> on a card. It is spoken.</li>
+      <li>Add a contact, then reload the page. The contact is still there.</li>
+      <li>Turn on aeroplane mode and reload the SOS page. The cards still appear and <b>Speak</b> still works (with an offline voice installed).</li>
+    </ol>
+  </div>
+</section>
+
+<section class="chapter" id="learn">
+  <h2>13. Learn braille and sign language</h2>
+  <a class="open" href="{{BASE}}/learn/braille/alphabet">{{BASE}}/learn/braille/alphabet</a>
+  <img class="shot" src="shots/learn-braille.jpg" alt="Learn braille alphabet">
+  <h3>Braille lessons</h3>
+  <ol class="steps">
+    <li><b>Alphabet (Grade 1):</b> all 26 letters with their dot numbers. Press <b>Hear how braille cells work</b> for a short spoken introduction.</li>
+    <li><b>Numbers:</b> how the number sign (dots 3 4 5 6) turns letters a–j into 1–0.</li>
+    <li><b>Grade 2 contractions:</b> the short forms used in most braille books, such as ⠮ for "the".</li>
+    <li><b>Quick quiz:</b> a braille cell is shown; pick the right letter. It says <b>Correct.</b> or shows the answer.</li>
+  </ol>
+  <a class="open" href="{{BASE}}/learn/sign/isl/alphabet">{{BASE}}/learn/sign/isl/alphabet</a>
+  <h3>Sign language lessons</h3>
+  <ol class="steps">
+    <li>Choose a language at the top: ISL, ASL, FSL, LSM, LIS or DGS.</li>
+    <li><b>Alphabet</b> shows each handshape for ISL, ASL, FSL and DGS (ISL and ASL with a tip for each letter). For ISL, <b>Show each letter in</b> adds the letter in any of 22 Indian scripts. <b>Numbers</b> covers ISL and ASL. LSM and LIS have no openly licensed pictures, and their pages say so.</li>
+    <li><b>Phrases</b> plays everyday phrases with the animated signer.</li>
+    <li><b>Practice with camera</b> (ISL and ASL): the page shows a letter under <b>Sign this letter</b>. Start the camera and make it. When it is right you see <b>Well done</b>; press <b>Next letter</b> for another, or <b>Skip</b> a letter you don't know yet.</li>
+  </ol>
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <p>On the braille alphabet page, answer the quiz. Then open ASL, <b>Practice with camera</b>, start the camera and make the letter it asks for.</p>
+  </div>
+</section>
+
+<section class="chapter" id="settings">
+  <h2>14. Display settings (12 modes)</h2>
+  <p>Open <b>Display settings</b> from the bottom of the left menu, or with the sliders icon at the top right on a phone. Everything you choose is saved on your device.</p>
+  <img class="shot" src="shots/settings.jpg" alt="Display settings panel">
+  <table>
+    <tr><th>Mode</th><th>For</th><th>Mode</th><th>For</th></tr>
+    <tr><td>Light</td><td>Default colours</td><td>Calm</td><td>Muted colours, no motion</td></tr>
+    <tr><td>Dark</td><td>Less glare</td><td>Focus</td><td>Only the tool you are using</td></tr>
+    <tr><td>High contrast</td><td>Black, white and yellow</td><td>Low vision</td><td>Larger, bolder text</td></tr>
+    <tr><td>Solarized</td><td>Soft, low strain</td><td>Autism-friendly</td><td>Pastel, predictable, no motion</td></tr>
+    <tr><td>Night blue</td><td>Dim, for night use</td><td>Dyslexia</td><td>OpenDyslexic font, wide spacing</td></tr>
+    <tr><td>Forest</td><td>Green, calm</td><td>Sepia</td><td>Warm paper</td></tr>
+  </table>
+  <p>Also in this panel: <b>Text size</b>; <b>Tools in the menu</b>, to hide tools you don't use; and under <b>More</b>, <b>Underline all links</b>, <b>Large cursor</b> and <b>Turn off animation</b>.</p>
+  <img class="shot" src="shots/dyslexia.jpg" alt="Text to speech in dyslexia mode">
+  <div class="box expect">
+    <h4>Check it works</h4>
+    <ol class="steps">
+      <li>Choose <b>Dyslexia</b>. The whole site changes to the OpenDyslexic font with wider spacing.</li>
+      <li>Choose <b>High contrast</b>. Black background, white text, yellow links.</li>
+      <li>Set <b>Text size</b> to the largest on a phone. Text gets bigger and nothing runs off the side of the screen.</li>
+      <li>Reload the page. Your choices are still there.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="chapter" id="about">
+  <h2>15. About, privacy, evidence and credits</h2>
+  <table>
+    <tr><th>Page</th><th>Link</th><th>What it shows</th></tr>
+    <tr><td>About</td><td><a href="{{BASE}}/about">{{BASE}}/about</a></td><td>What Bridgify is, who made it and how it works</td></tr>
+    <tr><td>Privacy</td><td><a href="{{BASE}}/about/privacy">{{BASE}}/about/privacy</a></td><td>What stays on your device and what doesn't</td></tr>
+    <tr><td>Evidence</td><td><a href="{{BASE}}/about/evidence">{{BASE}}/about/evidence</a></td><td>Accuracy of every model, measured on people it never saw, with confusion charts</td></tr>
+    <tr><td>Credits</td><td><a href="{{BASE}}/about/credits">{{BASE}}/about/credits</a></td><td>Every dataset, model, font and sign source, with its licence</td></tr>
+  </table>
+  <img class="shot" src="shots/evidence.jpg" alt="Evidence page">
+  <h3>The numbers to remember</h3>
+  <div class="two">
+    <div><p class="num">0.962</p><p>ASL fingerspelling, macro-F1 on two signers never seen in training</p></div>
+    <div><p class="num">0.989</p><p>ISL fingerspelling, macro-F1 on a signer never seen in training</p></div>
+    <div><p class="num">97.3%</p><p>Hand gestures, on 626 people not used for tuning</p></div>
+    <div><p class="num">59 / 59</p><p>Braille cases identical to native liblouis</p></div>
+  </div>
+  <p class="muted">Macro-F1 averages the score of every letter equally, so a rare letter counts as much as a common one. 1.0 would be perfect.</p>
+</section>
+
+<section class="chapter" id="checklist">
+  <h2>16. Full test checklist</h2>
+  <p>Tick each row as you go. Use Chrome on a laptop unless the row says phone.</p>
+  <table>
+    <tr><th>#</th><th>Page</th><th>Do this</th><th>You should see</th><th>✓</th></tr>
+    <tr><td>1</td><td><a href="{{BASE}}/">Home</a></td><td>Open the site</td><td>The page loads in a second or two; the menu lists every tool</td><td class="tick">☐</td></tr>
+    <tr><td>2</td><td><a href="{{BASE}}/">Home</a></td><td>Type <b>Hello world</b></td><td>Braille ⠠⠓⠑⠇⠇⠕⠀⠺⠕⠗⠇⠙, fingerspelling pictures and large print</td><td class="tick">☐</td></tr>
+    <tr><td>3</td><td><a href="{{BASE}}/">Home</a></td><td>Press <b>Speak it</b></td><td>"Hello world" is spoken</td><td class="tick">☐</td></tr>
+    <tr><td>4</td><td><a href="{{BASE}}/">Home</a></td><td>Tap the suggestion <b>I need water</b></td><td>The box fills with "I need water"</td><td class="tick">☐</td></tr>
+    <tr><td>5</td><td><a href="{{BASE}}/tools/text-to-speech">Text to speech</a></td><td>Emergency, tap <b>Call an ambulance</b></td><td>Spoken at once, words light up</td><td class="tick">☐</td></tr>
+    <tr><td>6</td><td><a href="{{BASE}}/tools/text-to-speech">Text to speech</a></td><td>Type a long paragraph, press <b>Speak</b>, then <b>Pause</b> and <b>Resume</b></td><td>It pauses and carries on to the end</td><td class="tick">☐</td></tr>
+    <tr><td>7</td><td><a href="{{BASE}}/tools/text-to-speech">Text to speech</a></td><td>Move <b>Speed</b> to fast, press <b>Repeat</b></td><td>Same text, faster</td><td class="tick">☐</td></tr>
+    <tr><td>8</td><td><a href="{{BASE}}/tools/text-to-speech">Text to speech</a></td><td>Language Hindi, tap a Hindi phrase</td><td>Spoken in Hindi</td><td class="tick">☐</td></tr>
+    <tr><td>9</td><td><a href="{{BASE}}/tools/speech-to-text">Speech to text</a></td><td><b>Start listening</b>, say "where is the nearest hospital"</td><td><b>Where is the nearest hospital?</b></td><td class="tick">☐</td></tr>
+    <tr><td>10</td><td><a href="{{BASE}}/tools/speech-to-text">Speech to text</a></td><td>Press <b>Captions view</b></td><td>Very large captions</td><td class="tick">☐</td></tr>
+    <tr><td>11</td><td><a href="{{BASE}}/tools/speech-to-text">Speech to text</a></td><td>Press <b>Download</b></td><td>A .txt file with the transcript</td><td class="tick">☐</td></tr>
+    <tr><td>12</td><td><a href="{{BASE}}/tools/speech-to-text">Speech to text</a></td><td>In Firefox or Brave: <b>Download and turn on</b>, then speak</td><td>A progress bar, then captions without the browser's service</td><td class="tick">☐</td></tr>
+    <tr><td>13</td><td><a href="{{BASE}}/tools/text-to-braille">Text to braille</a></td><td>Grade 1, type <b>HELLO, HOW ARE YOU?</b></td><td>⠠⠠⠠⠓⠑⠇⠇⠕⠂⠀⠓⠕⠺⠀⠁⠗⠑⠀⠽⠕⠥⠦⠠⠄</td><td class="tick">☐</td></tr>
+    <tr><td>14</td><td><a href="{{BASE}}/tools/text-to-braille">Text to braille</a></td><td>Grade 2, type <b>the and for of with</b></td><td>⠮⠀⠯⠀⠿⠀⠷⠀⠾</td><td class="tick">☐</td></tr>
+    <tr><td>15</td><td><a href="{{BASE}}/tools/text-to-braille">Text to braille</a></td><td>Hindi (Bharati), type <b>नमस्ते</b></td><td>⠝⠍⠈⠎⠞⠑</td><td class="tick">☐</td></tr>
+    <tr><td>16</td><td><a href="{{BASE}}/tools/text-to-braille">Text to braille</a></td><td><b>Download .brf</b></td><td>A .brf file downloads</td><td class="tick">☐</td></tr>
+    <tr><td>17</td><td><a href="{{BASE}}/tools/braille-to-text">Braille to text</a></td><td>In the Brailler box press <span class="kbd">F</span></td><td><b>a</b></td><td class="tick">☐</td></tr>
+    <tr><td>18</td><td><a href="{{BASE}}/tools/braille-to-text">Braille to text</a></td><td><span class="kbd">F</span><span class="kbd">D</span><span class="kbd">K</span> together, then <span class="kbd">D</span><span class="kbd">J</span> together</td><td><b>hi</b></td><td class="tick">☐</td></tr>
+    <tr><td>19</td><td><a href="{{BASE}}/tools/braille-to-text">Braille to text</a></td><td>Phone: tap dots 1 and 2, <b>Add cell</b></td><td><b>b</b></td><td class="tick">☐</td></tr>
+    <tr><td>20</td><td><a href="{{BASE}}/tools/sign-to-text">Sign to text</a></td><td>ASL, <b>Start camera</b></td><td>Download progress once, then your camera with hand points drawn on it</td><td class="tick">☐</td></tr>
+    <tr><td>21</td><td><a href="{{BASE}}/tools/sign-to-text">Sign to text</a></td><td>Hold ASL <b>L</b>, then <b>V</b></td><td><b>L</b> then <b>V</b> added after the ring fills</td><td class="tick">☐</td></tr>
+    <tr><td>22</td><td><a href="{{BASE}}/tools/sign-to-text">Sign to text</a></td><td>Spell <b>L O V E</b>, press <b>Speak</b></td><td><b>LOVE</b> is shown and spoken</td><td class="tick">☐</td></tr>
+    <tr><td>23</td><td><a href="{{BASE}}/tools/sign-to-text">Sign to text</a></td><td>Switch to ISL and sign with two hands</td><td>ISL letters are added</td><td class="tick">☐</td></tr>
+    <tr><td>24</td><td><a href="{{BASE}}/tools/text-to-sign">Text to sign</a></td><td>ASL, <b>hello</b>, <b>Show signs</b></td><td>A figure signs HELLO</td><td class="tick">☐</td></tr>
+    <tr><td>25</td><td><a href="{{BASE}}/tools/text-to-sign">Text to sign</a></td><td>Type <b>Riddhi</b>, <b>Show signs</b></td><td>Fingerspelled R-I-D-D-H-I</td><td class="tick">☐</td></tr>
+    <tr><td>26</td><td><a href="{{BASE}}/tools/text-to-sign">Text to sign</a></td><td>ISL, <b>Where is the hospital?</b></td><td>Order line <b>HOSPITAL WHERE</b></td><td class="tick">☐</td></tr>
+    <tr><td>27</td><td><a href="{{BASE}}/tools/text-to-sign">Text to sign</a></td><td>Try FSL, LSM, LIS and DGS with their example words</td><td>Each one plays a sign or fingerspells</td><td class="tick">☐</td></tr>
+    <tr><td>28</td><td><a href="{{BASE}}/tools/gesture-emotion">Gesture and emotion</a></td><td><b>Start camera</b>, thumbs up</td><td><b>Thumbs up</b>, <b>Yes, I agree</b>, a line in the log</td><td class="tick">☐</td></tr>
+    <tr><td>29</td><td><a href="{{BASE}}/tools/gesture-emotion">Gesture and emotion</a></td><td>Turn on <b>Speak meanings aloud</b>, open palm</td><td>You hear "Please wait."</td><td class="tick">☐</td></tr>
+    <tr><td>30</td><td><a href="{{BASE}}/tools/gesture-emotion">Gesture and emotion</a></td><td>Smile widely</td><td>Expression <b>Happy</b></td><td class="tick">☐</td></tr>
+    <tr><td>31</td><td><a href="{{BASE}}/tools/gesture-emotion">Gesture and emotion</a></td><td><b>Export CSV</b></td><td>A .csv file with the log</td><td class="tick">☐</td></tr>
+    <tr><td>32</td><td><a href="{{BASE}}/bridge">Bridge</a></td><td>Phone A: <b>Start a conversation</b></td><td>A six-character code and a QR code</td><td class="tick">☐</td></tr>
+    <tr><td>33</td><td><a href="{{BASE}}/bridge">Bridge</a></td><td>Phone B: scan the QR code</td><td>Both phones show the conversation</td><td class="tick">☐</td></tr>
+    <tr><td>34</td><td><a href="{{BASE}}/bridge">Bridge</a></td><td>Type on A, <b>Send</b></td><td>B shows or speaks it in its chosen form</td><td class="tick">☐</td></tr>
+    <tr><td>35</td><td><a href="{{BASE}}/bridge">Bridge</a></td><td>B chooses to receive <b>Braille</b></td><td>A's next message arrives as braille cells</td><td class="tick">☐</td></tr>
+    <tr><td>36</td><td><a href="{{BASE}}/sos">SOS</a></td><td>Press the red <b>SOS</b> button, then <b>Show full screen</b> on a card</td><td>The card fills the screen in large text and plays its signs</td><td class="tick">☐</td></tr>
+    <tr><td>37</td><td><a href="{{BASE}}/sos">SOS</a></td><td>Aeroplane mode, reload</td><td>The cards still appear</td><td class="tick">☐</td></tr>
+    <tr><td>38</td><td><a href="{{BASE}}/learn/braille/alphabet">Learn braille</a></td><td>Answer the quiz</td><td><b>Correct.</b> for the right letter</td><td class="tick">☐</td></tr>
+    <tr><td>39</td><td><a href="{{BASE}}/learn/braille/numbers">Learn braille</a></td><td>Open <b>Numbers</b></td><td>The number sign explained</td><td class="tick">☐</td></tr>
+    <tr><td>40</td><td><a href="{{BASE}}/learn/sign/asl/practice">Learn sign</a></td><td>ASL <b>Practice with camera</b>, make the letter shown</td><td><b>Well done</b>, then <b>Next letter</b></td><td class="tick">☐</td></tr>
+    <tr><td>41</td><td><a href="{{BASE}}/learn/sign/isl/alphabet">Learn sign</a></td><td>Switch between ISL, ASL, FSL and DGS</td><td>Each shows its own alphabet; LSM and LIS explain why they have no pictures</td><td class="tick">☐</td></tr>
+    <tr><td>42</td><td>Display settings</td><td>Choose <b>Dyslexia</b></td><td>OpenDyslexic font everywhere</td><td class="tick">☐</td></tr>
+    <tr><td>43</td><td>Display settings</td><td>Choose <b>High contrast</b>, reload</td><td>Black and yellow, still set after reload</td><td class="tick">☐</td></tr>
+    <tr><td>44</td><td>Display settings</td><td>Phone, largest text size</td><td>No sideways scrolling</td><td class="tick">☐</td></tr>
+    <tr><td>45</td><td>Any page</td><td>Use only <span class="kbd">Tab</span> and <span class="kbd">Enter</span></td><td>A visible outline shows where you are; every button works</td><td class="tick">☐</td></tr>
+    <tr><td>46</td><td><a href="{{BASE}}/about/evidence">Evidence</a></td><td>Open the page</td><td>0.962, 0.989, 97.3% and 0.744 with charts</td><td class="tick">☐</td></tr>
+    <tr><td>47</td><td><a href="{{BASE}}/does-not-exist">Any wrong link</a></td><td>Open a link that doesn't exist</td><td><b>That page doesn't exist</b>, with links to every tool</td><td class="tick">☐</td></tr>
+    <tr><td>48</td><td>Phone</td><td>Install the site (chapter 1)</td><td>A Bridgify icon on the home screen that opens full screen</td><td class="tick">☐</td></tr>
+  </table>
+</section>
+
+<section class="chapter" id="demo">
+  <h2>17. Demo script for the review (about 7 minutes)</h2>
+  <h3>The day before</h3>
+  <ul>
+    <li>Open every page once on the laptop and both phones. This caches the models, so nothing downloads during the demo.</li>
+    <li>Charge both phones. Use Chrome. Sit in good light with a plain wall behind you.</li>
+    <li>Turn the laptop volume up and test the projector sound.</li>
+  </ul>
+  <table>
+    <tr><th>Time</th><th>Show</th><th>Say</th></tr>
+    <tr><td>0:00</td><td>Home page. Type "Where is the hospital?" and press <b>Speak it</b></td><td>"One message, shown every way at once: speech, braille, fingerspelling and large print."</td></tr>
+    <tr><td>0:45</td><td>Sign to text, ASL. Spell L-O-V-E, press <b>Speak</b></td><td>"The camera never leaves the laptop. A small model reads 21 points on the hand. On signers it never saw, it scores 0.96."</td></tr>
+    <tr><td>2:00</td><td>Text to sign, ISL, "Where is the hospital?"</td><td>"ISL puts question words last, so we reorder the words first. Unknown words are fingerspelled."</td></tr>
+    <tr><td>3:00</td><td>Text to braille, Grade 2. Type a sentence, <b>Download .brf</b></td><td>"This is liblouis, the standard braille translator, running in the browser. It matches the native library on all 59 test cases."</td></tr>
+    <tr><td>4:00</td><td>Bridge on two phones. One types, the other hears it. Then switch to <b>Braille</b></td><td>"Each person picks their own way to send and receive. It goes phone to phone, and nothing is stored."</td></tr>
+    <tr><td>5:30</td><td>Display settings: Dyslexia, then High contrast</td><td>"Twelve modes, each checked automatically for contrast and accessibility."</td></tr>
+    <tr><td>6:15</td><td>Press <b>SOS</b>, then <b>Show full screen</b> on a card</td><td>"One tap in an emergency, and it works offline."</td></tr>
+    <tr><td>6:45</td><td>Evidence page</td><td>"Every number is measured on people the models never saw."</td></tr>
+  </table>
+</section>
+
+<section class="chapter" id="viva">
+  <h2>18. Questions you may be asked</h2>
+  <h3>What does Bridgify do, in one line?</h3>
+  <p>It converts between speech, text, braille and sign language in the browser, so people with different abilities can talk to each other.</p>
+  <h3>How does sign recognition work?</h3>
+  <p>MediaPipe finds 21 points on each hand in every camera frame. We turn them into 91 numbers per hand: positions, finger angles, fingertip distances and palm direction. A small neural network (ASL) or logistic regression (ISL) picks the letter. A letter is accepted only when it is held for 0.7 seconds with at least 80% confidence.</p>
+  <h3>How accurate is it, and how was that measured?</h3>
+  <p>We trained on public datasets and tested on people left out of training: ASL macro-F1 0.962 on two unseen signers, and ISL 0.989 on an unseen signer. Testing on new people matters, because a model can score highly on people it has already seen and still fail on new ones.</p>
+  <h3>Why does it run in the browser instead of on a server?</h3>
+  <p>Privacy, because the camera picture never leaves the device. It also costs nothing to host, and it keeps working offline. The models are small: 12 MB for Sign to text, downloaded once.</p>
+  <h3>Is this full sign-language translation?</h3>
+  <p>No. Sign to text reads fingerspelled letters, and Text to sign looks signs up word by word. Translating whole signed sentences is still an open research problem, and the site says so.</p>
+  <h3>Where do the braille rules come from?</h3>
+  <p>liblouis, the open-source braille translator used by screen readers such as NVDA and Orca. We compiled it to WebAssembly so it runs in the browser.</p>
+  <h3>How do the two phones in Bridge talk?</h3>
+  <p>With WebRTC, a direct phone-to-phone connection. A free PeerJS server only introduces the two phones; messages then go directly between them. Only text and hand points are sent, never video or audio.</p>
+  <h3>What are the limits?</h3>
+  <p>Letters that need movement are not recognised from the camera: J and Z in ASL, and H, J and Y in ISL. Expression detection is approximate (macro-F1 0.744). Sign output covers common words; other words are fingerspelled.</p>
+  <h3>How was accessibility tested?</h3>
+  <p>Automated axe checks on every page in all 12 modes, colour-contrast checks for every mode, full keyboard use, and 200% text on a small phone screen.</p>
+  <h3>What did it cost?</h3>
+  <p>Nothing. It uses Vercel's free hosting, open-licence models and datasets, and the free sign.mt and PeerJS services.</p>
+</section>
+
+<section class="chapter" id="links">
+  <h2>19. Every link in one place</h2>
+  <table>
+    <tr><th>Page</th><th>Link</th></tr>
+    <tr><td>Home</td><td><a href="{{BASE}}/">{{BASE}}/</a></td></tr>
+    <tr><td>Text to speech</td><td><a href="{{BASE}}/tools/text-to-speech">{{BASE}}/tools/text-to-speech</a></td></tr>
+    <tr><td>Speech to text</td><td><a href="{{BASE}}/tools/speech-to-text">{{BASE}}/tools/speech-to-text</a></td></tr>
+    <tr><td>Text to braille</td><td><a href="{{BASE}}/tools/text-to-braille">{{BASE}}/tools/text-to-braille</a></td></tr>
+    <tr><td>Braille to text</td><td><a href="{{BASE}}/tools/braille-to-text">{{BASE}}/tools/braille-to-text</a></td></tr>
+    <tr><td>Sign to text</td><td><a href="{{BASE}}/tools/sign-to-text">{{BASE}}/tools/sign-to-text</a></td></tr>
+    <tr><td>Text to sign</td><td><a href="{{BASE}}/tools/text-to-sign">{{BASE}}/tools/text-to-sign</a></td></tr>
+    <tr><td>Gesture and emotion</td><td><a href="{{BASE}}/tools/gesture-emotion">{{BASE}}/tools/gesture-emotion</a></td></tr>
+    <tr><td>Bridge</td><td><a href="{{BASE}}/bridge">{{BASE}}/bridge</a></td></tr>
+    <tr><td>SOS</td><td><a href="{{BASE}}/sos">{{BASE}}/sos</a></td></tr>
+    <tr><td>Learn braille: alphabet</td><td><a href="{{BASE}}/learn/braille/alphabet">{{BASE}}/learn/braille/alphabet</a></td></tr>
+    <tr><td>Learn braille: numbers</td><td><a href="{{BASE}}/learn/braille/numbers">{{BASE}}/learn/braille/numbers</a></td></tr>
+    <tr><td>Learn braille: Grade 2</td><td><a href="{{BASE}}/learn/braille/contractions">{{BASE}}/learn/braille/contractions</a></td></tr>
+    <tr><td>Learn ISL</td><td><a href="{{BASE}}/learn/sign/isl/alphabet">{{BASE}}/learn/sign/isl/alphabet</a></td></tr>
+    <tr><td>Learn ASL</td><td><a href="{{BASE}}/learn/sign/asl/alphabet">{{BASE}}/learn/sign/asl/alphabet</a></td></tr>
+    <tr><td>Practise ASL with the camera</td><td><a href="{{BASE}}/learn/sign/asl/practice">{{BASE}}/learn/sign/asl/practice</a></td></tr>
+    <tr><td>Practise ISL with the camera</td><td><a href="{{BASE}}/learn/sign/isl/practice">{{BASE}}/learn/sign/isl/practice</a></td></tr>
+    <tr><td>About</td><td><a href="{{BASE}}/about">{{BASE}}/about</a></td></tr>
+    <tr><td>Privacy</td><td><a href="{{BASE}}/about/privacy">{{BASE}}/about/privacy</a></td></tr>
+    <tr><td>Evidence</td><td><a href="{{BASE}}/about/evidence">{{BASE}}/about/evidence</a></td></tr>
+    <tr><td>Credits</td><td><a href="{{BASE}}/about/credits">{{BASE}}/about/credits</a></td></tr>
+    <tr><td>Code</td><td><a href="https://github.com/RidzM/bridgify">https://github.com/RidzM/bridgify</a></td></tr>
+  </table>
+</section>

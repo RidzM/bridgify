@@ -1,0 +1,64 @@
+{
+  "lang": "it-IT",
+  "categories": [
+    { "id": "words", "label": "Parole comuni", "items": [
+      { "text": "Sì", "en": "Yes" },
+      { "text": "No", "en": "No" },
+      { "text": "Per favore", "en": "Please" },
+      { "text": "Grazie", "en": "Thank you" },
+      { "text": "Scusa", "en": "Sorry" },
+      { "text": "Mi scusi", "en": "Excuse me" },
+      { "text": "Aiuto", "en": "Help" },
+      { "text": "Stop", "en": "Stop" },
+      { "text": "Aspetta", "en": "Wait" },
+      { "text": "Va bene", "en": "Okay" },
+      { "text": "Buongiorno", "en": "Good morning" },
+      { "text": "Buonanotte", "en": "Good night" }
+    ] },
+    { "id": "phrases", "label": "Frasi", "items": [
+      { "text": "Capisco", "en": "I understand" },
+      { "text": "Non capisco", "en": "I don't understand" },
+      { "text": "Può ripetere?", "en": "Can you repeat that?" },
+      { "text": "Parli lentamente, per favore", "en": "Please speak slowly" },
+      { "text": "Può scriverlo?", "en": "Can you write it down?" },
+      { "text": "Abbia pazienza con me, per favore", "en": "Please be patient with me" },
+      { "text": "Mi guardi quando parla, per favore", "en": "Please face me when you speak" },
+      { "text": "Un momento, per favore", "en": "One moment, please" }
+    ] },
+    { "id": "intro", "label": "Presentarsi", "items": [
+      { "text": "Sono sordo", "en": "I am deaf" },
+      { "text": "Sono ipoudente", "en": "I am hard of hearing" },
+      { "text": "Uso la lingua dei segni", "en": "I use sign language" },
+      { "text": "Come si chiama?", "en": "What is your name?" },
+      { "text": "Piacere di conoscerti", "en": "Nice to meet you" },
+      { "text": "Uso questa app per comunicare", "en": "I use this app to communicate" }
+    ] },
+    { "id": "needs", "label": "Bisogni essenziali", "items": [
+      { "text": "Ho bisogno di acqua", "en": "I need water" },
+      { "text": "Ho bisogno di mangiare", "en": "I need food" },
+      { "text": "Ho fame", "en": "I am hungry" },
+      { "text": "Ho sete", "en": "I am thirsty" },
+      { "text": "Sono stanco", "en": "I am tired" },
+      { "text": "Ho freddo", "en": "I am cold" },
+      { "text": "Devo andare in bagno", "en": "I need the toilet" },
+      { "text": "Ho bisogno delle mie medicine", "en": "I need my medicine" }
+    ] },
+    { "id": "emergency", "label": "Emergenza", "items": [
+      { "text": "Aiutami", "en": "Help me" },
+      { "text": "Ho bisogno di aiuto subito", "en": "I need help now" },
+      { "text": "Chiamate un'ambulanza", "en": "Call an ambulance" },
+      { "text": "Chiamate la polizia", "en": "Call the police" },
+      { "text": "Ho bisogno di un medico", "en": "I need a doctor" },
+      { "text": "Sento dolore", "en": "I am in pain" },
+      { "text": "Chiamate la mia famiglia, per favore", "en": "Please call my family" }
+    ] },
+    { "id": "questions", "label": "Domande", "items": [
+      { "text": "Dov'è il bagno?", "en": "Where is the toilet?" },
+      { "text": "Dov'è l'ospedale?", "en": "Where is the hospital?" },
+      { "text": "Dov'è la fermata dell'autobus?", "en": "Where is the bus stop?" },
+      { "text": "Che ore sono?", "en": "What time is it?" },
+      { "text": "Quanto costa?", "en": "How much does it cost?" },
+      { "text": "Mi può aiutare?", "en": "Can you help me?" }
+    ] }
+  ]
+}

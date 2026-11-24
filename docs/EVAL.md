@@ -272,3 +272,20 @@ HaGRID gives no image size, so tuning used aspect = 1. On camera the rules get t
 - **Gestures.** Tuned on HaGRID photos, mostly frontal at arm's length, with an unknown aspect. ILY is untested on real data. The live 3 × 8 × 5 test is still required for the ≥ 90 % gate.
 - **Emotion.** KDEF is posed, studio-lit and only 70 adults of similar background. Acted expressions are not felt emotions, so the UI must say "approximate". KDEF's licence is non-commercial research, and the emotion weights inherit that.
 - **ISL licence.** The ISL weights derive from CC-BY-SA-4.0 data (share-alike applies to the weights file).
+
+## 9. Bridge (phone to phone) `[OBSERVED]`, 24 Nov 2026
+
+Measured on one laptop: two tabs, and two browser contexts through the public PeerJS broker. Phone-to-phone numbers on real networks are **not measured yet** `[UNKNOWN]`. Method: the e2e suites `web/e2e/bridge.spec.ts` plus a test-only hook that feeds hand points through the real session code (headless camera inference runs at only 2 fps).
+
+| What | Result |
+|---|---|
+| Connect, two tabs (guest opens link → both "Connected") | 363–579 ms (handshake 8–15 ms) |
+| Connect, public PeerJS broker, isolated runs | 1.6–3.1 s (one run under a fully loaded parallel suite took 10.2 s) |
+| Round trip, two tabs | median 0.8–1.7 ms, p95 1.2–2.2 ms |
+| Round trip, PeerJS (same machine) | median 1.2–2.7 ms, p95 1.6–2.9 ms |
+| Send → receipt | 6–17 ms |
+| Text message | 117–141 B, plus a 52 B receipt |
+| Idle keep-alive | 45 B ping + 45 B pong every 5 s (about 18 B/s each way) |
+| Hands stream, moving hand, 30 fps input | 183 B per packet for one hand (295 B for two), 9.4 packets/s = **13.8 kbps** (target < 15 kbps) |
+| Hands stream, still hand | about 1.6–1.9 kbps (keyframes only) |
+| SOS offline, navigation → first card | 103–287 ms (target 300 ms) |

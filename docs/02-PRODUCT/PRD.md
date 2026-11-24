@@ -237,9 +237,12 @@ These are what the team should update in the report after v2. Each is stronger t
 | MS-ASL / ASLLRP training data | ASL-HG (10 signers, CC-BY), ISL landmark set (CC-BY-SA), HaGRID, KDEF | Licence-clean, multi-signer, held-out evaluation |
 | Whisper on Flask as fallback | **Whisper tiny.en in the browser** (opt-in ~40 MB download) | Future work done; private; no heavy server |
 | face-api.js ExpressionNet | MediaPipe FaceLandmarker blendshapes, then a 7-class scorer | face-api.js is unmaintained since 2022. This reuses the MediaPipe runtime already loaded |
-| Text→Sign "static sign cards / emoji" | Real signer video, then pose animation, then fingerspelling | Future work done |
+| Text→Sign "static sign cards / emoji" | Sign animations stored per language (prepared from sign.mt), real signer video where a licence-clean source exists (DGS), a live sign.mt request for other words, then fingerspelling. ISL input is reordered into approximate ISL word order first | Future work done `[D-30]` `[D-31]` |
 | No offline mode | PWA offline | Future work done |
 | MediaPipe Python/OpenCV on the server | Not needed: all vision runs in the browser | Simpler and more private |
 | liblouis via Flask | liblouis 3.39 compiled to WebAssembly, in the browser (identical output, 59 golden cases) | Works offline, no server |
 | WCAG 2.1 AA | WCAG 2.2 AA, tested in CI | Newer standard, superset |
-| — | Conversation Bridge, SOS, Braille→Text, Hindi Bharati braille, evidence page | New |
+| Live ISL recognition of "all letters" (implied) | 23 ISL letters: H, J and Y are missing from the public training data, so they are typed; practice mode never asks for them | Honest coverage `[D-34]` |
+| Bridge over a server room (plan v1) | Direct phone-to-phone WebRTC; the free PeerJS broker only introduces the phones; a same-device tab mode for one-laptop demos | No server, more private `[D-24]` |
+| — | Strict Content-Security-Policy; the site is checked under it in production | Security `[D-32]` |
+| — | Conversation Bridge, SOS, Braille→Text, Hindi Bharati braille, braille and sign lessons with camera practice, evidence, privacy and credits pages | New |

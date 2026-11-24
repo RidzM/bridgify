@@ -1,0 +1,1364 @@
+{
+  "lang": "isl",
+  "version": 1,
+  "spoken": "en",
+  "alsoSpoken": [
+    "hi"
+  ],
+  "entries": [
+    {
+      "gloss": "HELLO",
+      "en": "hello",
+      "words": [
+        "hello",
+        "hi",
+        "हैलो",
+        "हेलो"
+      ],
+      "pose": "/signs/isl/words/hello.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NAMASTE",
+      "en": "namaste",
+      "words": [
+        "namaste",
+        "namaskar",
+        "नमस्ते",
+        "नमस्कार",
+        "प्रणाम"
+      ],
+      "pose": "/signs/isl/words/hello.json",
+      "video": null,
+      "source": "sign.mt (closest equivalent: hello; sign.mt has no sign for \"namaste\")"
+    },
+    {
+      "gloss": "GOODBYE",
+      "en": "goodbye",
+      "words": [
+        "goodbye",
+        "bye",
+        "good bye",
+        "farewell",
+        "अलविदा",
+        "फिर मिलेंगे"
+      ],
+      "pose": "/signs/isl/words/farewell.json",
+      "video": null,
+      "source": "sign.mt (signed as: farewell)"
+    },
+    {
+      "gloss": "YES",
+      "en": "yes",
+      "words": [
+        "yes",
+        "हाँ",
+        "हां",
+        "जी हाँ"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "NO",
+      "en": "no",
+      "words": [
+        "no",
+        "नहीं",
+        "ना",
+        "not"
+      ],
+      "pose": "/signs/isl/words/no.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE",
+      "en": "please",
+      "words": [
+        "please",
+        "कृपया",
+        "प्लीज़",
+        "प्लीज"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "THANK-YOU",
+      "en": "thank you",
+      "words": [
+        "thank you",
+        "thanks",
+        "धन्यवाद",
+        "शुक्रिया"
+      ],
+      "pose": "/signs/isl/words/thank-you.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SORRY",
+      "en": "sorry",
+      "words": [
+        "sorry",
+        "माफ़ कीजिए",
+        "माफ कीजिए",
+        "माफ़ करना",
+        "माफ करना",
+        "सॉरी",
+        "क्षमा कीजिए"
+      ],
+      "pose": "/signs/isl/words/sorry.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HELP",
+      "en": "help",
+      "words": [
+        "help",
+        "मदद",
+        "सहायता"
+      ],
+      "pose": "/signs/isl/words/help.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "STOP",
+      "en": "stop",
+      "words": [
+        "stop",
+        "रुकिए",
+        "रुको",
+        "रुकें"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "WAIT",
+      "en": "wait",
+      "words": [
+        "wait",
+        "इंतज़ार कीजिए",
+        "इंतजार कीजिए",
+        "इंतज़ार",
+        "इंतजार",
+        "ठहरिए"
+      ],
+      "pose": "/signs/isl/words/wait.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MORE",
+      "en": "more",
+      "words": [
+        "more",
+        "और",
+        "ज़्यादा",
+        "ज्यादा",
+        "अधिक"
+      ],
+      "pose": "/signs/isl/words/more.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "OKAY",
+      "en": "okay",
+      "words": [
+        "okay",
+        "ok",
+        "ठीक है",
+        "ओके"
+      ],
+      "pose": "/signs/isl/words/fine.json",
+      "video": null,
+      "source": "sign.mt (signed as: fine)"
+    },
+    {
+      "gloss": "GOOD",
+      "en": "good",
+      "words": [
+        "good",
+        "अच्छा",
+        "अच्छी",
+        "बढ़िया",
+        "बढिया"
+      ],
+      "pose": "/signs/isl/words/good.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BAD",
+      "en": "bad",
+      "words": [
+        "bad",
+        "बुरा",
+        "ख़राब",
+        "खराब",
+        "बुरी"
+      ],
+      "pose": "/signs/isl/words/bad.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WATER",
+      "en": "water",
+      "words": [
+        "water",
+        "पानी",
+        "जल"
+      ],
+      "pose": "/signs/isl/words/water.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FOOD",
+      "en": "food",
+      "words": [
+        "food",
+        "meal",
+        "खाना",
+        "भोजन"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "EAT",
+      "en": "eat",
+      "words": [
+        "eat",
+        "खाओ",
+        "खाइए"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "DRINK",
+      "en": "drink",
+      "words": [
+        "drink",
+        "पीना",
+        "पियो",
+        "पीजिए"
+      ],
+      "pose": "/signs/isl/words/drink.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOCTOR",
+      "en": "doctor",
+      "words": [
+        "doctor",
+        "डॉक्टर",
+        "चिकित्सक",
+        "डाक्टर"
+      ],
+      "pose": "/signs/isl/words/doctor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOSPITAL",
+      "en": "hospital",
+      "words": [
+        "hospital",
+        "अस्पताल",
+        "हॉस्पिटल"
+      ],
+      "pose": "/signs/isl/words/hospital.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MEDICINE",
+      "en": "medicine",
+      "words": [
+        "medicine",
+        "medication",
+        "tablet",
+        "दवाई",
+        "दवा",
+        "दवाइयाँ"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "PAIN",
+      "en": "pain",
+      "words": [
+        "pain",
+        "hurt",
+        "दर्द",
+        "पीड़ा",
+        "पीडा"
+      ],
+      "pose": "/signs/isl/words/pain.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SICK",
+      "en": "sick",
+      "words": [
+        "sick",
+        "ill",
+        "unwell",
+        "बीमार"
+      ],
+      "pose": "/signs/isl/words/sick.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TOILET",
+      "en": "toilet",
+      "words": [
+        "toilet",
+        "bathroom",
+        "restroom",
+        "शौचालय",
+        "टॉयलेट",
+        "बाथरूम"
+      ],
+      "pose": "/signs/isl/words/toilet.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOME",
+      "en": "home",
+      "words": [
+        "home",
+        "house",
+        "घर"
+      ],
+      "pose": "/signs/isl/words/home.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SCHOOL",
+      "en": "school",
+      "words": [
+        "school",
+        "स्कूल",
+        "विद्यालय"
+      ],
+      "pose": "/signs/isl/words/school.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FAMILY",
+      "en": "family",
+      "words": [
+        "family",
+        "परिवार"
+      ],
+      "pose": "/signs/isl/words/family.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MOTHER",
+      "en": "mother",
+      "words": [
+        "mother",
+        "mom",
+        "mum",
+        "माँ",
+        "माता",
+        "मम्मी"
+      ],
+      "pose": "/signs/isl/words/mother.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FATHER",
+      "en": "father",
+      "words": [
+        "father",
+        "dad",
+        "पिता",
+        "पापा",
+        "पिताजी"
+      ],
+      "pose": "/signs/isl/words/father.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FRIEND",
+      "en": "friend",
+      "words": [
+        "friend",
+        "दोस्त",
+        "मित्र"
+      ],
+      "pose": "/signs/isl/words/friend.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NAME",
+      "en": "name",
+      "words": [
+        "name",
+        "नाम"
+      ],
+      "pose": "/signs/isl/words/name.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DEAF",
+      "en": "deaf",
+      "words": [
+        "deaf",
+        "बधिर",
+        "बहरा"
+      ],
+      "pose": "/signs/isl/words/deaf.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HEARING",
+      "en": "hearing",
+      "words": [
+        "hearing",
+        "सुनने वाला",
+        "सुनने वाले"
+      ],
+      "pose": "/signs/isl/words/hearing.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SIGN",
+      "en": "sign",
+      "words": [
+        "sign",
+        "संकेत",
+        "इशारा"
+      ],
+      "pose": "/signs/isl/words/sign.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LANGUAGE",
+      "en": "language",
+      "words": [
+        "language",
+        "भाषा"
+      ],
+      "pose": "/signs/isl/words/language.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "UNDERSTAND",
+      "en": "understand",
+      "words": [
+        "understand",
+        "समझना",
+        "समझ",
+        "समझे"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "KNOW",
+      "en": "know",
+      "words": [
+        "know",
+        "जानना",
+        "पता",
+        "मालूम"
+      ],
+      "pose": "/signs/isl/words/know.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WANT",
+      "en": "want",
+      "words": [
+        "want",
+        "चाहना",
+        "चाहता",
+        "चाहती"
+      ],
+      "pose": "/signs/isl/words/want.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NEED",
+      "en": "need",
+      "words": [
+        "need",
+        "चाहिए",
+        "ज़रूरत",
+        "जरूरत"
+      ],
+      "pose": "/signs/isl/words/need.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LIKE",
+      "en": "like",
+      "words": [
+        "like",
+        "पसंद"
+      ],
+      "pose": "/signs/isl/words/like.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LOVE",
+      "en": "love",
+      "words": [
+        "love",
+        "प्यार",
+        "प्रेम"
+      ],
+      "pose": "/signs/isl/words/love.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HAPPY",
+      "en": "happy",
+      "words": [
+        "happy",
+        "ख़ुश",
+        "खुश",
+        "प्रसन्न"
+      ],
+      "pose": "/signs/isl/words/happy.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SAD",
+      "en": "sad",
+      "words": [
+        "sad",
+        "उदास",
+        "दुखी"
+      ],
+      "pose": "/signs/isl/words/sad.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TIRED",
+      "en": "tired",
+      "words": [
+        "tired",
+        "थका",
+        "थका हुआ",
+        "थकी"
+      ],
+      "pose": "/signs/isl/words/tired.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HUNGRY",
+      "en": "hungry",
+      "words": [
+        "hungry",
+        "भूख",
+        "भूखा",
+        "भूखी"
+      ],
+      "pose": "/signs/isl/words/hungry.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "THIRSTY",
+      "en": "thirsty",
+      "words": [
+        "thirsty",
+        "प्यास",
+        "प्यासा",
+        "प्यासी"
+      ],
+      "pose": "/signs/isl/words/thirst.json",
+      "video": null,
+      "source": "sign.mt (signed as: thirst)"
+    },
+    {
+      "gloss": "COLD",
+      "en": "cold",
+      "words": [
+        "cold",
+        "ठंड",
+        "ठंडा",
+        "सर्दी"
+      ],
+      "pose": "/signs/isl/words/cold.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOT",
+      "en": "hot",
+      "words": [
+        "hot",
+        "गर्म",
+        "गरम",
+        "गर्मी"
+      ],
+      "pose": "/signs/isl/words/hot.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TODAY",
+      "en": "today",
+      "words": [
+        "today",
+        "आज"
+      ],
+      "pose": "/signs/isl/words/today.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TOMORROW",
+      "en": "tomorrow",
+      "words": [
+        "tomorrow",
+        "कल",
+        "आने वाला कल"
+      ],
+      "pose": "/signs/isl/words/tomorrow.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "YESTERDAY",
+      "en": "yesterday",
+      "words": [
+        "yesterday",
+        "बीता हुआ कल"
+      ],
+      "pose": "/signs/isl/words/yesterday.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NOW",
+      "en": "now",
+      "words": [
+        "now",
+        "अभी",
+        "अब"
+      ],
+      "pose": "/signs/isl/words/now.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LATER",
+      "en": "later",
+      "words": [
+        "later",
+        "बाद में",
+        "बाद"
+      ],
+      "pose": "/signs/isl/words/after.json",
+      "video": null,
+      "source": "sign.mt (signed as: after)"
+    },
+    {
+      "gloss": "MORNING",
+      "en": "morning",
+      "words": [
+        "morning",
+        "सुबह"
+      ],
+      "pose": "/signs/isl/words/morning.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NIGHT",
+      "en": "night",
+      "words": [
+        "night",
+        "रात"
+      ],
+      "pose": "/signs/isl/words/night.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHERE",
+      "en": "where",
+      "words": [
+        "where",
+        "कहाँ",
+        "कहां"
+      ],
+      "pose": "/signs/isl/words/where.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHAT",
+      "en": "what",
+      "words": [
+        "what",
+        "क्या"
+      ],
+      "pose": "/signs/isl/words/what.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHO",
+      "en": "who",
+      "words": [
+        "who",
+        "कौन"
+      ],
+      "pose": "/signs/isl/words/who.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHEN",
+      "en": "when",
+      "words": [
+        "when",
+        "कब"
+      ],
+      "pose": "/signs/isl/words/when.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHY",
+      "en": "why",
+      "words": [
+        "why",
+        "क्यों"
+      ],
+      "pose": "/signs/isl/words/why.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOW",
+      "en": "how",
+      "words": [
+        "how",
+        "कैसे"
+      ],
+      "pose": "/signs/isl/words/how.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GO",
+      "en": "go",
+      "words": [
+        "go",
+        "जाना",
+        "जाओ",
+        "जाइए"
+      ],
+      "pose": "/signs/isl/words/go.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "COME",
+      "en": "come",
+      "words": [
+        "come",
+        "आना",
+        "आओ",
+        "आइए"
+      ],
+      "pose": "/signs/isl/words/come.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SEE",
+      "en": "see",
+      "words": [
+        "see",
+        "look",
+        "देखना",
+        "देखो"
+      ],
+      "pose": "/signs/isl/words/look.json",
+      "video": null,
+      "source": "sign.mt (signed as: look)"
+    },
+    {
+      "gloss": "GIVE",
+      "en": "give",
+      "words": [
+        "give",
+        "देना",
+        "दीजिए"
+      ],
+      "pose": "/signs/isl/words/give.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HELP-ME",
+      "en": "help me",
+      "words": [
+        "help me",
+        "मेरी मदद कीजिए",
+        "मेरी मदद करो",
+        "मदद करो",
+        "me help"
+      ],
+      "pose": "/signs/isl/words/help-me.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CALL",
+      "en": "call",
+      "words": [
+        "call",
+        "बुलाना",
+        "बुलाओ"
+      ],
+      "pose": "/signs/isl/words/call.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PHONE",
+      "en": "phone",
+      "words": [
+        "phone",
+        "telephone",
+        "mobile",
+        "फ़ोन",
+        "फोन",
+        "मोबाइल",
+        "टेलीफ़ोन",
+        "टेलीफोन"
+      ],
+      "pose": "/signs/isl/words/telephone.json",
+      "video": null,
+      "source": "sign.mt (signed as: telephone)"
+    },
+    {
+      "gloss": "POLICE",
+      "en": "police",
+      "words": [
+        "police",
+        "पुलिस"
+      ],
+      "pose": "/signs/isl/words/police.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "EMERGENCY",
+      "en": "emergency",
+      "words": [
+        "emergency",
+        "आपातकाल",
+        "इमरजेंसी"
+      ],
+      "pose": "/signs/isl/words/emergency.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BUS",
+      "en": "bus",
+      "words": [
+        "bus",
+        "बस"
+      ],
+      "pose": "/signs/isl/words/bus.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MONEY",
+      "en": "money",
+      "words": [
+        "money",
+        "पैसा",
+        "पैसे"
+      ],
+      "pose": "/signs/isl/words/money.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-UNDERSTAND",
+      "en": "I understand",
+      "words": [
+        "मैं समझ गया",
+        "i understand"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "I-DON'T-UNDERSTAND",
+      "en": "I don't understand",
+      "words": [
+        "मैं नहीं समझा",
+        "i don't understand",
+        "i understand not"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "PLEASE-REPEAT",
+      "en": "Please repeat",
+      "words": [
+        "कृपया दोहराइए",
+        "please repeat"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "PLEASE-SPEAK-SLOWLY",
+      "en": "Please speak slowly",
+      "words": [
+        "कृपया धीरे बोलिए",
+        "please speak slowly",
+        "please slowly speak"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "I-NEED-HELP",
+      "en": "I need help",
+      "words": [
+        "मुझे मदद चाहिए",
+        "i need help",
+        "i help need"
+      ],
+      "pose": "/signs/isl/phrases/i-need-help.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-DID-NOT-UNDERSTAND",
+      "en": "I did not understand",
+      "words": [
+        "मुझे समझ नहीं आया",
+        "i did not understand"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "I-AM-HUNGRY",
+      "en": "I am hungry",
+      "words": [
+        "मुझे भूख लगी है",
+        "i am hungry",
+        "i hungry"
+      ],
+      "pose": "/signs/isl/phrases/i-am-hungry.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-THIRSTY",
+      "en": "I am thirsty",
+      "words": [
+        "मुझे प्यास लगी है",
+        "i am thirsty",
+        "i thirsty"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "I-CANNOT-SPEAK-RIGHT-NOW",
+      "en": "I cannot speak right now",
+      "words": [
+        "मैं अभी बोल नहीं सकता",
+        "i cannot speak right now",
+        "now i right speak not"
+      ],
+      "pose": "/signs/isl/phrases/i-cannot-speak-right-now.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-BE-PATIENT-WITH-ME",
+      "en": "Please be patient with me",
+      "words": [
+        "कृपया मेरे साथ धैर्य रखें",
+        "please be patient with me",
+        "please patient with me"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "CAN-YOU-WRITE-THIS-DOWN",
+      "en": "Can you write this down?",
+      "words": [
+        "क्या आप यह लिख सकते हैं",
+        "can you write this down",
+        "you this down write"
+      ],
+      "pose": "/signs/isl/phrases/can-you-write-this-down.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-LOOK-AT-ME-WHEN-YOU-SPEAK",
+      "en": "Please look at me when you speak",
+      "words": [
+        "कृपया मेरी तरफ़ देखकर बोलिए",
+        "कृपया मेरी तरफ देखकर बोलिए",
+        "please look at me when you speak",
+        "please at me you speak look when"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "HELLO-I-USE-THIS-DEVICE-TO-SPEAK",
+      "en": "Hello, I use this device to speak",
+      "words": [
+        "नमस्ते मैं बोलने के लिए इस डिवाइस का उपयोग करता हूँ",
+        "hello i use this device to speak"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "I-AM-DEAF",
+      "en": "I am deaf",
+      "words": [
+        "मैं बधिर हूँ",
+        "i am deaf",
+        "i deaf"
+      ],
+      "pose": "/signs/isl/phrases/i-am-deaf.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-USE-SIGN-LANGUAGE",
+      "en": "I use sign language",
+      "words": [
+        "मैं सांकेतिक भाषा का उपयोग करता हूँ",
+        "i use sign language",
+        "i use language sign"
+      ],
+      "pose": "/signs/isl/phrases/i-use-sign-language.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-WATER",
+      "en": "I need water",
+      "words": [
+        "मुझे पानी चाहिए",
+        "i need water",
+        "i water need"
+      ],
+      "pose": "/signs/isl/phrases/i-need-water.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-FOOD",
+      "en": "I need food",
+      "words": [
+        "मुझे खाना चाहिए",
+        "i need food",
+        "i food need"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "I-AM-IN-PAIN",
+      "en": "I am in pain",
+      "words": [
+        "मुझे दर्द हो रहा है",
+        "i am in pain",
+        "i in pain"
+      ],
+      "pose": "/signs/isl/phrases/i-am-in-pain.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-A-DOCTOR",
+      "en": "I need a doctor",
+      "words": [
+        "मुझे डॉक्टर चाहिए",
+        "i need a doctor",
+        "i doctor need"
+      ],
+      "pose": "/signs/isl/phrases/i-need-a-doctor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-MEDICINE",
+      "en": "I need medicine",
+      "words": [
+        "मुझे दवाई चाहिए",
+        "i need medicine",
+        "i medicine need"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "I-NEED-HELP-NOW",
+      "en": "I need help now",
+      "words": [
+        "मुझे अभी मदद चाहिए",
+        "i need help now",
+        "now i help need"
+      ],
+      "pose": "/signs/isl/phrases/i-need-help-now.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CALL-AN-AMBULANCE",
+      "en": "Call an ambulance",
+      "words": [
+        "एम्बुलेंस बुलाइए",
+        "call an ambulance",
+        "ambulance call"
+      ],
+      "pose": "/signs/isl/phrases/call-an-ambulance.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CALL-THE-POLICE",
+      "en": "Call the police",
+      "words": [
+        "पुलिस बुलाइए",
+        "call the police",
+        "police call"
+      ],
+      "pose": "/signs/isl/phrases/call-the-police.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-HAVING-TROUBLE-BREATHING",
+      "en": "I am having trouble breathing",
+      "words": [
+        "मुझे साँस लेने में तकलीफ़ हो रही है",
+        "मुझे साँस लेने में तकलीफ हो रही है",
+        "i am having trouble breathing",
+        "i trouble breathing have"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "PLEASE-CALL-MY-FAMILY",
+      "en": "Please call my family",
+      "words": [
+        "कृपया मेरे परिवार को फ़ोन कीजिए",
+        "कृपया मेरे परिवार को फोन कीजिए",
+        "please call my family",
+        "please my family call"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "GOOD-MORNING",
+      "en": "Good morning",
+      "words": [
+        "सुप्रभात",
+        "good morning",
+        "morning good"
+      ],
+      "pose": "/signs/isl/phrases/good-morning.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GOOD-NIGHT",
+      "en": "Good night",
+      "words": [
+        "शुभ रात्रि",
+        "good night",
+        "night good"
+      ],
+      "pose": "/signs/isl/phrases/good-night.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOW-ARE-YOU",
+      "en": "How are you?",
+      "words": [
+        "आप कैसे हैं",
+        "how are you",
+        "you how"
+      ],
+      "pose": "/signs/isl/phrases/how-are-you.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-FINE-THANK-YOU",
+      "en": "I am fine, thank you",
+      "words": [
+        "मैं ठीक हूँ धन्यवाद",
+        "i am fine thank you",
+        "i fine thank you"
+      ],
+      "pose": "/signs/isl/phrases/i-am-fine-thank-you.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NICE-TO-MEET-YOU",
+      "en": "Nice to meet you",
+      "words": [
+        "आपसे मिलकर खुशी हुई",
+        "nice to meet you",
+        "nice to you meet"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "SEE-YOU-TOMORROW",
+      "en": "See you tomorrow",
+      "words": [
+        "कल मिलते हैं",
+        "see you tomorrow",
+        "tomorrow you see"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "WHAT-IS-YOUR-NAME",
+      "en": "What is your name?",
+      "words": [
+        "आपका नाम क्या है",
+        "what is your name",
+        "your name what"
+      ],
+      "pose": "/signs/isl/phrases/what-is-your-name.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-TIRED",
+      "en": "I am tired",
+      "words": [
+        "मैं थका हुआ हूँ",
+        "i am tired",
+        "i tired"
+      ],
+      "pose": "/signs/isl/phrases/i-am-tired.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHERE-IS-THE-TOILET",
+      "en": "Where is the toilet?",
+      "words": [
+        "शौचालय कहाँ है",
+        "where is the toilet",
+        "toilet where"
+      ],
+      "pose": "/signs/isl/phrases/where-is-the-toilet.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHERE-IS-THE-HOSPITAL",
+      "en": "Where is the hospital?",
+      "words": [
+        "अस्पताल कहाँ है",
+        "where is the hospital",
+        "hospital where"
+      ],
+      "pose": "/signs/isl/phrases/where-is-the-hospital.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOW-MUCH-DOES-IT-COST",
+      "en": "How much does it cost?",
+      "words": [
+        "इसकी कीमत कितनी है",
+        "how much does it cost",
+        "much it cost how"
+      ],
+      "pose": "/signs/isl/phrases/how-much-does-it-cost.json",
+      "video": null,
+      "source": "sign.mt"
+    }
+  ]
+}

@@ -1,0 +1,1303 @@
+{
+  "lang": "lis",
+  "version": 1,
+  "spoken": "it",
+  "entries": [
+    {
+      "gloss": "CIAO",
+      "en": "hello",
+      "words": [
+        "ciao",
+        "salve",
+        "hello",
+        "hi"
+      ],
+      "pose": "/signs/lis/words/buongiorno.json",
+      "video": null,
+      "source": "sign.mt (signed as: buongiorno)"
+    },
+    {
+      "gloss": "ARRIVEDERCI",
+      "en": "goodbye",
+      "words": [
+        "arrivederci",
+        "addio",
+        "goodbye",
+        "bye",
+        "good bye",
+        "farewell"
+      ],
+      "pose": "/signs/lis/words/addio.json",
+      "video": null,
+      "source": "sign.mt (signed as: addio)"
+    },
+    {
+      "gloss": "SÌ",
+      "en": "yes",
+      "words": [
+        "sì",
+        "yes"
+      ],
+      "pose": "/signs/lis/words/si.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NO",
+      "en": "no",
+      "words": [
+        "no"
+      ],
+      "pose": "/signs/lis/words/no.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PER-FAVORE",
+      "en": "please",
+      "words": [
+        "per favore",
+        "per piacere",
+        "please"
+      ],
+      "pose": "/signs/lis/words/per-favore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GRAZIE",
+      "en": "thank you",
+      "words": [
+        "grazie",
+        "grazie mille",
+        "thank you",
+        "thanks"
+      ],
+      "pose": "/signs/lis/words/grazie.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SCUSA",
+      "en": "sorry",
+      "words": [
+        "scusa",
+        "mi dispiace",
+        "scusi",
+        "scusami",
+        "sorry"
+      ],
+      "pose": "/signs/lis/words/scusa.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AIUTO",
+      "en": "help / help me",
+      "words": [
+        "aiuto",
+        "aiutare",
+        "help",
+        "aiutami",
+        "mi aiuti",
+        "help me"
+      ],
+      "pose": "/signs/lis/words/aiutare.json",
+      "video": null,
+      "source": "sign.mt (signed as: aiutare)"
+    },
+    {
+      "gloss": "FERMARE",
+      "en": "stop",
+      "words": [
+        "fermare",
+        "stop",
+        "basta",
+        "fermo"
+      ],
+      "pose": "/signs/lis/words/fermare.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ASPETTARE",
+      "en": "wait",
+      "words": [
+        "aspettare",
+        "aspetta",
+        "aspetti",
+        "wait"
+      ],
+      "pose": "/signs/lis/words/aspettare.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PIÙ",
+      "en": "more",
+      "words": [
+        "più",
+        "ancora",
+        "more"
+      ],
+      "pose": "/signs/lis/words/piu.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "VA-BENE",
+      "en": "okay",
+      "words": [
+        "va bene",
+        "ok",
+        "d'accordo",
+        "d’accordo",
+        "okay"
+      ],
+      "pose": "/signs/lis/words/ok.json",
+      "video": null,
+      "source": "sign.mt (signed as: ok)"
+    },
+    {
+      "gloss": "BUONO",
+      "en": "good",
+      "words": [
+        "buono",
+        "bene",
+        "buona",
+        "good"
+      ],
+      "pose": "/signs/lis/words/buono.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CATTIVO",
+      "en": "bad",
+      "words": [
+        "cattivo",
+        "male",
+        "brutto",
+        "bad"
+      ],
+      "pose": "/signs/lis/words/cattivo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ACQUA",
+      "en": "water",
+      "words": [
+        "acqua",
+        "water"
+      ],
+      "pose": "/signs/lis/words/acqua.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CIBO",
+      "en": "food",
+      "words": [
+        "cibo",
+        "food"
+      ],
+      "pose": "/signs/lis/words/cibo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MANGIARE",
+      "en": "eat",
+      "words": [
+        "mangiare",
+        "eat"
+      ],
+      "pose": "/signs/lis/words/mangiare.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BERE",
+      "en": "drink",
+      "words": [
+        "bere",
+        "bevanda",
+        "drink"
+      ],
+      "pose": "/signs/lis/words/bere.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOTTORE",
+      "en": "doctor",
+      "words": [
+        "dottore",
+        "medico",
+        "dottoressa",
+        "doctor"
+      ],
+      "pose": "/signs/lis/words/dottore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "OSPEDALE",
+      "en": "hospital",
+      "words": [
+        "ospedale",
+        "hospital"
+      ],
+      "pose": "/signs/lis/words/ospedale.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MEDICINA",
+      "en": "medicine",
+      "words": [
+        "medicina",
+        "medicine",
+        "farmaco",
+        "medication"
+      ],
+      "pose": "/signs/lis/words/medicina.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOLORE",
+      "en": "pain",
+      "words": [
+        "dolore",
+        "pain",
+        "hurt"
+      ],
+      "pose": "/signs/lis/words/dolore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MALATO",
+      "en": "sick",
+      "words": [
+        "malato",
+        "malata",
+        "sick",
+        "ill",
+        "unwell"
+      ],
+      "pose": "/signs/lis/words/malato.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BAGNO",
+      "en": "toilet",
+      "words": [
+        "bagno",
+        "toilette",
+        "gabinetto",
+        "toilet",
+        "bathroom",
+        "restroom"
+      ],
+      "pose": "/signs/lis/words/bagno.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CASA",
+      "en": "home",
+      "words": [
+        "casa",
+        "home",
+        "house"
+      ],
+      "pose": "/signs/lis/words/casa.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SCUOLA",
+      "en": "school",
+      "words": [
+        "scuola",
+        "school"
+      ],
+      "pose": "/signs/lis/words/scuola.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FAMIGLIA",
+      "en": "family",
+      "words": [
+        "famiglia",
+        "family"
+      ],
+      "pose": "/signs/lis/words/famiglia.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MADRE",
+      "en": "mother",
+      "words": [
+        "madre",
+        "mamma",
+        "mother",
+        "mom",
+        "mum"
+      ],
+      "pose": "/signs/lis/words/madre.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PADRE",
+      "en": "father",
+      "words": [
+        "padre",
+        "papà",
+        "father",
+        "dad"
+      ],
+      "pose": "/signs/lis/words/padre.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AMICO",
+      "en": "friend",
+      "words": [
+        "amico",
+        "amica",
+        "friend"
+      ],
+      "pose": "/signs/lis/words/amico.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NOME",
+      "en": "name",
+      "words": [
+        "nome",
+        "name"
+      ],
+      "pose": "/signs/lis/words/nome.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SORDO",
+      "en": "deaf",
+      "words": [
+        "sordo",
+        "sorda",
+        "deaf"
+      ],
+      "pose": "/signs/lis/words/sordo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "UDENTE",
+      "en": "hearing",
+      "words": [
+        "udente",
+        "hearing"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "SEGNO",
+      "en": "sign",
+      "words": [
+        "segno",
+        "segni",
+        "sign"
+      ],
+      "pose": "/signs/lis/words/segno.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LINGUA",
+      "en": "language",
+      "words": [
+        "lingua",
+        "language"
+      ],
+      "pose": "/signs/lis/words/lingua.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CAPIRE",
+      "en": "understand",
+      "words": [
+        "capire",
+        "capisco",
+        "capito",
+        "understand"
+      ],
+      "pose": "/signs/lis/words/capire.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SAPERE",
+      "en": "know",
+      "words": [
+        "sapere",
+        "conoscere",
+        "know"
+      ],
+      "pose": "/signs/lis/words/conoscere.json",
+      "video": null,
+      "source": "sign.mt (signed as: conoscere)"
+    },
+    {
+      "gloss": "VOLERE",
+      "en": "want",
+      "words": [
+        "volere",
+        "voglio",
+        "want"
+      ],
+      "pose": "/signs/lis/words/volere.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BISOGNO",
+      "en": "need",
+      "words": [
+        "bisogno",
+        "avere bisogno",
+        "ho bisogno",
+        "need"
+      ],
+      "pose": "/signs/lis/words/bisogno.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PIACERE",
+      "en": "like",
+      "words": [
+        "piacere",
+        "mi piace",
+        "like"
+      ],
+      "pose": "/signs/lis/words/piacere.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AMORE",
+      "en": "love",
+      "words": [
+        "amore",
+        "amare",
+        "love"
+      ],
+      "pose": "/signs/lis/words/amore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FELICE",
+      "en": "happy",
+      "words": [
+        "felice",
+        "contento",
+        "contenta",
+        "happy"
+      ],
+      "pose": "/signs/lis/words/felice.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TRISTE",
+      "en": "sad",
+      "words": [
+        "triste",
+        "sad"
+      ],
+      "pose": "/signs/lis/words/triste.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "STANCO",
+      "en": "tired",
+      "words": [
+        "stanco",
+        "stanca",
+        "tired"
+      ],
+      "pose": "/signs/lis/words/stanco.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FAME",
+      "en": "hungry",
+      "words": [
+        "fame",
+        "affamato",
+        "hungry"
+      ],
+      "pose": "/signs/lis/words/fame.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SETE",
+      "en": "thirsty",
+      "words": [
+        "sete",
+        "assetato",
+        "thirsty"
+      ],
+      "pose": "/signs/lis/words/sete.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FREDDO",
+      "en": "cold",
+      "words": [
+        "freddo",
+        "cold"
+      ],
+      "pose": "/signs/lis/words/freddo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CALDO",
+      "en": "hot",
+      "words": [
+        "caldo",
+        "hot"
+      ],
+      "pose": "/signs/lis/words/caldo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "OGGI",
+      "en": "today",
+      "words": [
+        "oggi",
+        "today"
+      ],
+      "pose": "/signs/lis/words/oggi.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOMANI",
+      "en": "tomorrow",
+      "words": [
+        "domani",
+        "tomorrow"
+      ],
+      "pose": "/signs/lis/words/domani.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "IERI",
+      "en": "yesterday",
+      "words": [
+        "ieri",
+        "yesterday"
+      ],
+      "pose": "/signs/lis/words/ieri.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ADESSO",
+      "en": "now",
+      "words": [
+        "adesso",
+        "ora",
+        "now"
+      ],
+      "pose": "/signs/lis/words/adesso.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOPO",
+      "en": "later",
+      "words": [
+        "dopo",
+        "più tardi",
+        "piu tardi",
+        "later"
+      ],
+      "pose": "/signs/lis/words/dopo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MATTINA",
+      "en": "morning",
+      "words": [
+        "mattina",
+        "mattino",
+        "morning"
+      ],
+      "pose": "/signs/lis/words/mattina.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NOTTE",
+      "en": "night",
+      "words": [
+        "notte",
+        "night"
+      ],
+      "pose": "/signs/lis/words/notte.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOVE",
+      "en": "where",
+      "words": [
+        "dove",
+        "where"
+      ],
+      "pose": "/signs/lis/words/dove.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "COSA",
+      "en": "what",
+      "words": [
+        "cosa",
+        "che cosa",
+        "what"
+      ],
+      "pose": "/signs/lis/words/cosa.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CHI",
+      "en": "who",
+      "words": [
+        "chi",
+        "who"
+      ],
+      "pose": "/signs/lis/words/chi.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "QUANDO",
+      "en": "when",
+      "words": [
+        "quando",
+        "when"
+      ],
+      "pose": "/signs/lis/words/quando.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PERCHÉ",
+      "en": "why",
+      "words": [
+        "perché",
+        "perche",
+        "why"
+      ],
+      "pose": "/signs/lis/words/perche.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "COME",
+      "en": "how",
+      "words": [
+        "come",
+        "how"
+      ],
+      "pose": "/signs/lis/words/come.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "ANDARE",
+      "en": "go",
+      "words": [
+        "andare",
+        "vai",
+        "go"
+      ],
+      "pose": "/signs/lis/words/andare.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "VENIRE",
+      "en": "come",
+      "words": [
+        "venire",
+        "vieni"
+      ],
+      "pose": "/signs/lis/words/venire.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "VEDERE",
+      "en": "see",
+      "words": [
+        "vedere",
+        "see"
+      ],
+      "pose": "/signs/lis/words/vedere.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DARE",
+      "en": "give",
+      "words": [
+        "dare",
+        "dammi",
+        "give"
+      ],
+      "pose": "/signs/lis/words/dare.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CHIAMARE",
+      "en": "call",
+      "words": [
+        "chiamare",
+        "chiama",
+        "call"
+      ],
+      "pose": "/signs/lis/words/chiamare.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TELEFONO",
+      "en": "phone",
+      "words": [
+        "telefono",
+        "cellulare",
+        "phone",
+        "telephone",
+        "mobile"
+      ],
+      "pose": "/signs/lis/words/telefono.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "POLIZIA",
+      "en": "police",
+      "words": [
+        "polizia",
+        "police"
+      ],
+      "pose": "/signs/lis/words/polizia.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "EMERGENZA",
+      "en": "emergency",
+      "words": [
+        "emergenza",
+        "urgenza",
+        "emergency"
+      ],
+      "pose": "/signs/lis/words/emergenza.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "AUTOBUS",
+      "en": "bus",
+      "words": [
+        "autobus",
+        "bus"
+      ],
+      "pose": "/signs/lis/words/autobus.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SOLDI",
+      "en": "money",
+      "words": [
+        "soldi",
+        "denaro",
+        "money"
+      ],
+      "pose": "/signs/lis/words/denaro.json",
+      "video": null,
+      "source": "sign.mt (signed as: denaro)"
+    },
+    {
+      "gloss": "MI-SCUSI",
+      "en": "Excuse me",
+      "words": [
+        "mi scusi",
+        "excuse me"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "BUONGIORNO",
+      "en": "Good morning",
+      "words": [
+        "buongiorno",
+        "good morning"
+      ],
+      "pose": "/signs/lis/phrases/buongiorno.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BUONANOTTE",
+      "en": "Good night",
+      "words": [
+        "buonanotte",
+        "good night"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "NON-CAPISCO",
+      "en": "I don't understand",
+      "words": [
+        "non capisco",
+        "i don't understand"
+      ],
+      "pose": "/signs/lis/phrases/non-capisco.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PUÒ-RIPETERE",
+      "en": "Can you repeat that?",
+      "words": [
+        "può ripetere",
+        "puo ripetere",
+        "can you repeat that"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "PARLI-LENTAMENTE-PER-FAVORE",
+      "en": "Please speak slowly",
+      "words": [
+        "parli lentamente per favore",
+        "please speak slowly"
+      ],
+      "pose": "/signs/lis/phrases/parli-lentamente-per-favore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PUÒ-SCRIVERLO",
+      "en": "Can you write it down?",
+      "words": [
+        "può scriverlo",
+        "puo scriverlo",
+        "can you write it down"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "ABBIA-PAZIENZA-CON-ME-PER-FAVORE",
+      "en": "Please be patient with me",
+      "words": [
+        "abbia pazienza con me per favore",
+        "please be patient with me"
+      ],
+      "pose": "/signs/lis/phrases/abbia-pazienza-con-me-per-favore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MI-GUARDI-QUANDO-PARLA-PER-FAVORE",
+      "en": "Please face me when you speak",
+      "words": [
+        "mi guardi quando parla per favore",
+        "please face me when you speak"
+      ],
+      "pose": "/signs/lis/phrases/mi-guardi-quando-parla-per-favore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "UN-MOMENTO-PER-FAVORE",
+      "en": "One moment, please",
+      "words": [
+        "un momento per favore",
+        "one moment please"
+      ],
+      "pose": "/signs/lis/phrases/un-momento-per-favore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SONO-SORDO",
+      "en": "I am deaf",
+      "words": [
+        "sono sordo",
+        "i am deaf"
+      ],
+      "pose": "/signs/lis/phrases/sono-sordo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SONO-IPOUDENTE",
+      "en": "I am hard of hearing",
+      "words": [
+        "sono ipoudente",
+        "i am hard of hearing"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "USO-LA-LINGUA-DEI-SEGNI",
+      "en": "I use sign language",
+      "words": [
+        "uso la lingua dei segni",
+        "i use sign language"
+      ],
+      "pose": "/signs/lis/phrases/uso-la-lingua-dei-segni.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "COME-SI-CHIAMA",
+      "en": "What is your name?",
+      "words": [
+        "come si chiama",
+        "what is your name"
+      ],
+      "pose": "/signs/lis/phrases/come-si-chiama.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PIACERE-DI-CONOSCERTI",
+      "en": "Nice to meet you",
+      "words": [
+        "piacere di conoscerti",
+        "nice to meet you"
+      ],
+      "pose": "/signs/lis/phrases/piacere-di-conoscerti.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "USO-QUESTA-APP-PER-COMUNICARE",
+      "en": "I use this app to communicate",
+      "words": [
+        "uso questa app per comunicare",
+        "i use this app to communicate"
+      ],
+      "pose": "/signs/lis/phrases/uso-questa-app-per-comunicare.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HO-BISOGNO-DI-ACQUA",
+      "en": "I need water",
+      "words": [
+        "ho bisogno di acqua",
+        "i need water"
+      ],
+      "pose": "/signs/lis/phrases/ho-bisogno-di-acqua.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HO-BISOGNO-DI-MANGIARE",
+      "en": "I need food",
+      "words": [
+        "ho bisogno di mangiare",
+        "i need food"
+      ],
+      "pose": "/signs/lis/phrases/ho-bisogno-di-mangiare.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HO-FAME",
+      "en": "I am hungry",
+      "words": [
+        "ho fame",
+        "i am hungry"
+      ],
+      "pose": "/signs/lis/phrases/ho-fame.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HO-SETE",
+      "en": "I am thirsty",
+      "words": [
+        "ho sete",
+        "i am thirsty"
+      ],
+      "pose": "/signs/lis/phrases/ho-sete.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SONO-STANCO",
+      "en": "I am tired",
+      "words": [
+        "sono stanco",
+        "i am tired"
+      ],
+      "pose": "/signs/lis/phrases/sono-stanco.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HO-FREDDO",
+      "en": "I am cold",
+      "words": [
+        "ho freddo",
+        "i am cold"
+      ],
+      "pose": "/signs/lis/phrases/ho-freddo.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DEVO-ANDARE-IN-BAGNO",
+      "en": "I need the toilet",
+      "words": [
+        "devo andare in bagno",
+        "i need the toilet"
+      ],
+      "pose": "/signs/lis/phrases/devo-andare-in-bagno.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HO-BISOGNO-DELLE-MIE-MEDICINE",
+      "en": "I need my medicine",
+      "words": [
+        "ho bisogno delle mie medicine",
+        "i need my medicine"
+      ],
+      "pose": "/signs/lis/phrases/ho-bisogno-delle-mie-medicine.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HO-BISOGNO-DI-AIUTO-SUBITO",
+      "en": "I need help now",
+      "words": [
+        "ho bisogno di aiuto subito",
+        "i need help now"
+      ],
+      "pose": "/signs/lis/phrases/ho-bisogno-di-aiuto-subito.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CHIAMATE-UN'AMBULANZA",
+      "en": "Call an ambulance",
+      "words": [
+        "chiamate un'ambulanza",
+        "chiamate un’ambulanza",
+        "call an ambulance"
+      ],
+      "pose": "/signs/lis/phrases/chiamate-unambulanza.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CHIAMATE-LA-POLIZIA",
+      "en": "Call the police",
+      "words": [
+        "chiamate la polizia",
+        "call the police"
+      ],
+      "pose": "/signs/lis/phrases/chiamate-la-polizia.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HO-BISOGNO-DI-UN-MEDICO",
+      "en": "I need a doctor",
+      "words": [
+        "ho bisogno di un medico",
+        "i need a doctor"
+      ],
+      "pose": "/signs/lis/phrases/ho-bisogno-di-un-medico.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SENTO-DOLORE",
+      "en": "I am in pain",
+      "words": [
+        "sento dolore",
+        "i am in pain"
+      ],
+      "pose": "/signs/lis/phrases/sento-dolore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CHIAMATE-LA-MIA-FAMIGLIA-PER-FAVORE",
+      "en": "Please call my family",
+      "words": [
+        "chiamate la mia famiglia per favore",
+        "please call my family"
+      ],
+      "pose": "/signs/lis/phrases/chiamate-la-mia-famiglia-per-favore.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOV'È-IL-BAGNO",
+      "en": "Where is the toilet?",
+      "words": [
+        "dov'è il bagno",
+        "dov'e il bagno",
+        "dov’è il bagno",
+        "where is the toilet"
+      ],
+      "pose": "/signs/lis/phrases/dove-il-bagno.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOV'È-L'OSPEDALE",
+      "en": "Where is the hospital?",
+      "words": [
+        "dov'è l'ospedale",
+        "dov'e l'ospedale",
+        "dov’è l’ospedale",
+        "where is the hospital"
+      ],
+      "pose": "/signs/lis/phrases/dove-lospedale.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOV'È-LA-FERMATA-DELL'AUTOBUS",
+      "en": "Where is the bus stop?",
+      "words": [
+        "dov'è la fermata dell'autobus",
+        "dov'e la fermata dell'autobus",
+        "dov’è la fermata dell’autobus",
+        "where is the bus stop"
+      ],
+      "pose": "/signs/lis/phrases/dove-la-fermata-dellautobus.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CHE-ORE-SONO",
+      "en": "What time is it?",
+      "words": [
+        "che ore sono",
+        "what time is it"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "QUANTO-COSTA",
+      "en": "How much does it cost?",
+      "words": [
+        "quanto costa",
+        "how much does it cost"
+      ],
+      "pose": "/signs/lis/phrases/quanto-costa.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MI-PUÒ-AIUTARE",
+      "en": "Can you help me?",
+      "words": [
+        "mi può aiutare",
+        "mi puo aiutare",
+        "can you help me"
+      ],
+      "pose": null,
+      "video": null,
+      "source": null
+    },
+    {
+      "gloss": "COME-STAI",
+      "en": "How are you?",
+      "words": [
+        "come stai",
+        "how are you"
+      ],
+      "pose": "/signs/lis/phrases/come-stai.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "STO-BENE-GRAZIE",
+      "en": "I am fine, thank you",
+      "words": [
+        "sto bene grazie",
+        "i am fine thank you"
+      ],
+      "pose": "/signs/lis/phrases/sto-bene-grazie.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "A-DOMANI",
+      "en": "See you tomorrow",
+      "words": [
+        "a domani",
+        "see you tomorrow"
+      ],
+      "pose": "/signs/lis/phrases/a-domani.json",
+      "video": null,
+      "source": "sign.mt"
+    }
+  ]
+}

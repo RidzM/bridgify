@@ -1,0 +1,195 @@
+{
+  "lang": "lsf",
+  "spoken": "fr",
+  "phrases": [
+    {
+      "text": "Bonjour",
+      "en": "Good morning",
+      "media": null
+    },
+    {
+      "text": "Bonne nuit",
+      "en": "Good night",
+      "media": null
+    },
+    {
+      "text": "Comment allez-vous ?",
+      "en": "How are you?",
+      "media": null
+    },
+    {
+      "text": "Je vais bien, merci",
+      "en": "I am fine, thank you",
+      "media": null
+    },
+    {
+      "text": "Enchanté",
+      "en": "Nice to meet you",
+      "media": null
+    },
+    {
+      "text": "À demain",
+      "en": "See you tomorrow",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/a-demain.json"
+      }
+    },
+    {
+      "text": "Comment vous appelez-vous ?",
+      "en": "What is your name?",
+      "media": null
+    },
+    {
+      "text": "Je suis sourd",
+      "en": "I am deaf",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/je-suis-sourd.json"
+      }
+    },
+    {
+      "text": "J'utilise la langue des signes",
+      "en": "I use sign language",
+      "media": null
+    },
+    {
+      "text": "Je comprends",
+      "en": "I understand",
+      "media": null
+    },
+    {
+      "text": "Je ne comprends pas",
+      "en": "I don't understand",
+      "media": null
+    },
+    {
+      "text": "Pouvez-vous répéter ?",
+      "en": "Can you repeat that?",
+      "media": null
+    },
+    {
+      "text": "Parlez lentement, s'il vous plaît",
+      "en": "Please speak slowly",
+      "media": null
+    },
+    {
+      "text": "Pouvez-vous l'écrire ?",
+      "en": "Can you write it down?",
+      "media": null
+    },
+    {
+      "text": "J'ai besoin d'eau",
+      "en": "I need water",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/jai-besoin-deau.json"
+      }
+    },
+    {
+      "text": "J'ai besoin de manger",
+      "en": "I need food",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/jai-besoin-de-manger.json"
+      }
+    },
+    {
+      "text": "J'ai faim",
+      "en": "I am hungry",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/jai-faim.json"
+      }
+    },
+    {
+      "text": "J'ai soif",
+      "en": "I am thirsty",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/jai-soif.json"
+      }
+    },
+    {
+      "text": "Je suis fatigué",
+      "en": "I am tired",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/je-suis-fatigue.json"
+      }
+    },
+    {
+      "text": "J'ai besoin de mes médicaments",
+      "en": "I need my medicine",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/jai-besoin-de-mes-medicaments.json"
+      }
+    },
+    {
+      "text": "Aidez-moi",
+      "en": "Help me",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/words/aider.json"
+      }
+    },
+    {
+      "text": "J'ai besoin d'aide tout de suite",
+      "en": "I need help now",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/jai-besoin-daide-tout-de-suite.json"
+      }
+    },
+    {
+      "text": "Appelez une ambulance",
+      "en": "Call an ambulance",
+      "media": null
+    },
+    {
+      "text": "Appelez la police",
+      "en": "Call the police",
+      "media": null
+    },
+    {
+      "text": "J'ai besoin d'un médecin",
+      "en": "I need a doctor",
+      "media": null
+    },
+    {
+      "text": "J'ai mal",
+      "en": "I am in pain",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/jai-mal.json"
+      }
+    },
+    {
+      "text": "Appelez ma famille, s'il vous plaît",
+      "en": "Please call my family",
+      "media": null
+    },
+    {
+      "text": "Où sont les toilettes ?",
+      "en": "Where is the toilet?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/ou-sont-les-toilettes.json"
+      }
+    },
+    {
+      "text": "Où est l'hôpital ?",
+      "en": "Where is the hospital?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsf/phrases/ou-est-lhopital.json"
+      }
+    },
+    {
+      "text": "Combien ça coûte ?",
+      "en": "How much does it cost?",
+      "media": null
+    }
+  ]
+}

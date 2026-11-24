@@ -1,0 +1,1416 @@
+{
+  "lang": "asl",
+  "version": 1,
+  "spoken": "en",
+  "entries": [
+    {
+      "gloss": "HELLO",
+      "en": "hello",
+      "words": [
+        "hello",
+        "hi"
+      ],
+      "pose": "/signs/asl/words/hello.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GOODBYE",
+      "en": "goodbye",
+      "words": [
+        "goodbye",
+        "bye",
+        "good bye",
+        "farewell"
+      ],
+      "pose": "/signs/asl/words/farewell.json",
+      "video": null,
+      "source": "sign.mt (signed as: farewell)"
+    },
+    {
+      "gloss": "YES",
+      "en": "yes",
+      "words": [
+        "yes"
+      ],
+      "pose": "/signs/asl/words/yes.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NO",
+      "en": "no",
+      "words": [
+        "no"
+      ],
+      "pose": "/signs/asl/words/no.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE",
+      "en": "please",
+      "words": [
+        "please"
+      ],
+      "pose": "/signs/asl/words/please.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "THANK-YOU",
+      "en": "thank you",
+      "words": [
+        "thank you",
+        "thanks"
+      ],
+      "pose": "/signs/asl/words/thank-you.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SORRY",
+      "en": "sorry",
+      "words": [
+        "sorry"
+      ],
+      "pose": "/signs/asl/words/sorry.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HELP",
+      "en": "help",
+      "words": [
+        "help"
+      ],
+      "pose": "/signs/asl/words/help.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "STOP",
+      "en": "stop",
+      "words": [
+        "stop"
+      ],
+      "pose": "/signs/asl/words/stop.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WAIT",
+      "en": "wait",
+      "words": [
+        "wait"
+      ],
+      "pose": "/signs/asl/words/wait.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MORE",
+      "en": "more",
+      "words": [
+        "more"
+      ],
+      "pose": "/signs/asl/words/more.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "OKAY",
+      "en": "okay",
+      "words": [
+        "okay",
+        "ok"
+      ],
+      "pose": "/signs/asl/words/ok.json",
+      "video": null,
+      "source": "sign.mt (signed as: ok)"
+    },
+    {
+      "gloss": "GOOD",
+      "en": "good",
+      "words": [
+        "good"
+      ],
+      "pose": "/signs/asl/words/good.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BAD",
+      "en": "bad",
+      "words": [
+        "bad"
+      ],
+      "pose": "/signs/asl/words/bad.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WATER",
+      "en": "water",
+      "words": [
+        "water"
+      ],
+      "pose": "/signs/asl/words/water.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FOOD",
+      "en": "food",
+      "words": [
+        "food"
+      ],
+      "pose": "/signs/asl/words/food.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "EAT",
+      "en": "eat",
+      "words": [
+        "eat"
+      ],
+      "pose": "/signs/asl/words/eat.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DRINK",
+      "en": "drink",
+      "words": [
+        "drink"
+      ],
+      "pose": "/signs/asl/words/drink.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DOCTOR",
+      "en": "doctor",
+      "words": [
+        "doctor"
+      ],
+      "pose": "/signs/asl/words/doctor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOSPITAL",
+      "en": "hospital",
+      "words": [
+        "hospital"
+      ],
+      "pose": "/signs/asl/words/hospital.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MEDICINE",
+      "en": "medicine",
+      "words": [
+        "medicine",
+        "medication"
+      ],
+      "pose": "/signs/asl/words/medicine.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PAIN",
+      "en": "pain",
+      "words": [
+        "pain",
+        "hurt"
+      ],
+      "pose": "/signs/asl/words/pain.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SICK",
+      "en": "sick",
+      "words": [
+        "sick",
+        "ill",
+        "unwell"
+      ],
+      "pose": "/signs/asl/words/sick.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TOILET",
+      "en": "toilet",
+      "words": [
+        "toilet",
+        "bathroom",
+        "restroom"
+      ],
+      "pose": "/signs/asl/words/toilet.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOME",
+      "en": "home",
+      "words": [
+        "home",
+        "house"
+      ],
+      "pose": "/signs/asl/words/home.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SCHOOL",
+      "en": "school",
+      "words": [
+        "school"
+      ],
+      "pose": "/signs/asl/words/school.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FAMILY",
+      "en": "family",
+      "words": [
+        "family"
+      ],
+      "pose": "/signs/asl/words/family.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MOTHER",
+      "en": "mother",
+      "words": [
+        "mother",
+        "mom",
+        "mum"
+      ],
+      "pose": "/signs/asl/words/mother.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FATHER",
+      "en": "father",
+      "words": [
+        "father",
+        "dad"
+      ],
+      "pose": "/signs/asl/words/father.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "FRIEND",
+      "en": "friend",
+      "words": [
+        "friend"
+      ],
+      "pose": "/signs/asl/words/friend.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NAME",
+      "en": "name",
+      "words": [
+        "name"
+      ],
+      "pose": "/signs/asl/words/name.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "DEAF",
+      "en": "deaf",
+      "words": [
+        "deaf"
+      ],
+      "pose": "/signs/asl/words/deaf.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HEARING",
+      "en": "hearing",
+      "words": [
+        "hearing"
+      ],
+      "pose": "/signs/asl/words/hearing.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SIGN",
+      "en": "sign",
+      "words": [
+        "sign"
+      ],
+      "pose": "/signs/asl/words/sign.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LANGUAGE",
+      "en": "language",
+      "words": [
+        "language"
+      ],
+      "pose": "/signs/asl/words/language.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "UNDERSTAND",
+      "en": "understand",
+      "words": [
+        "understand"
+      ],
+      "pose": "/signs/asl/words/understand.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "KNOW",
+      "en": "know",
+      "words": [
+        "know"
+      ],
+      "pose": "/signs/asl/words/know.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WANT",
+      "en": "want",
+      "words": [
+        "want"
+      ],
+      "pose": "/signs/asl/words/want.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NEED",
+      "en": "need",
+      "words": [
+        "need"
+      ],
+      "pose": "/signs/asl/words/need.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LIKE",
+      "en": "like",
+      "words": [
+        "like"
+      ],
+      "pose": "/signs/asl/words/like.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LOVE",
+      "en": "love",
+      "words": [
+        "love"
+      ],
+      "pose": "/signs/asl/words/love.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HAPPY",
+      "en": "happy",
+      "words": [
+        "happy"
+      ],
+      "pose": "/signs/asl/words/happy.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SAD",
+      "en": "sad",
+      "words": [
+        "sad"
+      ],
+      "pose": "/signs/asl/words/sad.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TIRED",
+      "en": "tired",
+      "words": [
+        "tired"
+      ],
+      "pose": "/signs/asl/words/tired.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HUNGRY",
+      "en": "hungry",
+      "words": [
+        "hungry"
+      ],
+      "pose": "/signs/asl/words/hungry.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "THIRSTY",
+      "en": "thirsty",
+      "words": [
+        "thirsty"
+      ],
+      "pose": "/signs/asl/words/thirsty.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "COLD",
+      "en": "cold",
+      "words": [
+        "cold"
+      ],
+      "pose": "/signs/asl/words/cold.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOT",
+      "en": "hot",
+      "words": [
+        "hot"
+      ],
+      "pose": "/signs/asl/words/hot.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TODAY",
+      "en": "today",
+      "words": [
+        "today"
+      ],
+      "pose": "/signs/asl/words/today.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "TOMORROW",
+      "en": "tomorrow",
+      "words": [
+        "tomorrow"
+      ],
+      "pose": "/signs/asl/words/tomorrow.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "YESTERDAY",
+      "en": "yesterday",
+      "words": [
+        "yesterday"
+      ],
+      "pose": "/signs/asl/words/yesterday.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NOW",
+      "en": "now",
+      "words": [
+        "now"
+      ],
+      "pose": "/signs/asl/words/now.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "LATER",
+      "en": "later",
+      "words": [
+        "later"
+      ],
+      "pose": "/signs/asl/words/later.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MORNING",
+      "en": "morning",
+      "words": [
+        "morning"
+      ],
+      "pose": "/signs/asl/words/morning.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NIGHT",
+      "en": "night",
+      "words": [
+        "night"
+      ],
+      "pose": "/signs/asl/words/night.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHERE",
+      "en": "where",
+      "words": [
+        "where"
+      ],
+      "pose": "/signs/asl/words/where.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHAT",
+      "en": "what",
+      "words": [
+        "what"
+      ],
+      "pose": "/signs/asl/words/what.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHO",
+      "en": "who",
+      "words": [
+        "who"
+      ],
+      "pose": "/signs/asl/words/who.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHEN",
+      "en": "when",
+      "words": [
+        "when"
+      ],
+      "pose": "/signs/asl/words/when.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHY",
+      "en": "why",
+      "words": [
+        "why"
+      ],
+      "pose": "/signs/asl/words/why.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOW",
+      "en": "how",
+      "words": [
+        "how"
+      ],
+      "pose": "/signs/asl/words/how.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GO",
+      "en": "go",
+      "words": [
+        "go"
+      ],
+      "pose": "/signs/asl/words/go.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "COME",
+      "en": "come",
+      "words": [
+        "come"
+      ],
+      "pose": "/signs/asl/words/come.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SEE",
+      "en": "see",
+      "words": [
+        "see"
+      ],
+      "pose": "/signs/asl/words/see.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GIVE",
+      "en": "give",
+      "words": [
+        "give"
+      ],
+      "pose": "/signs/asl/words/give.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HELP-ME",
+      "en": "help me",
+      "words": [
+        "help me"
+      ],
+      "pose": "/signs/asl/words/help-me.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CALL",
+      "en": "call",
+      "words": [
+        "call"
+      ],
+      "pose": "/signs/asl/words/call.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PHONE",
+      "en": "phone",
+      "words": [
+        "phone",
+        "telephone",
+        "mobile"
+      ],
+      "pose": "/signs/asl/words/phone.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "POLICE",
+      "en": "police",
+      "words": [
+        "police"
+      ],
+      "pose": "/signs/asl/words/police.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "EMERGENCY",
+      "en": "emergency",
+      "words": [
+        "emergency"
+      ],
+      "pose": "/signs/asl/words/emergency.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "BUS",
+      "en": "bus",
+      "words": [
+        "bus"
+      ],
+      "pose": "/signs/asl/words/bus.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MONEY",
+      "en": "money",
+      "words": [
+        "money"
+      ],
+      "pose": "/signs/asl/words/money.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "EXCUSE-ME",
+      "en": "Excuse me",
+      "words": [
+        "excuse me"
+      ],
+      "pose": "/signs/asl/phrases/excuse-me.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-UNDERSTAND",
+      "en": "I understand",
+      "words": [
+        "i understand"
+      ],
+      "pose": "/signs/asl/phrases/i-understand.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-DON'T-UNDERSTAND",
+      "en": "I don't understand",
+      "words": [
+        "i don't understand",
+        "i don’t understand"
+      ],
+      "pose": "/signs/asl/phrases/i-dont-understand.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CAN-YOU-REPEAT-THAT",
+      "en": "Can you repeat that?",
+      "words": [
+        "can you repeat that"
+      ],
+      "pose": "/signs/asl/phrases/can-you-repeat-that.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SPEAK-SLOWLY-PLEASE",
+      "en": "Speak slowly please",
+      "words": [
+        "speak slowly please"
+      ],
+      "pose": "/signs/asl/phrases/speak-slowly-please.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-ASSISTANCE",
+      "en": "I need assistance",
+      "words": [
+        "i need assistance"
+      ],
+      "pose": "/signs/asl/phrases/i-need-assistance.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GOOD-MORNING",
+      "en": "Good morning",
+      "words": [
+        "good morning"
+      ],
+      "pose": "/signs/asl/phrases/good-morning.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "GOOD-NIGHT",
+      "en": "Good night",
+      "words": [
+        "good night"
+      ],
+      "pose": "/signs/asl/phrases/good-night.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-WOULD-LIKE-SOME-WATER",
+      "en": "I would like some water",
+      "words": [
+        "i would like some water"
+      ],
+      "pose": "/signs/asl/phrases/i-would-like-some-water.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-FEELING-UNWELL",
+      "en": "I am feeling unwell",
+      "words": [
+        "i am feeling unwell"
+      ],
+      "pose": "/signs/asl/phrases/i-am-feeling-unwell.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-CALL-SOMEONE-FOR-ME",
+      "en": "Please call someone for me",
+      "words": [
+        "please call someone for me"
+      ],
+      "pose": "/signs/asl/phrases/please-call-someone-for-me.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-TO-SIT-DOWN",
+      "en": "I need to sit down",
+      "words": [
+        "i need to sit down"
+      ],
+      "pose": "/signs/asl/phrases/i-need-to-sit-down.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-CANNOT-SPEAK-RIGHT-NOW",
+      "en": "I cannot speak right now",
+      "words": [
+        "i cannot speak right now"
+      ],
+      "pose": "/signs/asl/phrases/i-cannot-speak-right-now.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-BE-PATIENT-WITH-ME",
+      "en": "Please be patient with me",
+      "words": [
+        "please be patient with me"
+      ],
+      "pose": "/signs/asl/phrases/please-be-patient-with-me.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-USE-ASSISTIVE-COMMUNICATION",
+      "en": "I use assistive communication",
+      "words": [
+        "i use assistive communication"
+      ],
+      "pose": "/signs/asl/phrases/i-use-assistive-communication.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CAN-YOU-WRITE-THAT-DOWN",
+      "en": "Can you write that down?",
+      "words": [
+        "can you write that down"
+      ],
+      "pose": "/signs/asl/phrases/can-you-write-that-down.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-MORE-TIME-TO-RESPOND",
+      "en": "I need more time to respond",
+      "words": [
+        "i need more time to respond"
+      ],
+      "pose": "/signs/asl/phrases/i-need-more-time-to-respond.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-FACE-ME-WHEN-YOU-SPEAK",
+      "en": "Please face me when you speak",
+      "words": [
+        "please face me when you speak"
+      ],
+      "pose": "/signs/asl/phrases/please-face-me-when-you-speak.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-HARD-OF-HEARING",
+      "en": "I am hard of hearing",
+      "words": [
+        "i am hard of hearing"
+      ],
+      "pose": "/signs/asl/phrases/i-am-hard-of-hearing.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-VISUALLY-IMPAIRED",
+      "en": "I am visually impaired",
+      "words": [
+        "i am visually impaired"
+      ],
+      "pose": "/signs/asl/phrases/i-am-visually-impaired.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-HAVE-A-DISABILITY",
+      "en": "I have a disability",
+      "words": [
+        "i have a disability"
+      ],
+      "pose": "/signs/asl/phrases/i-have-a-disability.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-SPEAK-CLEARLY",
+      "en": "Please speak clearly",
+      "words": [
+        "please speak clearly"
+      ],
+      "pose": "/signs/asl/phrases/please-speak-clearly.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-A-QUIET-ENVIRONMENT",
+      "en": "I need a quiet environment",
+      "words": [
+        "i need a quiet environment"
+      ],
+      "pose": "/signs/asl/phrases/i-need-a-quiet-environment.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MY-NAME-IS-WRITTEN-ON-THIS-DEVICE",
+      "en": "My name is written on this device",
+      "words": [
+        "my name is written on this device"
+      ],
+      "pose": "/signs/asl/phrases/my-name-is-written-on-this-device.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-LIVE-AT-THIS-ADDRESS",
+      "en": "I live at this address",
+      "words": [
+        "i live at this address"
+      ],
+      "pose": "/signs/asl/phrases/i-live-at-this-address.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "MY-EMERGENCY-CONTACT-IS-SAVED-HERE",
+      "en": "My emergency contact is saved here",
+      "words": [
+        "my emergency contact is saved here"
+      ],
+      "pose": "/signs/asl/phrases/my-emergency-contact-is-saved-here.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-CALL-MY-CAREGIVER",
+      "en": "Please call my caregiver",
+      "words": [
+        "please call my caregiver"
+      ],
+      "pose": "/signs/asl/phrases/please-call-my-caregiver.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-TAKE-MEDICATION-DAILY",
+      "en": "I take medication daily",
+      "words": [
+        "i take medication daily"
+      ],
+      "pose": "/signs/asl/phrases/i-take-medication-daily.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-HAVE-A-MEDICAL-CONDITION",
+      "en": "I have a medical condition",
+      "words": [
+        "i have a medical condition"
+      ],
+      "pose": "/signs/asl/phrases/i-have-a-medical-condition.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-MY-WHEELCHAIR",
+      "en": "I need my wheelchair",
+      "words": [
+        "i need my wheelchair"
+      ],
+      "pose": "/signs/asl/phrases/i-need-my-wheelchair.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-CANNOT-STAND-FOR-LONG",
+      "en": "I cannot stand for long",
+      "words": [
+        "i cannot stand for long"
+      ],
+      "pose": "/signs/asl/phrases/i-cannot-stand-for-long.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-HELP-ME-FIND-A-SEAT",
+      "en": "Please help me find a seat",
+      "words": [
+        "please help me find a seat"
+      ],
+      "pose": "/signs/asl/phrases/please-help-me-find-a-seat.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-TO-USE-THE-RESTROOM",
+      "en": "I need to use the restroom",
+      "words": [
+        "i need to use the restroom"
+      ],
+      "pose": "/signs/asl/phrases/i-need-to-use-the-restroom.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-LOST-AND-NEED-DIRECTIONS",
+      "en": "I am lost and need directions",
+      "words": [
+        "i am lost and need directions"
+      ],
+      "pose": "/signs/asl/phrases/i-am-lost-and-need-directions.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-CALL-THIS-NUMBER-FOR-ME",
+      "en": "Please call this number for me",
+      "words": [
+        "please call this number for me"
+      ],
+      "pose": "/signs/asl/phrases/please-call-this-number-for-me.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-WAITING-FOR-SOMEONE",
+      "en": "I am waiting for someone",
+      "words": [
+        "i am waiting for someone"
+      ],
+      "pose": "/signs/asl/phrases/i-am-waiting-for-someone.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CAN-YOU-HELP-ME-GET-HOME",
+      "en": "Can you help me get home?",
+      "words": [
+        "can you help me get home"
+      ],
+      "pose": "/signs/asl/phrases/can-you-help-me-get-home.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-TO-CHARGE-MY-DEVICE",
+      "en": "I need to charge my device",
+      "words": [
+        "i need to charge my device"
+      ],
+      "pose": "/signs/asl/phrases/i-need-to-charge-my-device.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HELLO-I-USE-A-COMMUNICATION-DEVICE-TO-SPEAK",
+      "en": "Hello, I use a communication device to speak",
+      "words": [
+        "hello i use a communication device to speak"
+      ],
+      "pose": "/signs/asl/phrases/hello-i-use-a-communication-device-to-speak.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-COMMUNICATE-USING-ASSISTIVE-TECHNOLOGY",
+      "en": "I communicate using assistive technology",
+      "words": [
+        "i communicate using assistive technology"
+      ],
+      "pose": "/signs/asl/phrases/i-communicate-using-assistive-technology.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-MAY-TAKE-LONGER-TO-RESPOND-PLEASE-BE-PATIENT",
+      "en": "I may take longer to respond, please be patient",
+      "words": [
+        "i may take longer to respond please be patient"
+      ],
+      "pose": "/signs/asl/phrases/i-may-take-longer-to-respond-please-be-patient.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-DEAF-AND-COMMUNICATE-USING-SIGN-LANGUAGE",
+      "en": "I am Deaf and communicate using sign language",
+      "words": [
+        "i am deaf and communicate using sign language"
+      ],
+      "pose": "/signs/asl/phrases/i-am-deaf-and-communicate-using-sign-language.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "NICE-TO-MEET-YOU",
+      "en": "Nice to meet you",
+      "words": [
+        "nice to meet you"
+      ],
+      "pose": "/signs/asl/phrases/nice-to-meet-you.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-WATER",
+      "en": "I need water",
+      "words": [
+        "i need water"
+      ],
+      "pose": "/signs/asl/phrases/i-need-water.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-FOOD",
+      "en": "I need food",
+      "words": [
+        "i need food"
+      ],
+      "pose": "/signs/asl/phrases/i-need-food.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-IN-PAIN",
+      "en": "I am in pain",
+      "words": [
+        "i am in pain"
+      ],
+      "pose": "/signs/asl/phrases/i-am-in-pain.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-A-DOCTOR",
+      "en": "I need a doctor",
+      "words": [
+        "i need a doctor"
+      ],
+      "pose": "/signs/asl/phrases/i-need-a-doctor.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-COLD",
+      "en": "I am cold",
+      "words": [
+        "i am cold"
+      ],
+      "pose": "/signs/asl/phrases/i-am-cold.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-TIRED",
+      "en": "I am tired",
+      "words": [
+        "i am tired"
+      ],
+      "pose": "/signs/asl/phrases/i-am-tired.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-MY-MEDICINE",
+      "en": "I need my medicine",
+      "words": [
+        "i need my medicine"
+      ],
+      "pose": "/signs/asl/phrases/i-need-my-medicine.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-NEED-HELP-NOW",
+      "en": "I need help now",
+      "words": [
+        "i need help now"
+      ],
+      "pose": "/signs/asl/phrases/i-need-help-now.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CALL-AN-AMBULANCE",
+      "en": "Call an ambulance",
+      "words": [
+        "call an ambulance"
+      ],
+      "pose": "/signs/asl/phrases/call-an-ambulance.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "CALL-THE-POLICE",
+      "en": "Call the police",
+      "words": [
+        "call the police"
+      ],
+      "pose": "/signs/asl/phrases/call-the-police.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-HAVING-TROUBLE-BREATHING",
+      "en": "I am having trouble breathing",
+      "words": [
+        "i am having trouble breathing"
+      ],
+      "pose": "/signs/asl/phrases/i-am-having-trouble-breathing.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-ALLERGIC-TO-THIS",
+      "en": "I am allergic to this",
+      "words": [
+        "i am allergic to this"
+      ],
+      "pose": "/signs/asl/phrases/i-am-allergic-to-this.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "PLEASE-CALL-MY-FAMILY",
+      "en": "Please call my family",
+      "words": [
+        "please call my family"
+      ],
+      "pose": "/signs/asl/phrases/please-call-my-family.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOW-ARE-YOU",
+      "en": "How are you?",
+      "words": [
+        "how are you"
+      ],
+      "pose": "/signs/asl/phrases/how-are-you.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-FINE-THANK-YOU",
+      "en": "I am fine, thank you",
+      "words": [
+        "i am fine thank you"
+      ],
+      "pose": "/signs/asl/phrases/i-am-fine-thank-you.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "SEE-YOU-TOMORROW",
+      "en": "See you tomorrow",
+      "words": [
+        "see you tomorrow"
+      ],
+      "pose": "/signs/asl/phrases/see-you-tomorrow.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHAT-IS-YOUR-NAME",
+      "en": "What is your name?",
+      "words": [
+        "what is your name"
+      ],
+      "pose": "/signs/asl/phrases/what-is-your-name.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-DEAF",
+      "en": "I am deaf",
+      "words": [
+        "i am deaf"
+      ],
+      "pose": "/signs/asl/phrases/i-am-deaf.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-USE-SIGN-LANGUAGE",
+      "en": "I use sign language",
+      "words": [
+        "i use sign language"
+      ],
+      "pose": "/signs/asl/phrases/i-use-sign-language.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-HUNGRY",
+      "en": "I am hungry",
+      "words": [
+        "i am hungry"
+      ],
+      "pose": "/signs/asl/phrases/i-am-hungry.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "I-AM-THIRSTY",
+      "en": "I am thirsty",
+      "words": [
+        "i am thirsty"
+      ],
+      "pose": "/signs/asl/phrases/i-am-thirsty.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHERE-IS-THE-TOILET",
+      "en": "Where is the toilet?",
+      "words": [
+        "where is the toilet"
+      ],
+      "pose": "/signs/asl/phrases/where-is-the-toilet.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "WHERE-IS-THE-HOSPITAL",
+      "en": "Where is the hospital?",
+      "words": [
+        "where is the hospital"
+      ],
+      "pose": "/signs/asl/phrases/where-is-the-hospital.json",
+      "video": null,
+      "source": "sign.mt"
+    },
+    {
+      "gloss": "HOW-MUCH-DOES-IT-COST",
+      "en": "How much does it cost?",
+      "words": [
+        "how much does it cost"
+      ],
+      "pose": "/signs/asl/phrases/how-much-does-it-cost.json",
+      "video": null,
+      "source": "sign.mt"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ const url = (p) => `${BASE}${p}`
 // ---------- 1. screenshots ----------
 const browser = await chromium.launch()
 async function shot(name, path, { mobile = false, prefs = {}, act } = {}) {
-  const ctx = await browser.newContext({ viewport: mobile ? { width: 390, height: 844 } : { width: 1280, height: 820 }, deviceScaleFactor: mobile ? 2 : 1.5, reducedMotion: 'reduce' })
+  const ctx = await browser.newContext({ viewport: mobile ? { width: 390, height: 844 } : { width: 1280, height: 820 }, deviceScaleFactor: mobile ? 2 : 1.5, reducedMotion: 'reduce', serviceWorkers: 'block' })
   await ctx.addInitScript((p) => localStorage.setItem('bridgify.prefs.v1', JSON.stringify({ state: p, version: 1 })), prefs)
   const page = await ctx.newPage()
   await page.goto(url(path), { waitUntil: 'networkidle' })

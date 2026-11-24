@@ -1,0 +1,19 @@
+{
+  "about": "LSF real signer videos from Lingua Libre (Wikimedia Commons, Category:Lingua_Libre_pronunciation-fsl, CC0). Lexicon target key -> recorded word. Signer preference: Hugo en résidence, then Taliba31, Yug.",
+  "map": {
+    "w:hello": "bonjour",
+    "w:goodbye": "au revoir",
+    "w:yes": "oui",
+    "w:please": "s'il vous plait",
+    "w:thank-you": "merci",
+    "w:pardon": "pardon",
+    "w:encore": "encore",
+    "w:where": "où",
+    "w:why": "pourquoi",
+    "w:when": "quand",
+    "w:who": "qui",
+    "w:toilet": "toilettes",
+    "w:eat": "manger",
+    "p:je ne comprends pas": "je ne comprends pas"
+  }
+}

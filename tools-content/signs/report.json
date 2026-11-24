@@ -1,0 +1,2835 @@
+{
+  "generatedAt": "2026-11-24T15:36:43.518Z",
+  "source": "sign.mt public API (spoken_text_to_signed_pose)",
+  "languages": {
+    "asl": {
+      "signMt": {
+        "signed": "ase",
+        "spoken": "en"
+      },
+      "words": {
+        "total": 72,
+        "withPose": 72,
+        "withVideo": 0,
+        "withNoMedia": [],
+        "failed": [],
+        "viaOtherWord": [
+          {
+            "word": "goodbye",
+            "en": "goodbye",
+            "signedAs": "farewell",
+            "closestEquivalent": false
+          },
+          {
+            "word": "okay",
+            "en": "okay",
+            "signedAs": "ok",
+            "closestEquivalent": false
+          }
+        ]
+      },
+      "phrases": {
+        "total": 67,
+        "withPose": 67,
+        "withVideo": 0,
+        "failed": [],
+        "dropped": [],
+        "withFingerspelledWords": [
+          {
+            "text": "I don't understand",
+            "fingerspelled": [
+              "don"
+            ]
+          },
+          {
+            "text": "I use assistive communication",
+            "fingerspelled": [
+              "assistive"
+            ]
+          },
+          {
+            "text": "I am visually impaired",
+            "fingerspelled": [
+              "visually",
+              "impaired"
+            ]
+          },
+          {
+            "text": "My name is written on this device",
+            "fingerspelled": [
+              "written"
+            ]
+          },
+          {
+            "text": "Please call my caregiver",
+            "fingerspelled": [
+              "caregiver"
+            ]
+          },
+          {
+            "text": "I take medication daily",
+            "fingerspelled": [
+              "medication"
+            ]
+          },
+          {
+            "text": "I communicate using assistive technology",
+            "fingerspelled": [
+              "using",
+              "assistive"
+            ]
+          },
+          {
+            "text": "I may take longer to respond, please be patient",
+            "fingerspelled": [
+              "longer"
+            ]
+          },
+          {
+            "text": "I am Deaf and communicate using sign language",
+            "fingerspelled": [
+              "using"
+            ]
+          },
+          {
+            "text": "I am having trouble breathing",
+            "fingerspelled": [
+              "breathing"
+            ]
+          }
+        ]
+      },
+      "tutorials": {
+        "total": 30,
+        "withPose": 30,
+        "withVideoViaLexicon": 0
+      },
+      "lowHandTracking": [
+        {
+          "file": "/signs/asl/words/thirsty.json",
+          "handCoverage": 0.27
+        }
+      ],
+      "large": [
+        {
+          "file": "/signs/asl/phrases/i-would-like-some-water.json",
+          "kb": 153
+        },
+        {
+          "file": "/signs/asl/phrases/please-call-someone-for-me.json",
+          "kb": 137
+        },
+        {
+          "file": "/signs/asl/phrases/i-use-assistive-communication.json",
+          "kb": 161
+        },
+        {
+          "file": "/signs/asl/phrases/can-you-write-that-down.json",
+          "kb": 122
+        },
+        {
+          "file": "/signs/asl/phrases/i-need-more-time-to-respond.json",
+          "kb": 147
+        },
+        {
+          "file": "/signs/asl/phrases/please-face-me-when-you-speak.json",
+          "kb": 137
+        },
+        {
+          "file": "/signs/asl/phrases/i-am-visually-impaired.json",
+          "kb": 214
+        },
+        {
+          "file": "/signs/asl/phrases/my-name-is-written-on-this-device.json",
+          "kb": 249
+        },
+        {
+          "file": "/signs/asl/phrases/my-emergency-contact-is-saved-here.json",
+          "kb": 142
+        },
+        {
+          "file": "/signs/asl/phrases/please-call-my-caregiver.json",
+          "kb": 211
+        },
+        {
+          "file": "/signs/asl/phrases/i-take-medication-daily.json",
+          "kb": 178
+        },
+        {
+          "file": "/signs/asl/phrases/i-am-lost-and-need-directions.json",
+          "kb": 129
+        },
+        {
+          "file": "/signs/asl/phrases/please-call-this-number-for-me.json",
+          "kb": 149
+        },
+        {
+          "file": "/signs/asl/phrases/can-you-help-me-get-home.json",
+          "kb": 126
+        },
+        {
+          "file": "/signs/asl/phrases/i-need-to-charge-my-device.json",
+          "kb": 125
+        },
+        {
+          "file": "/signs/asl/phrases/hello-i-use-a-communication-device-to-speak.json",
+          "kb": 147
+        },
+        {
+          "file": "/signs/asl/phrases/i-communicate-using-assistive-technology.json",
+          "kb": 237
+        },
+        {
+          "file": "/signs/asl/phrases/i-may-take-longer-to-respond-please-be-patient.json",
+          "kb": 230
+        },
+        {
+          "file": "/signs/asl/phrases/i-am-deaf-and-communicate-using-sign-language.json",
+          "kb": 200
+        },
+        {
+          "file": "/signs/asl/phrases/call-an-ambulance.json",
+          "kb": 124
+        },
+        {
+          "file": "/signs/asl/phrases/i-am-having-trouble-breathing.json",
+          "kb": 157
+        },
+        {
+          "file": "/signs/asl/phrases/please-call-my-family.json",
+          "kb": 122
+        },
+        {
+          "file": "/signs/asl/phrases/how-much-does-it-cost.json",
+          "kb": 135
+        }
+      ],
+      "entries": 139,
+      "bytes": {
+        "words": 2079663,
+        "phrases": 7108639,
+        "video": 0,
+        "total": 9188302
+      }
+    },
+    "isl": {
+      "signMt": {
+        "signed": "ins",
+        "spoken": "en"
+      },
+      "words": {
+        "total": 73,
+        "withPose": 66,
+        "withVideo": 0,
+        "withNoMedia": [
+          "yes",
+          "please",
+          "stop",
+          "food",
+          "eat",
+          "medicine",
+          "understand"
+        ],
+        "failed": [
+          {
+            "word": "yes",
+            "en": "yes",
+            "video": false,
+            "tried": [
+              "yes [en]: no-hands",
+              "yeah [en]: no-sign",
+              "हाँ [hi]: no-sign"
+            ]
+          },
+          {
+            "word": "please",
+            "en": "please",
+            "video": false,
+            "tried": [
+              "please [en]: no-sign",
+              "kindly [en]: no-sign",
+              "कृपया [hi]: no-sign"
+            ]
+          },
+          {
+            "word": "stop",
+            "en": "stop",
+            "video": false,
+            "tried": [
+              "stop [en]: no-sign",
+              "halt [en]: no-sign",
+              "रुकिए [hi]: mis-tokenized"
+            ]
+          },
+          {
+            "word": "food",
+            "en": "food",
+            "video": false,
+            "tried": [
+              "food [en]: no-sign",
+              "meal [en]: no-sign",
+              "khana [en]: no-sign",
+              "खाना [hi]: no-sign"
+            ]
+          },
+          {
+            "word": "eat",
+            "en": "eat",
+            "video": false,
+            "tried": [
+              "eat [en]: no-sign",
+              "eating [en]: no-sign",
+              "meal [en]: no-sign",
+              "खाओ [hi]: no-sign"
+            ]
+          },
+          {
+            "word": "medicine",
+            "en": "medicine",
+            "video": false,
+            "tried": [
+              "medicine [en]: no-sign",
+              "medication [en]: no-sign",
+              "tablet [en]: no-sign",
+              "tablets [en]: no-sign",
+              "pill [en]: no-sign",
+              "दवाई [hi]: no-sign"
+            ]
+          },
+          {
+            "word": "understand",
+            "en": "understand",
+            "video": false,
+            "tried": [
+              "understand [en]: no-sign",
+              "understood [en]: no-sign",
+              "समझना [hi]: no-sign"
+            ]
+          }
+        ],
+        "viaOtherWord": [
+          {
+            "word": "namaste",
+            "en": "namaste",
+            "signedAs": "hello",
+            "closestEquivalent": true
+          },
+          {
+            "word": "goodbye",
+            "en": "goodbye",
+            "signedAs": "farewell",
+            "closestEquivalent": false
+          },
+          {
+            "word": "okay",
+            "en": "okay",
+            "signedAs": "fine",
+            "closestEquivalent": false
+          },
+          {
+            "word": "thirsty",
+            "en": "thirsty",
+            "signedAs": "thirst",
+            "closestEquivalent": false
+          },
+          {
+            "word": "later",
+            "en": "later",
+            "signedAs": "after",
+            "closestEquivalent": false
+          },
+          {
+            "word": "see",
+            "en": "see",
+            "signedAs": "look",
+            "closestEquivalent": false
+          },
+          {
+            "word": "phone",
+            "en": "phone",
+            "signedAs": "telephone",
+            "closestEquivalent": false
+          }
+        ]
+      },
+      "phrases": {
+        "total": 36,
+        "withPose": 21,
+        "withVideo": 0,
+        "failed": [],
+        "dropped": [
+          {
+            "text": "मैं समझ गया",
+            "en": "I understand",
+            "reason": "no sign for: understand",
+            "glosses": "i/i understand/understand"
+          },
+          {
+            "text": "मैं नहीं समझा",
+            "en": "I don't understand",
+            "reason": "no sign for: don, t, understand",
+            "glosses": "i/i don/don '/' t/t understand/understand"
+          },
+          {
+            "text": "कृपया दोहराइए",
+            "en": "Please repeat",
+            "reason": "no sign for: please",
+            "glosses": "please/please repeat/repeat"
+          },
+          {
+            "text": "कृपया धीरे बोलिए",
+            "en": "Please speak slowly",
+            "reason": "no sign for: please",
+            "glosses": "please/please speak/speak slowly/slowly"
+          },
+          {
+            "text": "मुझे समझ नहीं आया",
+            "en": "I did not understand",
+            "reason": "no sign for: understand",
+            "glosses": "i/i did/do not/not understand/understand"
+          },
+          {
+            "text": "मुझे प्यास लगी है",
+            "en": "I am thirsty",
+            "reason": "no sign for: thirsty",
+            "glosses": "i/i am/be thirsty/thirsty"
+          },
+          {
+            "text": "कृपया मेरे साथ धैर्य रखें",
+            "en": "Please be patient with me",
+            "reason": "no sign for: please, patient",
+            "glosses": "please/please be/be patient/patient with/with me/i"
+          },
+          {
+            "text": "कृपया मेरी तरफ़ देखकर बोलिए",
+            "en": "Please look at me when you speak",
+            "reason": "no sign for: please",
+            "glosses": "please/please look/look at/at me/i when/when you/you speak/speak"
+          },
+          {
+            "text": "नमस्ते, मैं बोलने के लिए इस डिवाइस का उपयोग करता हूँ",
+            "en": "Hello, I use this device to speak",
+            "reason": "no sign for: device",
+            "glosses": "hello/hello ,/, i/i use/use this/this device/device to/to speak/speak"
+          },
+          {
+            "text": "मुझे खाना चाहिए",
+            "en": "I need food",
+            "reason": "no sign for: food",
+            "glosses": "i/i need/need food/food"
+          },
+          {
+            "text": "मुझे दवाई चाहिए",
+            "en": "I need medicine",
+            "reason": "no sign for: medicine",
+            "glosses": "i/i need/need medicine/medicine"
+          },
+          {
+            "text": "मुझे साँस लेने में तकलीफ़ हो रही है",
+            "en": "I am having trouble breathing",
+            "reason": "no sign for: breathing",
+            "glosses": "i/i am/be having/have trouble/trouble breathing/breathing"
+          },
+          {
+            "text": "कृपया मेरे परिवार को फ़ोन कीजिए",
+            "en": "Please call my family",
+            "reason": "no sign for: please",
+            "glosses": "please/please call/call my/my family/family"
+          },
+          {
+            "text": "आपसे मिलकर खुशी हुई",
+            "en": "Nice to meet you",
+            "reason": "no sign for: meet",
+            "glosses": "nice/nice to/to meet/meet you/you"
+          },
+          {
+            "text": "कल मिलते हैं",
+            "en": "See you tomorrow",
+            "reason": "no sign for: see",
+            "glosses": "see/see you/you tomorrow/tomorrow"
+          }
+        ],
+        "withFingerspelledWords": []
+      },
+      "tutorials": {
+        "total": 30,
+        "withPose": 20,
+        "withVideoViaLexicon": 0
+      },
+      "lowHandTracking": [
+        {
+          "file": "/signs/isl/words/hello.json",
+          "handCoverage": 0.25
+        },
+        {
+          "file": "/signs/isl/words/hello.json",
+          "handCoverage": 0.25
+        },
+        {
+          "file": "/signs/isl/words/wait.json",
+          "handCoverage": 0.18
+        },
+        {
+          "file": "/signs/isl/words/hearing.json",
+          "handCoverage": 0.07
+        },
+        {
+          "file": "/signs/isl/words/know.json",
+          "handCoverage": 0.26
+        },
+        {
+          "file": "/signs/isl/words/sad.json",
+          "handCoverage": 0.06
+        },
+        {
+          "file": "/signs/isl/words/yesterday.json",
+          "handCoverage": 0.15
+        },
+        {
+          "file": "/signs/isl/words/morning.json",
+          "handCoverage": 0.12
+        }
+      ],
+      "large": [
+        {
+          "file": "/signs/isl/phrases/i-cannot-speak-right-now.json",
+          "kb": 145
+        },
+        {
+          "file": "/signs/isl/phrases/can-you-write-this-down.json",
+          "kb": 129
+        }
+      ],
+      "entries": 109,
+      "bytes": {
+        "words": 1675984,
+        "phrases": 1415091,
+        "video": 0,
+        "total": 3091075
+      },
+      "queries": [
+        {
+          "item": "hello",
+          "result": "hello [spoken=en]",
+          "tried": [
+            "hello [en]: ok"
+          ]
+        },
+        {
+          "item": "namaste",
+          "result": "hello [spoken=en]",
+          "tried": [
+            "namaste [en]: no-sign",
+            "namaskar [en]: no-sign",
+            "Namaste. [en]: no-sign",
+            "namaste! [en]: no-sign",
+            "Namaste friend [en]: partly-missing",
+            "नमस्ते [hi]: no-sign",
+            "नमस्कार [hi]: no-sign",
+            "hello [en]: ok"
+          ]
+        },
+        {
+          "item": "goodbye",
+          "result": "farewell [spoken=en]",
+          "tried": [
+            "goodbye [en]: no-sign",
+            "bye [en]: no-sign",
+            "good bye [en]: partly-missing",
+            "good-bye [en]: no-sign",
+            "bye-bye [en]: no-sign",
+            "farewell [en]: ok"
+          ]
+        },
+        {
+          "item": "yes",
+          "result": "none",
+          "tried": [
+            "yes [en]: no-hands",
+            "yeah [en]: no-sign",
+            "हाँ [hi]: no-sign"
+          ]
+        },
+        {
+          "item": "no",
+          "result": "no [spoken=en]",
+          "tried": [
+            "no [en]: ok"
+          ]
+        },
+        {
+          "item": "please",
+          "result": "none",
+          "tried": [
+            "please [en]: no-sign",
+            "kindly [en]: no-sign",
+            "कृपया [hi]: no-sign"
+          ]
+        },
+        {
+          "item": "thank you",
+          "result": "thank you [spoken=en]",
+          "tried": [
+            "thank you [en]: ok"
+          ]
+        },
+        {
+          "item": "sorry",
+          "result": "sorry [spoken=en]",
+          "tried": [
+            "sorry [en]: ok"
+          ]
+        },
+        {
+          "item": "help",
+          "result": "help [spoken=en]",
+          "tried": [
+            "help [en]: ok"
+          ]
+        },
+        {
+          "item": "stop",
+          "result": "none",
+          "tried": [
+            "stop [en]: no-sign",
+            "halt [en]: no-sign",
+            "रुकिए [hi]: mis-tokenized"
+          ]
+        },
+        {
+          "item": "wait",
+          "result": "wait [spoken=en]",
+          "tried": [
+            "wait [en]: ok"
+          ]
+        },
+        {
+          "item": "more",
+          "result": "more [spoken=en]",
+          "tried": [
+            "more [en]: ok"
+          ]
+        },
+        {
+          "item": "okay",
+          "result": "fine [spoken=en]",
+          "tried": [
+            "okay [en]: no-sign",
+            "ok [en]: no-sign",
+            "fine [en]: ok"
+          ]
+        },
+        {
+          "item": "good",
+          "result": "good [spoken=en]",
+          "tried": [
+            "good [en]: ok"
+          ]
+        },
+        {
+          "item": "bad",
+          "result": "bad [spoken=en]",
+          "tried": [
+            "bad [en]: ok"
+          ]
+        },
+        {
+          "item": "water",
+          "result": "water [spoken=en]",
+          "tried": [
+            "water [en]: ok"
+          ]
+        },
+        {
+          "item": "food",
+          "result": "none",
+          "tried": [
+            "food [en]: no-sign",
+            "meal [en]: no-sign",
+            "khana [en]: no-sign",
+            "खाना [hi]: no-sign"
+          ]
+        },
+        {
+          "item": "eat",
+          "result": "none",
+          "tried": [
+            "eat [en]: no-sign",
+            "eating [en]: no-sign",
+            "meal [en]: no-sign",
+            "खाओ [hi]: no-sign"
+          ]
+        },
+        {
+          "item": "drink",
+          "result": "drink [spoken=en]",
+          "tried": [
+            "drink [en]: ok"
+          ]
+        },
+        {
+          "item": "doctor",
+          "result": "doctor [spoken=en]",
+          "tried": [
+            "doctor [en]: ok"
+          ]
+        },
+        {
+          "item": "hospital",
+          "result": "hospital [spoken=en]",
+          "tried": [
+            "hospital [en]: ok"
+          ]
+        },
+        {
+          "item": "medicine",
+          "result": "none",
+          "tried": [
+            "medicine [en]: no-sign",
+            "medication [en]: no-sign",
+            "tablet [en]: no-sign",
+            "tablets [en]: no-sign",
+            "pill [en]: no-sign",
+            "दवाई [hi]: no-sign"
+          ]
+        },
+        {
+          "item": "pain",
+          "result": "pain [spoken=en]",
+          "tried": [
+            "pain [en]: ok"
+          ]
+        },
+        {
+          "item": "sick",
+          "result": "sick [spoken=en]",
+          "tried": [
+            "sick [en]: ok"
+          ]
+        },
+        {
+          "item": "toilet",
+          "result": "toilet [spoken=en]",
+          "tried": [
+            "toilet [en]: ok"
+          ]
+        },
+        {
+          "item": "home",
+          "result": "home [spoken=en]",
+          "tried": [
+            "home [en]: ok"
+          ]
+        },
+        {
+          "item": "school",
+          "result": "school [spoken=en]",
+          "tried": [
+            "school [en]: ok"
+          ]
+        },
+        {
+          "item": "family",
+          "result": "family [spoken=en]",
+          "tried": [
+            "family [en]: ok"
+          ]
+        },
+        {
+          "item": "mother",
+          "result": "mother [spoken=en]",
+          "tried": [
+            "mother [en]: ok"
+          ]
+        },
+        {
+          "item": "father",
+          "result": "father [spoken=en]",
+          "tried": [
+            "father [en]: ok"
+          ]
+        },
+        {
+          "item": "friend",
+          "result": "friend [spoken=en]",
+          "tried": [
+            "friend [en]: ok"
+          ]
+        },
+        {
+          "item": "name",
+          "result": "name [spoken=en]",
+          "tried": [
+            "name [en]: ok"
+          ]
+        },
+        {
+          "item": "deaf",
+          "result": "deaf [spoken=en]",
+          "tried": [
+            "deaf [en]: ok"
+          ]
+        },
+        {
+          "item": "hearing",
+          "result": "hearing [spoken=en]",
+          "tried": [
+            "hearing [en]: ok"
+          ]
+        },
+        {
+          "item": "sign",
+          "result": "sign [spoken=en]",
+          "tried": [
+            "sign [en]: ok"
+          ]
+        },
+        {
+          "item": "language",
+          "result": "language [spoken=en]",
+          "tried": [
+            "language [en]: ok"
+          ]
+        },
+        {
+          "item": "understand",
+          "result": "none",
+          "tried": [
+            "understand [en]: no-sign",
+            "understood [en]: no-sign",
+            "समझना [hi]: no-sign"
+          ]
+        },
+        {
+          "item": "know",
+          "result": "know [spoken=en]",
+          "tried": [
+            "know [en]: ok"
+          ]
+        },
+        {
+          "item": "want",
+          "result": "want [spoken=en]",
+          "tried": [
+            "want [en]: ok"
+          ]
+        },
+        {
+          "item": "need",
+          "result": "need [spoken=en]",
+          "tried": [
+            "need [en]: ok"
+          ]
+        },
+        {
+          "item": "like",
+          "result": "like [spoken=en]",
+          "tried": [
+            "like [en]: ok"
+          ]
+        },
+        {
+          "item": "love",
+          "result": "love [spoken=en]",
+          "tried": [
+            "love [en]: ok"
+          ]
+        },
+        {
+          "item": "happy",
+          "result": "happy [spoken=en]",
+          "tried": [
+            "happy [en]: ok"
+          ]
+        },
+        {
+          "item": "sad",
+          "result": "sad [spoken=en]",
+          "tried": [
+            "sad [en]: ok"
+          ]
+        },
+        {
+          "item": "tired",
+          "result": "tired [spoken=en]",
+          "tried": [
+            "tired [en]: ok"
+          ]
+        },
+        {
+          "item": "hungry",
+          "result": "hungry [spoken=en]",
+          "tried": [
+            "hungry [en]: ok"
+          ]
+        },
+        {
+          "item": "thirsty",
+          "result": "thirst [spoken=en]",
+          "tried": [
+            "thirsty [en]: no-sign",
+            "thirst [en]: ok"
+          ]
+        },
+        {
+          "item": "cold",
+          "result": "cold [spoken=en]",
+          "tried": [
+            "cold [en]: ok"
+          ]
+        },
+        {
+          "item": "hot",
+          "result": "hot [spoken=en]",
+          "tried": [
+            "hot [en]: ok"
+          ]
+        },
+        {
+          "item": "today",
+          "result": "today [spoken=en]",
+          "tried": [
+            "today [en]: ok"
+          ]
+        },
+        {
+          "item": "tomorrow",
+          "result": "tomorrow [spoken=en]",
+          "tried": [
+            "tomorrow [en]: ok"
+          ]
+        },
+        {
+          "item": "yesterday",
+          "result": "yesterday [spoken=en]",
+          "tried": [
+            "yesterday [en]: ok"
+          ]
+        },
+        {
+          "item": "now",
+          "result": "now [spoken=en]",
+          "tried": [
+            "now [en]: ok"
+          ]
+        },
+        {
+          "item": "later",
+          "result": "after [spoken=en]",
+          "tried": [
+            "later [en]: no-sign",
+            "after [en]: ok"
+          ]
+        },
+        {
+          "item": "morning",
+          "result": "morning [spoken=en]",
+          "tried": [
+            "morning [en]: ok"
+          ]
+        },
+        {
+          "item": "night",
+          "result": "night [spoken=en]",
+          "tried": [
+            "night [en]: ok"
+          ]
+        },
+        {
+          "item": "where",
+          "result": "where [spoken=en]",
+          "tried": [
+            "where [en]: ok"
+          ]
+        },
+        {
+          "item": "what",
+          "result": "what [spoken=en]",
+          "tried": [
+            "what [en]: ok"
+          ]
+        },
+        {
+          "item": "who",
+          "result": "who [spoken=en]",
+          "tried": [
+            "who [en]: ok"
+          ]
+        },
+        {
+          "item": "when",
+          "result": "when [spoken=en]",
+          "tried": [
+            "when [en]: ok"
+          ]
+        },
+        {
+          "item": "why",
+          "result": "why [spoken=en]",
+          "tried": [
+            "why [en]: ok"
+          ]
+        },
+        {
+          "item": "how",
+          "result": "how [spoken=en]",
+          "tried": [
+            "how [en]: ok"
+          ]
+        },
+        {
+          "item": "go",
+          "result": "go [spoken=en]",
+          "tried": [
+            "go [en]: ok"
+          ]
+        },
+        {
+          "item": "come",
+          "result": "come [spoken=en]",
+          "tried": [
+            "come [en]: ok"
+          ]
+        },
+        {
+          "item": "see",
+          "result": "look [spoken=en]",
+          "tried": [
+            "see [en]: no-sign",
+            "look [en]: ok"
+          ]
+        },
+        {
+          "item": "give",
+          "result": "give [spoken=en]",
+          "tried": [
+            "give [en]: ok"
+          ]
+        },
+        {
+          "item": "help me",
+          "result": "help me [spoken=en]",
+          "tried": [
+            "help me [en]: ok"
+          ]
+        },
+        {
+          "item": "call",
+          "result": "call [spoken=en]",
+          "tried": [
+            "call [en]: ok"
+          ]
+        },
+        {
+          "item": "phone",
+          "result": "telephone [spoken=en]",
+          "tried": [
+            "phone [en]: no-sign",
+            "telephone [en]: ok"
+          ]
+        },
+        {
+          "item": "police",
+          "result": "police [spoken=en]",
+          "tried": [
+            "police [en]: ok"
+          ]
+        },
+        {
+          "item": "emergency",
+          "result": "emergency [spoken=en]",
+          "tried": [
+            "emergency [en]: ok"
+          ]
+        },
+        {
+          "item": "bus",
+          "result": "bus [spoken=en]",
+          "tried": [
+            "bus [en]: ok"
+          ]
+        },
+        {
+          "item": "money",
+          "result": "money [spoken=en]",
+          "tried": [
+            "money [en]: ok"
+          ]
+        },
+        {
+          "item": "मैं समझ गया",
+          "result": "I understand [spoken=en]",
+          "tried": [
+            "I understand [en]: ok"
+          ]
+        },
+        {
+          "item": "मैं नहीं समझा",
+          "result": "I don't understand [spoken=en]",
+          "tried": [
+            "I don't understand [en]: ok"
+          ]
+        },
+        {
+          "item": "कृपया दोहराइए",
+          "result": "Please repeat [spoken=en]",
+          "tried": [
+            "Please repeat [en]: ok"
+          ]
+        },
+        {
+          "item": "कृपया धीरे बोलिए",
+          "result": "Please speak slowly [spoken=en]",
+          "tried": [
+            "Please speak slowly [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे मदद चाहिए",
+          "result": "I need help [spoken=en]",
+          "tried": [
+            "I need help [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे समझ नहीं आया",
+          "result": "I did not understand [spoken=en]",
+          "tried": [
+            "I did not understand [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे भूख लगी है",
+          "result": "I am hungry [spoken=en]",
+          "tried": [
+            "I am hungry [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे प्यास लगी है",
+          "result": "I am thirsty [spoken=en]",
+          "tried": [
+            "I am thirsty [en]: ok"
+          ]
+        },
+        {
+          "item": "मैं अभी बोल नहीं सकता",
+          "result": "I cannot speak right now [spoken=en]",
+          "tried": [
+            "I cannot speak right now [en]: ok"
+          ]
+        },
+        {
+          "item": "कृपया मेरे साथ धैर्य रखें",
+          "result": "Please be patient with me [spoken=en]",
+          "tried": [
+            "Please be patient with me [en]: ok"
+          ]
+        },
+        {
+          "item": "क्या आप यह लिख सकते हैं?",
+          "result": "Can you write this down? [spoken=en]",
+          "tried": [
+            "Can you write this down? [en]: ok"
+          ]
+        },
+        {
+          "item": "कृपया मेरी तरफ़ देखकर बोलिए",
+          "result": "Please look at me when you speak [spoken=en]",
+          "tried": [
+            "Please look at me when you speak [en]: ok"
+          ]
+        },
+        {
+          "item": "नमस्ते, मैं बोलने के लिए इस डिवाइस का उपयोग करता हूँ",
+          "result": "Hello, I use this device to speak [spoken=en]",
+          "tried": [
+            "Hello, I use this device to speak [en]: ok"
+          ]
+        },
+        {
+          "item": "मैं बधिर हूँ",
+          "result": "I am deaf [spoken=en]",
+          "tried": [
+            "I am deaf [en]: ok"
+          ]
+        },
+        {
+          "item": "मैं सांकेतिक भाषा का उपयोग करता हूँ",
+          "result": "I use sign language [spoken=en]",
+          "tried": [
+            "I use sign language [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे पानी चाहिए",
+          "result": "I need water [spoken=en]",
+          "tried": [
+            "I need water [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे खाना चाहिए",
+          "result": "I need food [spoken=en]",
+          "tried": [
+            "I need food [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे दर्द हो रहा है",
+          "result": "I am in pain [spoken=en]",
+          "tried": [
+            "I am in pain [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे डॉक्टर चाहिए",
+          "result": "I need a doctor [spoken=en]",
+          "tried": [
+            "I need a doctor [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे दवाई चाहिए",
+          "result": "I need medicine [spoken=en]",
+          "tried": [
+            "I need medicine [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे अभी मदद चाहिए",
+          "result": "I need help now [spoken=en]",
+          "tried": [
+            "I need help now [en]: ok"
+          ]
+        },
+        {
+          "item": "एम्बुलेंस बुलाइए",
+          "result": "Call an ambulance [spoken=en]",
+          "tried": [
+            "Call an ambulance [en]: ok"
+          ]
+        },
+        {
+          "item": "पुलिस बुलाइए",
+          "result": "Call the police [spoken=en]",
+          "tried": [
+            "Call the police [en]: ok"
+          ]
+        },
+        {
+          "item": "मुझे साँस लेने में तकलीफ़ हो रही है",
+          "result": "I am having trouble breathing [spoken=en]",
+          "tried": [
+            "I am having trouble breathing [en]: ok"
+          ]
+        },
+        {
+          "item": "कृपया मेरे परिवार को फ़ोन कीजिए",
+          "result": "Please call my family [spoken=en]",
+          "tried": [
+            "Please call my family [en]: ok"
+          ]
+        },
+        {
+          "item": "सुप्रभात",
+          "result": "Good morning [spoken=en]",
+          "tried": [
+            "Good morning [en]: ok"
+          ]
+        },
+        {
+          "item": "शुभ रात्रि",
+          "result": "Good night [spoken=en]",
+          "tried": [
+            "Good night [en]: ok"
+          ]
+        },
+        {
+          "item": "आप कैसे हैं?",
+          "result": "How are you? [spoken=en]",
+          "tried": [
+            "How are you? [en]: ok"
+          ]
+        },
+        {
+          "item": "मैं ठीक हूँ, धन्यवाद",
+          "result": "I am fine, thank you [spoken=en]",
+          "tried": [
+            "I am fine, thank you [en]: ok"
+          ]
+        },
+        {
+          "item": "आपसे मिलकर खुशी हुई",
+          "result": "Nice to meet you [spoken=en]",
+          "tried": [
+            "Nice to meet you [en]: ok"
+          ]
+        },
+        {
+          "item": "कल मिलते हैं",
+          "result": "See you tomorrow [spoken=en]",
+          "tried": [
+            "See you tomorrow [en]: ok"
+          ]
+        },
+        {
+          "item": "आपका नाम क्या है?",
+          "result": "What is your name? [spoken=en]",
+          "tried": [
+            "What is your name? [en]: ok"
+          ]
+        },
+        {
+          "item": "मैं थका हुआ हूँ",
+          "result": "I am tired [spoken=en]",
+          "tried": [
+            "I am tired [en]: ok"
+          ]
+        },
+        {
+          "item": "शौचालय कहाँ है?",
+          "result": "Where is the toilet? [spoken=en]",
+          "tried": [
+            "Where is the toilet? [en]: ok"
+          ]
+        },
+        {
+          "item": "अस्पताल कहाँ है?",
+          "result": "Where is the hospital? [spoken=en]",
+          "tried": [
+            "Where is the hospital? [en]: ok"
+          ]
+        },
+        {
+          "item": "इसकी कीमत कितनी है?",
+          "result": "How much does it cost? [spoken=en]",
+          "tried": [
+            "How much does it cost? [en]: ok"
+          ]
+        }
+      ]
+    },
+    "lsf": {
+      "signMt": {
+        "signed": "fsl",
+        "spoken": "fr"
+      },
+      "words": {
+        "total": 74,
+        "withPose": 71,
+        "withVideo": 13,
+        "withNoMedia": [
+          "aujourd'hui",
+          "plus tard"
+        ],
+        "failed": [
+          {
+            "word": "s'il vous plaît",
+            "en": "please",
+            "video": true,
+            "tried": [
+              "s'il vous plaît [fr]: partly-fingerspelled",
+              "s'il te plaît [fr]: partly-fingerspelled",
+              "svp [fr]: fingerspelled"
+            ]
+          },
+          {
+            "word": "aujourd'hui",
+            "en": "today",
+            "video": false,
+            "tried": [
+              "aujourd'hui [fr]: no-sign",
+              "aujourdhui [fr]: fingerspelled"
+            ]
+          },
+          {
+            "word": "plus tard",
+            "en": "later",
+            "video": false,
+            "tried": [
+              "plus tard [fr]: partly-fingerspelled",
+              "après [fr]: error",
+              "tard [fr]: fingerspelled",
+              "ensuite [fr]: fingerspelled"
+            ]
+          }
+        ],
+        "viaOtherWord": [
+          {
+            "word": "au revoir",
+            "en": "goodbye",
+            "signedAs": "adieu",
+            "closestEquivalent": false
+          },
+          {
+            "word": "médecin",
+            "en": "doctor",
+            "signedAs": "docteur",
+            "closestEquivalent": false
+          },
+          {
+            "word": "heureux",
+            "en": "happy",
+            "signedAs": "content",
+            "closestEquivalent": false
+          },
+          {
+            "word": "aidez-moi",
+            "en": "help me",
+            "signedAs": "aider",
+            "closestEquivalent": false
+          }
+        ]
+      },
+      "phrases": {
+        "total": 38,
+        "withPose": 14,
+        "withVideo": 1,
+        "failed": [
+          {
+            "text": "Je comprends",
+            "en": "I understand",
+            "origins": [
+              "quick-access.fr:phrases",
+              "tutorial"
+            ],
+            "tried": [
+              "Je comprends [fr]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Je ne comprends pas",
+            "en": "I don't understand",
+            "origins": [
+              "quick-access.fr:phrases",
+              "tutorial"
+            ],
+            "tried": [
+              "Je ne comprends pas [fr]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Enchanté",
+            "en": "Nice to meet you",
+            "origins": [
+              "quick-access.fr:intro",
+              "tutorial"
+            ],
+            "tried": [
+              "Enchanté [fr]: no-sign (No poses found for Enchanté/enchanté)"
+            ]
+          }
+        ],
+        "dropped": [
+          {
+            "text": "Bonne nuit",
+            "en": "Good night",
+            "reason": "fingerspelled with ASL letters: Bonne",
+            "glosses": "Bonne/bon nuit/nuit"
+          },
+          {
+            "text": "Pouvez-vous répéter ?",
+            "en": "Can you repeat that?",
+            "reason": "fingerspelled with ASL letters: Pouvez",
+            "glosses": "Pouvez/pouvoir -vous/-vous-IX répéter/répéter"
+          },
+          {
+            "text": "Parlez lentement, s'il vous plaît",
+            "en": "Please speak slowly",
+            "reason": "no sign for: plaît",
+            "glosses": "Parlez/parler lentement/lentement s'/se il/il-IX vous/vous-IX plaît/plaire"
+          },
+          {
+            "text": "Pouvez-vous l'écrire ?",
+            "en": "Can you write it down?",
+            "reason": "fingerspelled with ASL letters: Pouvez",
+            "glosses": "-vous/-vous-IX écrire/écrire Pouvez/pouvoir"
+          },
+          {
+            "text": "Soyez patient avec moi, s'il vous plaît",
+            "en": "Please be patient with me",
+            "reason": "no sign for: plaît",
+            "glosses": "Soyez/Soyez patient/patient moi/moi-IX s'/se il/il-IX vous/vous-IX plaît/plaire"
+          },
+          {
+            "text": "Regardez-moi quand vous parlez",
+            "en": "Please face me when you speak",
+            "reason": "fingerspelled with ASL letters: Regardez, parlez",
+            "glosses": "Regardez/Regardez -moi/-moi-IX quand/quand vous/vous-IX parlez/parler"
+          },
+          {
+            "text": "Un instant, s'il vous plaît",
+            "en": "One moment, please",
+            "reason": "no sign for: plaît",
+            "glosses": "instant/instant s'/se il/il-IX vous/vous-IX plaît/plaire"
+          },
+          {
+            "text": "J'utilise la langue des signes",
+            "en": "I use sign language",
+            "reason": "fingerspelled with ASL letters: signes, utilise",
+            "glosses": "J'/j'-IX langue/langue signes/signe utilise/utiliser"
+          },
+          {
+            "text": "Comment vous appelez-vous ?",
+            "en": "What is your name?",
+            "reason": "fingerspelled with ASL letters: appelez",
+            "glosses": "Comment/comment vous/vous-IX appelez/appeler -vous/-vous-IX"
+          },
+          {
+            "text": "J'utilise cette application pour communiquer",
+            "en": "I use this app to communicate",
+            "reason": "fingerspelled with ASL letters: utilise",
+            "glosses": "J'/j'-IX application/application utilise/utiliser communiquer/communiquer"
+          },
+          {
+            "text": "Je dois aller aux toilettes",
+            "en": "I need the toilet",
+            "reason": "fingerspelled with ASL letters: dois",
+            "glosses": "Je/je-IX dois/devoir aller/aller toilettes/toilette"
+          },
+          {
+            "text": "Appelez une ambulance",
+            "en": "Call an ambulance",
+            "reason": "fingerspelled with ASL letters: Appelez",
+            "glosses": "Appelez/appeler ambulance/ambulance"
+          },
+          {
+            "text": "Appelez la police",
+            "en": "Call the police",
+            "reason": "fingerspelled with ASL letters: Appelez",
+            "glosses": "Appelez/appeler police/police"
+          },
+          {
+            "text": "J'ai besoin d'un médecin",
+            "en": "I need a doctor",
+            "reason": "no sign for: médecin",
+            "glosses": "J'/j'-IX besoin/besoin ai/avoir médecin/médecin"
+          },
+          {
+            "text": "Appelez ma famille, s'il vous plaît",
+            "en": "Please call my family",
+            "reason": "no sign for: plaît",
+            "glosses": "Appelez/appeler ma/ma-IX famille/famille s'/se il/il-IX vous/vous-IX plaît/plaire"
+          },
+          {
+            "text": "Où est l'arrêt de bus ?",
+            "en": "Where is the bus stop?",
+            "reason": "no sign for: arrêt",
+            "glosses": "Où/où est/être arrêt/arrêt bus/bus"
+          },
+          {
+            "text": "Quelle heure est-il ?",
+            "en": "What time is it?",
+            "reason": "fingerspelled with ASL letters: Quelle",
+            "glosses": "Quelle/quell heure/heure est/être -il/-il-IX"
+          },
+          {
+            "text": "Combien ça coûte ?",
+            "en": "How much does it cost?",
+            "reason": "no sign for: coûte",
+            "glosses": "Combien/combien ça/ça-IX coûte/coûter"
+          },
+          {
+            "text": "Pouvez-vous m'aider ?",
+            "en": "Can you help me?",
+            "reason": "fingerspelled with ASL letters: Pouvez",
+            "glosses": "Pouvez/pouvoir -vous/-vous-IX m'/m'-IX aider/aider"
+          },
+          {
+            "text": "Comment allez-vous ?",
+            "en": "How are you?",
+            "reason": "fingerspelled with ASL letters: allez",
+            "glosses": "Comment/comment allez/aller -vous/-vous-IX"
+          },
+          {
+            "text": "Je vais bien, merci",
+            "en": "I am fine, thank you",
+            "reason": "fingerspelled with ASL letters: vais",
+            "glosses": "Je/je-IX vais/aller bien/bien merci/merci"
+          }
+        ],
+        "withFingerspelledWords": []
+      },
+      "tutorials": {
+        "total": 30,
+        "withPose": 13,
+        "withVideoViaLexicon": 2
+      },
+      "lowHandTracking": [
+        {
+          "file": "/signs/lsf/words/comprendre.json",
+          "handCoverage": 0.26
+        }
+      ],
+      "large": [
+        {
+          "file": "/signs/lsf/phrases/jai-besoin-daide-tout-de-suite.json",
+          "kb": 185
+        },
+        {
+          "file": "/signs/lsf/phrases/ou-sont-les-toilettes.json",
+          "kb": 138
+        }
+      ],
+      "entries": 112,
+      "bytes": {
+        "words": 1544886,
+        "phrases": 1182306,
+        "video": 400810,
+        "total": 3128002
+      }
+    },
+    "lsm": {
+      "signMt": {
+        "signed": "mfs",
+        "spoken": "es"
+      },
+      "words": {
+        "total": 72,
+        "withPose": 57,
+        "withVideo": 0,
+        "withNoMedia": [
+          "está bien",
+          "doctor",
+          "medicina",
+          "nombre",
+          "oyente",
+          "necesitar",
+          "la mañana",
+          "noche",
+          "qué",
+          "quién",
+          "cuándo",
+          "venir",
+          "ver",
+          "llamar",
+          "policía"
+        ],
+        "failed": [
+          {
+            "word": "está bien",
+            "en": "okay",
+            "video": false,
+            "tried": [
+              "está bien [es]: partly-missing",
+              "ok [es]: fingerspelled",
+              "de acuerdo [es]: partly-fingerspelled"
+            ]
+          },
+          {
+            "word": "doctor",
+            "en": "doctor",
+            "video": false,
+            "tried": [
+              "doctor [es]: fingerspelled",
+              "médico [es]: no-sign",
+              "doctora [es]: fingerspelled",
+              "medico [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "medicina",
+            "en": "medicine",
+            "video": false,
+            "tried": [
+              "medicina [es]: fingerspelled",
+              "medicamento [es]: fingerspelled",
+              "medicinas [es]: fingerspelled",
+              "remedio [es]: fingerspelled",
+              "pastilla [es]: fingerspelled",
+              "medicamentos [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "nombre",
+            "en": "name",
+            "video": false,
+            "tried": [
+              "nombre [es]: fingerspelled",
+              "nombres [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "oyente",
+            "en": "hearing",
+            "video": false,
+            "tried": [
+              "oyente [es]: fingerspelled",
+              "oyentes [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "necesitar",
+            "en": "need",
+            "video": false,
+            "tried": [
+              "necesitar [es]: fingerspelled",
+              "necesito [es]: fingerspelled",
+              "necesidad [es]: fingerspelled",
+              "necesita [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "la mañana",
+            "en": "morning",
+            "video": false,
+            "tried": [
+              "la mañana [es]: partly-fingerspelled",
+              "madrugada [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "noche",
+            "en": "night",
+            "video": false,
+            "tried": [
+              "noche [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "qué",
+            "en": "what",
+            "video": false,
+            "tried": [
+              "qué [es]: no-sign",
+              "que [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "quién",
+            "en": "who",
+            "video": false,
+            "tried": [
+              "quién [es]: no-sign",
+              "quien [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "cuándo",
+            "en": "when",
+            "video": false,
+            "tried": [
+              "cuándo [es]: no-sign",
+              "cuando [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "venir",
+            "en": "come",
+            "video": false,
+            "tried": [
+              "venir [es]: fingerspelled",
+              "ven [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "ver",
+            "en": "see",
+            "video": false,
+            "tried": [
+              "ver [es]: fingerspelled",
+              "mirar [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "llamar",
+            "en": "call",
+            "video": false,
+            "tried": [
+              "llamar [es]: fingerspelled",
+              "llama [es]: fingerspelled"
+            ]
+          },
+          {
+            "word": "policía",
+            "en": "police",
+            "video": false,
+            "tried": [
+              "policía [es]: no-sign",
+              "policia [es]: fingerspelled"
+            ]
+          }
+        ],
+        "viaOtherWord": [
+          {
+            "word": "por favor",
+            "en": "please",
+            "signedAs": "favor",
+            "closestEquivalent": false
+          },
+          {
+            "word": "perdón",
+            "en": "sorry",
+            "signedAs": "disculpe",
+            "closestEquivalent": false
+          },
+          {
+            "word": "parar",
+            "en": "stop",
+            "signedAs": "alto",
+            "closestEquivalent": false
+          },
+          {
+            "word": "madre",
+            "en": "mother",
+            "signedAs": "mamá",
+            "closestEquivalent": false
+          },
+          {
+            "word": "padre",
+            "en": "father",
+            "signedAs": "papá",
+            "closestEquivalent": false
+          },
+          {
+            "word": "por qué",
+            "en": "why",
+            "signedAs": "porque",
+            "closestEquivalent": false
+          },
+          {
+            "word": "ayúdame",
+            "en": "help me",
+            "signedAs": "ayudar",
+            "closestEquivalent": false
+          },
+          {
+            "word": "autobús",
+            "en": "bus",
+            "signedAs": "camión",
+            "closestEquivalent": false
+          }
+        ]
+      },
+      "phrases": {
+        "total": 38,
+        "withPose": 22,
+        "withVideo": 0,
+        "failed": [
+          {
+            "text": "Buenos días",
+            "en": "Good morning",
+            "origins": [
+              "quick-access.es:words",
+              "tutorial"
+            ],
+            "tried": [
+              "Buenos días [es]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Buenas noches",
+            "en": "Good night",
+            "origins": [
+              "quick-access.es:words",
+              "tutorial"
+            ],
+            "tried": [
+              "Buenas noches [es]: fingerspelled"
+            ]
+          },
+          {
+            "text": "¿Puede repetirlo?",
+            "en": "Can you repeat that?",
+            "origins": [
+              "quick-access.es:phrases",
+              "tutorial"
+            ],
+            "tried": [
+              "¿Puede repetirlo? [es]: fingerspelled",
+              "Puede repetirlo [es]: fingerspelled"
+            ]
+          },
+          {
+            "text": "¿Puede escribirlo?",
+            "en": "Can you write it down?",
+            "origins": [
+              "quick-access.es:phrases",
+              "tutorial"
+            ],
+            "tried": [
+              "¿Puede escribirlo? [es]: fingerspelled",
+              "Puede escribirlo [es]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Tenga paciencia conmigo, por favor",
+            "en": "Please be patient with me",
+            "origins": [
+              "quick-access.es:phrases"
+            ],
+            "tried": [
+              "Tenga paciencia conmigo, por favor [es]: too-large",
+              "Tenga paciencia conmigo por favor [es]: too-large"
+            ]
+          },
+          {
+            "text": "Tengo pérdida auditiva",
+            "en": "I am hard of hearing",
+            "origins": [
+              "quick-access.es:intro"
+            ],
+            "tried": [
+              "Tengo pérdida auditiva [es]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Uso esta aplicación para comunicarme",
+            "en": "I use this app to communicate",
+            "origins": [
+              "quick-access.es:intro"
+            ],
+            "tried": [
+              "Uso esta aplicación para comunicarme [es]: too-large"
+            ]
+          },
+          {
+            "text": "Necesito mi medicina",
+            "en": "I need my medicine",
+            "origins": [
+              "quick-access.es:needs",
+              "tutorial"
+            ],
+            "tried": [
+              "Necesito mi medicina [es]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Necesito un doctor",
+            "en": "I need a doctor",
+            "origins": [
+              "quick-access.es:emergency",
+              "tutorial"
+            ],
+            "tried": [
+              "Necesito un doctor [es]: fingerspelled"
+            ]
+          },
+          {
+            "text": "¿Dónde está la parada del autobús?",
+            "en": "Where is the bus stop?",
+            "origins": [
+              "quick-access.es:questions"
+            ],
+            "tried": [
+              "¿Dónde está la parada del autobús? [es]: fingerspelled",
+              "Dónde está la parada del autobús [es]: fingerspelled"
+            ]
+          },
+          {
+            "text": "¿Cuánto cuesta?",
+            "en": "How much does it cost?",
+            "origins": [
+              "quick-access.es:questions",
+              "tutorial"
+            ],
+            "tried": [
+              "¿Cuánto cuesta? [es]: fingerspelled",
+              "Cuánto cuesta [es]: fingerspelled"
+            ]
+          }
+        ],
+        "dropped": [
+          {
+            "text": "Míreme cuando hable, por favor",
+            "en": "Please face me when you speak",
+            "reason": "no sign for: míreme",
+            "glosses": "míreme/míreme cuando/cuando hable/hablar ,/, por/por favor/favor"
+          },
+          {
+            "text": "Llame a la policía",
+            "en": "Call the police",
+            "reason": "no sign for: policía",
+            "glosses": "llame/llamar a/a la/el policía/policía"
+          },
+          {
+            "text": "¿Dónde está el baño?",
+            "en": "Where is the toilet?",
+            "reason": "no sign for: dónde",
+            "glosses": "¿/¿ dónde/dónde está/estar el/el baño/baño ?/?"
+          },
+          {
+            "text": "¿Dónde está el hospital?",
+            "en": "Where is the hospital?",
+            "reason": "no sign for: dónde",
+            "glosses": "¿/¿ dónde/dónde está/estar el/el hospital/hospital ?/?"
+          },
+          {
+            "text": "¿Qué hora es?",
+            "en": "What time is it?",
+            "reason": "no sign for: qué",
+            "glosses": "¿/¿ qué/qué hora/hora es/ser ?/?"
+          }
+        ],
+        "withFingerspelledWords": [
+          {
+            "text": "No entiendo",
+            "fingerspelled": [
+              "entiendo"
+            ]
+          },
+          {
+            "text": "Hable despacio, por favor",
+            "fingerspelled": [
+              "hable"
+            ]
+          },
+          {
+            "text": "Uso lengua de señas",
+            "fingerspelled": [
+              "uso"
+            ]
+          },
+          {
+            "text": "¿Cómo se llama?",
+            "fingerspelled": [
+              "llama"
+            ]
+          },
+          {
+            "text": "Mucho gusto",
+            "fingerspelled": [
+              "gusto"
+            ]
+          },
+          {
+            "text": "Necesito agua",
+            "fingerspelled": [
+              "necesito"
+            ]
+          },
+          {
+            "text": "Necesito comida",
+            "fingerspelled": [
+              "necesito"
+            ]
+          },
+          {
+            "text": "Tengo hambre",
+            "fingerspelled": [
+              "tengo"
+            ]
+          },
+          {
+            "text": "Tengo sed",
+            "fingerspelled": [
+              "tengo"
+            ]
+          },
+          {
+            "text": "Tengo frío",
+            "fingerspelled": [
+              "tengo"
+            ]
+          },
+          {
+            "text": "Necesito ir al baño",
+            "fingerspelled": [
+              "necesito"
+            ]
+          },
+          {
+            "text": "Necesito ayuda ahora",
+            "fingerspelled": [
+              "necesito"
+            ]
+          },
+          {
+            "text": "Llame a una ambulancia",
+            "fingerspelled": [
+              "llame"
+            ]
+          },
+          {
+            "text": "Tengo dolor",
+            "fingerspelled": [
+              "tengo"
+            ]
+          },
+          {
+            "text": "Llame a mi familia, por favor",
+            "fingerspelled": [
+              "llame"
+            ]
+          },
+          {
+            "text": "¿Me puede ayudar?",
+            "fingerspelled": [
+              "puede"
+            ]
+          },
+          {
+            "text": "Hasta mañana",
+            "fingerspelled": [
+              "hasta"
+            ]
+          }
+        ]
+      },
+      "tutorials": {
+        "total": 30,
+        "withPose": 20,
+        "withVideoViaLexicon": 0
+      },
+      "lowHandTracking": [],
+      "large": [
+        {
+          "file": "/signs/lsm/phrases/no-entiendo.json",
+          "kb": 136
+        },
+        {
+          "file": "/signs/lsm/phrases/hable-despacio-por-favor.json",
+          "kb": 144
+        },
+        {
+          "file": "/signs/lsm/phrases/uso-lengua-de-senas.json",
+          "kb": 151
+        },
+        {
+          "file": "/signs/lsm/phrases/necesito-agua.json",
+          "kb": 122
+        },
+        {
+          "file": "/signs/lsm/phrases/necesito-comida.json",
+          "kb": 135
+        },
+        {
+          "file": "/signs/lsm/phrases/necesito-ir-al-bano.json",
+          "kb": 165
+        },
+        {
+          "file": "/signs/lsm/phrases/necesito-ayuda-ahora.json",
+          "kb": 149
+        },
+        {
+          "file": "/signs/lsm/phrases/llame-a-una-ambulancia.json",
+          "kb": 150
+        },
+        {
+          "file": "/signs/lsm/phrases/llame-a-mi-familia-por-favor.json",
+          "kb": 198
+        }
+      ],
+      "entries": 110,
+      "bytes": {
+        "words": 1472356,
+        "phrases": 2603969,
+        "video": 0,
+        "total": 4076325
+      }
+    },
+    "lis": {
+      "signMt": {
+        "signed": "ise",
+        "spoken": "it"
+      },
+      "words": {
+        "total": 72,
+        "withPose": 71,
+        "withVideo": 0,
+        "withNoMedia": [
+          "udente"
+        ],
+        "failed": [
+          {
+            "word": "udente",
+            "en": "hearing",
+            "video": false,
+            "tried": [
+              "udente [it]: fingerspelled",
+              "udenti [it]: fingerspelled"
+            ]
+          }
+        ],
+        "viaOtherWord": [
+          {
+            "word": "ciao",
+            "en": "hello",
+            "signedAs": "buongiorno",
+            "closestEquivalent": false
+          },
+          {
+            "word": "arrivederci",
+            "en": "goodbye",
+            "signedAs": "addio",
+            "closestEquivalent": false
+          },
+          {
+            "word": "aiuto",
+            "en": "help",
+            "signedAs": "aiutare",
+            "closestEquivalent": false
+          },
+          {
+            "word": "va bene",
+            "en": "okay",
+            "signedAs": "ok",
+            "closestEquivalent": false
+          },
+          {
+            "word": "sapere",
+            "en": "know",
+            "signedAs": "conoscere",
+            "closestEquivalent": false
+          },
+          {
+            "word": "aiutami",
+            "en": "help me",
+            "signedAs": "aiutare",
+            "closestEquivalent": false
+          },
+          {
+            "word": "soldi",
+            "en": "money",
+            "signedAs": "denaro",
+            "closestEquivalent": false
+          }
+        ]
+      },
+      "phrases": {
+        "total": 39,
+        "withPose": 32,
+        "withVideo": 0,
+        "failed": [
+          {
+            "text": "Mi scusi",
+            "en": "Excuse me",
+            "origins": [
+              "quick-access.it:words"
+            ],
+            "tried": [
+              "Mi scusi [it]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Buonanotte",
+            "en": "Good night",
+            "origins": [
+              "quick-access.it:words",
+              "tutorial"
+            ],
+            "tried": [
+              "Buonanotte [it]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Può scriverlo?",
+            "en": "Can you write it down?",
+            "origins": [
+              "quick-access.it:phrases",
+              "tutorial"
+            ],
+            "tried": [
+              "Può scriverlo? [it]: fingerspelled",
+              "Può scriverlo [it]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Sono ipoudente",
+            "en": "I am hard of hearing",
+            "origins": [
+              "quick-access.it:intro"
+            ],
+            "tried": [
+              "Sono ipoudente [it]: fingerspelled"
+            ]
+          },
+          {
+            "text": "Che ore sono?",
+            "en": "What time is it?",
+            "origins": [
+              "quick-access.it:questions"
+            ],
+            "tried": [
+              "Che ore sono? [it]: fingerspelled",
+              "Che ore sono [it]: fingerspelled"
+            ]
+          }
+        ],
+        "dropped": [
+          {
+            "text": "Può ripetere?",
+            "en": "Can you repeat that?",
+            "reason": "no sign for: può",
+            "glosses": "può/potere ripetere/ripetere ?/?"
+          },
+          {
+            "text": "Mi può aiutare?",
+            "en": "Can you help me?",
+            "reason": "no sign for: può",
+            "glosses": "mi/mi può/potere aiutare/aiutare ?/?"
+          }
+        ],
+        "withFingerspelledWords": [
+          {
+            "text": "Non capisco",
+            "fingerspelled": [
+              "capisco"
+            ]
+          },
+          {
+            "text": "Parli lentamente, per favore",
+            "fingerspelled": [
+              "parli"
+            ]
+          },
+          {
+            "text": "Mi guardi quando parla, per favore",
+            "fingerspelled": [
+              "guardi",
+              "parla"
+            ]
+          },
+          {
+            "text": "Uso la lingua dei segni",
+            "fingerspelled": [
+              "segni"
+            ]
+          },
+          {
+            "text": "Come si chiama?",
+            "fingerspelled": [
+              "chiama"
+            ]
+          },
+          {
+            "text": "Piacere di conoscerti",
+            "fingerspelled": [
+              "conoscerti"
+            ]
+          },
+          {
+            "text": "Uso questa app per comunicare",
+            "fingerspelled": [
+              "questa"
+            ]
+          },
+          {
+            "text": "Devo andare in bagno",
+            "fingerspelled": [
+              "devo"
+            ]
+          },
+          {
+            "text": "Ho bisogno delle mie medicine",
+            "fingerspelled": [
+              "medicine"
+            ]
+          },
+          {
+            "text": "Ho bisogno di aiuto subito",
+            "fingerspelled": [
+              "aiuto",
+              "subito"
+            ]
+          },
+          {
+            "text": "Chiamate un'ambulanza",
+            "fingerspelled": [
+              "chiamate"
+            ]
+          },
+          {
+            "text": "Chiamate la polizia",
+            "fingerspelled": [
+              "chiamate"
+            ]
+          },
+          {
+            "text": "Sento dolore",
+            "fingerspelled": [
+              "sento"
+            ]
+          },
+          {
+            "text": "Chiamate la mia famiglia, per favore",
+            "fingerspelled": [
+              "chiamate"
+            ]
+          },
+          {
+            "text": "Dov'è il bagno?",
+            "fingerspelled": [
+              "dov"
+            ]
+          },
+          {
+            "text": "Dov'è l'ospedale?",
+            "fingerspelled": [
+              "dov"
+            ]
+          },
+          {
+            "text": "Dov'è la fermata dell'autobus?",
+            "fingerspelled": [
+              "dov",
+              "fermata",
+              "dell"
+            ]
+          },
+          {
+            "text": "Quanto costa?",
+            "fingerspelled": [
+              "quanto"
+            ]
+          },
+          {
+            "text": "Come stai?",
+            "fingerspelled": [
+              "stai"
+            ]
+          },
+          {
+            "text": "Sto bene, grazie",
+            "fingerspelled": [
+              "sto"
+            ]
+          }
+        ]
+      },
+      "tutorials": {
+        "total": 30,
+        "withPose": 27,
+        "withVideoViaLexicon": 0
+      },
+      "lowHandTracking": [],
+      "large": [
+        {
+          "file": "/signs/lis/phrases/non-capisco.json",
+          "kb": 126
+        },
+        {
+          "file": "/signs/lis/phrases/parli-lentamente-per-favore.json",
+          "kb": 143
+        },
+        {
+          "file": "/signs/lis/phrases/abbia-pazienza-con-me-per-favore.json",
+          "kb": 137
+        },
+        {
+          "file": "/signs/lis/phrases/mi-guardi-quando-parla-per-favore.json",
+          "kb": 250
+        },
+        {
+          "file": "/signs/lis/phrases/uso-la-lingua-dei-segni.json",
+          "kb": 200
+        },
+        {
+          "file": "/signs/lis/phrases/piacere-di-conoscerti.json",
+          "kb": 193
+        },
+        {
+          "file": "/signs/lis/phrases/uso-questa-app-per-comunicare.json",
+          "kb": 161
+        },
+        {
+          "file": "/signs/lis/phrases/devo-andare-in-bagno.json",
+          "kb": 123
+        },
+        {
+          "file": "/signs/lis/phrases/ho-bisogno-delle-mie-medicine.json",
+          "kb": 277
+        },
+        {
+          "file": "/signs/lis/phrases/ho-bisogno-di-aiuto-subito.json",
+          "kb": 265
+        },
+        {
+          "file": "/signs/lis/phrases/chiamate-unambulanza.json",
+          "kb": 171
+        },
+        {
+          "file": "/signs/lis/phrases/chiamate-la-polizia.json",
+          "kb": 153
+        },
+        {
+          "file": "/signs/lis/phrases/ho-bisogno-di-un-medico.json",
+          "kb": 158
+        },
+        {
+          "file": "/signs/lis/phrases/chiamate-la-mia-famiglia-per-favore.json",
+          "kb": 244
+        },
+        {
+          "file": "/signs/lis/phrases/dove-il-bagno.json",
+          "kb": 136
+        },
+        {
+          "file": "/signs/lis/phrases/dove-lospedale.json",
+          "kb": 136
+        },
+        {
+          "file": "/signs/lis/phrases/dove-la-fermata-dellautobus.json",
+          "kb": 251
+        }
+      ],
+      "entries": 110,
+      "bytes": {
+        "words": 1523692,
+        "phrases": 4460995,
+        "video": 0,
+        "total": 5984687
+      }
+    },
+    "dgs": {
+      "signMt": {
+        "signed": "gsg",
+        "spoken": "de"
+      },
+      "words": {
+        "total": 72,
+        "withPose": 68,
+        "withVideo": 71,
+        "withNoMedia": [],
+        "failed": [
+          {
+            "word": "tschüss",
+            "en": "goodbye",
+            "video": true,
+            "tried": [
+              "tschüss [de]: fingerspelled",
+              "auf wiedersehen [de]: fingerspelled",
+              "tschüs [de]: fingerspelled"
+            ]
+          },
+          {
+            "word": "nein",
+            "en": "no",
+            "video": true,
+            "tried": [
+              "nein [de]: error",
+              "nee [de]: fingerspelled"
+            ]
+          },
+          {
+            "word": "hörend",
+            "en": "hearing",
+            "video": true,
+            "tried": [
+              "hörend [de]: fingerspelled",
+              "hörende [de]: fingerspelled"
+            ]
+          },
+          {
+            "word": "morgens",
+            "en": "morning",
+            "video": true,
+            "tried": [
+              "morgens [de]: fingerspelled",
+              "vormittag [de]: fingerspelled"
+            ]
+          }
+        ],
+        "viaOtherWord": [
+          {
+            "word": "stopp",
+            "en": "stop",
+            "signedAs": "anhalten",
+            "closestEquivalent": false
+          },
+          {
+            "word": "okay",
+            "en": "okay",
+            "signedAs": "in ordnung",
+            "closestEquivalent": false
+          },
+          {
+            "word": "zuhause",
+            "en": "home",
+            "signedAs": "haus",
+            "closestEquivalent": false
+          },
+          {
+            "word": "hilf mir",
+            "en": "help me",
+            "signedAs": "helfen",
+            "closestEquivalent": false
+          },
+          {
+            "word": "anrufen",
+            "en": "call",
+            "signedAs": "rufen",
+            "closestEquivalent": false
+          }
+        ]
+      },
+      "phrases": {
+        "total": 40,
+        "withPose": 39,
+        "withVideo": 2,
+        "failed": [
+          {
+            "text": "Ich brauche meine Medikamente",
+            "en": "I need my medicine",
+            "origins": [
+              "quick-access.de:needs",
+              "tutorial"
+            ],
+            "tried": [
+              "Ich brauche meine Medikamente [de]: too-large"
+            ]
+          }
+        ],
+        "dropped": [],
+        "withFingerspelledWords": [
+          {
+            "text": "Guten Morgen",
+            "fingerspelled": [
+              "Guten"
+            ]
+          },
+          {
+            "text": "Gute Nacht",
+            "fingerspelled": [
+              "Gute"
+            ]
+          },
+          {
+            "text": "Ich verstehe",
+            "fingerspelled": [
+              "verstehe"
+            ]
+          },
+          {
+            "text": "Ich verstehe nicht",
+            "fingerspelled": [
+              "verstehe"
+            ]
+          },
+          {
+            "text": "Können Sie das aufschreiben?",
+            "fingerspelled": [
+              "aufschreiben"
+            ]
+          },
+          {
+            "text": "Ich benutze Gebärdensprache",
+            "fingerspelled": [
+              "benutze"
+            ]
+          },
+          {
+            "text": "Freut mich",
+            "fingerspelled": [
+              "Freut"
+            ]
+          },
+          {
+            "text": "Ich nutze diese App zum Kommunizieren",
+            "fingerspelled": [
+              "nutze"
+            ]
+          },
+          {
+            "text": "Ich brauche Wasser",
+            "fingerspelled": [
+              "brauche"
+            ]
+          },
+          {
+            "text": "Ich brauche etwas zu essen",
+            "fingerspelled": [
+              "brauche"
+            ]
+          },
+          {
+            "text": "Ich muss auf die Toilette",
+            "fingerspelled": [
+              "muss"
+            ]
+          },
+          {
+            "text": "Ich brauche sofort Hilfe",
+            "fingerspelled": [
+              "brauche"
+            ]
+          },
+          {
+            "text": "Rufen Sie einen Krankenwagen",
+            "fingerspelled": [
+              "Krankenwagen"
+            ]
+          },
+          {
+            "text": "Ich brauche einen Arzt",
+            "fingerspelled": [
+              "brauche"
+            ]
+          },
+          {
+            "text": "Wie viel kostet das?",
+            "fingerspelled": [
+              "kostet"
+            ]
+          },
+          {
+            "text": "Wie geht es Ihnen?",
+            "fingerspelled": [
+              "geht"
+            ]
+          },
+          {
+            "text": "Mir geht es gut, danke",
+            "fingerspelled": [
+              "geht"
+            ]
+          }
+        ]
+      },
+      "tutorials": {
+        "total": 30,
+        "withPose": 27,
+        "withVideoViaLexicon": 2
+      },
+      "lowHandTracking": [
+        {
+          "file": "/signs/dgs/words/kalt.json",
+          "handCoverage": 0.23
+        }
+      ],
+      "large": [
+        {
+          "file": "/signs/dgs/phrases/ich-verstehe.json",
+          "kb": 155
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-verstehe-nicht.json",
+          "kb": 175
+        },
+        {
+          "file": "/signs/dgs/phrases/koennen-sie-das-aufschreiben.json",
+          "kb": 222
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-benutze-gebaerdensprache.json",
+          "kb": 149
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-nutze-diese-app-zum-kommunizieren.json",
+          "kb": 157
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-brauche-wasser.json",
+          "kb": 167
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-brauche-etwas-zu-essen.json",
+          "kb": 175
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-muss-auf-die-toilette.json",
+          "kb": 121
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-brauche-sofort-hilfe.json",
+          "kb": 172
+        },
+        {
+          "file": "/signs/dgs/phrases/rufen-sie-einen-krankenwagen.json",
+          "kb": 174
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-brauche-einen-arzt.json",
+          "kb": 155
+        },
+        {
+          "file": "/signs/dgs/phrases/ich-habe-schmerzen.json",
+          "kb": 123
+        },
+        {
+          "file": "/signs/dgs/phrases/bitte-rufen-sie-meine-familie-an.json",
+          "kb": 138
+        },
+        {
+          "file": "/signs/dgs/phrases/wie-viel-kostet-das.json",
+          "kb": 151
+        },
+        {
+          "file": "/signs/dgs/phrases/mir-geht-es-gut-danke.json",
+          "kb": 128
+        }
+      ],
+      "entries": 111,
+      "bytes": {
+        "words": 1413611,
+        "phrases": 4126986,
+        "video": 2315637,
+        "total": 7856234
+      }
+    }
+  },
+  "testWords": {
+    "asl": {
+      "word": "hello",
+      "entry": "HELLO",
+      "pose": "/signs/asl/words/hello.json",
+      "video": null,
+      "signedAs": "hello",
+      "source": "sign.mt",
+      "works": true
+    },
+    "isl": {
+      "word": "namaste",
+      "entry": "NAMASTE",
+      "pose": "/signs/isl/words/hello.json",
+      "video": null,
+      "signedAs": "hello",
+      "source": "sign.mt (closest equivalent: hello; sign.mt has no sign for \"namaste\")",
+      "works": true
+    },
+    "lsf": {
+      "word": "au revoir",
+      "entry": "AU-REVOIR",
+      "pose": "/signs/lsf/words/adieu.json",
+      "video": "/signs/lsf/video/au-revoir.webm",
+      "signedAs": "adieu",
+      "source": "sign.mt (signed as: adieu)",
+      "works": true
+    },
+    "lsm": {
+      "word": "amigo",
+      "entry": "AMIGO",
+      "pose": "/signs/lsm/words/amigo.json",
+      "video": null,
+      "signedAs": "amigo",
+      "source": "sign.mt",
+      "works": true
+    },
+    "lis": {
+      "word": "scusa",
+      "entry": "SCUSA",
+      "pose": "/signs/lis/words/scusa.json",
+      "video": null,
+      "signedAs": "scusa",
+      "source": "sign.mt",
+      "works": true
+    },
+    "dgs": {
+      "word": "wasser",
+      "entry": "WASSER",
+      "pose": "/signs/dgs/words/wasser.json",
+      "video": "/signs/dgs/video/wasser.webm",
+      "signedAs": "wasser",
+      "source": "sign.mt",
+      "works": true
+    }
+  },
+  "budgetDropped": [],
+  "totals": {
+    "bytes": 33324625,
+    "mb": 31.78,
+    "budgetMb": 40,
+    "videoBytes": 2716447,
+    "files": 769,
+    "removedStale": 43
+  },
+  "notes": [
+    "sign.mt translates word by word. A 200 answer can be synthetic fingerspelling (one hand tracked in every frame, the other in none); those are rejected and left to the app's own fingerspelling. ISL answers 500 instead of spelling.",
+    "sign.mt only matches base forms through its gloss index, so inflected words (\"comprends\", \"buenos días\") are often spelled even when the base word has a sign.",
+    "Multi-token word-list items are kept only if every token has its own real sign (ISL silently drops unknown tokens).",
+    "Idle frames (no hand in view) at the start and end are trimmed before conversion, keeping ~0.12 s margin.",
+    "ISL is queried in English: sign.mt splits Devanagari at vowel signs, so Hindi queries only return single-letter matches or \"No poses found\".",
+    "A phrase animation is kept unless a content word was dropped (ISL has no fingerspelling, so unknown words vanish) or, for LSF, a content word was fingerspelled with sign.mt's ASL letters. Function words may be dropped or spelled."
+  ]
+}

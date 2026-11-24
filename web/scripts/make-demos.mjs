@@ -16,7 +16,7 @@ const browser = await chromium.launch()
 /** Captures frames with `grab` while `script` runs, then encodes them as a looping GIF. */
 async function record(name, { path, prefs = {}, fps = 10, holdEnd = 1.6, realTime = false, scale = 2 }, script) {
   const dir = mkdtempSync(join(tmpdir(), `bridgify-${name}-`))
-  const ctx = await browser.newContext({ viewport: { width: 1280, height: 860 }, deviceScaleFactor: scale })
+  const ctx = await browser.newContext({ viewport: { width: 1280, height: 860 }, deviceScaleFactor: scale, serviceWorkers: 'block' })
   await ctx.addInitScript((p) => localStorage.setItem('bridgify.prefs.v1', JSON.stringify({ state: p, version: 1 })), prefs)
   const page = await ctx.newPage()
   await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' })

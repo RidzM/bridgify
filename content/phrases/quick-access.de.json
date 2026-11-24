@@ -1,0 +1,64 @@
+{
+  "lang": "de-DE",
+  "categories": [
+    { "id": "words", "label": "Häufige Wörter", "items": [
+      { "text": "Ja", "en": "Yes" },
+      { "text": "Nein", "en": "No" },
+      { "text": "Bitte", "en": "Please" },
+      { "text": "Danke", "en": "Thank you" },
+      { "text": "Entschuldigung", "en": "Sorry" },
+      { "text": "Entschuldigen Sie", "en": "Excuse me" },
+      { "text": "Hilfe", "en": "Help" },
+      { "text": "Stopp", "en": "Stop" },
+      { "text": "Warten Sie", "en": "Wait" },
+      { "text": "Okay", "en": "Okay" },
+      { "text": "Guten Morgen", "en": "Good morning" },
+      { "text": "Gute Nacht", "en": "Good night" }
+    ] },
+    { "id": "phrases", "label": "Sätze", "items": [
+      { "text": "Ich verstehe", "en": "I understand" },
+      { "text": "Ich verstehe nicht", "en": "I don't understand" },
+      { "text": "Können Sie das wiederholen?", "en": "Can you repeat that?" },
+      { "text": "Bitte sprechen Sie langsam", "en": "Please speak slowly" },
+      { "text": "Können Sie das aufschreiben?", "en": "Can you write it down?" },
+      { "text": "Bitte haben Sie Geduld mit mir", "en": "Please be patient with me" },
+      { "text": "Bitte sehen Sie mich beim Sprechen an", "en": "Please face me when you speak" },
+      { "text": "Einen Moment, bitte", "en": "One moment, please" }
+    ] },
+    { "id": "intro", "label": "Sich vorstellen", "items": [
+      { "text": "Ich bin gehörlos", "en": "I am deaf" },
+      { "text": "Ich bin schwerhörig", "en": "I am hard of hearing" },
+      { "text": "Ich benutze Gebärdensprache", "en": "I use sign language" },
+      { "text": "Wie heißen Sie?", "en": "What is your name?" },
+      { "text": "Freut mich", "en": "Nice to meet you" },
+      { "text": "Ich nutze diese App zum Kommunizieren", "en": "I use this app to communicate" }
+    ] },
+    { "id": "needs", "label": "Grundbedürfnisse", "items": [
+      { "text": "Ich brauche Wasser", "en": "I need water" },
+      { "text": "Ich brauche etwas zu essen", "en": "I need food" },
+      { "text": "Ich habe Hunger", "en": "I am hungry" },
+      { "text": "Ich habe Durst", "en": "I am thirsty" },
+      { "text": "Ich bin müde", "en": "I am tired" },
+      { "text": "Mir ist kalt", "en": "I am cold" },
+      { "text": "Ich muss auf die Toilette", "en": "I need the toilet" },
+      { "text": "Ich brauche meine Medikamente", "en": "I need my medicine" }
+    ] },
+    { "id": "emergency", "label": "Notfall", "items": [
+      { "text": "Helfen Sie mir", "en": "Help me" },
+      { "text": "Ich brauche sofort Hilfe", "en": "I need help now" },
+      { "text": "Rufen Sie einen Krankenwagen", "en": "Call an ambulance" },
+      { "text": "Rufen Sie die Polizei", "en": "Call the police" },
+      { "text": "Ich brauche einen Arzt", "en": "I need a doctor" },
+      { "text": "Ich habe Schmerzen", "en": "I am in pain" },
+      { "text": "Bitte rufen Sie meine Familie an", "en": "Please call my family" }
+    ] },
+    { "id": "questions", "label": "Fragen", "items": [
+      { "text": "Wo ist die Toilette?", "en": "Where is the toilet?" },
+      { "text": "Wo ist das Krankenhaus?", "en": "Where is the hospital?" },
+      { "text": "Wo ist die Bushaltestelle?", "en": "Where is the bus stop?" },
+      { "text": "Wie spät ist es?", "en": "What time is it?" },
+      { "text": "Wie viel kostet das?", "en": "How much does it cost?" },
+      { "text": "Können Sie mir helfen?", "en": "Can you help me?" }
+    ] }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "lang": "dgs",
+  "spoken": "de",
+  "phrases": [
+    {
+      "text": "Guten Morgen",
+      "en": "Good morning",
+      "media": null
+    },
+    {
+      "text": "Gute Nacht",
+      "en": "Good night",
+      "media": null
+    },
+    {
+      "text": "Wie geht es Ihnen?",
+      "en": "How are you?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/wie-geht-es-ihnen.json"
+      }
+    },
+    {
+      "text": "Mir geht es gut, danke",
+      "en": "I am fine, thank you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/mir-geht-es-gut-danke.json"
+      }
+    },
+    {
+      "text": "Freut mich",
+      "en": "Nice to meet you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/freut-mich.json"
+      }
+    },
+    {
+      "text": "Bis morgen",
+      "en": "See you tomorrow",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/bis-morgen.json"
+      }
+    },
+    {
+      "text": "Wie heißen Sie?",
+      "en": "What is your name?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/wie-heissen-sie.json"
+      }
+    },
+    {
+      "text": "Ich bin gehörlos",
+      "en": "I am deaf",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-bin-gehoerlos.json"
+      }
+    },
+    {
+      "text": "Ich benutze Gebärdensprache",
+      "en": "I use sign language",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-benutze-gebaerdensprache.json"
+      }
+    },
+    {
+      "text": "Ich verstehe",
+      "en": "I understand",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-verstehe.json"
+      }
+    },
+    {
+      "text": "Ich verstehe nicht",
+      "en": "I don't understand",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-verstehe-nicht.json"
+      }
+    },
+    {
+      "text": "Können Sie das wiederholen?",
+      "en": "Can you repeat that?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/koennen-sie-das-wiederholen.json"
+      }
+    },
+    {
+      "text": "Bitte sprechen Sie langsam",
+      "en": "Please speak slowly",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/bitte-sprechen-sie-langsam.json"
+      }
+    },
+    {
+      "text": "Können Sie das aufschreiben?",
+      "en": "Can you write it down?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/koennen-sie-das-aufschreiben.json"
+      }
+    },
+    {
+      "text": "Ich brauche Wasser",
+      "en": "I need water",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-brauche-wasser.json"
+      }
+    },
+    {
+      "text": "Ich brauche etwas zu essen",
+      "en": "I need food",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-brauche-etwas-zu-essen.json"
+      }
+    },
+    {
+      "text": "Ich habe Hunger",
+      "en": "I am hungry",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-habe-hunger.json"
+      }
+    },
+    {
+      "text": "Ich habe Durst",
+      "en": "I am thirsty",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-habe-durst.json"
+      }
+    },
+    {
+      "text": "Ich bin müde",
+      "en": "I am tired",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-bin-muede.json"
+      }
+    },
+    {
+      "text": "Ich brauche meine Medikamente",
+      "en": "I need my medicine",
+      "media": null
+    },
+    {
+      "text": "Helfen Sie mir",
+      "en": "Help me",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/words/helfen.json"
+      }
+    },
+    {
+      "text": "Ich brauche sofort Hilfe",
+      "en": "I need help now",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-brauche-sofort-hilfe.json"
+      }
+    },
+    {
+      "text": "Rufen Sie einen Krankenwagen",
+      "en": "Call an ambulance",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/rufen-sie-einen-krankenwagen.json"
+      }
+    },
+    {
+      "text": "Rufen Sie die Polizei",
+      "en": "Call the police",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/rufen-sie-die-polizei.json"
+      }
+    },
+    {
+      "text": "Ich brauche einen Arzt",
+      "en": "I need a doctor",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-brauche-einen-arzt.json"
+      }
+    },
+    {
+      "text": "Ich habe Schmerzen",
+      "en": "I am in pain",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/ich-habe-schmerzen.json"
+      }
+    },
+    {
+      "text": "Bitte rufen Sie meine Familie an",
+      "en": "Please call my family",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/bitte-rufen-sie-meine-familie-an.json"
+      }
+    },
+    {
+      "text": "Wo ist die Toilette?",
+      "en": "Where is the toilet?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/wo-ist-die-toilette.json"
+      }
+    },
+    {
+      "text": "Wo ist das Krankenhaus?",
+      "en": "Where is the hospital?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/wo-ist-das-krankenhaus.json"
+      }
+    },
+    {
+      "text": "Wie viel kostet das?",
+      "en": "How much does it cost?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/dgs/phrases/wie-viel-kostet-das.json"
+      }
+    }
+  ]
+}

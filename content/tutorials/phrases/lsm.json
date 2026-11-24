@@ -1,0 +1,216 @@
+{
+  "lang": "lsm",
+  "spoken": "es",
+  "phrases": [
+    {
+      "text": "Buenos días",
+      "en": "Good morning",
+      "media": null
+    },
+    {
+      "text": "Buenas noches",
+      "en": "Good night",
+      "media": null
+    },
+    {
+      "text": "¿Cómo está?",
+      "en": "How are you?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/como-esta.json"
+      }
+    },
+    {
+      "text": "Estoy bien, gracias",
+      "en": "I am fine, thank you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/estoy-bien-gracias.json"
+      }
+    },
+    {
+      "text": "Mucho gusto",
+      "en": "Nice to meet you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/mucho-gusto.json"
+      }
+    },
+    {
+      "text": "Hasta mañana",
+      "en": "See you tomorrow",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/hasta-manana.json"
+      }
+    },
+    {
+      "text": "¿Cómo se llama?",
+      "en": "What is your name?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/como-se-llama.json"
+      }
+    },
+    {
+      "text": "Soy sordo",
+      "en": "I am deaf",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/soy-sordo.json"
+      }
+    },
+    {
+      "text": "Uso lengua de señas",
+      "en": "I use sign language",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/uso-lengua-de-senas.json"
+      }
+    },
+    {
+      "text": "Entiendo",
+      "en": "I understand",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/words/entender.json"
+      }
+    },
+    {
+      "text": "No entiendo",
+      "en": "I don't understand",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/no-entiendo.json"
+      }
+    },
+    {
+      "text": "¿Puede repetirlo?",
+      "en": "Can you repeat that?",
+      "media": null
+    },
+    {
+      "text": "Hable despacio, por favor",
+      "en": "Please speak slowly",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/hable-despacio-por-favor.json"
+      }
+    },
+    {
+      "text": "¿Puede escribirlo?",
+      "en": "Can you write it down?",
+      "media": null
+    },
+    {
+      "text": "Necesito agua",
+      "en": "I need water",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/necesito-agua.json"
+      }
+    },
+    {
+      "text": "Necesito comida",
+      "en": "I need food",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/necesito-comida.json"
+      }
+    },
+    {
+      "text": "Tengo hambre",
+      "en": "I am hungry",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/tengo-hambre.json"
+      }
+    },
+    {
+      "text": "Tengo sed",
+      "en": "I am thirsty",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/tengo-sed.json"
+      }
+    },
+    {
+      "text": "Estoy cansado",
+      "en": "I am tired",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/estoy-cansado.json"
+      }
+    },
+    {
+      "text": "Necesito mi medicina",
+      "en": "I need my medicine",
+      "media": null
+    },
+    {
+      "text": "Ayúdeme",
+      "en": "Help me",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/words/ayudar.json"
+      }
+    },
+    {
+      "text": "Necesito ayuda ahora",
+      "en": "I need help now",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/necesito-ayuda-ahora.json"
+      }
+    },
+    {
+      "text": "Llame a una ambulancia",
+      "en": "Call an ambulance",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/llame-a-una-ambulancia.json"
+      }
+    },
+    {
+      "text": "Llame a la policía",
+      "en": "Call the police",
+      "media": null
+    },
+    {
+      "text": "Necesito un doctor",
+      "en": "I need a doctor",
+      "media": null
+    },
+    {
+      "text": "Tengo dolor",
+      "en": "I am in pain",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/tengo-dolor.json"
+      }
+    },
+    {
+      "text": "Llame a mi familia, por favor",
+      "en": "Please call my family",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lsm/phrases/llame-a-mi-familia-por-favor.json"
+      }
+    },
+    {
+      "text": "¿Dónde está el baño?",
+      "en": "Where is the toilet?",
+      "media": null
+    },
+    {
+      "text": "¿Dónde está el hospital?",
+      "en": "Where is the hospital?",
+      "media": null
+    },
+    {
+      "text": "¿Cuánto cuesta?",
+      "en": "How much does it cost?",
+      "media": null
+    }
+  ]
+}

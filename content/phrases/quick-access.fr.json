@@ -1,0 +1,64 @@
+{
+  "lang": "fr-FR",
+  "categories": [
+    { "id": "words", "label": "Mots courants", "items": [
+      { "text": "Oui", "en": "Yes" },
+      { "text": "Non", "en": "No" },
+      { "text": "S'il vous plaît", "en": "Please" },
+      { "text": "Merci", "en": "Thank you" },
+      { "text": "Désolé", "en": "Sorry" },
+      { "text": "Excusez-moi", "en": "Excuse me" },
+      { "text": "Au secours", "en": "Help" },
+      { "text": "Arrêtez", "en": "Stop" },
+      { "text": "Attendez", "en": "Wait" },
+      { "text": "D'accord", "en": "Okay" },
+      { "text": "Bonjour", "en": "Hello" },
+      { "text": "Bonne nuit", "en": "Good night" }
+    ] },
+    { "id": "phrases", "label": "Phrases", "items": [
+      { "text": "Je comprends", "en": "I understand" },
+      { "text": "Je ne comprends pas", "en": "I don't understand" },
+      { "text": "Pouvez-vous répéter ?", "en": "Can you repeat that?" },
+      { "text": "Parlez lentement, s'il vous plaît", "en": "Please speak slowly" },
+      { "text": "Pouvez-vous l'écrire ?", "en": "Can you write it down?" },
+      { "text": "Soyez patient avec moi, s'il vous plaît", "en": "Please be patient with me" },
+      { "text": "Regardez-moi quand vous parlez", "en": "Please face me when you speak" },
+      { "text": "Un instant, s'il vous plaît", "en": "One moment, please" }
+    ] },
+    { "id": "intro", "label": "Se présenter", "items": [
+      { "text": "Je suis sourd", "en": "I am deaf" },
+      { "text": "Je suis malentendant", "en": "I am hard of hearing" },
+      { "text": "J'utilise la langue des signes", "en": "I use sign language" },
+      { "text": "Comment vous appelez-vous ?", "en": "What is your name?" },
+      { "text": "Enchanté", "en": "Nice to meet you" },
+      { "text": "J'utilise cette application pour communiquer", "en": "I use this app to communicate" }
+    ] },
+    { "id": "needs", "label": "Besoins essentiels", "items": [
+      { "text": "J'ai besoin d'eau", "en": "I need water" },
+      { "text": "J'ai besoin de manger", "en": "I need food" },
+      { "text": "J'ai faim", "en": "I am hungry" },
+      { "text": "J'ai soif", "en": "I am thirsty" },
+      { "text": "Je suis fatigué", "en": "I am tired" },
+      { "text": "J'ai froid", "en": "I am cold" },
+      { "text": "Je dois aller aux toilettes", "en": "I need the toilet" },
+      { "text": "J'ai besoin de mes médicaments", "en": "I need my medicine" }
+    ] },
+    { "id": "emergency", "label": "Urgence", "items": [
+      { "text": "Aidez-moi", "en": "Help me" },
+      { "text": "J'ai besoin d'aide tout de suite", "en": "I need help now" },
+      { "text": "Appelez une ambulance", "en": "Call an ambulance" },
+      { "text": "Appelez la police", "en": "Call the police" },
+      { "text": "J'ai besoin d'un médecin", "en": "I need a doctor" },
+      { "text": "J'ai mal", "en": "I am in pain" },
+      { "text": "Appelez ma famille, s'il vous plaît", "en": "Please call my family" }
+    ] },
+    { "id": "questions", "label": "Questions", "items": [
+      { "text": "Où sont les toilettes ?", "en": "Where is the toilet?" },
+      { "text": "Où est l'hôpital ?", "en": "Where is the hospital?" },
+      { "text": "Où est l'arrêt de bus ?", "en": "Where is the bus stop?" },
+      { "text": "Quelle heure est-il ?", "en": "What time is it?" },
+      { "text": "Combien ça coûte ?", "en": "How much does it cost?" },
+      { "text": "Pouvez-vous m'aider ?", "en": "Can you help me?" }
+    ] }
+  ]
+}

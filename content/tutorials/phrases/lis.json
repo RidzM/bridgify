@@ -1,0 +1,237 @@
+{
+  "lang": "lis",
+  "spoken": "it",
+  "phrases": [
+    {
+      "text": "Buongiorno",
+      "en": "Good morning",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/buongiorno.json"
+      }
+    },
+    {
+      "text": "Buonanotte",
+      "en": "Good night",
+      "media": null
+    },
+    {
+      "text": "Come stai?",
+      "en": "How are you?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/come-stai.json"
+      }
+    },
+    {
+      "text": "Sto bene, grazie",
+      "en": "I am fine, thank you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/sto-bene-grazie.json"
+      }
+    },
+    {
+      "text": "Piacere di conoscerti",
+      "en": "Nice to meet you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/piacere-di-conoscerti.json"
+      }
+    },
+    {
+      "text": "A domani",
+      "en": "See you tomorrow",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/a-domani.json"
+      }
+    },
+    {
+      "text": "Come si chiama?",
+      "en": "What is your name?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/come-si-chiama.json"
+      }
+    },
+    {
+      "text": "Sono sordo",
+      "en": "I am deaf",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/sono-sordo.json"
+      }
+    },
+    {
+      "text": "Uso la lingua dei segni",
+      "en": "I use sign language",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/uso-la-lingua-dei-segni.json"
+      }
+    },
+    {
+      "text": "Capisco",
+      "en": "I understand",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/words/capire.json"
+      }
+    },
+    {
+      "text": "Non capisco",
+      "en": "I don't understand",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/non-capisco.json"
+      }
+    },
+    {
+      "text": "Può ripetere?",
+      "en": "Can you repeat that?",
+      "media": null
+    },
+    {
+      "text": "Parli lentamente, per favore",
+      "en": "Please speak slowly",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/parli-lentamente-per-favore.json"
+      }
+    },
+    {
+      "text": "Può scriverlo?",
+      "en": "Can you write it down?",
+      "media": null
+    },
+    {
+      "text": "Ho bisogno di acqua",
+      "en": "I need water",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/ho-bisogno-di-acqua.json"
+      }
+    },
+    {
+      "text": "Ho bisogno di mangiare",
+      "en": "I need food",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/ho-bisogno-di-mangiare.json"
+      }
+    },
+    {
+      "text": "Ho fame",
+      "en": "I am hungry",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/ho-fame.json"
+      }
+    },
+    {
+      "text": "Ho sete",
+      "en": "I am thirsty",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/ho-sete.json"
+      }
+    },
+    {
+      "text": "Sono stanco",
+      "en": "I am tired",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/sono-stanco.json"
+      }
+    },
+    {
+      "text": "Ho bisogno delle mie medicine",
+      "en": "I need my medicine",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/ho-bisogno-delle-mie-medicine.json"
+      }
+    },
+    {
+      "text": "Aiutami",
+      "en": "Help me",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/words/aiutare.json"
+      }
+    },
+    {
+      "text": "Ho bisogno di aiuto subito",
+      "en": "I need help now",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/ho-bisogno-di-aiuto-subito.json"
+      }
+    },
+    {
+      "text": "Chiamate un'ambulanza",
+      "en": "Call an ambulance",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/chiamate-unambulanza.json"
+      }
+    },
+    {
+      "text": "Chiamate la polizia",
+      "en": "Call the police",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/chiamate-la-polizia.json"
+      }
+    },
+    {
+      "text": "Ho bisogno di un medico",
+      "en": "I need a doctor",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/ho-bisogno-di-un-medico.json"
+      }
+    },
+    {
+      "text": "Sento dolore",
+      "en": "I am in pain",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/sento-dolore.json"
+      }
+    },
+    {
+      "text": "Chiamate la mia famiglia, per favore",
+      "en": "Please call my family",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/chiamate-la-mia-famiglia-per-favore.json"
+      }
+    },
+    {
+      "text": "Dov'è il bagno?",
+      "en": "Where is the toilet?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/dove-il-bagno.json"
+      }
+    },
+    {
+      "text": "Dov'è l'ospedale?",
+      "en": "Where is the hospital?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/dove-lospedale.json"
+      }
+    },
+    {
+      "text": "Quanto costa?",
+      "en": "How much does it cost?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/lis/phrases/quanto-costa.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "lang": "asl",
+  "spoken": "en",
+  "phrases": [
+    {
+      "text": "Good morning",
+      "en": "Good morning",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/good-morning.json"
+      }
+    },
+    {
+      "text": "Good night",
+      "en": "Good night",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/good-night.json"
+      }
+    },
+    {
+      "text": "How are you?",
+      "en": "How are you?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/how-are-you.json"
+      }
+    },
+    {
+      "text": "I am fine, thank you",
+      "en": "I am fine, thank you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-am-fine-thank-you.json"
+      }
+    },
+    {
+      "text": "Nice to meet you",
+      "en": "Nice to meet you",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/nice-to-meet-you.json"
+      }
+    },
+    {
+      "text": "See you tomorrow",
+      "en": "See you tomorrow",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/see-you-tomorrow.json"
+      }
+    },
+    {
+      "text": "What is your name?",
+      "en": "What is your name?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/what-is-your-name.json"
+      }
+    },
+    {
+      "text": "I am deaf",
+      "en": "I am deaf",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-am-deaf.json"
+      }
+    },
+    {
+      "text": "I use sign language",
+      "en": "I use sign language",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-use-sign-language.json"
+      }
+    },
+    {
+      "text": "I understand",
+      "en": "I understand",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-understand.json"
+      }
+    },
+    {
+      "text": "I don't understand",
+      "en": "I don't understand",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-dont-understand.json"
+      }
+    },
+    {
+      "text": "Can you repeat that?",
+      "en": "Can you repeat that?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/can-you-repeat-that.json"
+      }
+    },
+    {
+      "text": "Speak slowly please",
+      "en": "Speak slowly please",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/speak-slowly-please.json"
+      }
+    },
+    {
+      "text": "Can you write that down?",
+      "en": "Can you write that down?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/can-you-write-that-down.json"
+      }
+    },
+    {
+      "text": "I need water",
+      "en": "I need water",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-need-water.json"
+      }
+    },
+    {
+      "text": "I need food",
+      "en": "I need food",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-need-food.json"
+      }
+    },
+    {
+      "text": "I am hungry",
+      "en": "I am hungry",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-am-hungry.json"
+      }
+    },
+    {
+      "text": "I am thirsty",
+      "en": "I am thirsty",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-am-thirsty.json"
+      }
+    },
+    {
+      "text": "I am tired",
+      "en": "I am tired",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-am-tired.json"
+      }
+    },
+    {
+      "text": "I need my medicine",
+      "en": "I need my medicine",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-need-my-medicine.json"
+      }
+    },
+    {
+      "text": "Help me",
+      "en": "Help me",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/words/help-me.json"
+      }
+    },
+    {
+      "text": "I need help now",
+      "en": "I need help now",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-need-help-now.json"
+      }
+    },
+    {
+      "text": "Call an ambulance",
+      "en": "Call an ambulance",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/call-an-ambulance.json"
+      }
+    },
+    {
+      "text": "Call the police",
+      "en": "Call the police",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/call-the-police.json"
+      }
+    },
+    {
+      "text": "I need a doctor",
+      "en": "I need a doctor",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-need-a-doctor.json"
+      }
+    },
+    {
+      "text": "I am in pain",
+      "en": "I am in pain",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/i-am-in-pain.json"
+      }
+    },
+    {
+      "text": "Please call my family",
+      "en": "Please call my family",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/please-call-my-family.json"
+      }
+    },
+    {
+      "text": "Where is the toilet?",
+      "en": "Where is the toilet?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/where-is-the-toilet.json"
+      }
+    },
+    {
+      "text": "Where is the hospital?",
+      "en": "Where is the hospital?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/where-is-the-hospital.json"
+      }
+    },
+    {
+      "text": "How much does it cost?",
+      "en": "How much does it cost?",
+      "media": {
+        "type": "pose",
+        "src": "/signs/asl/phrases/how-much-does-it-cost.json"
+      }
+    }
+  ]
+}
