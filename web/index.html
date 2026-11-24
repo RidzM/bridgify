@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bridgify: a free, private, browser-based communication platform. Speech, text, braille and sign, every way." />
+    <meta name="theme-color" content="#3d0075" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Bridgify: speak your way, be heard every way</title>
+    <script>
+      // Apply saved display settings before first paint (no flash of the wrong mode).
+      ;(function () {
+        var d = document.documentElement
+        var p = null
+        try { p = JSON.parse(localStorage.getItem('bridgify.prefs.v1') || 'null') } catch (e) {}
+        var s = (p && p.state) || {}
+        var mm = function (q) { return window.matchMedia && window.matchMedia(q).matches }
+        var mode = s.mode || (mm('(prefers-contrast: more)') ? 'high-contrast' : mm('(prefers-color-scheme: dark)') ? 'dark' : 'light')
+        var reduced = mm('(prefers-reduced-motion: reduce)')
+        var motion = s.motion || 'system'
+        var off = motion === 'off' || (motion === 'system' && (reduced || mode === 'calm' || mode === 'focus' || mode === 'autism'))
+        d.dataset.mode = mode
+        d.dataset.motion = off ? 'off' : 'on'
+        d.dataset.underline = s.underlineLinks ? 'on' : 'off'
+        d.dataset.cursor = s.largeCursor ? 'large' : 'normal'
+        d.style.setProperty('--text-scale', String(s.textScale || 1))
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

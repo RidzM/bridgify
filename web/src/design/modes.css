@@ -1,0 +1,68 @@
+/* The 12 display modes (report Fig 3.5.2). Each overrides semantic tokens only. */
+[data-mode='dark'] {
+  --bg: #0e0014; --surface: #1a0a26; --surface-2: #241233; --ink: #efe8fa; --ink-muted: #c3b5d8;
+  --line: #3a2650; --line-strong: #8d79a8; --brand: #c9a6ff; --brand-ink: #14001f; --brand-soft: #2c1844;
+  --live: #f07cf0; --live-fill: #e04be0; --ok: #4fd1c5; --warn: #f0b44c; --danger: #ff8a80; --danger-ink: #1a0000;
+  --focus: #f07cf0; --shadow-sheet: 0 0 0 1px var(--line); color-scheme: dark;
+}
+[data-mode='high-contrast'] {
+  --bg: #000000; --surface: #000000; --surface-2: #111111; --ink: #ffffff; --ink-muted: #ffffff;
+  --line: #ffffff; --line-strong: #ffffff; --brand: #ffe600; --brand-ink: #000000; --brand-soft: #222200;
+  --live: #00e5ff; --live-fill: #00e5ff; --ok: #7dff7a; --warn: #ffe600; --danger: #ff6b6b; --danger-ink: #000000;
+  --focus: #ffe600; --shadow-sheet: 0 0 0 2px #ffffff; color-scheme: dark;
+}
+@layer base { [data-mode='high-contrast'] a { text-decoration: underline; } }
+[data-mode='high-contrast'] :focus-visible { outline-width: 4px; }
+[data-mode='solarized'] {
+  --bg: #fdf6e3; --surface: #fffbef; --surface-2: #eee8d5; --ink: #073642; --ink-muted: #3d5a63;
+  --line: #e2dbc4; --line-strong: #7c8c8e; --brand: #3f45a8; --brand-ink: #ffffff; --brand-soft: #e6e3f0;
+  --live: #b0236d; --live-fill: #d33682; --ok: #2c6e1f; --warn: #7a5400; --danger: #b8271f; --focus: #b0236d;
+}
+[data-mode='night-blue'] {
+  --bg: #0b1426; --surface: #111d35; --surface-2: #182746; --ink: #e6edf7; --ink-muted: #b4c2d8;
+  --line: #24365a; --line-strong: #7f93b8; --brand: #8db4ff; --brand-ink: #0b1426; --brand-soft: #1b2c4f;
+  --live: #ff9bd2; --live-fill: #ff7cc4; --ok: #6fd6b8; --warn: #f2c06b; --danger: #ff8f8f; --danger-ink: #1a0000;
+  --focus: #ff9bd2; --shadow-sheet: 0 0 0 1px var(--line); color-scheme: dark;
+}
+[data-mode='forest'] {
+  --bg: #f1f5ee; --surface: #ffffff; --surface-2: #e3ebde; --ink: #17301f; --ink-muted: #3f5546;
+  --line: #d2dccb; --line-strong: #7f917f; --brand: #2e6b3f; --brand-ink: #ffffff; --brand-soft: #dcebdf;
+  --live: #9c2f6a; --live-fill: #b5397d; --ok: #1f6b52; --warn: #7a5200; --danger: #a8281f; --focus: #9c2f6a;
+}
+[data-mode='sepia'] {
+  --bg: #f4ecd8; --surface: #fbf5e6; --surface-2: #ebe0c5; --ink: #3b2a1a; --ink-muted: #5e4a35;
+  --line: #ddd0b1; --line-strong: #8f7d60; --brand: #6b3f1d; --brand-ink: #ffffff; --brand-soft: #ead9c0;
+  --live: #8e2c48; --live-fill: #a5375a; --ok: #3f6a3a; --warn: #7a4d00; --danger: #a3261f; --focus: #8e2c48;
+}
+[data-mode='calm'] {
+  --bg: #eef3f6; --surface: #f8fafb; --surface-2: #e2eaef; --ink: #24323d; --ink-muted: #4a5a66;
+  --line: #d3dde4; --line-strong: #7f8f9b; --brand: #3e6a86; --brand-ink: #ffffff; --brand-soft: #dbe7ef;
+  --live: #4d5f96; --live-fill: #5d6fa8; --ok: #3d6b5f; --warn: #6e5a2a; --danger: #8f3a35; --focus: #4d5f96;
+}
+[data-mode='focus'] { /* inherits Light palette; dimming handled in AppShell */ }
+[data-mode='low-vision'] {
+  --bg: #ffffff; --surface: #ffffff; --surface-2: #f2f2f2; --ink: #000000; --ink-muted: #1f1f1f;
+  --line: #595959; --line-strong: #000000; --brand: #2b0058; --brand-ink: #ffffff; --brand-soft: #ece4f7;
+  --live: #7a007a; --live-fill: #8a008a; --ok: #005c57; --warn: #6b3f00; --danger: #8c1b14; --focus: #7a007a;
+}
+[data-mode='low-vision'] body { font-size: 1.3rem; font-weight: 500; }
+[data-mode='low-vision'] :focus-visible { outline-width: 4px; }
+[data-mode='autism'] {
+  --bg: #eef4f1; --surface: #f6faf8; --surface-2: #e1ebe6; --ink: #283a33; --ink-muted: #4a5c55;
+  --line: #d0ddd6; --line-strong: #7e918a; --brand: #3f6f62; --brand-ink: #ffffff; --brand-soft: #dceae4;
+  --live: #4b6d8f; --live-fill: #5b7fa0; --ok: #3f6f62; --warn: #6d5a2c; --danger: #8c3b36; --focus: #4b6d8f;
+}
+[data-mode='dyslexia'] {
+  --bg: #faf3e3; --surface: #fffaf0; --surface-2: #f1e7d0; --ink: #2a2320; --ink-muted: #4f4540;
+  --line: #e3d7bd; --line-strong: #8f826d; --brand: #4a2a7a; --brand-ink: #ffffff; --brand-soft: #eadff3;
+  --live: #8a2e7a; --live-fill: #a2398f; --ok: #2f6650; --warn: #6e4d00; --danger: #9c2a22; --focus: #8a2e7a;
+  --font-body: 'OpenDyslexic', 'Atkinson Hyperlegible Next', sans-serif;
+  --font-display: 'OpenDyslexic', sans-serif;
+  --letter-spacing: 0.05em; --word-spacing: 0.14em; --line-height: 1.8; --measure: 65ch;
+}
+[data-mode='dyslexia'] :is(p, li, td, label, textarea, input) { text-align: left !important; font-style: normal; }
+[data-mode='dyslexia'] h1 { letter-spacing: 0.02em; }
+
+/* Focus mode: remove everything that is not the active task. (Hidden rather than faded,
+   so remaining text keeps full contrast.) */
+[data-mode='focus'] :is(.focus-dim, .focus-hide) { display: none; }

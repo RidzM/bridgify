@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+@import './design/tokens.css';
+@import './design/modes.css';
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --color-live: var(--live);
+  --color-live-fill: var(--live-fill);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-danger-ink: var(--danger-ink);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-braille: var(--font-braille);
+  --radius-control: 6px;
+  --radius-panel: 12px;
+}
